@@ -7,10 +7,10 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
-import type { AppSidebarItemData } from "@/components/sidebar/sidebar-item";
+import type { TClickUpRailItemProps } from "./clickup-rail-item";
 import { ClickUpRailIcon } from "./clickup-rail-icon";
 
-export type TAppRailDockItem = AppSidebarItemData & {
+export type TAppRailDockItem = TClickUpRailItemProps & {
   shouldRender: boolean;
   section: "top" | "bottom";
 };
@@ -27,6 +27,7 @@ export function withDockItems<P extends WithDockItemsProps>(WrappedComponent: Re
     const isHome = pathname === `/${slug}` || pathname === `/${slug}/`;
     const isSpaces = pathname.includes(`/${slug}/projects`);
     const isPlanner = pathname.includes(`/${slug}/active-cycles`);
+    const plannerDay = String(new Date().getDate());
 
     const dockItems: TAppRailDockItem[] = [
       {
@@ -47,7 +48,7 @@ export function withDockItems<P extends WithDockItemsProps>(WrappedComponent: Re
       },
       {
         label: "Planner",
-        icon: <ClickUpRailIcon src="/clickup-rail/planner.svg" alt="Planner" />,
+        icon: <ClickUpRailIcon src="/clickup-rail/planner.svg" alt="Planner" badge={plannerDay} />,
         href: `/${slug}/active-cycles/`,
         isActive: isPlanner,
         shouldRender: true,
@@ -68,6 +69,7 @@ export function withDockItems<P extends WithDockItemsProps>(WrappedComponent: Re
       {
         label: "Invite",
         icon: <ClickUpRailIcon src="/clickup-rail/invite.svg" alt="Invite" />,
+        tracking: "utility",
         shouldRender: true,
         section: "bottom",
       },

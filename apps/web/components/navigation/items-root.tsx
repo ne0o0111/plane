@@ -5,26 +5,28 @@
  */
 
 import React from "react";
-import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
 import type { TAppRailDockItem } from "./app-rail-hoc";
 import { withDockItems } from "./app-rail-hoc";
+import { ClickUpRailItem } from "./clickup-rail-item";
 
 type Props = {
   dockItems: TAppRailDockItem[];
-  showLabel?: boolean;
   section?: "top" | "bottom";
 };
 
-function Component({ dockItems, showLabel = true, section = "top" }: Props) {
+function Component({ dockItems, section = "top" }: Props) {
   return (
     <>
       {dockItems
         .filter((item) => item.shouldRender && item.section === section)
         .map((item) => (
-          <AppSidebarItem
+          <ClickUpRailItem
             key={item.label}
-            item={{ ...item, showLabel, tone: "inverse" }}
-            variant={item.href ? "link" : "button"}
+            label={item.label}
+            icon={item.icon}
+            href={item.href}
+            isActive={item.isActive}
+            tracking={item.tracking}
           />
         ))}
     </>

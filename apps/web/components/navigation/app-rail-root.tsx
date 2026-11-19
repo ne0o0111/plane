@@ -5,6 +5,7 @@
  */
 
 "use client";
+import { useEffect } from "react";
 import { observer } from "mobx-react";
 import {
   ContextMenu,
@@ -13,39 +14,69 @@ import {
   ContextMenuSeparator,
   ContextMenuTrigger,
 } from "@makeplane/propel/components/context-menu";
-// hooks
 import { useAppRailPreferences } from "@/hooks/use-navigation-preferences";
 import { useAppRailVisibility } from "@/lib/app-rail/context";
-// local imports
 import { AppSidebarItemsRoot } from "./items-root";
 
+const ROBOTO_LINK_ID = "clickup-rail-roboto-font";
+
+function ensureRobotoFont() {
+  if (typeof document === "undefined") return;
+  if (document.getElementById(ROBOTO_LINK_ID)) return;
+  const link = document.createElement("link");
+  link.id = ROBOTO_LINK_ID;
+  link.rel = "stylesheet";
+  link.href = "https://fonts.googleapis.com/css2?family=Roboto:wght@600;700;800&display=swap";
+  document.head.appendChild(link);
+}
+
 export const AppRailRoot = observer(() => {
-  // preferences
   const { preferences, updateDisplayMode } = useAppRailPreferences();
   const { isCollapsed, toggleAppRail } = useAppRailVisibility();
-  // derived values
-  const showLabel = preferences.displayMode === "icon_with_label";
-  const railWidth = showLabel ? "3.5rem" : "3rem";
+
+  useEffect(() => {
+    ensureRobotoFont();
+  }, []);
 
   return (
-    <div
-      className="z-[26] h-full flex-shrink-0 py-1.5 pl-1.5 transition-all duration-300 ease-in-out"
-      style={{
-        width: `calc(${railWidth} + 0.375rem)`,
-        display: "block",
-      }}
-    >
+    <div style={{ zIndex: 26, height: "100%", width: 58, flexShrink: 0, padding: "6px 0 6px 6px" }}>
       <ContextMenu>
-        <ContextMenuTrigger render={<div className="h-full" />}>
+        <ContextMenuTrigger render={<div style={{ height: "100%" }} />}>
           <div
-            className="flex h-full flex-col justify-between rounded-lg px-1.5 py-3"
-            style={{ backgroundColor: "#000000" }}
+            style={{
+              display: "flex",
+              height: "100%",
+              width: 52,
+              flexDirection: "column",
+              justifyContent: "space-between",
+              overflow: "visible",
+              borderRadius: 8,
+              paddingTop: 10,
+              paddingBottom: 10,
+              backgroundColor: "#000000",
+              boxShadow: "0px 4px 6px -1px rgba(0,0,0,0.11), 0px 2px 4px -2px rgba(0,0,0,0.11)",
+            }}
           >
-            <div className="flex flex-col gap-4">
-              <AppSidebarItemsRoot showLabel={showLabel} section="top" />
+            {/* Item height ~50px + gap 12px = 62px pitch (Figma) */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: 12,
+              }}
+            >
+              <AppSidebarItemsRoot section="top" />
             </div>
-            <div className="flex flex-col gap-4">
-              <AppSidebarItemsRoot showLabel={showLabel} section="bottom" />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: 12,
+              }}
+            >
+              <AppSidebarItemsRoot section="bottom" />
             </div>
           </div>
         </ContextMenuTrigger>
