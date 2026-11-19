@@ -21,7 +21,7 @@
       },
       "confirm_project_name_label": "Wpisz nazwę projektu, aby kontynuować.",
       "leave_project": {
-        "confirm_description": "Czy na pewno chcesz opuścić projekt {projectName}? Elementy pracy powiązane z Tobą staną się niedostępne."
+        "confirm_description": "Czy na pewno chcesz opuścić projekt {projectName}? Zadania powiązane z Tobą staną się niedostępne."
       }
     },
     "members": {
@@ -53,7 +53,7 @@
     },
     "labels": {
       "heading": "Etykiety",
-      "description": "Twórz niestandardowe etykiety, aby kategoryzować i organizować swoje elementy pracy",
+      "description": "Twórz niestandardowe etykiety, aby kategoryzować i organizować swoje zadania",
       "label_title": "Nazwa etykiety",
       "label_title_is_required": "Nazwa etykiety jest wymagana",
       "label_max_char": "Nazwa etykiety nie może mieć więcej niż 255 znaków",
@@ -206,7 +206,7 @@
     "empty_state": {
       "labels": {
         "title": "Brak etykiet",
-        "description": "Utwórz etykiety, aby organizować elementy pracy."
+        "description": "Utwórz etykiety, aby organizować zadania."
       },
       "estimates": {
         "title": "Brak systemów szacowania",
@@ -215,7 +215,7 @@
       },
       "integrations": {
         "title": "Brak skonfigurowanych integracji",
-        "description": "Skonfiguruj GitHub i inne integracje, aby synchronizować elementy pracy projektu."
+        "description": "Skonfiguruj GitHub i inne integracje, aby synchronizować zadania projektu."
       }
     },
     "workflows": {
@@ -249,10 +249,10 @@
         "add_states": "Dodaj stany",
         "unmapped_states": {
           "title": "Wykryto niezmapowane stany",
-          "description": "Niektóre elementy pracy dla wybranych typów znajdują się obecnie w stanach, które nie istnieją w tym przepływie pracy.",
+          "description": "Niektóre zadania dla wybranych typów znajdują się obecnie w stanach, które nie istnieją w tym przepływie pracy.",
           "note": "Jeśli włączysz ten przepływ pracy, te elementy zostaną automatycznie przeniesione do stanu początkowego tego przepływu pracy.",
           "label": "Brakujące stany",
-          "tooltip": "Niektóre elementy pracy znajdują się w stanach, które nie są zmapowane do tego przepływu pracy. Otwórz przepływ pracy, aby sprawdzić."
+          "tooltip": "Niektóre zadania znajdują się w stanach, które nie są zmapowane do tego przepływu pracy. Otwórz przepływ pracy, aby sprawdzić."
         }
       },
       "select_states": {
@@ -373,16 +373,16 @@
         },
         "in_app": {
           "title": "W aplikacji",
-          "description": "Otrzymuj nowe elementy pracy od członków i gości w obszarze roboczym bez zakłócania istniejących."
+          "description": "Otrzymuj nowe zadania od członków i gości w obszarze roboczym bez zakłócania istniejących."
         },
         "email": {
           "title": "E-mail",
-          "description": "Zbieraj nowe elementy pracy od każdego, kto wyśle e-mail na adres Plane.",
+          "description": "Zbieraj nowe zadania od każdego, kto wyśle e-mail na adres Plane.",
           "fieldName": "ID e-mail"
         },
         "form": {
           "title": "Formularze",
-          "description": "Pozwól osobom spoza obszaru roboczego tworzyć potencjalne nowe elementy pracy przez dedykowany i bezpieczny formularz.",
+          "description": "Pozwól osobom spoza obszaru roboczego tworzyć potencjalne nowe zadania przez dedykowany i bezpieczny formularz.",
           "fieldName": "Domyślny URL formularza",
           "create_forms": "Twórz formularze przy użyciu typów elementów pracy",
           "manage_forms": "Zarządzaj formularzami",
@@ -428,7 +428,7 @@
         "short_title": "Kamienie milowe",
         "description": "Kamienie milowe zapewniają warstwę do wyrównania elementów pracy w kierunku wspólnych dat zakończenia.",
         "toggle_title": "Włącz kamienie milowe",
-        "toggle_description": "Organizuj elementy pracy według terminów kamieni milowych."
+        "toggle_description": "Organizuj zadania według terminów kamieni milowych."
       },
       "toasts": {
         "loading": "Aktualizowanie funkcji projektu...",
@@ -496,7 +496,7 @@
           },
           "auto_rollover": {
             "label": "Automatyczne przenoszenie elementów pracy",
-            "tooltip": "W dniu zakończenia cyklu przenieś wszystkie niedokończone elementy pracy do następnego cyklu."
+            "tooltip": "W dniu zakończenia cyklu przenieś wszystkie niedokończone zadania do następnego cyklu."
           }
         },
         "toast": {

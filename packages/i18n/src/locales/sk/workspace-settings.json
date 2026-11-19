@@ -287,7 +287,7 @@
       "relations": {
         "title": "Vzťahy",
         "heading": "Vzťahy",
-        "description": "Vytvárajte a spravujte typy vzťahov, ktoré prepájajú pracovné položky naprieč vaším pracovným priestorom."
+        "description": "Vytvárajte a spravujte typy vzťahov, ktoré prepájajú úlohy naprieč vaším pracovným priestorom."
       },
       "cancel_trial": {
         "title": "Najprv zrušte vašu skúšobnú verziu.",
@@ -464,7 +464,7 @@
         "app_consent_unapproved_description": "Pred prepojením s pracovným priestorom sa uistite, že tejto aplikácii dôverujete.",
         "go_to_app": "Prejsť na aplikáciu",
         "enable_app_mentions": "Povoliť zmienky o aplikácii",
-        "enable_app_mentions_tooltip": "Keď je toto povolené, používatelia môžu spomenúť alebo priradiť pracovné položky tejto aplikácii.",
+        "enable_app_mentions_tooltip": "Keď je toto povolené, používatelia môžu spomenúť alebo priradiť úlohy tejto aplikácii.",
         "scopes": "Rozsahy",
         "select_scopes": "Vybrať rozsahy",
         "read_access_to": "Prístup len na čítanie k",

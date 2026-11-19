@@ -11,7 +11,7 @@
           "label": "Șabloane de proiect"
         },
         "work_item": {
-          "label": "Șabloane de elemente de lucru"
+          "label": "Șabloane de sarcini"
         },
         "page": {
           "label": "Șabloane de pagină"
@@ -70,7 +70,7 @@
         "work_item": {
           "template": {
             "name": {
-              "placeholder": "Denumește șablonul tău de element de lucru.",
+              "placeholder": "Denumește șablonul tău de sarcină.",
               "validation": {
                 "required": "Numele șablonului este obligatoriu",
                 "maxLength": "Numele șablonului trebuie să fie mai mic de 255 de caractere"
@@ -81,18 +81,18 @@
             }
           },
           "name": {
-            "placeholder": "Dă acestui element de lucru un titlu.",
+            "placeholder": "Dă acestui sarcină un titlu.",
             "validation": {
               "required": "Titlul elementului de lucru este obligatoriu",
               "maxLength": "Titlul elementului de lucru trebuie să fie mai mic de 255 de caractere"
             }
           },
           "description": {
-            "placeholder": "Descrie acest element de lucru astfel încât să fie clar ce vei realiza când îl vei completa."
+            "placeholder": "Descrie acest sarcină astfel încât să fie clar ce vei realiza când îl vei completa."
           },
           "button": {
-            "create": "Creează șablon de element de lucru",
-            "update": "Actualizează șablon de element de lucru"
+            "create": "Creează șablon de sarcină",
+            "update": "Actualizează șablon de sarcină"
           }
         },
         "page": {
@@ -227,7 +227,7 @@
     "empty_state": {
       "upgrade": {
         "title": "Șabloane",
-        "description": "Cu șabloane de proiect, element de lucru și pagină în Plane, nu trebuie să creezi un proiect de la zero sau să setezi manual proprietățile elementelor de lucru.",
+        "description": "Cu șabloane de proiect, sarcină și pagină în Plane, nu trebuie să creezi un proiect de la zero sau să setezi manual proprietățile elementelor de lucru.",
         "sub_description": "Recuperează 80% din timpul tău administrativ când folosești Șabloane."
       },
       "no_templates": {
@@ -240,10 +240,10 @@
         "description": "Nu există module încă. Organizează munca în sub-proiecte cu lideri și responsabili dedicați."
       },
       "no_work_items": {
-        "description": "Nu există elemente de lucru încă. Adaugă unul pentru a structura mai bine munca ta."
+        "description": "Nu există sarcini încă. Adaugă unul pentru a structura mai bine munca ta."
       },
       "no_sub_work_items": {
-        "description": "Nu există sub-elemente de lucru încă. Adaugă unul pentru a structura mai bine munca ta."
+        "description": "Nu există sub-sarcini încă. Adaugă unul pentru a structura mai bine munca ta."
       },
       "page": {
         "no_templates": {
@@ -322,7 +322,7 @@
         "page": "Alege un șablon"
       },
       "tooltip": {
-        "work_item": "Alege un șablon de element de lucru"
+        "work_item": "Alege un șablon de sarcină"
       },
       "no_results": {
         "work_item": "Nu s-au găsit șabloane.",

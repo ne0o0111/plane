@@ -54,7 +54,7 @@
     "empty_state": {
       "general": {
         "title": "Podgląd projektów, aktywności i metryk",
-        "description": "Witaj w Plane, cieszymy się, że jesteś. Utwórz pierwszy projekt, śledź elementy pracy, a ta strona stanie się centrum Twojego postępu. Administratorzy zobaczą tu również elementy pomocne zespołowi.",
+        "description": "Witaj w Plane, cieszymy się, że jesteś. Utwórz pierwszy projekt, śledź zadania, a ta strona stanie się centrum Twojego postępu. Administratorzy zobaczą tu również elementy pomocne zespołowi.",
         "primary_button": {
           "text": "Utwórz pierwszy projekt",
           "comic": {
@@ -70,18 +70,18 @@
     "page_label": "{workspace} - Analizy",
     "open_tasks": "Łączna liczba otwartych zadań",
     "error": "Wystąpił błąd podczas wczytywania danych.",
-    "work_items_closed_in": "Elementy pracy zamknięte w",
+    "work_items_closed_in": "Zadania zamknięte w",
     "selected_projects": "Wybrane projekty",
     "total_members": "Łączna liczba członków",
     "total_cycles": "Łączna liczba cykli",
     "total_modules": "Łączna liczba modułów",
     "pending_work_items": {
-      "title": "Oczekujące elementy pracy",
+      "title": "Oczekujące zadania",
       "empty_state": "Tutaj zobaczysz analizę oczekujących elementów pracy według współpracowników."
     },
     "work_items_closed_in_a_year": {
-      "title": "Elementy pracy zamknięte w ciągu roku",
-      "empty_state": "Zamykaj elementy pracy, aby zobaczyć analizę w wykresie."
+      "title": "Zadania zamknięte w ciągu roku",
+      "empty_state": "Zamykaj zadania, aby zobaczyć analizę w wykresie."
     },
     "most_work_items_created": {
       "title": "Najwięcej utworzonych elementów",
@@ -110,15 +110,15 @@
     "empty_state": {
       "project_insights": {
         "title": "Brak danych",
-        "description": "Przypisane do Ciebie elementy pracy, podzielone według stanu, pojawią się tutaj."
+        "description": "Przypisane do Ciebie zadania, podzielone według stanu, pojawią się tutaj."
       },
       "created_vs_resolved": {
         "title": "Brak danych",
-        "description": "Elementy pracy utworzone i rozwiązane w czasie pojawią się tutaj."
+        "description": "Zadania utworzone i rozwiązane w czasie pojawią się tutaj."
       },
       "customized_insights": {
         "title": "Brak danych",
-        "description": "Przypisane do Ciebie elementy pracy, podzielone według stanu, pojawią się tutaj."
+        "description": "Przypisane do Ciebie zadania, podzielone według stanu, pojawią się tutaj."
       },
       "general": {
         "title": "Śledź postęp, obciążenie pracą i alokacje. Wykrywaj trendy, usuwaj blokady i pracuj szybciej",
@@ -127,25 +127,25 @@
           "text": "Rozpocznij swój pierwszy projekt",
           "comic": {
             "title": "Analityka działa najlepiej z Cyklami + Modułami",
-            "description": "Najpierw umieść swoje elementy pracy w Cyklach, a jeśli można, pogrupuj elementy obejmujące więcej niż jeden cykl w Moduły. Sprawdź oba w lewej nawigacji."
+            "description": "Najpierw umieść swoje zadania w Cyklach, a jeśli można, pogrupuj elementy obejmujące więcej niż jeden cykl w Moduły. Sprawdź oba w lewej nawigacji."
           }
         }
       },
       "cycle_progress": {
         "title": "Brak danych",
-        "description": "Analiza postępu cyklu pojawi się tutaj. Dodaj elementy pracy do cykli, aby rozpocząć śledzenie postępów."
+        "description": "Analiza postępu cyklu pojawi się tutaj. Dodaj zadania do cykli, aby rozpocząć śledzenie postępów."
       },
       "module_progress": {
         "title": "Brak danych",
-        "description": "Analiza postępu modułu pojawi się tutaj. Dodaj elementy pracy do modułów, aby rozpocząć śledzenie postępów."
+        "description": "Analiza postępu modułu pojawi się tutaj. Dodaj zadania do modułów, aby rozpocząć śledzenie postępów."
       },
       "intake_trends": {
         "title": "Brak danych",
-        "description": "Analiza trendów przyjęć pojawi się tutaj. Dodaj elementy pracy do przyjęć, aby rozpocząć śledzenie trendów."
+        "description": "Analiza trendów przyjęć pojawi się tutaj. Dodaj zadania do przyjęć, aby rozpocząć śledzenie trendów."
       }
     },
     "upgrade_to_plan": "Ulepsz do {plan}, aby odblokować {tab}",
-    "workitem_resolved_vs_pending": "Rozwiązane vs oczekujące elementy pracy",
+    "workitem_resolved_vs_pending": "Rozwiązane vs oczekujące zadania",
     "projects_by_status": "Projekty według statusu",
     "active_users": "Aktywni użytkownicy",
     "intake_trends": "Trendy przyjęć"
@@ -207,7 +207,7 @@
       },
       "no_projects": {
         "title": "Brak projektów",
-        "description": "Aby tworzyć elementy pracy, musisz utworzyć lub dołączyć do projektu.",
+        "description": "Aby tworzyć zadania, musisz utworzyć lub dołączyć do projektu.",
         "primary_button": {
           "text": "Rozpocznij pierwszy projekt",
           "comic": {
@@ -237,21 +237,21 @@
         "title": "Brak elementów pracy w projekcie",
         "description": "Utwórz pierwszy element i śledź postępy!",
         "primary_button": {
-          "text": "Utwórz element pracy"
+          "text": "Utwórz zadanie"
         }
       },
       "assigned": {
         "title": "Brak przypisanych elementów",
         "description": "Tutaj zobaczysz elementy przypisane Tobie.",
         "primary_button": {
-          "text": "Utwórz element pracy"
+          "text": "Utwórz zadanie"
         }
       },
       "created": {
         "title": "Brak utworzonych elementów",
         "description": "Tutaj pojawiają się elementy, które utworzyłeś(aś).",
         "primary_button": {
-          "text": "Utwórz element pracy"
+          "text": "Utwórz zadanie"
         }
       },
       "subscribed": {
@@ -271,7 +271,7 @@
   "workspace_draft_issues": {
     "draft_an_issue": "Utwórz szkic elementu pracy",
     "empty_state": {
-      "title": "Robocze elementy pracy i komentarze pojawią się tutaj.",
+      "title": "Robocze zadania i komentarze pojawią się tutaj.",
       "description": "Rozpocznij tworzenie elementu pracy i zostaw go w formie szkicu.",
       "primary_button": {
         "text": "Utwórz pierwszy szkic"
@@ -295,7 +295,7 @@
     "empty_state": {
       "general": {
         "title": "Napisz notatkę, dokument lub pełną bazę wiedzy. Niech Galileo, asystent AI Plane, pomoże Ci zacząć",
-        "description": "Strony to przestrzeń do przechowywania myśli w Plane. Sporządzaj notatki ze spotkań, formatuj je łatwo, osadzaj elementy pracy, układaj je za pomocą biblioteki komponentów i trzymaj je wszystkie w kontekście projektu. Aby szybko wykonać dowolny dokument, wywołaj Galileo, AI Plane, za pomocą skrótu lub kliknięcia przycisku.",
+        "description": "Strony to przestrzeń do przechowywania myśli w Plane. Sporządzaj notatki ze spotkań, formatuj je łatwo, osadzaj zadania, układaj je za pomocą biblioteki komponentów i trzymaj je wszystkie w kontekście projektu. Aby szybko wykonać dowolny dokument, wywołaj Galileo, AI Plane, za pomocą skrótu lub kliknięcia przycisku.",
         "primary_button": {
           "text": "Utwórz swoją pierwszą stronę"
         }

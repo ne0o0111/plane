@@ -19,7 +19,7 @@
   },
   "github_integration": {
     "name": "GitHub",
-    "description": "Połącz i synchronizuj swoje elementy pracy GitHub z Plane",
+    "description": "Połącz i synchronizuj swoje zadania GitHub z Plane",
     "connect_org": "Connect Organization",
     "connect_org_description": "Połącz swoją organizację GitHub z Plane",
     "processing": "Przetwarzanie",
@@ -48,7 +48,7 @@
     "pr_state_mapping_empty_state": "Zmapowane stany PR pojawią się tutaj",
     "remove_pr_state_mapping": "Usuń to mapowanie stanu pull request",
     "remove_pr_state_mapping_confirmation": "Czy na pewno chcesz usunąć to mapowanie stanu pull request?",
-    "issue_sync_message": "Elementy pracy są synchronizowane do {project}",
+    "issue_sync_message": "Zadania są synchronizowane do {project}",
     "link": "Link GitHub Repository do projektu Plane",
     "pull_request_automation": "Automatyzacja pull request",
     "pull_request_automation_description": "Skonfiguruj mapowanie stanu pull request z GitHub do swojego projektu Plane",
@@ -150,7 +150,7 @@
       "project_updates_empty_state": "Projekty połączone z kanałami Slack pojawią się tutaj.",
       "project_updates_form": {
         "title": "Skonfiguruj Aktualizacje Projektu",
-        "description": "Otrzymuj powiadomienia o aktualizacjach projektu w Slack, gdy tworzone są elementy pracy",
+        "description": "Otrzymuj powiadomienia o aktualizacjach projektu w Slack, gdy tworzone są zadania",
         "failed_to_load_channels": "Nie udało się załadować kanałów ze Slack",
         "project_dropdown": {
           "placeholder": "Wybierz projekt",

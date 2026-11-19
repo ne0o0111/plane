@@ -19,7 +19,7 @@
   },
   "github_integration": {
     "name": "GitHub",
-    "description": "Подключите и синхронизируйте ваши рабочие элементы GitHub с Plane.",
+    "description": "Подключите и синхронизируйте ваши задачи GitHub с Plane.",
     "connect_org": "Подключить организацию",
     "connect_org_description": "Подключите вашу организацию GitHub к Plane",
     "processing": "Обработка",
@@ -48,7 +48,7 @@
     "pr_state_mapping_empty_state": "Сопоставленные состояния PR появятся здесь",
     "remove_pr_state_mapping": "Удалить это сопоставление состояния запроса на слияние",
     "remove_pr_state_mapping_confirmation": "Вы уверены, что хотите удалить это сопоставление состояния запроса на слияние?",
-    "issue_sync_message": "Рабочие элементы синхронизированы в {project}",
+    "issue_sync_message": "Задачи синхронизированы в {project}",
     "link": "Ссылка на репозиторий GitHub на проект Plane",
     "pull_request_automation": "Автоматизация запроса на слияние",
     "pull_request_automation_description": "Настройте сопоставление состояния запроса на слияние из GitHub в ваш проект Plane",
@@ -150,7 +150,7 @@
       "project_updates_empty_state": "Проекты, подключенные к каналам Slack, появятся здесь.",
       "project_updates_form": {
         "title": "Настроить Обновления Проекта",
-        "description": "Получайте уведомления об обновлениях проекта в Slack, когда создаются рабочие элементы",
+        "description": "Получайте уведомления об обновлениях проекта в Slack, когда создаются задачи",
         "failed_to_load_channels": "Не удалось загрузить каналы из Slack",
         "project_dropdown": {
           "placeholder": "Выберите проект",

@@ -54,7 +54,7 @@
     "empty_state": {
       "general": {
         "title": "Prehľad projektov, aktivít a metrík",
-        "description": "Vitajte v Plane, teší nás, že ste tu. Vytvorte prvý projekt, sledujte pracovné položky a táto stránka sa zmení na priestor pre váš pokrok. Správcovia tu uvidia aj položky pomáhajúce tímu.",
+        "description": "Vitajte v Plane, teší nás, že ste tu. Vytvorte prvý projekt, sledujte úlohy a táto stránka sa zmení na priestor pre váš pokrok. Správcovia tu uvidia aj položky pomáhajúce tímu.",
         "primary_button": {
           "text": "Vytvorte prvý projekt",
           "comic": {
@@ -70,17 +70,17 @@
     "page_label": "{workspace} - Analytika",
     "open_tasks": "Celkovo otvorených úloh",
     "error": "Pri načítaní dát došlo k chybe.",
-    "work_items_closed_in": "Pracovné položky uzavreté v",
+    "work_items_closed_in": "Úlohy uzavreté v",
     "selected_projects": "Vybrané projekty",
     "total_members": "Celkovo členov",
     "total_cycles": "Celkovo cyklov",
     "total_modules": "Celkovo modulov",
     "pending_work_items": {
-      "title": "Čakajúce pracovné položky",
+      "title": "Čakajúce úlohy",
       "empty_state": "Tu sa zobrazí analýza čakajúcich položiek podľa spolupracovníkov."
     },
     "work_items_closed_in_a_year": {
-      "title": "Pracovné položky uzavreté v roku",
+      "title": "Úlohy uzavreté v roku",
       "empty_state": "Uzatvárajte položky, aby ste videli analýzu stavov v grafe."
     },
     "most_work_items_created": {
@@ -110,15 +110,15 @@
     "empty_state": {
       "project_insights": {
         "title": "Zatiaľ žiadne údaje",
-        "description": "Pracovné položky priradené vám, rozdelené podľa stavu, sa zobrazia tu."
+        "description": "Úlohy priradené vám, rozdelené podľa stavu, sa zobrazia tu."
       },
       "created_vs_resolved": {
         "title": "Zatiaľ žiadne údaje",
-        "description": "Pracovné položky vytvorené a vyriešené v priebehu času sa zobrazia tu."
+        "description": "Úlohy vytvorené a vyriešené v priebehu času sa zobrazia tu."
       },
       "customized_insights": {
         "title": "Zatiaľ žiadne údaje",
-        "description": "Pracovné položky priradené vám, rozdelené podľa stavu, sa zobrazia tu."
+        "description": "Úlohy priradené vám, rozdelené podľa stavu, sa zobrazia tu."
       },
       "general": {
         "title": "Sledujte pokrok, pracovné zaťaženie a alokácie. Identifikujte trendy, odstráňte prekážky a urýchlite prácu",
@@ -133,19 +133,19 @@
       },
       "cycle_progress": {
         "title": "Zatiaľ žiadne údaje",
-        "description": "Analýza postupu cyklu sa zobrazí tu. Pridajte pracovné položky do cyklov, aby ste mohli začať sledovať postup."
+        "description": "Analýza postupu cyklu sa zobrazí tu. Pridajte úlohy do cyklov, aby ste mohli začať sledovať postup."
       },
       "module_progress": {
         "title": "Zatiaľ žiadne údaje",
-        "description": "Analýza postupu modulu sa zobrazí tu. Pridajte pracovné položky do modulov, aby ste mohli začať sledovať postup."
+        "description": "Analýza postupu modulu sa zobrazí tu. Pridajte úlohy do modulov, aby ste mohli začať sledovať postup."
       },
       "intake_trends": {
         "title": "Zatiaľ žiadne údaje",
-        "description": "Analýza trendov príjmu sa zobrazí tu. Pridajte pracovné položky do príjmu, aby ste mohli sledovať trendy."
+        "description": "Analýza trendov príjmu sa zobrazí tu. Pridajte úlohy do príjmu, aby ste mohli sledovať trendy."
       }
     },
     "upgrade_to_plan": "Inovujte na {plan}, aby ste odomkli kartu {tab}",
-    "workitem_resolved_vs_pending": "Vyriešené vs. čakajúce pracovné položky",
+    "workitem_resolved_vs_pending": "Vyriešené vs. čakajúce úlohy",
     "projects_by_status": "Projekty podľa stavu",
     "active_users": "Aktívni používatelia",
     "intake_trends": "Trendy prijímania"
@@ -234,7 +234,7 @@
     "add_view": "Pridať pohľad",
     "empty_state": {
       "all-issues": {
-        "title": "Žiadne pracovné položky v projekte",
+        "title": "Žiadne úlohy v projekte",
         "description": "Vytvorte prvú položku a sledujte svoj pokrok!",
         "primary_button": {
           "text": "Vytvoriť pracovnú položku"
@@ -295,7 +295,7 @@
     "empty_state": {
       "general": {
         "title": "Napíšte poznámku, dokument alebo úplnú znalostnej bázu. Nechajte Galilea, Plenovho AI asistenta, aby vám pomohol začať",
-        "description": "Stránky sú priestor pre myšlienky v Plene. Zapíšte si poznámky zo stretnutí, jednoducho ich formátujte, vložte pracovné položky, rozložte ich pomocou knižnice komponentov a uchovajte ich všetky v kontexte vášho projektu. Aby ste skrátili prácu na akomkoľvek dokumente, vyvolajte Galilea, AI Plena, pomocou skratky alebo kliknutia na tlačidlo.",
+        "description": "Stránky sú priestor pre myšlienky v Plene. Zapíšte si poznámky zo stretnutí, jednoducho ich formátujte, vložte úlohy, rozložte ich pomocou knižnice komponentov a uchovajte ich všetky v kontexte vášho projektu. Aby ste skrátili prácu na akomkoľvek dokumente, vyvolajte Galilea, AI Plena, pomocou skratky alebo kliknutia na tlačidlo.",
         "primary_button": {
           "text": "Vytvorte svoju prvú stránku"
         }

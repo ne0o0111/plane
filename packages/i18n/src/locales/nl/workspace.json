@@ -54,7 +54,7 @@
     "empty_state": {
       "general": {
         "title": "Overzicht van je projecten, activiteit en statistieken",
-        "description": "Welkom bij Plane, we zijn blij dat je er bent. Maak je eerste project aan en volg je werkitems, en deze pagina verandert in een plek die je helpt vooruit te komen. Beheerders zien ook items die hun team helpen vooruit te komen.",
+        "description": "Welkom bij Plane, we zijn blij dat je er bent. Maak je eerste project aan en volg je taken, en deze pagina verandert in een plek die je helpt vooruit te komen. Beheerders zien ook items die hun team helpen vooruit te komen.",
         "primary_button": {
           "text": "Bouw je eerste project",
           "comic": {
@@ -70,26 +70,26 @@
     "page_label": "{workspace} - Analyses",
     "open_tasks": "Totaal aantal openstaande taken",
     "error": "Er ging iets mis bij het ophalen van de gegevens.",
-    "work_items_closed_in": "Werkitems gesloten in",
+    "work_items_closed_in": "Taken gesloten in",
     "selected_projects": "Geselecteerde projecten",
     "total_members": "Totaal aantal leden",
     "total_cycles": "Totaal aantal cycli",
     "total_modules": "Totaal aantal modules",
     "pending_work_items": {
-      "title": "Openstaande werkitems",
-      "empty_state": "Analyse van openstaande werkitems per collega verschijnt hier."
+      "title": "Openstaande taken",
+      "empty_state": "Analyse van openstaande taken per collega verschijnt hier."
     },
     "work_items_closed_in_a_year": {
-      "title": "Werkitems gesloten in een jaar",
-      "empty_state": "Sluit werkitems om hiervan een analyse in de vorm van een grafiek te zien."
+      "title": "Taken gesloten in een jaar",
+      "empty_state": "Sluit taken om hiervan een analyse in de vorm van een grafiek te zien."
     },
     "most_work_items_created": {
-      "title": "Meeste werkitems aangemaakt",
-      "empty_state": "Collega's en het aantal werkitems dat zij hebben aangemaakt verschijnt hier."
+      "title": "Meeste taken aangemaakt",
+      "empty_state": "Collega's en het aantal taken dat zij hebben aangemaakt verschijnt hier."
     },
     "most_work_items_closed": {
-      "title": "Meeste werkitems gesloten",
-      "empty_state": "Collega's en het aantal werkitems dat zij hebben gesloten verschijnt hier."
+      "title": "Meeste taken gesloten",
+      "empty_state": "Collega's en het aantal taken dat zij hebben gesloten verschijnt hier."
     },
     "tabs": {
       "scope_and_demand": "Omvang en vraag",
@@ -110,15 +110,15 @@
     "empty_state": {
       "project_insights": {
         "title": "Nog geen gegevens",
-        "description": "Werkitems die aan jou zijn toegewezen, uitgesplitst per status, verschijnen hier."
+        "description": "Taken die aan jou zijn toegewezen, uitgesplitst per status, verschijnen hier."
       },
       "created_vs_resolved": {
         "title": "Nog geen gegevens",
-        "description": "Werkitems die in de loop van de tijd zijn aangemaakt en opgelost verschijnen hier."
+        "description": "Taken die in de loop van de tijd zijn aangemaakt en opgelost verschijnen hier."
       },
       "customized_insights": {
         "title": "Nog geen gegevens",
-        "description": "Werkitems die aan jou zijn toegewezen, uitgesplitst per status, verschijnen hier."
+        "description": "Taken die aan jou zijn toegewezen, uitgesplitst per status, verschijnen hier."
       },
       "general": {
         "title": "Volg voortgang, werklast en toewijzingen. Spot trends, verwijder blokkades en laat werk sneller vorderen",
@@ -127,25 +127,25 @@
           "text": "Start je eerste project",
           "comic": {
             "title": "Analyses werken het beste met cycli en modules",
-            "description": "Plaats je werkitems eerst in cycli met een vaste tijdsduur en groepeer, als je kunt, werkitems die meer dan een cyclus beslaan in modules. Bekijk beide in de linkernavigatie."
+            "description": "Plaats je taken eerst in cycli met een vaste tijdsduur en groepeer, als je kunt, taken die meer dan een cyclus beslaan in modules. Bekijk beide in de linkernavigatie."
           }
         }
       },
       "cycle_progress": {
         "title": "Nog geen gegevens",
-        "description": "Analyses over cyclusvoortgang verschijnen hier. Voeg werkitems toe aan cycli om de voortgang te gaan volgen."
+        "description": "Analyses over cyclusvoortgang verschijnen hier. Voeg taken toe aan cycli om de voortgang te gaan volgen."
       },
       "module_progress": {
         "title": "Nog geen gegevens",
-        "description": "Analyses over modulevoortgang verschijnen hier. Voeg werkitems toe aan modules om de voortgang te gaan volgen."
+        "description": "Analyses over modulevoortgang verschijnen hier. Voeg taken toe aan modules om de voortgang te gaan volgen."
       },
       "intake_trends": {
         "title": "Nog geen gegevens",
-        "description": "Analyses over intaketrends verschijnen hier. Voeg werkitems toe aan de intake om trends te gaan volgen."
+        "description": "Analyses over intaketrends verschijnen hier. Voeg taken toe aan de intake om trends te gaan volgen."
       }
     },
     "upgrade_to_plan": "Upgrade naar {plan} om {tab} te ontgrendelen",
-    "workitem_resolved_vs_pending": "Werkitems opgelost versus openstaand",
+    "workitem_resolved_vs_pending": "Taken opgelost versus openstaand",
     "projects_by_status": "Projecten op status",
     "active_users": "Actieve gebruikers",
     "intake_trends": "Intaketrends"
@@ -170,7 +170,7 @@
       "permission": "Je hebt geen toestemming om deze actie uit te voeren.",
       "cycle_delete": "Verwijderen van cyclus mislukt",
       "module_delete": "Verwijderen van module mislukt",
-      "issue_delete": "Verwijderen van werkitem mislukt"
+      "issue_delete": "Verwijderen van taak mislukt"
     },
     "state": {
       "backlog": "Backlog",
@@ -207,7 +207,7 @@
       },
       "no_projects": {
         "title": "Geen project",
-        "description": "Om werkitems aan te maken of je werk te beheren moet je een project aanmaken of deel uitmaken van een project.",
+        "description": "Om taken aan te maken of je werk te beheren moet je een project aanmaken of deel uitmaken van een project.",
         "primary_button": {
           "text": "Start je eerste project",
           "comic": {
@@ -234,33 +234,33 @@
     "add_view": "Weergave toevoegen",
     "empty_state": {
       "all-issues": {
-        "title": "Geen werkitems in het project",
-        "description": "Eerste project klaar! Verdeel je werk nu in traceerbare stukken met werkitems. We gaan aan de slag!",
+        "title": "Geen taken in het project",
+        "description": "Eerste project klaar! Verdeel je werk nu in traceerbare stukken met taken. We gaan aan de slag!",
         "primary_button": {
-          "text": "Nieuw werkitem aanmaken"
+          "text": "Nieuw taak aanmaken"
         }
       },
       "assigned": {
-        "title": "Nog geen werkitems",
-        "description": "Werkitems die aan jou zijn toegewezen kun je hier volgen.",
+        "title": "Nog geen taken",
+        "description": "Taken die aan jou zijn toegewezen kun je hier volgen.",
         "primary_button": {
-          "text": "Nieuw werkitem aanmaken"
+          "text": "Nieuw taak aanmaken"
         }
       },
       "created": {
-        "title": "Nog geen werkitems",
-        "description": "Alle werkitems die je hebt aangemaakt komen hier, volg ze hier direct.",
+        "title": "Nog geen taken",
+        "description": "Alle taken die je hebt aangemaakt komen hier, volg ze hier direct.",
         "primary_button": {
-          "text": "Nieuw werkitem aanmaken"
+          "text": "Nieuw taak aanmaken"
         }
       },
       "subscribed": {
-        "title": "Nog geen werkitems",
-        "description": "Abonneer je op werkitems waarin je geïnteresseerd bent en volg ze hier allemaal."
+        "title": "Nog geen taken",
+        "description": "Abonneer je op taken waarin je geïnteresseerd bent en volg ze hier allemaal."
       },
       "custom-view": {
-        "title": "Nog geen werkitems",
-        "description": "Werkitems die aan de filters voldoen, volg ze hier allemaal."
+        "title": "Nog geen taken",
+        "description": "Taken die aan de filters voldoen, volg ze hier allemaal."
       }
     },
     "delete_view": {
@@ -269,10 +269,10 @@
     }
   },
   "workspace_draft_issues": {
-    "draft_an_issue": "Werkitem als concept opstellen",
+    "draft_an_issue": "Taak als concept opstellen",
     "empty_state": {
-      "title": "Half geschreven werkitems, en binnenkort reacties, verschijnen hier.",
-      "description": "Om dit uit te proberen, begin met het toevoegen van een werkitem en laat het halverwege staan of maak hieronder je eerste concept aan. 😉",
+      "title": "Half geschreven taken, en binnenkort reacties, verschijnen hier.",
+      "description": "Om dit uit te proberen, begin met het toevoegen van een taak en laat het halverwege staan of maak hieronder je eerste concept aan. 😉",
       "primary_button": {
         "text": "Maak je eerste concept aan"
       }
@@ -284,7 +284,7 @@
     "toasts": {
       "created": {
         "success": "Concept aangemaakt",
-        "error": "Werkitem kon niet worden aangemaakt. Probeer het opnieuw."
+        "error": "Taak kon niet worden aangemaakt. Probeer het opnieuw."
       },
       "deleted": {
         "success": "Concept verwijderd"
@@ -295,7 +295,7 @@
     "empty_state": {
       "general": {
         "title": "Schrijf een notitie, een document of een volledige kennisbank. Laat Galileo, de AI-assistent van Plane, je op weg helpen",
-        "description": "Pagina's zijn de plek om je gedachten in Plane vast te leggen. Maak vergadernotities, geef ze eenvoudig opmaak, sluit werkitems in, deel ze in met een bibliotheek aan componenten en houd ze allemaal binnen de context van je project. Roep Galileo, de AI van Plane, aan met een sneltoets of een klik op de knop om elk document snel af te ronden.",
+        "description": "Pagina's zijn de plek om je gedachten in Plane vast te leggen. Maak vergadernotities, geef ze eenvoudig opmaak, sluit taken in, deel ze in met een bibliotheek aan componenten en houd ze allemaal binnen de context van je project. Roep Galileo, de AI van Plane, aan met een sneltoets of een klik op de knop om elk document snel af te ronden.",
         "primary_button": {
           "text": "Maak je eerste pagina aan"
         }

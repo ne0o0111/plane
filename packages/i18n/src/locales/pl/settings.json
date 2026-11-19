@@ -115,19 +115,19 @@
     "empty_state": {
       "activity": {
         "title": "Brak aktywności",
-        "description": "Utwórz element pracy, aby zacząć."
+        "description": "Utwórz zadanie, aby zacząć."
       },
       "assigned": {
         "title": "Brak przypisanych elementów pracy",
-        "description": "Tutaj zobaczysz elementy pracy przypisane do Ciebie."
+        "description": "Tutaj zobaczysz zadania przypisane do Ciebie."
       },
       "created": {
         "title": "Brak utworzonych elementów pracy",
-        "description": "Tutaj są elementy pracy, które utworzyłeś(aś)."
+        "description": "Tutaj są zadania, które utworzyłeś(aś)."
       },
       "subscribed": {
         "title": "Brak subskrybowanych elementów pracy",
-        "description": "Subskrybuj interesujące Cię elementy pracy, a pojawią się tutaj."
+        "description": "Subskrybuj interesujące Cię zadania, a pojawią się tutaj."
       }
     }
   },

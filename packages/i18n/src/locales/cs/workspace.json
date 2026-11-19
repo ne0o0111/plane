@@ -54,7 +54,7 @@
     "empty_state": {
       "general": {
         "title": "Přehled projektů, aktivit a metrik",
-        "description": "Vítejte v Plane, jsme rádi, že jste zde. Vytvořte první projekt, sledujte pracovní položky a tato stránka se promění v prostor pro váš pokrok. Správci zde uvidí i položky pomáhající týmu.",
+        "description": "Vítejte v Plane, jsme rádi, že jste zde. Vytvořte první projekt, sledujte úkoly a tato stránka se promění v prostor pro váš pokrok. Správci zde uvidí i položky pomáhající týmu.",
         "primary_button": {
           "text": "Vytvořte první projekt",
           "comic": {
@@ -70,17 +70,17 @@
     "page_label": "{workspace} - Analytika",
     "open_tasks": "Celkem otevřených úkolů",
     "error": "Při načítání dat došlo k chybě.",
-    "work_items_closed_in": "Pracovní položky uzavřené v",
+    "work_items_closed_in": "Úkoly uzavřené v",
     "selected_projects": "Vybrané projekty",
     "total_members": "Celkem členů",
     "total_cycles": "Celkem cyklů",
     "total_modules": "Celkem modulů",
     "pending_work_items": {
-      "title": "Čekající pracovní položky",
+      "title": "Čekající úkoly",
       "empty_state": "Zde se zobrazí analýza čekajících položek podle spolupracovníků."
     },
     "work_items_closed_in_a_year": {
-      "title": "Pracovní položky uzavřené v roce",
+      "title": "Úkoly uzavřené v roce",
       "empty_state": "Uzavírejte položky pro zobrazení analýzy v grafu."
     },
     "most_work_items_created": {
@@ -110,15 +110,15 @@
     "empty_state": {
       "project_insights": {
         "title": "Zatím žádná data",
-        "description": "Pracovní položky přiřazené vám, rozdělené podle stavu, se zde zobrazí."
+        "description": "Úkoly přiřazené vám, rozdělené podle stavu, se zde zobrazí."
       },
       "created_vs_resolved": {
         "title": "Zatím žádná data",
-        "description": "Pracovní položky vytvořené a vyřešené v průběhu času se zde zobrazí."
+        "description": "Úkoly vytvořené a vyřešené v průběhu času se zde zobrazí."
       },
       "customized_insights": {
         "title": "Zatím žádná data",
-        "description": "Pracovní položky přiřazené vám, rozdělené podle stavu, se zde zobrazí."
+        "description": "Úkoly přiřazené vám, rozdělené podle stavu, se zde zobrazí."
       },
       "general": {
         "title": "Sledujte pokrok, pracovní zátěž a alokace. Odhalte trendy, odstraňte překážky a zrychlete práci",
@@ -133,19 +133,19 @@
       },
       "cycle_progress": {
         "title": "Zatím žádná data",
-        "description": "Analýza postupu cyklu se zobrazí zde. Přidejte pracovní položky do cyklů, abyste mohli sledovat postup."
+        "description": "Analýza postupu cyklu se zobrazí zde. Přidejte úkoly do cyklů, abyste mohli sledovat postup."
       },
       "module_progress": {
         "title": "Zatím žádná data",
-        "description": "Analýza postupu modulu se zobrazí zde. Přidejte pracovní položky do modulů, abyste mohli sledovat postup."
+        "description": "Analýza postupu modulu se zobrazí zde. Přidejte úkoly do modulů, abyste mohli sledovat postup."
       },
       "intake_trends": {
         "title": "Zatím žádná data",
-        "description": "Analýza trendů příjmu se zobrazí zde. Přidejte pracovní položky do příjmu, abyste mohli sledovat trendy."
+        "description": "Analýza trendů příjmu se zobrazí zde. Přidejte úkoly do příjmu, abyste mohli sledovat trendy."
       }
     },
     "upgrade_to_plan": "Přejděte na plán {plan}, abyste odemkli kartu {tab}",
-    "workitem_resolved_vs_pending": "Vyřešené vs. čekající pracovní položky",
+    "workitem_resolved_vs_pending": "Vyřešené vs. čekající úkoly",
     "projects_by_status": "Projekty podle stavu",
     "active_users": "Aktivní uživatelé",
     "intake_trends": "Trendy příjmů"
@@ -170,7 +170,7 @@
       "permission": "Nemáte oprávnění k této akci.",
       "cycle_delete": "Odstranění cyklu se nezdařilo",
       "module_delete": "Odstranění modulu se nezdařilo",
-      "issue_delete": "Odstranění pracovní položky se nezdařilo"
+      "issue_delete": "Odstranění úkoly se nezdařilo"
     },
     "state": {
       "backlog": "Backlog",
@@ -234,7 +234,7 @@
     "add_view": "Přidat pohled",
     "empty_state": {
       "all-issues": {
-        "title": "Žádné pracovní položky v projektu",
+        "title": "Žádné úkoly v projektu",
         "description": "Vytvořte první položku a sledujte svůj pokrok!",
         "primary_button": {
           "text": "Vytvořit pracovní položku"
@@ -295,7 +295,7 @@
     "empty_state": {
       "general": {
         "title": "Napište poznámku, dokument nebo celou znalostní bázi. Získejte pomoc od Galilea, AI asistenta Plane, abyste začali",
-        "description": "Stránky jsou prostor pro myšlenky v Plane. Zaznamenejte si poznámky z jednání, snadno je naformátujte, vložte pracovní položky, uspořádejte je pomocí knihovny komponent a udržujte je všechny v kontextu vašeho projektu. Abychom usnadnili práci s jakýmkoli dokumentem, vyvolejte Galilea, AI Plane, pomocí zkratky nebo kliknutím na tlačítko.",
+        "description": "Stránky jsou prostor pro myšlenky v Plane. Zaznamenejte si poznámky z jednání, snadno je naformátujte, vložte úkoly, uspořádejte je pomocí knihovny komponent a udržujte je všechny v kontextu vašeho projektu. Abychom usnadnili práci s jakýmkoli dokumentem, vyvolejte Galilea, AI Plane, pomocí zkratky nebo kliknutím na tlačítko.",
         "primary_button": {
           "text": "Vytvořit svou první stránku"
         }

@@ -21,7 +21,7 @@
       },
       "confirm_project_name_label": "Digita il nome del progetto per continuare.",
       "leave_project": {
-        "confirm_description": "Sei sicuro di voler lasciare il progetto {projectName}? Gli elementi di lavoro associati a te non saranno più accessibili."
+        "confirm_description": "Sei sicuro di voler lasciare il progetto {projectName}? Gli attività associati a te non saranno più accessibili."
       }
     },
     "members": {
@@ -33,8 +33,8 @@
       "project_subscribers": "Iscritti al progetto",
       "project_subscribers_description": "Seleziona i membri che riceveranno le notifiche per questo progetto.",
       "guest_super_permissions": {
-        "title": "Concedi accesso in sola lettura a tutti gli elementi di lavoro per gli utenti ospiti:",
-        "sub_heading": "Questo permetterà agli ospiti di visualizzare tutti gli elementi di lavoro del progetto."
+        "title": "Concedi accesso in sola lettura a tutti gli attività per gli utenti ospiti:",
+        "sub_heading": "Questo permetterà agli ospiti di visualizzare tutti gli attività del progetto."
       },
       "invite_members": {
         "title": "Invita membri",
@@ -44,7 +44,7 @@
     },
     "states": {
       "heading": "Stati",
-      "description": "Definisci e personalizza gli stati del flusso di lavoro per tracciare l'avanzamento dei tuoi elementi di lavoro.",
+      "description": "Definisci e personalizza gli stati del flusso di lavoro per tracciare l'avanzamento dei tuoi attività.",
       "describe_this_state_for_your_members": "Descrivi questo stato per i tuoi membri.",
       "empty_state": {
         "title": "Nessuno stato disponibile per il gruppo {groupKey}",
@@ -53,7 +53,7 @@
     },
     "labels": {
       "heading": "Etichette",
-      "description": "Crea etichette personalizzate per categorizzare e organizzare i tuoi elementi di lavoro",
+      "description": "Crea etichette personalizzate per categorizzare e organizzare i tuoi attività",
       "label_title": "Titolo etichetta",
       "label_title_is_required": "Il titolo dell'etichetta è obbligatorio",
       "label_max_char": "Il nome dell'etichetta non deve superare i 255 caratteri",
@@ -63,7 +63,7 @@
     },
     "estimates": {
       "heading": "Stime",
-      "description": "Imposta sistemi di stima per tracciare e comunicare lo sforzo richiesto per ogni elemento di lavoro.",
+      "description": "Imposta sistemi di stima per tracciare e comunicare lo sforzo richiesto per ogni attività.",
       "label": "Stime",
       "title": "Abilita le stime per il mio progetto",
       "enable_description": "Ti aiutano a comunicare la complessità e il carico di lavoro del team.",
@@ -187,14 +187,14 @@
       "heading": "Automazioni",
       "description": "Configura azioni automatizzate per ottimizzare il flusso di gestione del progetto e ridurre le attività manuali.",
       "auto-archive": {
-        "title": "Archivia automaticamente gli elementi di lavoro chiusi",
-        "description": "Plane archiverà automaticamente gli elementi di lavoro che sono stati completati o annullati.",
-        "duration": "Archivia automaticamente gli elementi di lavoro chiusi per"
+        "title": "Archivia automaticamente gli attività chiusi",
+        "description": "Plane archiverà automaticamente gli attività che sono stati completati o annullati.",
+        "duration": "Archivia automaticamente gli attività chiusi per"
       },
       "auto-close": {
-        "title": "Chiudi automaticamente gli elementi di lavoro",
-        "description": "Plane chiuderà automaticamente gli elementi di lavoro che non sono stati completati o annullati.",
-        "duration": "Chiudi automaticamente gli elementi di lavoro inattivi per",
+        "title": "Chiudi automaticamente gli attività",
+        "description": "Plane chiuderà automaticamente gli attività che non sono stati completati o annullati.",
+        "duration": "Chiudi automaticamente gli attività inattivi per",
         "auto_close_status": "Stato di chiusura automatica"
       },
       "auto-remind": {
@@ -206,25 +206,25 @@
     "empty_state": {
       "labels": {
         "title": "Nessuna etichetta ancora",
-        "description": "Crea etichette per aiutare a organizzare e filtrare gli elementi di lavoro nel tuo progetto."
+        "description": "Crea etichette per aiutare a organizzare e filtrare gli attività nel tuo progetto."
       },
       "estimates": {
         "title": "Nessun sistema di stime ancora",
-        "description": "Crea un set di stime per comunicare la quantità di lavoro per elemento di lavoro.",
+        "description": "Crea un set di stime per comunicare la quantità di lavoro per attività.",
         "primary_button": "Aggiungi sistema di stime"
       },
       "integrations": {
         "title": "Nessuna integrazione configurata",
-        "description": "Configura GitHub e altre integrazioni per sincronizzare i tuoi elementi di lavoro del progetto."
+        "description": "Configura GitHub e altre integrazioni per sincronizzare i tuoi attività del progetto."
       }
     },
     "workflows": {
       "toggle": {
         "title": "Abilita flussi di lavoro",
-        "description": "Imposta flussi di lavoro per controllare il movimento degli elementi di lavoro",
+        "description": "Imposta flussi di lavoro per controllare il movimento degli attività",
         "no_states_tooltip": "Nessuno stato è stato aggiunto al flusso di lavoro.",
-        "no_work_item_types_tooltip": "Nessun tipo di elemento di lavoro è stato aggiunto al flusso di lavoro.",
-        "no_states_or_work_item_types_tooltip": "Nessuno stato o tipo di elemento di lavoro è stato aggiunto al flusso di lavoro.",
+        "no_work_item_types_tooltip": "Nessun tipo di attività è stato aggiunto al flusso di lavoro.",
+        "no_states_or_work_item_types_tooltip": "Nessuno stato o tipo di attività è stato aggiunto al flusso di lavoro.",
         "toast": {
           "loading": {
             "enabling": "Abilitazione dei flussi di lavoro",
@@ -241,7 +241,7 @@
         }
       },
       "heading": "Flussi di lavoro",
-      "description": "Automatizza le transizioni degli elementi di lavoro e imposta regole per controllare come le attività si spostano nella pipeline del tuo progetto.",
+      "description": "Automatizza le transizioni degli attività e imposta regole per controllare come le attività si spostano nella pipeline del tuo progetto.",
       "add_button": "Aggiungi nuovo flusso di lavoro",
       "search": "Cerca flussi di lavoro",
       "detail": {
@@ -249,10 +249,10 @@
         "add_states": "Aggiungi stati",
         "unmapped_states": {
           "title": "Stati non mappati rilevati",
-          "description": "Alcuni elementi di lavoro per i tipi selezionati si trovano attualmente in stati che non esistono in questo flusso di lavoro.",
+          "description": "Alcuni attività per i tipi selezionati si trovano attualmente in stati che non esistono in questo flusso di lavoro.",
           "note": "Se abiliti questo flusso di lavoro, questi elementi verranno spostati automaticamente allo stato iniziale di questo flusso di lavoro.",
           "label": "Stati mancanti",
-          "tooltip": "Alcuni elementi di lavoro si trovano in stati non mappati a questo flusso di lavoro. Apri il flusso di lavoro per rivedere."
+          "tooltip": "Alcuni attività si trovano in stati non mappati a questo flusso di lavoro. Apri il flusso di lavoro per rivedere."
         }
       },
       "select_states": {
@@ -262,7 +262,7 @@
         }
       },
       "default_footer": {
-        "fallback_message": "Questo flusso di lavoro si applica a qualsiasi tipo di elemento di lavoro che non è assegnato a un flusso di lavoro."
+        "fallback_message": "Questo flusso di lavoro si applica a qualsiasi tipo di attività che non è assegnato a un flusso di lavoro."
       },
       "create": {
         "heading": "Crea nuovo flusso di lavoro",
@@ -281,7 +281,7 @@
           }
         },
         "work_item_type": {
-          "label": "Tipo di elemento di lavoro"
+          "label": "Tipo di attività"
         },
         "success": {
           "title": "Successo!",
@@ -325,8 +325,8 @@
       }
     },
     "work_item_types": {
-      "heading": "Tipi di elementi di lavoro",
-      "description": "Crea e personalizza diversi tipi di elementi di lavoro con proprietà uniche"
+      "heading": "Tipi di attività",
+      "description": "Crea e personalizza diversi tipi di attività con proprietà uniche"
     },
     "features": {
       "cycles": {
@@ -373,25 +373,25 @@
         },
         "in_app": {
           "title": "In-app",
-          "description": "Ricevi nuovi elementi di lavoro da membri e ospiti nel tuo spazio di lavoro senza disturbare quelli esistenti."
+          "description": "Ricevi nuovi attività da membri e ospiti nel tuo spazio di lavoro senza disturbare quelli esistenti."
         },
         "email": {
           "title": "Email",
-          "description": "Raccogli nuovi elementi di lavoro da chiunque invii un'email a un indirizzo email Plane.",
+          "description": "Raccogli nuovi attività da chiunque invii un'email a un indirizzo email Plane.",
           "fieldName": "ID email"
         },
         "form": {
           "title": "Moduli",
-          "description": "Consenti a persone esterne al tuo spazio di lavoro di creare potenziali nuovi elementi di lavoro tramite un modulo dedicato e sicuro.",
+          "description": "Consenti a persone esterne al tuo spazio di lavoro di creare potenziali nuovi attività tramite un modulo dedicato e sicuro.",
           "fieldName": "URL modulo predefinito",
-          "create_forms": "Crea moduli utilizzando i tipi di elementi di lavoro",
+          "create_forms": "Crea moduli utilizzando i tipi di attività",
           "manage_forms": "Gestisci moduli",
           "manage_forms_tooltip": "Chiedi all'admin dello spazio di lavoro di gestirlo.",
           "create_form": "Crea modulo",
           "edit_form": "Modifica dettagli modulo",
           "form_title": "Titolo modulo",
           "form_title_required": "Il titolo del modulo è obbligatorio",
-          "work_item_type": "Tipo di elemento di lavoro",
+          "work_item_type": "Tipo di attività",
           "remove_property": "Rimuovi proprietà",
           "select_properties": "Seleziona proprietà",
           "search_placeholder": "Cerca proprietà",
@@ -419,16 +419,16 @@
       "time_tracking": {
         "title": "Monitoraggio del tempo",
         "short_title": "Monitoraggio del tempo",
-        "description": "Registra il tempo trascorso su elementi di lavoro e progetti.",
+        "description": "Registra il tempo trascorso su attività e progetti.",
         "toggle_title": "Abilita monitoraggio del tempo",
         "toggle_description": "I membri del progetto potranno registrare il tempo lavorato."
       },
       "milestones": {
         "title": "Traguardi",
         "short_title": "Traguardi",
-        "description": "I traguardi forniscono un livello per allineare gli elementi di lavoro verso date di completamento condivise.",
+        "description": "I traguardi forniscono un livello per allineare gli attività verso date di completamento condivise.",
         "toggle_title": "Abilita traguardi",
-        "toggle_description": "Organizza gli elementi di lavoro per scadenze dei traguardi."
+        "toggle_description": "Organizza gli attività per scadenze dei traguardi."
       },
       "toasts": {
         "loading": "Aggiornamento funzionalità progetto...",
@@ -442,7 +442,7 @@
     },
     "templates": {
       "heading": "Modelli",
-      "description": "Risparmia l'80% del tempo speso nella creazione di progetti, elementi di lavoro e pagine quando usi i modelli."
+      "description": "Risparmia l'80% del tempo speso nella creazione di progetti, attività e pagine quando usi i modelli."
     },
     "cycles": {
       "auto_schedule": {
@@ -495,8 +495,8 @@
             }
           },
           "auto_rollover": {
-            "label": "Trasferimento automatico degli elementi di lavoro",
-            "tooltip": "Il giorno del completamento di un ciclo, spostare tutti gli elementi di lavoro non completati nel ciclo successivo."
+            "label": "Trasferimento automatico degli attività",
+            "tooltip": "Il giorno del completamento di un ciclo, spostare tutti gli attività non completati nel ciclo successivo."
           }
         },
         "toast": {

@@ -3,11 +3,11 @@
     "workitems": {
       "step_zero": {
         "title": "Bun venit în spațiul tău de lucru",
-        "description": "Pentru a te ajuta să începi, am creat un Proiect Demo pentru tine. Hai să adăugăm primul tău element de lucru."
+        "description": "Pentru a te ajuta să începi, am creat un Proiect Demo pentru tine. Hai să adăugăm primul tău sarcină."
       },
       "step_one": {
-        "title": "Fă clic pe \"+ Adaugă element de lucru\"",
-        "description": "Începe făcând clic pe butonul \"+ Element de lucru nou\". Poți crea sarcini, erori sau un tip personalizat care se potrivește nevoilor tale."
+        "title": "Fă clic pe \"+ Adaugă sarcină\"",
+        "description": "Începe făcând clic pe butonul \"+ Sarcină nou\". Poți crea sarcini, erori sau un tip personalizat care se potrivește nevoilor tale."
       },
       "step_two": {
         "title": "Filtrează elementele tale de lucru",
@@ -33,14 +33,14 @@
       },
       "step_two": {
         "title": "Fă clic pe \"+\"",
-        "description": "Începe făcând clic pe butonul \"+\". Adaugă elemente de lucru noi sau existente direct de pe pagina Ciclului."
+        "description": "Începe făcând clic pe butonul \"+\". Adaugă sarcini noi sau existente direct de pe pagina Ciclului."
       },
       "step_three": {
         "title": "Rezumatul ciclului",
         "description": "Urmărește progresul ciclului, productivitatea echipei și prioritățile—și investighează dacă ceva rămâne în urmă."
       },
       "step_four": {
-        "title": "Transferă elemente de lucru",
+        "title": "Transferă sarcini",
         "description": "După data scadentă, un ciclu se finalizează automat. Mută munca neterminată într-un alt ciclu."
       }
     },
@@ -55,7 +55,7 @@
       },
       "step_two": {
         "title": "Fă clic pe \"+\"",
-        "description": "Începe făcând clic pe butonul \"+\". Adaugă elemente de lucru noi sau existente direct de pe pagina Modulului."
+        "description": "Începe făcând clic pe butonul \"+\". Adaugă sarcini noi sau existente direct de pe pagina Modulului."
       },
       "step_three": {
         "title": "Stările modulului",
@@ -95,7 +95,7 @@
     "intake": {
       "step_zero": {
         "title": "Simplifică cererile cu admitere",
-        "description": "O funcție exclusivă Plane care permite Oaspeților să creeze elemente de lucru pentru erori, cereri sau tichete."
+        "description": "O funcție exclusivă Plane care permite Oaspeților să creeze sarcini pentru erori, cereri sau tichete."
       },
       "step_one": {
         "title": "Cereri de admitere deschise/închise",
@@ -107,7 +107,7 @@
       },
       "step_three": {
         "title": "Amână deocamdată",
-        "description": "Un element de lucru poate fi amânat pentru a-l revizui mai târziu. Va fi mutat la sfârșitul listei tale de cereri deschise."
+        "description": "Un sarcină poate fi amânat pentru a-l revizui mai târziu. Va fi mutat la sfârșitul listei tale de cereri deschise."
       }
     },
     "mcp_connectors": {
@@ -163,7 +163,7 @@
           "title": "Creează un proiect"
         },
         "item_2": {
-          "title": "Creează un element de lucru"
+          "title": "Creează un sarcină"
         },
         "item_3": {
           "title": "Invită membri ai echipei"

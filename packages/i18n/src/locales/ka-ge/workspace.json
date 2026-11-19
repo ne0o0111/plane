@@ -133,19 +133,19 @@
       },
       "cycle_progress": {
         "title": "No data yet",
-        "description": "Cycle progress analytics will appear here. Add work items to cycles to start tracking progress."
+        "description": "Cycle progress analytics will appear here. Add tasks to cycles to start tracking progress."
       },
       "module_progress": {
         "title": "No data yet",
-        "description": "Module progress analytics will appear here. Add work items to modules to start tracking progress."
+        "description": "Module progress analytics will appear here. Add tasks to modules to start tracking progress."
       },
       "intake_trends": {
         "title": "No data yet",
-        "description": "Intake trends analytics will appear here. Add work items to intake to start tracking trends."
+        "description": "Intake trends analytics will appear here. Add tasks to intake to start tracking trends."
       }
     },
     "upgrade_to_plan": "Upgrade to {plan} to unlock {tab}",
-    "workitem_resolved_vs_pending": "Work items resolved vs pending",
+    "workitem_resolved_vs_pending": "Tasks resolved vs pending",
     "projects_by_status": "Projects by status",
     "active_users": "Active users",
     "intake_trends": "Intake Trends"
@@ -295,7 +295,7 @@
     "empty_state": {
       "general": {
         "title": "Write a note, a doc, or a full knowledge base. Get Galileo, Plane's AI assistant, to help you get started",
-        "description": "Pages are thoughts potting space in Plane. Take down meeting notes, format them easily, embed work items, lay them out using a library of components, and keep them all in your project's context. To make short work of any doc, invoke Galileo, Plane's AI, with a shortcut or the click of a button.",
+        "description": "Pages are thoughts potting space in Plane. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your project's context. To make short work of any doc, invoke Galileo, Plane's AI, with a shortcut or the click of a button.",
         "primary_button": {
           "text": "Create your first page"
         }

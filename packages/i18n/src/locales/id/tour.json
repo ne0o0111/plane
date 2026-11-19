@@ -3,23 +3,23 @@
     "workitems": {
       "step_zero": {
         "title": "Selamat datang di ruang kerja Anda",
-        "description": "Untuk membantu Anda memulai, kami telah membuat Proyek Demo untuk Anda. Mari tambahkan item pekerjaan pertama Anda."
+        "description": "Untuk membantu Anda memulai, kami telah membuat Proyek Demo untuk Anda. Mari tambahkan tugas pertama Anda."
       },
       "step_one": {
-        "title": "Klik \"+ Tambah item pekerjaan\"",
+        "title": "Klik \"+ Tambah tugas\"",
         "description": "Mulailah dengan mengklik tombol \"+ Item Pekerjaan Baru\". Anda dapat membuat tugas, bug, atau jenis khusus yang sesuai dengan kebutuhan Anda."
       },
       "step_two": {
-        "title": "Filter item pekerjaan Anda",
+        "title": "Filter tugas Anda",
         "description": "Gunakan filter untuk mempersempit daftar Anda dengan cepat. Anda dapat memfilter berdasarkan status, prioritas, atau anggota tim. "
       },
       "step_three": {
-        "title": "Lihat, kelompokkan, dan urutkan item pekerjaan sesuai kebutuhan.",
-        "description": "Lihat properti yang diperlukan, dan kelompokkan atau urutkan item pekerjaan sesuai kebutuhan Anda."
+        "title": "Lihat, kelompokkan, dan urutkan tugas sesuai kebutuhan.",
+        "description": "Lihat properti yang diperlukan, dan kelompokkan atau urutkan tugas sesuai kebutuhan Anda."
       },
       "step_four": {
         "title": "Visualisasikan sesuka Anda",
-        "description": "Pilih properti mana yang ingin Anda lihat dalam daftar. Anda juga dapat mengelompokkan dan mengurutkan item pekerjaan dengan cara Anda sendiri."
+        "description": "Pilih properti mana yang ingin Anda lihat dalam daftar. Anda juga dapat mengelompokkan dan mengurutkan tugas dengan cara Anda sendiri."
       }
     },
     "cycle": {
@@ -33,29 +33,29 @@
       },
       "step_two": {
         "title": "Klik \"+\"",
-        "description": "Mulailah dengan mengklik tombol \"+\". Tambahkan item pekerjaan baru atau yang sudah ada langsung dari halaman Siklus."
+        "description": "Mulailah dengan mengklik tombol \"+\". Tambahkan tugas baru atau yang sudah ada langsung dari halaman Siklus."
       },
       "step_three": {
         "title": "Ringkasan siklus",
         "description": "Lacak kemajuan siklus, produktivitas tim, dan prioritas—dan selidiki jika ada yang tertinggal."
       },
       "step_four": {
-        "title": "Transfer item pekerjaan",
+        "title": "Transfer tugas",
         "description": "Setelah tanggal jatuh tempo, siklus selesai secara otomatis. Pindahkan pekerjaan yang belum selesai ke siklus lain."
       }
     },
     "module": {
       "step_zero": {
         "title": "Bagi proyek Anda menjadi Modul",
-        "description": "Modul adalah proyek yang lebih kecil dan terfokus yang membantu pengguna mengelompokkan dan mengorganisir item pekerjaan dalam jangka waktu tertentu."
+        "description": "Modul adalah proyek yang lebih kecil dan terfokus yang membantu pengguna mengelompokkan dan mengorganisir tugas dalam jangka waktu tertentu."
       },
       "step_one": {
         "title": "Buat Modul",
-        "description": "Modul adalah proyek yang lebih kecil dan terfokus yang membantu pengguna mengelompokkan dan mengorganisir item pekerjaan dalam jangka waktu tertentu."
+        "description": "Modul adalah proyek yang lebih kecil dan terfokus yang membantu pengguna mengelompokkan dan mengorganisir tugas dalam jangka waktu tertentu."
       },
       "step_two": {
         "title": "Klik \"+\"",
-        "description": "Mulailah dengan mengklik tombol \"+\". Tambahkan item pekerjaan baru atau yang sudah ada langsung dari halaman Modul."
+        "description": "Mulailah dengan mengklik tombol \"+\". Tambahkan tugas baru atau yang sudah ada langsung dari halaman Modul."
       },
       "step_three": {
         "title": "Status modul",
@@ -95,7 +95,7 @@
     "intake": {
       "step_zero": {
         "title": "Sederhanakan permintaan dengan intake",
-        "description": "Fitur eksklusif Plane yang memungkinkan Tamu membuat item pekerjaan untuk bug, permintaan, atau tiket."
+        "description": "Fitur eksklusif Plane yang memungkinkan Tamu membuat tugas untuk bug, permintaan, atau tiket."
       },
       "step_one": {
         "title": "Permintaan intake terbuka/tertutup",
@@ -103,11 +103,11 @@
       },
       "step_two": {
         "title": "Terima/tolak permintaan yang tertunda",
-        "description": "Terima untuk mengedit dan memindahkan item pekerjaan ke proyek Anda, atau tolak untuk menandainya sebagai Dibatalkan."
+        "description": "Terima untuk mengedit dan memindahkan tugas ke proyek Anda, atau tolak untuk menandainya sebagai Dibatalkan."
       },
       "step_three": {
         "title": "Tunda untuk sekarang",
-        "description": "Item pekerjaan dapat ditunda untuk ditinjau di lain waktu. Ini akan dipindahkan ke bagian bawah daftar permintaan terbuka Anda."
+        "description": "Tugas dapat ditunda untuk ditinjau di lain waktu. Ini akan dipindahkan ke bagian bawah daftar permintaan terbuka Anda."
       }
     },
     "mcp_connectors": {
@@ -163,7 +163,7 @@
           "title": "Buat proyek"
         },
         "item_2": {
-          "title": "Buat item pekerjaan"
+          "title": "Buat tugas"
         },
         "item_3": {
           "title": "Undang anggota tim"

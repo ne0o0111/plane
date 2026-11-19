@@ -5,9 +5,9 @@
     "select": "Modules toevoegen",
     "details_drawer": {
       "progress": {
-        "done": "{completed} van {scope, plural, one {# werkitem} other {# werkitems}} voltooid",
+        "done": "{completed} van {scope, plural, one {# taak} other {# taken}} voltooid",
         "points_done": "{completed} van {scope, plural, one {# punt} other {# punten}} voltooid",
-        "empty": "Voeg werkitems toe aan de module om de voortgang te volgen."
+        "empty": "Voeg taken toe aan de module om de voortgang te volgen."
       }
     }
   }

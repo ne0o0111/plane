@@ -133,19 +133,19 @@
       },
       "cycle_progress": {
         "title": "Nu există date încă",
-        "description": "Analizele progresului ciclului vor apărea aici. Adăugați elemente de lucru la cicluri pentru a începe să urmăriți progresul."
+        "description": "Analizele progresului ciclului vor apărea aici. Adăugați sarcini la cicluri pentru a începe să urmăriți progresul."
       },
       "module_progress": {
         "title": "Nu există date încă",
-        "description": "Analizele progresului modulului vor apărea aici. Adăugați elemente de lucru la module pentru a începe să urmăriți progresul."
+        "description": "Analizele progresului modulului vor apărea aici. Adăugați sarcini la module pentru a începe să urmăriți progresul."
       },
       "intake_trends": {
         "title": "Nu există date încă",
-        "description": "Analizele tendințelor de intake vor apărea aici. Adăugați elemente de lucru la intake pentru a începe să urmăriți tendințele."
+        "description": "Analizele tendințelor de intake vor apărea aici. Adăugați sarcini la intake pentru a începe să urmăriți tendințele."
       }
     },
     "upgrade_to_plan": "Upgradează la {plan} pentru a debloca {tab}",
-    "workitem_resolved_vs_pending": "Elemente de lucru rezolvate vs în așteptare",
+    "workitem_resolved_vs_pending": "Sarcini rezolvate vs în așteptare",
     "projects_by_status": "Proiecte după statut",
     "active_users": "Utilizatori activi",
     "intake_trends": "Tendințe de admitere"
@@ -295,7 +295,7 @@
     "empty_state": {
       "general": {
         "title": "Scrie o notă, un document sau o bază de cunoștințe completă. Obține ajutorul lui Galileo, asistentul AI al Plane, pentru a începe",
-        "description": "Paginile sunt spații de gândire în Plane. Notează notițe de întâlnire, formatează-le ușor, încorporează elemente de lucru, aranjează-le folosind o bibliotecă de componente și păstrează-le toate în contextul proiectului tău. Pentru a face o muncă scurtă din orice document, invocă Galileo, AI-ul Plane, cu o scurtătură sau click pe un buton.",
+        "description": "Paginile sunt spații de gândire în Plane. Notează notițe de întâlnire, formatează-le ușor, încorporează sarcini, aranjează-le folosind o bibliotecă de componente și păstrează-le toate în contextul proiectului tău. Pentru a face o muncă scurtă din orice document, invocă Galileo, AI-ul Plane, cu o scurtătură sau click pe un buton.",
         "primary_button": {
           "text": "Creează prima ta pagină"
         }

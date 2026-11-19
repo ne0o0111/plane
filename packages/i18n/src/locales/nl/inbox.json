@@ -24,30 +24,30 @@
     },
     "modals": {
       "decline": {
-        "title": "Werkitem afwijzen",
-        "content": "Weet je zeker dat je werkitem {value} wilt afwijzen?"
+        "title": "Taak afwijzen",
+        "content": "Weet je zeker dat je taak {value} wilt afwijzen?"
       },
       "delete": {
-        "title": "Werkitem verwijderen",
-        "content": "Weet je zeker dat je werkitem {value} wilt verwijderen?",
-        "success": "Werkitem succesvol verwijderd"
+        "title": "Taak verwijderen",
+        "content": "Weet je zeker dat je taak {value} wilt verwijderen?",
+        "success": "Taak succesvol verwijderd"
       }
     },
     "errors": {
-      "snooze_permission": "Alleen projectbeheerders kunnen werkitems uitstellen of het uitstel opheffen",
-      "accept_permission": "Alleen projectbeheerders kunnen werkitems accepteren",
-      "decline_permission": "Alleen projectbeheerders kunnen werkitems weigeren"
+      "snooze_permission": "Alleen projectbeheerders kunnen taken uitstellen of het uitstel opheffen",
+      "accept_permission": "Alleen projectbeheerders kunnen taken accepteren",
+      "decline_permission": "Alleen projectbeheerders kunnen taken weigeren"
     },
     "actions": {
       "accept": "Accepteren",
       "decline": "Afwijzen",
       "snooze": "Uitstellen",
       "unsnooze": "Uitstel opheffen",
-      "copy": "Koppeling naar werkitem kopiëren",
+      "copy": "Koppeling naar taak kopiëren",
       "delete": "Verwijderen",
-      "open": "Werkitem openen",
+      "open": "Taak openen",
       "mark_as_duplicate": "Als duplicaat markeren",
-      "move": "{value} verplaatsen naar projectwerkitems"
+      "move": "{value} verplaatsen naar projecttaken"
     },
     "source": {
       "in-app": "in-app"
@@ -60,7 +60,7 @@
     "label": "Intake",
     "page_label": "{workspace} - Intake",
     "modal": {
-      "title": "Intake-werkitem aanmaken"
+      "title": "Intake-taak aanmaken"
     },
     "tabs": {
       "open": "Open",
@@ -68,19 +68,19 @@
     },
     "empty_state": {
       "sidebar_open_tab": {
-        "title": "Geen open werkitems",
-        "description": "Vind hier open werkitems. Maak een nieuw werkitem aan."
+        "title": "Geen open taken",
+        "description": "Vind hier open taken. Maak een nieuw taak aan."
       },
       "sidebar_closed_tab": {
-        "title": "Geen gesloten werkitems",
-        "description": "Alle werkitems, of ze nu geaccepteerd of afgewezen zijn, vind je hier."
+        "title": "Geen gesloten taken",
+        "description": "Alle taken, of ze nu geaccepteerd of afgewezen zijn, vind je hier."
       },
       "sidebar_filter": {
-        "title": "Geen overeenkomende werkitems",
-        "description": "Geen werkitem komt overeen met het filter dat is toegepast in de intake. Maak een nieuw werkitem aan."
+        "title": "Geen overeenkomende taken",
+        "description": "Geen taak komt overeen met het filter dat is toegepast in de intake. Maak een nieuw taak aan."
       },
       "detail": {
-        "title": "Selecteer een werkitem om de details te bekijken."
+        "title": "Selecteer een taak om de details te bekijken."
       }
     }
   }

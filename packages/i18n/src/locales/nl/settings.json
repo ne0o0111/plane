@@ -45,7 +45,7 @@
     },
     "notifications": {
       "heading": "E-mailmeldingen",
-      "description": "Blijf op de hoogte van werkitems waarop je bent geabonneerd. Schakel dit in om meldingen te ontvangen.",
+      "description": "Blijf op de hoogte van taken waarop je bent geabonneerd. Schakel dit in om meldingen te ontvangen.",
       "select_default_view": "Selecteer standaardweergave",
       "compact": "Compact",
       "full": "Volledig scherm"
@@ -59,7 +59,7 @@
     },
     "activity": {
       "heading": "Activiteit",
-      "description": "Volg je recente acties en wijzigingen in alle projecten en werkitems."
+      "description": "Volg je recente acties en wijzigingen in alle projecten en taken."
     },
     "connections": {
       "title": "Verbindingen",
@@ -78,16 +78,16 @@
     "stats": {
       "workload": "Werklast",
       "overview": "Overzicht",
-      "created": "Aangemaakte werkitems",
-      "assigned": "Toegewezen werkitems",
-      "subscribed": "Geabonneerde werkitems",
+      "created": "Aangemaakte taken",
+      "assigned": "Toegewezen taken",
+      "subscribed": "Geabonneerde taken",
       "state_distribution": {
-        "title": "Werkitems per status",
-        "empty": "Maak werkitems aan om ze per status in de grafiek te bekijken voor een betere analyse."
+        "title": "Taken per status",
+        "empty": "Maak taken aan om ze per status in de grafiek te bekijken voor een betere analyse."
       },
       "priority_distribution": {
-        "title": "Werkitems per prioriteit",
-        "empty": "Maak werkitems aan om ze per prioriteit in de grafiek te bekijken voor een betere analyse."
+        "title": "Taken per prioriteit",
+        "empty": "Maak taken aan om ze per prioriteit in de grafiek te bekijken voor een betere analyse."
       },
       "recent_activity": {
         "title": "Recente activiteit",
@@ -115,19 +115,19 @@
     "empty_state": {
       "activity": {
         "title": "Nog geen activiteiten",
-        "description": "Begin met het aanmaken van een nieuw werkitem! Voeg er details en eigenschappen aan toe. Ontdek meer in Plane om je activiteit te zien."
+        "description": "Begin met het aanmaken van een nieuw taak! Voeg er details en eigenschappen aan toe. Ontdek meer in Plane om je activiteit te zien."
       },
       "assigned": {
-        "title": "Er zijn geen werkitems aan je toegewezen",
-        "description": "Werkitems die aan jou zijn toegewezen, kun je hier volgen."
+        "title": "Er zijn geen taken aan je toegewezen",
+        "description": "Taken die aan jou zijn toegewezen, kun je hier volgen."
       },
       "created": {
-        "title": "Nog geen werkitems",
-        "description": "Alle werkitems die je aanmaakt, komen hier terecht. Volg ze hier direct."
+        "title": "Nog geen taken",
+        "description": "Alle taken die je aanmaakt, komen hier terecht. Volg ze hier direct."
       },
       "subscribed": {
-        "title": "Nog geen werkitems",
-        "description": "Abonneer je op werkitems die je interesseren en volg ze hier allemaal."
+        "title": "Nog geen taken",
+        "description": "Abonneer je op taken die je interesseren en volg ze hier allemaal."
       }
     }
   },

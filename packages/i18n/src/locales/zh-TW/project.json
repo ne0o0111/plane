@@ -21,7 +21,7 @@
     "in_your_timezone": "在您的時區",
     "transfer_work_items": "轉移 {count} 工作事項",
     "transfer": {
-      "no_cycles_available": "沒有其他可用的週期來轉移工作項目。"
+      "no_cycles_available": "沒有其他可用的週期來轉移任務。"
     },
     "date_range": "日期範圍",
     "add_date": "新增日期",

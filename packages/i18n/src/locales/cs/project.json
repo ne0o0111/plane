@@ -154,14 +154,14 @@
         }
       },
       "no_archived_issues": {
-        "title": "Zatím žádné archivované pracovní položky",
-        "description": "Ručně nebo pomocí automatizace můžete archivovat pracovní položky, které jsou dokončené nebo zrušené. Jakmile budou archivovány, najdete je zde.",
+        "title": "Zatím žádné archivované úkoly",
+        "description": "Ručně nebo pomocí automatizace můžete archivovat úkoly, které jsou dokončené nebo zrušené. Jakmile budou archivovány, najdete je zde.",
         "primary_button": {
           "text": "Nastavit automatizaci"
         }
       },
       "issues_empty_filter": {
-        "title": "Nebyly nalezeny žádné pracovní položky odpovídající použitým filtrům",
+        "title": "Nebyly nalezeny žádné úkoly odpovídající použitým filtrům",
         "secondary_button": {
           "text": "Vymazat všechny filtry"
         }

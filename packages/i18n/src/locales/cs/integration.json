@@ -48,7 +48,7 @@
     "pr_state_mapping_empty_state": "Namapované stavy PR se zobrazí zde",
     "remove_pr_state_mapping": "Odstranit toto mapování stavu žádosti o sloučení",
     "remove_pr_state_mapping_confirmation": "Jste si jisti, že chcete odstranit tuto mapování stavu žádosti o sloučení?",
-    "issue_sync_message": "Pracovní položky jsou synchronizovány do {project}",
+    "issue_sync_message": "Úkoly jsou synchronizovány do {project}",
     "link": "Propojit GitHub repozitář s projektem Plane",
     "pull_request_automation": "Automatizace žádosti o sloučení",
     "pull_request_automation_description": "Nastavte mapování stavu žádosti o sloučení z GitHub do vašeho projektu Plane",
@@ -150,7 +150,7 @@
       "project_updates_empty_state": "Projekty propojené s kanály Slack se zobrazí zde.",
       "project_updates_form": {
         "title": "Konfigurovat Aktualizace Projektu",
-        "description": "Přijímejte oznámení o aktualizacích projektu ve Slack, když jsou vytvořeny pracovní položky",
+        "description": "Přijímejte oznámení o aktualizacích projektu ve Slack, když jsou vytvořeny úkoly",
         "failed_to_load_channels": "Nepodařilo se načíst kanály ze Slack",
         "project_dropdown": {
           "placeholder": "Vyberte projekt",

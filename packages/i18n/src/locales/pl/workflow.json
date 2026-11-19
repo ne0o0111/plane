@@ -1,9 +1,9 @@
 {
   "workflows": {
     "workflow_states": {
-      "work_item_creation": "Zezwalaj na nowe elementy pracy",
+      "work_item_creation": "Zezwalaj na nowe zadania",
       "work_item_creation_disable_tooltip": "Tworzenie elementów pracy jest wyłączone dla tego stanu",
-      "default_state": "Stan domyślny pozwala wszystkim członkom tworzyć nowe elementy pracy. Nie można tego zmienić",
+      "default_state": "Stan domyślny pozwala wszystkim członkom tworzyć nowe zadania. Nie można tego zmienić",
       "state_change_count": "{count, plural, one {1 dozwolona zmiana stanu} other {{count} dozwolone zmiany stanu}}",
       "movers_count": "{count, plural, one {1 wymieniony recenzent} other {{count} wymienionych recenzentów}}",
       "state_changes": {

@@ -5,9 +5,9 @@
     "select": "添加模块",
     "details_drawer": {
       "progress": {
-        "done": "已完成 {completed}/{scope, plural, one {# 个工作项} other {# 个工作项}}",
+        "done": "已完成 {completed}/{scope, plural, one {# 个任务} other {# 个任务}}",
         "points_done": "已完成 {completed}/{scope, plural, one {# 点} other {# 点}}",
-        "empty": "向模块添加工作项以跟踪进度。"
+        "empty": "向模块添加任务以跟踪进度。"
       }
     }
   }

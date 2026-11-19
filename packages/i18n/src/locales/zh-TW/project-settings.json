@@ -187,14 +187,14 @@
       "heading": "自動化",
       "description": "設定自動化動作以簡化您的專案管理流程並減少手動任務。",
       "auto-archive": {
-        "title": "自動封存已關閉的工作項目",
-        "description": "Plane將自動封存已完成或已取消的工作項目。",
-        "duration": "自動封存已關閉的工作項目"
+        "title": "自動封存已關閉的任務",
+        "description": "Plane將自動封存已完成或已取消的任務。",
+        "duration": "自動封存已關閉的任務"
       },
       "auto-close": {
-        "title": "自動關閉工作項目",
-        "description": "Plane將自動關閉未完成或未取消的工作項目。",
-        "duration": "自動關閉非活動工作項目",
+        "title": "自動關閉任務",
+        "description": "Plane將自動關閉未完成或未取消的任務。",
+        "duration": "自動關閉非活動任務",
         "auto_close_status": "自動關閉狀態"
       },
       "auto-remind": {
@@ -215,7 +215,7 @@
       },
       "integrations": {
         "title": "未配置整合",
-        "description": "配置 GitHub 和其他整合以同步您的專案工作項目。"
+        "description": "配置 GitHub 和其他整合以同步您的專案任務。"
       }
     },
     "workflows": {
@@ -373,25 +373,25 @@
         },
         "in_app": {
           "title": "應用程式內",
-          "description": "從工作區的成員與訪客取得新的工作項目，不影響現有工作項目。"
+          "description": "從工作區的成員與訪客取得新的任務，不影響現有任務。"
         },
         "email": {
           "title": "電子郵件",
-          "description": "從任何寄信到 Plane 電子郵件地址的人收集新的工作項目。",
+          "description": "從任何寄信到 Plane 電子郵件地址的人收集新的任務。",
           "fieldName": "電子郵件 ID"
         },
         "form": {
           "title": "表單",
-          "description": "讓工作區外的人透過專用安全表單為您建立潛在的新工作項目。",
+          "description": "讓工作區外的人透過專用安全表單為您建立潛在的新任務。",
           "fieldName": "預設表單 URL",
-          "create_forms": "使用工作項目類型建立表單",
+          "create_forms": "使用任務類型建立表單",
           "manage_forms": "管理表單",
           "manage_forms_tooltip": "請工作區管理員代為管理。",
           "create_form": "建立表單",
           "edit_form": "編輯表單詳細資訊",
           "form_title": "表單標題",
           "form_title_required": "表單標題為必填",
-          "work_item_type": "工作項目類型",
+          "work_item_type": "任務類型",
           "remove_property": "移除屬性",
           "select_properties": "選擇屬性",
           "search_placeholder": "搜尋屬性",
@@ -419,16 +419,16 @@
       "time_tracking": {
         "title": "時間追蹤",
         "short_title": "時間追蹤",
-        "description": "記錄在工作項目和專案上花費的時間。",
+        "description": "記錄在任務和專案上花費的時間。",
         "toggle_title": "啟用時間追蹤",
         "toggle_description": "專案成員將能夠記錄工作時間。"
       },
       "milestones": {
         "title": "里程碑",
         "short_title": "里程碑",
-        "description": "里程碑提供了一個層，用於將工作項目對齊到共享的完成日期。",
+        "description": "里程碑提供了一個層，用於將任務對齊到共享的完成日期。",
         "toggle_title": "啟用里程碑",
-        "toggle_description": "按里程碑截止日期組織工作項目。"
+        "toggle_description": "按里程碑截止日期組織任務。"
       },
       "toasts": {
         "loading": "正在更新專案功能...",
@@ -495,8 +495,8 @@
             }
           },
           "auto_rollover": {
-            "label": "工作項自動結轉",
-            "tooltip": "在週期完成的當天，將所有未完成的工作項移至下一個週期。"
+            "label": "任務自動結轉",
+            "tooltip": "在週期完成的當天，將所有未完成的任務移至下一個週期。"
           }
         },
         "toast": {

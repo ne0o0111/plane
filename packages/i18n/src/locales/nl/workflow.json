@@ -1,9 +1,9 @@
 {
   "workflows": {
     "workflow_states": {
-      "work_item_creation": "Nieuwe werkitems toestaan",
-      "work_item_creation_disable_tooltip": "Het aanmaken van werkitems is uitgeschakeld voor deze status",
-      "default_state": "Bij de standaardstatus kunnen alle leden nieuwe werkitems aanmaken. Dit kan niet worden gewijzigd",
+      "work_item_creation": "Nieuwe taken toestaan",
+      "work_item_creation_disable_tooltip": "Het aanmaken van taken is uitgeschakeld voor deze status",
+      "default_state": "Bij de standaardstatus kunnen alle leden nieuwe taken aanmaken. Dit kan niet worden gewijzigd",
       "state_change_count": "{count, plural, one {1 toegestane statuswijziging} other {{count} toegestane statuswijzigingen}}",
       "movers_count": "{count, plural, one {1 vermelde reviewer} other {{count} vermelde reviewers}}",
       "state_changes": {
@@ -14,19 +14,19 @@
         "move_to": "Status wijzigen naar",
         "movers": {
           "label": "Bij review door",
-          "tooltip": "Reviewers zijn mensen die werkitems van de ene status naar de andere mogen verplaatsen.",
+          "tooltip": "Reviewers zijn mensen die taken van de ene status naar de andere mogen verplaatsen.",
           "add": "Reviewers toevoegen"
         }
       }
     },
     "workflow_disabled": {
-      "title": "Je kunt dit werkitem hier niet naartoe verplaatsen."
+      "title": "Je kunt dit taak hier niet naartoe verplaatsen."
     },
     "workflow_enabled": {
       "label": "Statuswijziging"
     },
     "workflow_tree": {
-      "label": "Voor werkitems in",
+      "label": "Voor taken in",
       "state_change_label": "kan het verplaatst worden naar"
     },
     "empty_state": {

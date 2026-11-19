@@ -5,9 +5,9 @@
     "select": "モジュールを追加",
     "details_drawer": {
       "progress": {
-        "done": "{scope, plural, one {# 件の作業項目} other {# 件の作業項目}}中 {completed} 件完了",
+        "done": "{scope, plural, one {# 件のタスク} other {# 件のタスク}}中 {completed} 件完了",
         "points_done": "{scope, plural, one {# ポイント} other {# ポイント}}中 {completed} ポイント完了",
-        "empty": "進捗を追跡するには、モジュールに作業項目を追加してください。"
+        "empty": "進捗を追跡するには、モジュールにタスクを追加してください。"
       }
     }
   }

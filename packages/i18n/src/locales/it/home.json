@@ -32,7 +32,7 @@
       }
     },
     "quick_links": {
-      "empty": "Salva link a elementi di lavoro che ti servono.",
+      "empty": "Salva link a attività che ti servono.",
       "add": "Aggiungi link rapido",
       "title": "Link rapido",
       "title_plural": "Link rapidi"
@@ -42,14 +42,14 @@
       "empty": {
         "project": "I tuoi progetti recenti appariranno qui una volta visitati.",
         "page": "Le tue pagine recenti appariranno qui una volta visitate.",
-        "issue": "I tuoi elementi di lavoro recenti appariranno qui una volta visitati.",
+        "issue": "I tuoi attività recenti appariranno qui una volta visitati.",
         "default": "Non hai ancora elementi recenti."
       },
       "filters": {
         "all": "Tutti",
         "projects": "Progetti",
         "pages": "Pagine",
-        "issues": "Elementi di lavoro"
+        "issues": "Attività"
       }
     },
     "new_at_plane": {

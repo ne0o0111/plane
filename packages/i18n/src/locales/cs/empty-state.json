@@ -37,7 +37,7 @@
     },
     "work_items": {
       "title": "Začněte s vaší první pracovní položkou.",
-      "description": "Pracovní položky jsou stavebními kameny vašeho projektu — přiřazujte vlastníky, nastavujte priority a snadno sledujte pokrok.",
+      "description": "Úkoly jsou stavebními kameny vašeho projektu — přiřazujte vlastníky, nastavujte priority a snadno sledujte pokrok.",
       "cta_primary": "Vytvořte svou první pracovní položku"
     },
     "cycles": {
@@ -46,8 +46,8 @@
       "cta_primary": "Nastavte svůj první cyklus"
     },
     "cycle_work_items": {
-      "title": "V tomto cyklu nejsou žádné pracovní položky k zobrazení",
-      "description": "Vytvořte pracovní položky pro zahájení sledování pokroku vašeho týmu v tomto cyklu a dosažení vašich cílů včas.",
+      "title": "V tomto cyklu nejsou žádné úkoly k zobrazení",
+      "description": "Vytvořte úkoly pro zahájení sledování pokroku vašeho týmu v tomto cyklu a dosažení vašich cílů včas.",
       "cta_primary": "Vytvořit pracovní položku",
       "cta_secondary": "Přidat existující pracovní položku"
     },
@@ -57,8 +57,8 @@
       "cta_primary": "Nastavte svůj první modul"
     },
     "module_work_items": {
-      "title": "V tomto modulu nejsou žádné pracovní položky k zobrazení",
-      "description": "Vytvořte pracovní položky pro zahájení sledování tohoto modulu.",
+      "title": "V tomto modulu nejsou žádné úkoly k zobrazení",
+      "description": "Vytvořte úkoly pro zahájení sledování tohoto modulu.",
       "cta_primary": "Vytvořit pracovní položku",
       "cta_secondary": "Přidat existující pracovní položku"
     },
@@ -68,18 +68,18 @@
       "cta_primary": "Vytvořit pohled"
     },
     "no_work_items_in_project": {
-      "title": "V projektu zatím nejsou žádné pracovní položky",
-      "description": "Přidejte pracovní položky do svého projektu a rozdělte svou práci na sledovatelné části pomocí pohledů.",
+      "title": "V projektu zatím nejsou žádné úkoly",
+      "description": "Přidejte úkoly do svého projektu a rozdělte svou práci na sledovatelné části pomocí pohledů.",
       "cta_primary": "Přidat pracovní položku"
     },
     "work_item_filter": {
-      "title": "Nebyly nalezeny žádné pracovní položky",
+      "title": "Nebyly nalezeny žádné úkoly",
       "description": "Váš aktuální filtr nevrátil žádné výsledky. Zkuste změnit filtry.",
       "cta_primary": "Přidat pracovní položku"
     },
     "pages": {
       "title": "Dokumentujte vše — od poznámek po PRD",
-      "description": "Stránky vám umožňují zachytit a organizovat informace na jednom místě. Pište poznámky ze schůzek, projektovou dokumentaci a PRD, vkládejte pracovní položky a strukturujte je pomocí připravených komponent.",
+      "description": "Stránky vám umožňují zachytit a organizovat informace na jednom místě. Pište poznámky ze schůzek, projektovou dokumentaci a PRD, vkládejte úkoly a strukturujte je pomocí připravených komponent.",
       "cta_primary": "Vytvořte svou první stránku"
     },
     "archive_pages": {
@@ -101,9 +101,9 @@
       "cta_secondary": "Dokumentace"
     },
     "epic_work_items": {
-      "title": "K tomuto epiku jste ještě nepřidali pracovní položky.",
+      "title": "K tomuto epiku jste ještě nepřidali úkoly.",
       "description": "Začněte přidáním některých pracovních položek k tomuto epiku a sledujte je zde.",
-      "cta_secondary": "Přidat pracovní položky"
+      "cta_secondary": "Přidat úkoly"
     }
   },
   "workspace_empty_state": {
@@ -112,8 +112,8 @@
       "description": "Můžete archivovat dokončené nebo zrušené epiky. Najdete je zde po archivaci."
     },
     "archive_work_items": {
-      "title": "Zatím žádné archivované pracovní položky",
-      "description": "Ručně nebo pomocí automatizace můžete archivovat dokončené nebo zrušené pracovní položky. Najdete je zde, jakmile budou archivovány.",
+      "title": "Zatím žádné archivované úkoly",
+      "description": "Ručně nebo pomocí automatizace můžete archivovat dokončené nebo zrušené úkoly. Najdete je zde, jakmile budou archivovány.",
       "cta_primary": "Nastavit automatizaci"
     },
     "archive_cycles": {
@@ -128,26 +128,26 @@
       "title": "Mějte po ruce důležité odkazy, zdroje nebo dokumenty pro vaši práci"
     },
     "inbox_sidebar_all": {
-      "title": "Aktualizace pro vaše odebírané pracovní položky se zobrazí zde"
+      "title": "Aktualizace pro vaše odebírané úkoly se zobrazí zde"
     },
     "inbox_sidebar_mentions": {
       "title": "Zmínky o vašich pracovních položkách se zobrazí zde"
     },
     "your_work_by_priority": {
-      "title": "Zatím není přiřazena žádná pracovní položka"
+      "title": "Zatím není přiřazena žádná úkol"
     },
     "your_work_by_state": {
-      "title": "Zatím není přiřazena žádná pracovní položka"
+      "title": "Zatím není přiřazena žádná úkol"
     },
     "views": {
       "title": "Zatím žádné pohledy",
-      "description": "Přidejte pracovní položky do svého projektu a používejte pohledy pro snadné filtrování, třídění a sledování pokroku.",
+      "description": "Přidejte úkoly do svého projektu a používejte pohledy pro snadné filtrování, třídění a sledování pokroku.",
       "cta_primary": "Přidat pracovní položku"
     },
     "drafts": {
-      "title": "Napůl napsané pracovní položky",
+      "title": "Napůl napsané úkoly",
       "description": "Chcete-li to vyzkoušet, začněte přidávat pracovní položku a nechte ji nedokončenou nebo vytvořte svůj první koncept níže. 😉",
-      "cta_primary": "Vytvořit koncept pracovní položky"
+      "cta_primary": "Vytvořit koncept úkoly"
     },
     "projects_archived": {
       "title": "Žádné archivované projekty",
@@ -188,7 +188,7 @@
     },
     "wiki": {
       "title": "Napište poznámku, dokument nebo celou znalostní bázi.",
-      "description": "Stránky jsou prostorem pro zachycení myšlenek v Plane. Pořizujte poznámky ze schůzek, snadno je formátujte, vkládejte pracovní položky, uspořádejte je pomocí knihovny komponent a udržujte vše v kontextu vašeho projektu.",
+      "description": "Stránky jsou prostorem pro zachycení myšlenek v Plane. Pořizujte poznámky ze schůzek, snadno je formátujte, vkládejte úkoly, uspořádejte je pomocí knihovny komponent a udržujte vše v kontextu vašeho projektu.",
       "cta_primary": "Vytvořte svou stránku"
     },
     "project_overview_state_sidebar": {
@@ -232,17 +232,17 @@
       "cta_primary": "Povolit"
     },
     "work_item_type_properties": {
-      "title": "Definujte vlastnost a podrobnosti, které chcete zachytit pro tento typ pracovní položky. Přizpůsobte jej pracovnímu postupu vašeho projektu.",
+      "title": "Definujte vlastnost a podrobnosti, které chcete zachytit pro tento typ úkoly. Přizpůsobte jej pracovnímu postupu vašeho projektu.",
       "cta_secondary": "Přidat vlastnost"
     },
     "templates": {
       "title": "Zatím žádné šablony",
-      "description": "Zkraťte dobu nastavení vytvářením šablon pro pracovní položky a stránky — a začněte novou práci během několika sekund.",
+      "description": "Zkraťte dobu nastavení vytvářením šablon pro úkoly a stránky — a začněte novou práci během několika sekund.",
       "cta_primary": "Vytvořte svou první šablonu"
     },
     "recurring_work_items": {
-      "title": "Zatím žádná opakující se pracovní položka",
-      "description": "Nastavte opakující se pracovní položky pro automatizaci opakujících se úkolů a snadné dodržování harmonogramu.",
+      "title": "Zatím žádná opakující se úkol",
+      "description": "Nastavte opakující se úkoly pro automatizaci opakujících se úkolů a snadné dodržování harmonogramu.",
       "cta_primary": "Vytvořit opakující se pracovní položku"
     },
     "worklogs": {
@@ -254,7 +254,7 @@
     },
     "template_setting": {
       "title": "Zatím žádné šablony",
-      "description": "Zkraťte dobu nastavení vytvářením šablon pro projekty, pracovní položky a stránky — a začněte novou práci během několika sekund.",
+      "description": "Zkraťte dobu nastavení vytvářením šablon pro projekty, úkoly a stránky — a začněte novou práci během několika sekund.",
       "cta_primary": "Vytvořit šablonu"
     },
     "workflows": {
@@ -263,7 +263,7 @@
       "cta_primary": "Přidat nové workflow",
       "states": {
         "title": "Přidat stavy",
-        "description": "Vyberte stavy, kterými pracovní položka prochází."
+        "description": "Vyberte stavy, kterými úkol prochází."
       }
     }
   }

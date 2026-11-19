@@ -36,9 +36,9 @@
       "description": "Proiectul pe care îl căutați nu există."
     },
     "work_items": {
-      "title": "Începeți cu primul dvs. element de lucru.",
+      "title": "Începeți cu primul dvs. sarcină.",
       "description": "Elementele de lucru sunt blocurile de construcție ale proiectului dvs. — alocați proprietari, stabiliți priorități și urmăriți progresul cu ușurință.",
-      "cta_primary": "Creați primul dvs. element de lucru"
+      "cta_primary": "Creați primul dvs. sarcină"
     },
     "cycles": {
       "title": "Grupați și limitați în timp munca dvs. în Cicluri.",
@@ -46,21 +46,21 @@
       "cta_primary": "Setați primul dvs. ciclu"
     },
     "cycle_work_items": {
-      "title": "Niciun element de lucru de afișat în acest ciclu",
-      "description": "Creați elemente de lucru pentru a începe monitorizarea progresului echipei dvs. în acest ciclu și pentru a-vă atinge obiectivele la timp.",
-      "cta_primary": "Creați element de lucru",
-      "cta_secondary": "Adăugați element de lucru existent"
+      "title": "Niciun sarcină de afișat în acest ciclu",
+      "description": "Creați sarcini pentru a începe monitorizarea progresului echipei dvs. în acest ciclu și pentru a-vă atinge obiectivele la timp.",
+      "cta_primary": "Creați sarcină",
+      "cta_secondary": "Adăugați sarcină existent"
     },
     "modules": {
       "title": "Mapați obiectivele proiectului dvs. la Module și urmăriți cu ușurință.",
-      "description": "Modulele sunt compuse din elemente de lucru interconectate. Acestea ajută la monitorizarea progresului prin fazele proiectului, fiecare cu termene limită și analize specifice pentru a indica cât de aproape sunteți de atingerea acelor faze.",
+      "description": "Modulele sunt compuse din sarcini interconectate. Acestea ajută la monitorizarea progresului prin fazele proiectului, fiecare cu termene limită și analize specifice pentru a indica cât de aproape sunteți de atingerea acelor faze.",
       "cta_primary": "Setați primul dvs. modul"
     },
     "module_work_items": {
-      "title": "Niciun element de lucru de afișat în acest Modul",
-      "description": "Creați elemente de lucru pentru a începe monitorizarea acestui modul.",
-      "cta_primary": "Creați element de lucru",
-      "cta_secondary": "Adăugați element de lucru existent"
+      "title": "Niciun sarcină de afișat în acest Modul",
+      "description": "Creați sarcini pentru a începe monitorizarea acestui modul.",
+      "cta_primary": "Creați sarcină",
+      "cta_secondary": "Adăugați sarcină existent"
     },
     "views": {
       "title": "Salvați vizualizări personalizate pentru proiectul dvs.",
@@ -68,18 +68,18 @@
       "cta_primary": "Creați vizualizare"
     },
     "no_work_items_in_project": {
-      "title": "Încă nu există elemente de lucru în proiect",
-      "description": "Adăugați elemente de lucru la proiectul dvs. și împărțiți munca în bucăți urmăribile cu vizualizări.",
-      "cta_primary": "Adăugați element de lucru"
+      "title": "Încă nu există sarcini în proiect",
+      "description": "Adăugați sarcini la proiectul dvs. și împărțiți munca în bucăți urmăribile cu vizualizări.",
+      "cta_primary": "Adăugați sarcină"
     },
     "work_item_filter": {
-      "title": "Nu s-au găsit elemente de lucru",
+      "title": "Nu s-au găsit sarcini",
       "description": "Filtrul dvs. curent nu a returnat niciun rezultat. Încercați să modificați filtrele.",
-      "cta_primary": "Adăugați element de lucru"
+      "cta_primary": "Adăugați sarcină"
     },
     "pages": {
       "title": "Documentați totul — de la notițe la PRD-uri",
-      "description": "Paginile vă permit să capturați și să organizați informații într-un singur loc. Scrieți note de întâlnire, documentație de proiect și PRD-uri, încorporați elemente de lucru și structurați-le cu componente gata de utilizat.",
+      "description": "Paginile vă permit să capturați și să organizați informații într-un singur loc. Scrieți note de întâlnire, documentație de proiect și PRD-uri, încorporați sarcini și structurați-le cu componente gata de utilizat.",
       "cta_primary": "Creați prima dvs. Pagină"
     },
     "archive_pages": {
@@ -92,7 +92,7 @@
       "cta_primary": "Creați solicitare de Admitere"
     },
     "intake_main": {
-      "title": "Selectați un element de lucru de Admitere pentru a vedea detaliile"
+      "title": "Selectați un sarcină de Admitere pentru a vedea detaliile"
     },
     "epics": {
       "title": "Transformați proiecte complexe în epopei structurate.",
@@ -101,9 +101,9 @@
       "cta_secondary": "Documentație"
     },
     "epic_work_items": {
-      "title": "Nu ați adăugat încă elemente de lucru la această epopeie.",
-      "description": "Începeți prin a adăuga câteva elemente de lucru la această epopeie și urmăriți-le aici.",
-      "cta_secondary": "Adăugați elemente de lucru"
+      "title": "Nu ați adăugat încă sarcini la această epopeie.",
+      "description": "Începeți prin a adăuga câteva sarcini la această epopeie și urmăriți-le aici.",
+      "cta_secondary": "Adăugați sarcini"
     }
   },
   "workspace_empty_state": {
@@ -112,8 +112,8 @@
       "description": "Puteți arhiva epici finalizate sau anulate. Găsiți-le aici după arhivare."
     },
     "archive_work_items": {
-      "title": "Încă nu există elemente de lucru arhivate",
-      "description": "Manual sau prin automatizare, puteți arhiva elemente de lucru finalizate sau anulate. Găsiți-le aici odată arhivate.",
+      "title": "Încă nu există sarcini arhivate",
+      "description": "Manual sau prin automatizare, puteți arhiva sarcini finalizate sau anulate. Găsiți-le aici odată arhivate.",
       "cta_primary": "Configurați automatizarea"
     },
     "archive_cycles": {
@@ -134,20 +134,20 @@
       "title": "Mențiunile pentru elementele dvs. de lucru vor apărea aici"
     },
     "your_work_by_priority": {
-      "title": "Încă nu există elemente de lucru atribuite"
+      "title": "Încă nu există sarcini atribuite"
     },
     "your_work_by_state": {
-      "title": "Încă nu există elemente de lucru atribuite"
+      "title": "Încă nu există sarcini atribuite"
     },
     "views": {
       "title": "Încă nu există Vizualizări",
-      "description": "Adăugați elemente de lucru la proiectul dvs. și utilizați vizualizări pentru a filtra, sorta și monitoriza progresul fără efort.",
-      "cta_primary": "Adăugați element de lucru"
+      "description": "Adăugați sarcini la proiectul dvs. și utilizați vizualizări pentru a filtra, sorta și monitoriza progresul fără efort.",
+      "cta_primary": "Adăugați sarcină"
     },
     "drafts": {
-      "title": "Elemente de lucru semi-scrise",
-      "description": "Pentru a încerca acest lucru, începeți să adăugați un element de lucru și lăsați-l nefinalizat sau creați prima dvs. schiță mai jos. 😉",
-      "cta_primary": "Creați element de lucru schiță"
+      "title": "Sarcini semi-scrise",
+      "description": "Pentru a încerca acest lucru, începeți să adăugați un sarcină și lăsați-l nefinalizat sau creați prima dvs. schiță mai jos. 😉",
+      "cta_primary": "Creați sarcină schiță"
     },
     "projects_archived": {
       "title": "Niciun proiect arhivat",
@@ -157,7 +157,7 @@
       "title": "Creați proiecte pentru a vizualiza metricile proiectului aici."
     },
     "analytics_work_items": {
-      "title": "Creați proiecte cu elemente de lucru și responsabili pentru a începe urmărirea performanței, progresului și impactului echipei aici."
+      "title": "Creați proiecte cu sarcini și responsabili pentru a începe urmărirea performanței, progresului și impactului echipei aici."
     },
     "analytics_no_cycle": {
       "title": "Creați cicluri pentru a organiza munca în faze limitate în timp și a urmări progresul în sprint-uri."
@@ -188,7 +188,7 @@
     },
     "wiki": {
       "title": "Scrieți o notă, un document sau o bază de cunoștințe completă.",
-      "description": "Paginile sunt spațiu de captare a gândurilor în Plane. Notați note de întâlnire, formatați-le cu ușurință, încorporați elemente de lucru, aranjați-le folosind o bibliotecă de componente și păstrați-le toate în contextul proiectului dvs.",
+      "description": "Paginile sunt spațiu de captare a gândurilor în Plane. Notați note de întâlnire, formatați-le cu ușurință, încorporați sarcini, aranjați-le folosind o bibliotecă de componente și păstrați-le toate în contextul proiectului dvs.",
       "cta_primary": "Creați pagina dvs."
     },
     "project_overview_state_sidebar": {
@@ -227,34 +227,34 @@
       "cta_primary": "Adăugați webhook"
     },
     "work_item_types": {
-      "title": "Creați și personalizați tipuri de elemente de lucru",
-      "description": "Definiți tipuri unice de elemente de lucru pentru proiectul dvs. Fiecare tip poate avea propriile proprietăți, fluxuri de lucru și câmpuri - adaptate la nevoile proiectului și echipei dvs.",
+      "title": "Creați și personalizați tipuri de sarcini",
+      "description": "Definiți tipuri unice de sarcini pentru proiectul dvs. Fiecare tip poate avea propriile proprietăți, fluxuri de lucru și câmpuri - adaptate la nevoile proiectului și echipei dvs.",
       "cta_primary": "Activați"
     },
     "work_item_type_properties": {
-      "title": "Definiți proprietatea și detaliile pe care doriți să le capturați pentru acest tip de element de lucru. Personalizați-l pentru a se potrivi fluxului de lucru al proiectului dvs.",
+      "title": "Definiți proprietatea și detaliile pe care doriți să le capturați pentru acest tip de sarcină. Personalizați-l pentru a se potrivi fluxului de lucru al proiectului dvs.",
       "cta_secondary": "Adăugați proprietate"
     },
     "templates": {
       "title": "Încă nu există șabloane",
-      "description": "Reduceți timpul de configurare prin crearea de șabloane pentru elemente de lucru și pagini — și începeți munca nouă în câteva secunde.",
+      "description": "Reduceți timpul de configurare prin crearea de șabloane pentru sarcini și pagini — și începeți munca nouă în câteva secunde.",
       "cta_primary": "Creați primul dvs. șablon"
     },
     "recurring_work_items": {
-      "title": "Încă nu există elemente de lucru recurente",
-      "description": "Configurați elemente de lucru recurente pentru a automatiza sarcinile repetitive și a rămâne la timp fără efort.",
-      "cta_primary": "Creați element de lucru recurent"
+      "title": "Încă nu există sarcini recurente",
+      "description": "Configurați sarcini recurente pentru a automatiza sarcinile repetitive și a rămâne la timp fără efort.",
+      "cta_primary": "Creați sarcină recurent"
     },
     "worklogs": {
       "title": "Urmăriți foile de pontaj pentru toți membrii",
-      "description": "Înregistrați timpul pe elemente de lucru pentru a vedea foi de pontaj detaliate pentru orice membru al echipei din proiecte."
+      "description": "Înregistrați timpul pe sarcini pentru a vedea foi de pontaj detaliate pentru orice membru al echipei din proiecte."
     },
     "group_syncing": {
       "title": "Încă nu există mapări de grup"
     },
     "template_setting": {
       "title": "Încă nu există șabloane",
-      "description": "Reduceți timpul de configurare prin crearea de șabloane pentru proiecte, elemente de lucru și pagini — și începeți munca nouă în câteva secunde.",
+      "description": "Reduceți timpul de configurare prin crearea de șabloane pentru proiecte, sarcini și pagini — și începeți munca nouă în câteva secunde.",
       "cta_primary": "Creați șablon"
     },
     "workflows": {

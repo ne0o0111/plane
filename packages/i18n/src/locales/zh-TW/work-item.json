@@ -330,20 +330,20 @@
   "bulk_operations": {
     "error_details": {
       "invalid_archive_state_group": {
-        "title": "無法歸檔工作項目",
-        "message": "只有屬於已完成或已取消狀態組的工作項目可以被歸檔。"
+        "title": "無法歸檔任務",
+        "message": "只有屬於已完成或已取消狀態組的任務可以被歸檔。"
       },
       "invalid_issue_start_date": {
-        "title": "無法更新工作項目",
-        "message": "選擇的開始日期晚於某些工作項目的截止日期。請確保開始日期早於截止日期。"
+        "title": "無法更新任務",
+        "message": "選擇的開始日期晚於某些任務的截止日期。請確保開始日期早於截止日期。"
       },
       "invalid_issue_target_date": {
-        "title": "無法更新工作項目",
-        "message": "選擇的截止日期早於某些工作項目的開始日期。請確保截止日期晚於開始日期。"
+        "title": "無法更新任務",
+        "message": "選擇的截止日期早於某些任務的開始日期。請確保截止日期晚於開始日期。"
       },
       "invalid_state_transition": {
-        "title": "無法更新工作項目",
-        "message": "某些工作項目不允許狀態變更。請確保狀態變更是允許的。"
+        "title": "無法更新任務",
+        "message": "某些任務不允許狀態變更。請確保狀態變更是允許的。"
       }
     },
     "upgrade_banner": {
@@ -353,10 +353,10 @@
   },
   "recurring_work_items": {
     "settings": {
-      "heading": "重複工作項目",
+      "heading": "重複任務",
       "description": "設定一次重複工作，我們將處理重複。當需要時，您將在此處看到所有內容。",
-      "new_recurring_work_item": "新增重複工作項目",
-      "update_recurring_work_item": "更新重複工作項目",
+      "new_recurring_work_item": "新增重複任務",
+      "update_recurring_work_item": "更新重複任務",
       "form": {
         "interval": {
           "title": "排程",
@@ -372,13 +372,13 @@
           }
         },
         "button": {
-          "create": "建立重複工作項目",
-          "update": "更新重複工作項目"
+          "create": "建立重複任務",
+          "update": "更新重複任務"
         }
       },
       "create_button": {
-        "label": "建立重複工作項目",
-        "no_permission": "請聯繫您的專案管理員以建立重複工作項目"
+        "label": "建立重複任務",
+        "no_permission": "請聯繫您的專案管理員以建立重複任務"
       }
     },
     "empty_state": {
@@ -387,46 +387,46 @@
         "description": "只需設定一次，到期時我們會自動為您建立。升級至商業版，讓重複工作變得輕鬆無憂。"
       },
       "no_templates": {
-        "button": "建立您的第一個重複工作項目"
+        "button": "建立您的第一個重複任務"
       }
     },
     "toasts": {
       "create": {
         "success": {
-          "title": "已建立重複工作項目",
-          "message": "{name}，該重複工作項目，現已在您的工作區中可用。"
+          "title": "已建立重複任務",
+          "message": "{name}，該重複任務，現已在您的工作區中可用。"
         },
         "error": {
-          "title": "本次無法建立該重複工作項目。",
-          "message": "請再試一次儲存您的資訊，或將其複製到新的重複工作項目中，建議在其他分頁操作。"
+          "title": "本次無法建立該重複任務。",
+          "message": "請再試一次儲存您的資訊，或將其複製到新的重複任務中，建議在其他分頁操作。"
         }
       },
       "update": {
         "success": {
-          "title": "重複工作項目已變更",
-          "message": "{name}，該重複工作項目，已被變更。"
+          "title": "重複任務已變更",
+          "message": "{name}，該重複任務，已被變更。"
         },
         "error": {
-          "title": "無法儲存該重複工作項目的變更。",
-          "message": "請再試一次儲存您的資訊，或稍後再回來變更該重複工作項目。如果仍有問題，請聯繫我們。"
+          "title": "無法儲存該重複任務的變更。",
+          "message": "請再試一次儲存您的資訊，或稍後再回來變更該重複任務。如果仍有問題，請聯繫我們。"
         }
       },
       "delete": {
         "success": {
-          "title": "已刪除重複工作項目",
-          "message": "{name}，該重複工作項目，已從您的工作區中刪除。"
+          "title": "已刪除重複任務",
+          "message": "{name}，該重複任務，已從您的工作區中刪除。"
         },
         "error": {
-          "title": "無法刪除該重複工作項目。",
+          "title": "無法刪除該重複任務。",
           "message": "請再試一次刪除，或稍後再試。如果仍無法刪除，請聯繫我們。"
         }
       }
     },
     "delete_confirmation": {
-      "title": "刪除重複工作項目",
+      "title": "刪除重複任務",
       "description": {
-        "prefix": "您確定要刪除重複工作項目-",
-        "suffix": "嗎？與該重複工作項目相關的所有資料將被永久移除。此操作無法撤銷。"
+        "prefix": "您確定要刪除重複任務-",
+        "suffix": "嗎？與該重複任務相關的所有資料將被永久移除。此操作無法撤銷。"
       }
     }
   },

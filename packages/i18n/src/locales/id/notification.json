@@ -30,12 +30,12 @@
         "description": "Pilih notifikasi untuk melihat detailnya."
       },
       "all": {
-        "title": "Tidak ada item kerja yang ditugaskan",
-        "description": "Pembaruan untuk item kerja yang ditugaskan kepada Anda dapat dilihat di sini"
+        "title": "Tidak ada tugas yang ditugaskan",
+        "description": "Pembaruan untuk tugas yang ditugaskan kepada Anda dapat dilihat di sini"
       },
       "mentions": {
-        "title": "Tidak ada item kerja yang ditugaskan",
-        "description": "Pembaruan untuk item kerja yang ditugaskan kepada Anda dapat dilihat di sini"
+        "title": "Tidak ada tugas yang ditugaskan",
+        "description": "Pembaruan untuk tugas yang ditugaskan kepada Anda dapat dilihat di sini"
       }
     },
     "tabs": {

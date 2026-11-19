@@ -8,8 +8,8 @@
       "set_as_default": "Nastavit jako výchozí",
       "cant_set_default_inactive_message": "Před nastavením jako výchozí tento typ aktivujte",
       "set_default_confirmation": {
-        "title": "Nastavit jako výchozí typ pracovní položky",
-        "description": "Nastavením {name} jako výchozího se tento typ importuje do všech projektů v tomto pracovním prostoru. Všechny nové pracovní položky budou tento typ používat ve výchozím nastavení.",
+        "title": "Nastavit jako výchozí typ úkoly",
+        "description": "Nastavením {name} jako výchozího se tento typ importuje do všech projektů v tomto pracovním prostoru. Všechny nové úkoly budou tento typ používat ve výchozím nastavení.",
         "confirm_button": "Nastavit jako výchozí"
       },
       "properties": {
@@ -195,7 +195,7 @@
           "validation_success_with_refs": "Vzorec je platný! Vrací {resultType} ({count} odkazovaných polí)",
           "error": {
             "empty": "Zadejte prosím vzorec",
-            "missing_context": "Chybí kontext pracovního prostoru, projektu nebo typu pracovní položky",
+            "missing_context": "Chybí kontext pracovního prostoru, projektu nebo typu úkoly",
             "validation_failed": "Ověření se nezdařilo"
           },
           "picker": {
@@ -287,8 +287,8 @@
           }
         },
         "errors": {
-          "cannot_delete_default_work_item_type": "Výchozí typ pracovní položky nelze odstranit",
-          "cannot_delete_work_item_type_with_associated_work_items": "Typ pracovní položky s přidruženými pracovními položkami nelze odstranit"
+          "cannot_delete_default_work_item_type": "Výchozí typ úkoly nelze odstranit",
+          "cannot_delete_work_item_type_with_associated_work_items": "Typ úkoly s přidruženými pracovními položkami nelze odstranit"
         }
       }
     },
@@ -303,7 +303,7 @@
         "error": {
           "title": "Chyba!",
           "message": {
-            "default": "Nepodařilo se vytvořit typ pracovní položky. Zkuste to prosím znovu!",
+            "default": "Nepodařilo se vytvořit typ úkoly. Zkuste to prosím znovu!",
             "conflict": "Typ {name} již existuje. Zvolte jiné jméno."
           }
         }
@@ -320,7 +320,7 @@
         "error": {
           "title": "Chyba!",
           "message": {
-            "default": "Nepodařilo se aktualizovat typ pracovní položky. Zkuste to prosím znovu!",
+            "default": "Nepodařilo se aktualizovat typ úkoly. Zkuste to prosím znovu!",
             "conflict": "Typ {name} již existuje. Zvolte jiné jméno."
           }
         }
@@ -361,7 +361,7 @@
     "empty_state": {
       "enable": {
         "title": "Povolit typy pracovních položek",
-        "description": "Upravte pracovní položky podle svých potřeb s typy pracovních položek. Přizpůsobte je ikonami, pozadím a vlastnostmi a nakonfigurujte je pro tento projekt.",
+        "description": "Upravte úkoly podle svých potřeb s typy pracovních položek. Přizpůsobte je ikonami, pozadím a vlastnostmi a nakonfigurujte je pro tento projekt.",
         "primary_button": {
           "text": "Povolit"
         },
@@ -376,14 +376,14 @@
       },
       "get_pro": {
         "title": "Získejte Pro pro povolení typů pracovních položek.",
-        "description": "Upravte pracovní položky podle svých potřeb s typy pracovních položek. Přizpůsobte je ikonami, pozadím a vlastnostmi a nakonfigurujte je pro tento projekt.",
+        "description": "Upravte úkoly podle svých potřeb s typy pracovních položek. Přizpůsobte je ikonami, pozadím a vlastnostmi a nakonfigurujte je pro tento projekt.",
         "primary_button": {
           "text": "Získejte Pro"
         }
       },
       "upgrade": {
         "title": "Upgradujte pro povolení typů pracovních položek.",
-        "description": "Upravte pracovní položky podle svých potřeb s typy pracovních položek. Přizpůsobte je ikonami, pozadím a vlastnostmi a nakonfigurujte je pro tento projekt.",
+        "description": "Upravte úkoly podle svých potřeb s typy pracovních položek. Přizpůsobte je ikonami, pozadím a vlastnostmi a nakonfigurujte je pro tento projekt.",
         "primary_button": {
           "text": "Upgradovat"
         }
@@ -408,7 +408,7 @@
     },
     "levels": {
       "max_level_placeholder": "Přetáhněte typ pro přidání nové úrovně hierarchie",
-      "empty_level_placeholder": "Přetáhněte typ pracovní položky na úroveň {level}",
+      "empty_level_placeholder": "Přetáhněte typ úkoly na úroveň {level}",
       "drag_tooltip": "Přetáhněte pro změnu úrovně",
       "quick_actions": {
         "set_as_default": {
@@ -437,9 +437,9 @@
     "break_hierarchy_modal": {
       "title": "Uložením se přeruší stávající vazby",
       "content": {
-        "intro": "Typ pracovní položky {workItemTypeName} obsahuje:",
+        "intro": "Typ úkoly {workItemTypeName} obsahuje:",
         "parent_items": "{count, plural, one {Bude odstraněna # nadřazená vazba} few {Budou odstraněny # nadřazené vazby} other {Bude odstraněno # nadřazených vazeb}}.",
-        "child_items": "{count, plural, one {podřazenou pracovní položku} few {podřazené pracovní položky} other {podřazených pracovních položek}}",
+        "child_items": "{count, plural, one {podřazenou pracovní položku} few {podřazené úkoly} other {podřazených pracovních položek}}",
         "parent_line_suffix_when_also_children": ", a ",
         "footer": "Tato změna odstraní nadřazené a podřazené vztahy u stávajících pracovních položek typu {workItemTypeName}."
       },
@@ -459,18 +459,18 @@
     "work_item_modal": {
       "invalid_work_item_type_create_toast": {
         "title": "Chyba!",
-        "message": "Vybraný typ pracovní položky nelze použít k vytvoření nové pracovní položky, protože porušuje pravidla hierarchie."
+        "message": "Vybraný typ úkoly nelze použít k vytvoření nové úkoly, protože porušuje pravidla hierarchie."
       },
       "invalid_work_item_type_update_toast": {
         "title": "Chyba!",
-        "message": "Typ pracovní položky nelze aktualizovat, protože porušuje pravidla hierarchie."
+        "message": "Typ úkoly nelze aktualizovat, protože porušuje pravidla hierarchie."
       }
     },
     "work_item_type_modal": {
       "level": "Úroveň hierarchie",
       "invalid_level_toast": {
         "title": "Chyba!",
-        "message": "Typ pracovní položky nelze aktualizovat, protože to porušuje pravidla hierarchie."
+        "message": "Typ úkoly nelze aktualizovat, protože to porušuje pravidla hierarchie."
       }
     }
   }

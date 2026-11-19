@@ -5,9 +5,9 @@
     "select": "Add modules",
     "details_drawer": {
       "progress": {
-        "done": "{completed} of {scope, plural, one {# work item} other {# work items}} done",
+        "done": "{completed} of {scope, plural, one {# task} other {# tasks}} done",
         "points_done": "{completed} of {scope, plural, one {# point} other {# points}} done",
-        "empty": "Add work items to the module to track progress."
+        "empty": "Add tasks to the module to track progress."
       }
     }
   }

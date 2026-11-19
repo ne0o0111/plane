@@ -1,21 +1,21 @@
 {
   "work_item_types": {
     "label": "Tipuri de Elemente de Lucru",
-    "label_lowercase": "tipuri de elemente de lucru",
+    "label_lowercase": "tipuri de sarcini",
     "settings": {
       "description": "Personalizează și adaugă propriile proprietăți pentru a le adapta nevoilor echipei tale.",
-      "cant_delete_default_message": "Nu se poate șterge acest tip de element de lucru deoarece este setat ca tip implicit pentru acest proiect.",
+      "cant_delete_default_message": "Nu se poate șterge acest tip de sarcină deoarece este setat ca tip implicit pentru acest proiect.",
       "set_as_default": "Setează ca implicit",
       "cant_set_default_inactive_message": "Activează acest tip înainte de a-l seta ca implicit",
       "set_default_confirmation": {
-        "title": "Setează ca tip implicit de element de lucru",
+        "title": "Setează ca tip implicit de sarcină",
         "description": "Setarea {name} ca implicit îl va importa în toate proiectele din acest spațiu de lucru. Toate elementele de lucru noi vor folosi acest tip în mod implicit.",
         "confirm_button": "Setează ca implicit"
       },
       "properties": {
         "title": "Proprietăți personalizate",
         "description": "Creează și personalizează proprietăți.",
-        "tooltip": "Fiecare tip de element de lucru vine cu un set implicit de proprietăți precum Titlu, Descriere, Responsabil, Stare, Prioritate, Data de început, Data scadentă, Modul, Ciclu etc. De asemenea, poți personaliza și adăuga propriile proprietăți pentru a le adapta nevoilor echipei tale.",
+        "tooltip": "Fiecare tip de sarcină vine cu un set implicit de proprietăți precum Titlu, Descriere, Responsabil, Stare, Prioritate, Data de început, Data scadentă, Modul, Ciclu etc. De asemenea, poți personaliza și adăuga propriile proprietăți pentru a le adapta nevoilor echipei tale.",
         "add_button": "Adaugă proprietate nouă",
         "project": {
           "add_button": {
@@ -195,7 +195,7 @@
           "validation_success_with_refs": "Formula este validă! Returnează {resultType} ({count} câmp(uri) referențiat(e))",
           "error": {
             "empty": "Vă rugăm introduceți o formulă",
-            "missing_context": "Lipsește contextul spațiului de lucru, proiectului sau tipului de element de lucru",
+            "missing_context": "Lipsește contextul spațiului de lucru, proiectului sau tipului de sarcină",
             "validation_failed": "Validarea a eșuat"
           },
           "picker": {
@@ -228,7 +228,7 @@
         },
         "empty_state": {
           "title": "Adaugă proprietăți personalizate",
-          "description": "Noile proprietăți pe care le adaugi pentru acest tip de element de lucru vor apărea aici."
+          "description": "Noile proprietăți pe care le adaugi pentru acest tip de sarcină vor apărea aici."
         }
       },
       "types": {
@@ -283,22 +283,22 @@
           },
           "error": {
             "title": "Eroare!",
-            "message": "Ștergerea tipului de element de lucru a eșuat. Vă rugăm să încercați din nou!"
+            "message": "Ștergerea tipului de sarcină a eșuat. Vă rugăm să încercați din nou!"
           }
         },
         "errors": {
-          "cannot_delete_default_work_item_type": "Nu se poate șterge tipul implicit de element de lucru",
-          "cannot_delete_work_item_type_with_associated_work_items": "Nu se poate șterge tipul de element de lucru cu elemente de lucru asociate"
+          "cannot_delete_default_work_item_type": "Nu se poate șterge tipul implicit de sarcină",
+          "cannot_delete_work_item_type_with_associated_work_items": "Nu se poate șterge tipul de sarcină cu sarcini asociate"
         }
       }
     },
     "create": {
-      "title": "Creează tip de element de lucru",
-      "button": "Adaugă tip de element de lucru",
+      "title": "Creează tip de sarcină",
+      "button": "Adaugă tip de sarcină",
       "toast": {
         "success": {
           "title": "Succes!",
-          "message": "Tipul de element de lucru a fost creat cu succes."
+          "message": "Tipul de sarcină a fost creat cu succes."
         },
         "error": {
           "title": "Eroare!",
@@ -310,12 +310,12 @@
       }
     },
     "update": {
-      "title": "Actualizează tipul de element de lucru",
-      "button": "Actualizează tipul de element de lucru",
+      "title": "Actualizează tipul de sarcină",
+      "button": "Actualizează tipul de sarcină",
       "toast": {
         "success": {
           "title": "Succes!",
-          "message": "Tipul de element de lucru {name} a fost actualizat cu succes."
+          "message": "Tipul de sarcină {name} a fost actualizat cu succes."
         },
         "error": {
           "title": "Eroare!",
@@ -329,30 +329,30 @@
     "create_update": {
       "form": {
         "name": {
-          "placeholder": "Dă acestui tip de element de lucru un nume unic"
+          "placeholder": "Dă acestui tip de sarcină un nume unic"
         },
         "description": {
-          "placeholder": "Descrie pentru ce este destinat acest tip de element de lucru și când trebuie utilizat."
+          "placeholder": "Descrie pentru ce este destinat acest tip de sarcină și când trebuie utilizat."
         }
       }
     },
     "enable_disable": {
       "toast": {
-        "loading": "{action} tipul de element de lucru {name}",
+        "loading": "{action} tipul de sarcină {name}",
         "success": {
           "title": "Succes!",
-          "message": "Tipul de element de lucru {name} {action} cu succes."
+          "message": "Tipul de sarcină {name} {action} cu succes."
         },
         "error": {
           "title": "Eroare!",
-          "message": "Nu s-a putut {action} tipul de element de lucru. Te rugăm să încerci din nou!"
+          "message": "Nu s-a putut {action} tipul de sarcină. Te rugăm să încerci din nou!"
         }
       },
       "tooltip": "Click pentru a {action}"
     },
     "change_confirmation": {
-      "title": "Schimbați tipul de element de lucru?",
-      "description": "Schimbarea tipului de element de lucru poate duce la pierderea valorilor proprietăților personalizate care sunt specifice tipului curent. Această acțiune nu poate fi anulată.",
+      "title": "Schimbați tipul de sarcină?",
+      "description": "Schimbarea tipului de sarcină poate duce la pierderea valorilor proprietăților personalizate care sunt specifice tipului curent. Această acțiune nu poate fi anulată.",
       "button": {
         "loading": "Se schimbă",
         "default": "Schimbă tipul"
@@ -361,13 +361,13 @@
     "empty_state": {
       "enable": {
         "title": "Activează Tipurile de Elemente de Lucru",
-        "description": "Modelează elementele de lucru pentru munca ta cu Tipuri de elemente de lucru. Personalizează cu pictograme, fundaluri și proprietăți și configurează-le pentru acest proiect.",
+        "description": "Modelează elementele de lucru pentru munca ta cu Tipuri de sarcini. Personalizează cu pictograme, fundaluri și proprietăți și configurează-le pentru acest proiect.",
         "primary_button": {
           "text": "Activează"
         },
         "confirmation": {
           "title": "Odată activate, Tipurile de Elemente de Lucru nu pot fi dezactivate.",
-          "description": "Elementul de Lucru al Plane va deveni tipul implicit de element de lucru pentru acest proiect și va apărea cu pictograma și fundalul său în acest proiect.",
+          "description": "Elementul de Lucru al Plane va deveni tipul implicit de sarcină pentru acest proiect și va apărea cu pictograma și fundalul său în acest proiect.",
           "button": {
             "default": "Activează",
             "loading": "Se configurează"
@@ -376,14 +376,14 @@
       },
       "get_pro": {
         "title": "Obține Pro pentru a activa Tipurile de Elemente de Lucru.",
-        "description": "Modelează elementele de lucru pentru munca ta cu Tipuri de elemente de lucru. Personalizează cu pictograme, fundaluri și proprietăți și configurează-le pentru acest proiect.",
+        "description": "Modelează elementele de lucru pentru munca ta cu Tipuri de sarcini. Personalizează cu pictograme, fundaluri și proprietăți și configurează-le pentru acest proiect.",
         "primary_button": {
           "text": "Obține Pro"
         }
       },
       "upgrade": {
         "title": "Actualizează pentru a activa Tipurile de Elemente de Lucru.",
-        "description": "Modelează elementele de lucru pentru munca ta cu Tipuri de elemente de lucru. Personalizează cu pictograme, fundaluri și proprietăți și configurează-le pentru acest proiect.",
+        "description": "Modelează elementele de lucru pentru munca ta cu Tipuri de sarcini. Personalizează cu pictograme, fundaluri și proprietăți și configurează-le pentru acest proiect.",
         "primary_button": {
           "text": "Actualizează"
         }
@@ -398,17 +398,17 @@
       "sidebar_label": "Ierarhie",
       "enable_control": {
         "title": "Activați ierarhia",
-        "description": "Creați relații părinte-copil între diferite tipuri de elemente de lucru.",
+        "description": "Creați relații părinte-copil între diferite tipuri de sarcini.",
         "tooltip": "Nu puteți dezactiva ierarhia odată ce este activată."
       },
       "workspace_work_item_types_disabled_banner": {
-        "content": "Definiți mai întâi tipurile de elemente de lucru pentru a crea o nouă ierarhie.",
-        "cta": "Setări tipuri elemente de lucru"
+        "content": "Definiți mai întâi tipurile de sarcini pentru a crea o nouă ierarhie.",
+        "cta": "Setări tipuri sarcini"
       }
     },
     "levels": {
       "max_level_placeholder": "Trageți și plasați un tip pentru a adăuga un nou nivel ierarhic",
-      "empty_level_placeholder": "Trageți și plasați un tip de element de lucru la nivelul {level}",
+      "empty_level_placeholder": "Trageți și plasați un tip de sarcină la nivelul {level}",
       "drag_tooltip": "Glisați pentru a schimba nivelul",
       "quick_actions": {
         "set_as_default": {
@@ -437,9 +437,9 @@
     "break_hierarchy_modal": {
       "title": "Salvarea va rupe legăturile existente",
       "content": {
-        "intro": "Tipul de element de lucru {workItemTypeName} are:",
+        "intro": "Tipul de sarcină {workItemTypeName} are:",
         "parent_items": "{count, plural, one {Se va elimina # legătură părinte} few {Se vor elimina # legături părinte} other {Se vor elimina # de legături părinte}}.",
-        "child_items": "{count, plural, one {sub-element de lucru} few {sub-elemente de lucru} other {sub-elemente de lucru}}",
+        "child_items": "{count, plural, one {sub-sarcină} few {sub-sarcini} other {sub-sarcini}}",
         "parent_line_suffix_when_also_children": ", și ",
         "footer": "Această modificare va elimina relațiile părinte-copil din elementele de lucru existente de tipul {workItemTypeName}."
       },
@@ -459,11 +459,11 @@
     "work_item_modal": {
       "invalid_work_item_type_create_toast": {
         "title": "Eroare!",
-        "message": "Tipul de element de lucru selectat nu poate fi utilizat pentru a crea un nou element de lucru deoarece încalcă regulile ierarhiei."
+        "message": "Tipul de sarcină selectat nu poate fi utilizat pentru a crea un nou sarcină deoarece încalcă regulile ierarhiei."
       },
       "invalid_work_item_type_update_toast": {
         "title": "Eroare!",
-        "message": "Tipul de element de lucru nu poate fi actualizat deoarece încalcă regulile ierarhiei."
+        "message": "Tipul de sarcină nu poate fi actualizat deoarece încalcă regulile ierarhiei."
       }
     },
     "work_item_type_modal": {

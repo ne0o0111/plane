@@ -5,9 +5,9 @@
     "select": "Thêm mô-đun",
     "details_drawer": {
       "progress": {
-        "done": "Đã hoàn thành {completed}/{scope, plural, one {# mục công việc} other {# mục công việc}}",
+        "done": "Đã hoàn thành {completed}/{scope, plural, one {# task} other {# task}}",
         "points_done": "Đã hoàn thành {completed}/{scope, plural, one {# điểm} other {# điểm}}",
-        "empty": "Thêm mục công việc vào mô-đun để theo dõi tiến độ."
+        "empty": "Thêm task vào mô-đun để theo dõi tiến độ."
       }
     }
   }

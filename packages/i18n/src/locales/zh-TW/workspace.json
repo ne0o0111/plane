@@ -110,15 +110,15 @@
     "empty_state": {
       "project_insights": {
         "title": "尚無資料",
-        "description": "指派給您的工作項目將依狀態分類顯示在此處。"
+        "description": "指派給您的任務將依狀態分類顯示在此處。"
       },
       "created_vs_resolved": {
         "title": "尚無資料",
-        "description": "隨著時間推移所建立與解決的工作項目將顯示在此處。"
+        "description": "隨著時間推移所建立與解決的任務將顯示在此處。"
       },
       "customized_insights": {
         "title": "尚無資料",
-        "description": "指派給您的工作項目將依狀態分類顯示在此處。"
+        "description": "指派給您的任務將依狀態分類顯示在此處。"
       },
       "general": {
         "title": "追蹤進度、工作量和分配。發現趨勢，消除障礙，加速工作進展",
@@ -133,19 +133,19 @@
       },
       "cycle_progress": {
         "title": "尚無資料",
-        "description": "循環進度分析將顯示在此處。將工作項目加入循環以開始追蹤進度。"
+        "description": "循環進度分析將顯示在此處。將任務加入循環以開始追蹤進度。"
       },
       "module_progress": {
         "title": "尚無資料",
-        "description": "模組進度分析將顯示在此處。將工作項目加入模組以開始追蹤進度。"
+        "description": "模組進度分析將顯示在此處。將任務加入模組以開始追蹤進度。"
       },
       "intake_trends": {
         "title": "尚無資料",
-        "description": "引入趨勢分析將顯示在此處。將工作項目加入引入以開始追蹤趨勢。"
+        "description": "引入趨勢分析將顯示在此處。將任務加入引入以開始追蹤趨勢。"
       }
     },
     "upgrade_to_plan": "升級至 {plan} 以解鎖 {tab}",
-    "workitem_resolved_vs_pending": "已解決 vs 待處理的工作項目",
+    "workitem_resolved_vs_pending": "已解決 vs 待處理的任務",
     "projects_by_status": "按狀態分類的專案",
     "active_users": "活躍使用者",
     "intake_trends": "入學趨勢"
@@ -295,7 +295,7 @@
     "empty_state": {
       "general": {
         "title": "寫一個筆記、文檔或完整的知識庫。讓 Galileo，Plane 的 AI 助手，幫助您開始",
-        "description": "頁面是 Plane 中的思想沉澱空間。記下會議筆記，輕鬆格式化，嵌入工作項目，使用組件庫佈局，並將它們全部保存在您的專案上下文中。要快速完成任何文檔，使用快捷方式或點擊按鈕來調用 Galileo，Plane 的 AI。",
+        "description": "頁面是 Plane 中的思想沉澱空間。記下會議筆記，輕鬆格式化，嵌入任務，使用組件庫佈局，並將它們全部保存在您的專案上下文中。要快速完成任何文檔，使用快捷方式或點擊按鈕來調用 Galileo，Plane 的 AI。",
         "primary_button": {
           "text": "創建您的第一個頁面"
         }

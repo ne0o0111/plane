@@ -1,7 +1,7 @@
 {
   "issue": {
-    "label": "{count, plural, one {Pracovná položka} few {Pracovné položky} other {Pracovných položiek}}",
-    "all": "Všetky pracovné položky",
+    "label": "{count, plural, one {Úloha} few {Úlohy} other {Pracovných položiek}}",
+    "all": "Všetky úlohy",
     "edit": "Upraviť pracovnú položku",
     "properties_overflow": {
       "trigger_aria_label": "{count, plural, one {# ďalšia vlastnosť} few {# ďalšie vlastnosti} many {# ďalšej vlastnosti} other {# ďalších vlastností}}",
@@ -16,7 +16,7 @@
       "label": "Pridať pracovnú položku",
       "cycle": {
         "failed": "Pridanie pracovnej položky do cyklu zlyhalo. Skúste to prosím znova.",
-        "success": "{count, plural, one {Pracovná položka} few {Pracovné položky} other {Pracovných položiek}} pridaná do cyklu.",
+        "success": "{count, plural, one {Úloha} few {Úlohy} other {Pracovných položiek}} pridaná do cyklu.",
         "loading": "Pridávanie {count, plural, one {pracovnej položky} few {pracovných položiek} other {pracovných položiek}} do cyklu"
       },
       "assignee": "Pridať priradených",
@@ -33,22 +33,22 @@
       "label": "Odstrániť pracovnú položku",
       "cycle": {
         "loading": "Odstraňovanie pracovnej položky z cyklu",
-        "success": "Pracovná položka odstránená z cyklu.",
+        "success": "Úloha odstránená z cyklu.",
         "failed": "Odstránenie pracovnej položky z cyklu zlyhalo. Skúste to prosím znova."
       },
       "module": {
         "loading": "Odstraňovanie pracovnej položky z modulu",
-        "success": "Pracovná položka odstránená z modulu.",
+        "success": "Úloha odstránená z modulu.",
         "failed": "Odstránenie pracovnej položky z modulu zlyhalo. Skúste to prosím znova."
       },
       "parent": {
         "label": "Odstrániť nadradenú pracovnú položku"
       }
     },
-    "new": "Nová pracovná položka",
+    "new": "Nová úloha",
     "adding": "Pridávanie pracovnej položky",
     "create": {
-      "success": "Pracovná položka bola úspešne vytvorená"
+      "success": "Úloha bola úspešne vytvorená"
     },
     "priority": {
       "urgent": "Naliehavá",
@@ -156,10 +156,10 @@
     },
     "empty_state": {
       "issue_detail": {
-        "title": "Pracovná položka neexistuje",
-        "description": "Pracovná položka, ktorú hľadáte, neexistuje, bola archivovaná alebo zmazaná.",
+        "title": "Úloha neexistuje",
+        "description": "Úloha, ktorú hľadáte, neexistuje, bola archivovaná alebo zmazaná.",
         "primary_button": {
-          "text": "Zobraziť ďalšie pracovné položky"
+          "text": "Zobraziť ďalšie úlohy"
         }
       },
       "no_access": {
@@ -168,10 +168,10 @@
       }
     },
     "sibling": {
-      "label": "Súvisiace pracovné položky"
+      "label": "Súvisiace úlohy"
     },
     "archive": {
-      "description": "Archivovať je možné iba dokončené alebo zrušené\npracovné položky",
+      "description": "Archivovať je možné iba dokončené alebo zrušené\núlohy",
       "label": "Archivovať pracovnú položku",
       "confirm_message": "Naozaj chcete archivovať túto pracovnú položku? Všetky archivované položky je možné neskôr obnoviť.",
       "success": {
@@ -181,19 +181,19 @@
       "failed": {
         "message": "Archivácia pracovnej položky zlyhala. Skúste to prosím znova."
       },
-      "banner_message": "Táto pracovná položka bola archivovaná. Prejdite do sekcie Archívy a obnovte ju.",
+      "banner_message": "Táto úloha bola archivovaná. Prejdite do sekcie Archívy a obnovte ju.",
       "go_to_archives": "Prejsť do archívov"
     },
     "restore": {
       "success": {
         "title": "Obnovenie úspešné",
-        "message": "Vaša pracovná položka je na nájdenie v pracovných položkách projektu."
+        "message": "Vaša úloha je na nájdenie v pracovných položkách projektu."
       },
       "failed": {
         "message": "Obnovenie pracovnej položky zlyhalo. Skúste to prosím znova."
       }
     },
-    "archived_banner": "Táto pracovná položka je archivovaná. Ak chcete vykonať zmeny, obnovte ju.",
+    "archived_banner": "Táto úloha je archivovaná. Ak chcete vykonať zmeny, obnovte ju.",
     "updated_time_ago": "Aktualizované {time}",
     "description_load_failed": "Popis sa nepodarilo načítať.",
     "assignee_count": "{count, plural, one {# priradený} few {# priradení} many {# priradeného} other {# priradených}}",
@@ -216,14 +216,14 @@
     },
     "subscription": {
       "actions": {
-        "subscribed": "Pracovná položka úspešne prihlásená na odber",
+        "subscribed": "Úloha úspešne prihlásená na odber",
         "unsubscribed": "Odber pracovnej položky zrušený"
       }
     },
     "select": {
       "error": "Vyberte aspoň jednu pracovnú položku",
-      "empty": "Nie sú vybrané žiadne pracovné položky",
-      "add_selected": "Pridať vybrané pracovné položky",
+      "empty": "Nie sú vybrané žiadne úlohy",
+      "add_selected": "Pridať vybrané úlohy",
       "select_all": "Vybrať všetko",
       "deselect_all": "Zrušiť výber všetkého"
     },
@@ -239,7 +239,7 @@
     "toast": {
       "duplicate": {
         "success": {
-          "message": "Pracovná položka bola úspešne duplikovaná"
+          "message": "Úloha bola úspešne duplikovaná"
         },
         "error": {
           "message": "Duplikovanie pracovnej položky zlyhalo"
@@ -289,21 +289,21 @@
   },
   "sub_work_item": {
     "update": {
-      "success": "Podriadená pracovná položka bola úspešne aktualizovaná",
+      "success": "Podriadená úloha bola úspešne aktualizovaná",
       "error": "Chyba pri aktualizácii podriadenej položky"
     },
     "remove": {
-      "success": "Podriadená pracovná položka bola úspešne odstránená",
+      "success": "Podriadená úloha bola úspešne odstránená",
       "error": "Chyba pri odstraňovaní podriadenej položky"
     },
     "empty_state": {
       "sub_list_filters": {
-        "title": "Nemáte podriadené pracovné položky, ktoré zodpovedajú použitým filtrom.",
+        "title": "Nemáte podriadené úlohy, ktoré zodpovedajú použitým filtrom.",
         "description": "Pre zobrazenie všetkých podriadených pracovných položiek vymažte všetky použité filtre.",
         "action": "Vymazať filtre"
       },
       "list_filters": {
-        "title": "Nemáte pracovné položky, ktoré zodpovedajú použitým filtrom.",
+        "title": "Nemáte úlohy, ktoré zodpovedajú použitým filtrom.",
         "description": "Pre zobrazenie všetkých pracovných položiek vymažte všetky použité filtre.",
         "action": "Vymazať filtre"
       }
@@ -330,20 +330,20 @@
   "bulk_operations": {
     "error_details": {
       "invalid_archive_state_group": {
-        "title": "Nemožno archivovať pracovné položky",
-        "message": "Archivovať je možné iba pracovné položky patriace do skupín stavov Dokončené alebo Zrušené."
+        "title": "Nemožno archivovať úlohy",
+        "message": "Archivovať je možné iba úlohy patriace do skupín stavov Dokončené alebo Zrušené."
       },
       "invalid_issue_start_date": {
-        "title": "Nemožno aktualizovať pracovné položky",
+        "title": "Nemožno aktualizovať úlohy",
         "message": "Vybraný dátum začiatku nasleduje po termíne dokončenia niektorých pracovných položiek. Zabezpečte, aby dátum začiatku predchádzal termínu dokončenia."
       },
       "invalid_issue_target_date": {
-        "title": "Nemožno aktualizovať pracovné položky",
+        "title": "Nemožno aktualizovať úlohy",
         "message": "Vybraný termín dokončenia predchádza dátumu začiatku niektorých pracovných položiek. Zabezpečte, aby termín dokončenia nasledoval po dátume začiatku."
       },
       "invalid_state_transition": {
-        "title": "Nemožno aktualizovať pracovné položky",
-        "message": "Zmena stavu nie je povolená pre niektoré pracovné položky. Uistite sa, že zmena stavu je povolená."
+        "title": "Nemožno aktualizovať úlohy",
+        "message": "Zmena stavu nie je povolená pre niektoré úlohy. Uistite sa, že zmena stavu je povolená."
       }
     },
     "upgrade_banner": {
@@ -353,8 +353,8 @@
   },
   "recurring_work_items": {
     "settings": {
-      "heading": "Opakujúce sa pracovné položky",
-      "description": "Nastavte opakujúce sa pracovné položky raz a my sa postaráme o opakovanie. Všetko sa tu zobrazí, keď bude čas.",
+      "heading": "Opakujúce sa úlohy",
+      "description": "Nastavte opakujúce sa úlohy raz a my sa postaráme o opakovanie. Všetko sa tu zobrazí, keď bude čas.",
       "new_recurring_work_item": "Nová opakujúca sa úloha",
       "update_recurring_work_item": "Upraviť opakujúcu sa úlohu",
       "form": {

@@ -88,7 +88,7 @@
             }
           },
           "description": {
-            "placeholder": "Opisz ten element pracy, aby było jasne, co osiągniesz po jego ukończeniu."
+            "placeholder": "Opisz ten zadanie, aby było jasne, co osiągniesz po jego ukończeniu."
           },
           "button": {
             "create": "Utwórz szablon elementu pracy",
@@ -234,7 +234,7 @@
         "button": "Utwórz swój pierwszy szablon"
       },
       "no_labels": {
-        "description": " Brak etykiet. Utwórz etykiety, aby pomóc zorganizować i filtrować elementy pracy w Twoim projekcie."
+        "description": " Brak etykiet. Utwórz etykiety, aby pomóc zorganizować i filtrować zadania w Twoim projekcie."
       },
       "no_modules": {
         "description": "Brak modułów. Organizuj pracę w podprojekty z dedykowanymi liderami i przypisanymi osobami."

@@ -7,7 +7,7 @@
       "progress": {
         "done": "Hotovo {completed} z {scope, plural, one {# pracovnej položky} few {# pracovných položiek} many {# pracovnej položky} other {# pracovných položiek}}",
         "points_done": "Hotovo {completed} z {scope, plural, one {# bodu} few {# bodov} many {# bodu} other {# bodov}}",
-        "empty": "Pridajte do modulu pracovné položky a sledujte priebeh."
+        "empty": "Pridajte do modulu úlohy a sledujte priebeh."
       }
     }
   }

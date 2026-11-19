@@ -21,7 +21,7 @@
       },
       "confirm_project_name_label": "Ak chcete pokračovať, zadajte názov projektu.",
       "leave_project": {
-        "confirm_description": "Naozaj chcete opustiť projekt {projectName}? Pracovné položky, ktoré sú s vami spojené, prestanú byť dostupné."
+        "confirm_description": "Naozaj chcete opustiť projekt {projectName}? Úlohy, ktoré sú s vami spojené, prestanú byť dostupné."
       }
     },
     "members": {
@@ -249,10 +249,10 @@
         "add_states": "Pridať stavy",
         "unmapped_states": {
           "title": "Zistené nenamapované stavy",
-          "description": "Niektoré pracovné položky vybraných typov sa aktuálne nachádzajú v stavoch, ktoré v tomto pracovnom postupe neexistujú.",
+          "description": "Niektoré úlohy vybraných typov sa aktuálne nachádzajú v stavoch, ktoré v tomto pracovnom postupe neexistujú.",
           "note": "Ak tento pracovný postup povolíte, tieto položky sa automaticky presunú do počiatočného stavu tohto pracovného postupu.",
           "label": "Chýbajúce stavy",
-          "tooltip": "Niektoré pracovné položky sú v stavoch, ktoré nie sú namapované na tento pracovný postup. Otvorte pracovný postup a skontrolujte."
+          "tooltip": "Niektoré úlohy sú v stavoch, ktoré nie sú namapované na tento pracovný postup. Otvorte pracovný postup a skontrolujte."
         }
       },
       "select_states": {
@@ -373,16 +373,16 @@
         },
         "in_app": {
           "title": "V aplikácii",
-          "description": "Získajte nové pracovné položky od členov a hostí vo vašom pracovnom priestore bez narušenia existujúcich pracovných položiek."
+          "description": "Získajte nové úlohy od členov a hostí vo vašom pracovnom priestore bez narušenia existujúcich pracovných položiek."
         },
         "email": {
           "title": "E-mail",
-          "description": "Zhromažďujte nové pracovné položky od každého, kto pošle e-mail na Plane e-mailovú adresu.",
+          "description": "Zhromažďujte nové úlohy od každého, kto pošle e-mail na Plane e-mailovú adresu.",
           "fieldName": "ID e-mailu"
         },
         "form": {
           "title": "Formuláre",
-          "description": "Umožnite ľuďom mimo pracovného priestoru vytvárať pre vás potenciálne nové pracovné položky prostredníctvom vyhradeného a bezpečného formulára.",
+          "description": "Umožnite ľuďom mimo pracovného priestoru vytvárať pre vás potenciálne nové úlohy prostredníctvom vyhradeného a bezpečného formulára.",
           "fieldName": "Predvolená URL formulára",
           "create_forms": "Vytvárať formuláre pomocou typov pracovných položiek",
           "manage_forms": "Spravovať formuláre",
@@ -428,7 +428,7 @@
         "short_title": "Míľniky",
         "description": "Míľniky poskytujú vrstvu na zladenie pracovných položiek smerom k spoločným termínom dokončenia.",
         "toggle_title": "Povoliť míľniky",
-        "toggle_description": "Organizujte pracovné položky podľa termínov míľnikov."
+        "toggle_description": "Organizujte úlohy podľa termínov míľnikov."
       },
       "toasts": {
         "loading": "Aktualizácia funkcie projektu...",
@@ -496,7 +496,7 @@
           },
           "auto_rollover": {
             "label": "Automatický prevod pracovných položiek",
-            "tooltip": "V deň dokončenia cyklu presunúť všetky nedokončené pracovné položky do ďalšieho cyklu."
+            "tooltip": "V deň dokončenia cyklu presunúť všetky nedokončené úlohy do ďalšieho cyklu."
           }
         },
         "toast": {

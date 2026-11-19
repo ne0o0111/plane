@@ -2,16 +2,16 @@
   "templates": {
     "settings": {
       "title": "Sjablonen",
-      "description": "Bespaar 80% van de tijd die je besteedt aan het aanmaken van projecten, werkitems en pagina's wanneer je sjablonen gebruikt.",
+      "description": "Bespaar 80% van de tijd die je besteedt aan het aanmaken van projecten, taken en pagina's wanneer je sjablonen gebruikt.",
       "new_project_template": "Nieuw projectsjabloon",
-      "new_work_item_template": "Nieuw werkitemsjabloon",
+      "new_work_item_template": "Nieuw takenjabloon",
       "new_page_template": "Nieuw paginasjabloon",
       "options": {
         "project": {
           "label": "Projectsjablonen"
         },
         "work_item": {
-          "label": "Werkitemsjablonen"
+          "label": "Takenjablonen"
         },
         "page": {
           "label": "Paginasjablonen"
@@ -70,7 +70,7 @@
         "work_item": {
           "template": {
             "name": {
-              "placeholder": "Geef je werkitemsjabloon een naam.",
+              "placeholder": "Geef je takenjabloon een naam.",
               "validation": {
                 "required": "Sjabloonnaam is verplicht",
                 "maxLength": "Sjabloonnaam moet minder dan 255 tekens zijn"
@@ -81,18 +81,18 @@
             }
           },
           "name": {
-            "placeholder": "Geef dit werkitem een titel.",
+            "placeholder": "Geef dit taak een titel.",
             "validation": {
-              "required": "Werkitemtitel is verplicht",
-              "maxLength": "Werkitemtitel moet minder dan 255 tekens zijn"
+              "required": "Taaktitel is verplicht",
+              "maxLength": "Taaktitel moet minder dan 255 tekens zijn"
             }
           },
           "description": {
-            "placeholder": "Beschrijf dit werkitem zodat duidelijk is wat je bereikt wanneer je het afrondt."
+            "placeholder": "Beschrijf dit taak zodat duidelijk is wat je bereikt wanneer je het afrondt."
           },
           "button": {
-            "create": "Werkitemsjabloon aanmaken",
-            "update": "Werkitemsjabloon bijwerken"
+            "create": "Takenjabloon aanmaken",
+            "update": "Takenjabloon bijwerken"
           }
         },
         "page": {
@@ -227,23 +227,23 @@
     "empty_state": {
       "upgrade": {
         "title": "Sjablonen",
-        "description": "Met project-, werkitem- en paginasjablonen in Plane hoef je geen project vanaf nul aan te maken of werkitemeigenschappen handmatig in te stellen.",
+        "description": "Met project-, taak- en paginasjablonen in Plane hoef je geen project vanaf nul aan te maken of taakeigenschappen handmatig in te stellen.",
         "sub_description": "Krijg 80% van je beheertijd terug wanneer je sjablonen gebruikt."
       },
       "no_templates": {
         "button": "Maak je eerste sjabloon aan"
       },
       "no_labels": {
-        "description": "Nog geen labels. Maak labels aan om werkitems in je project te ordenen en te filteren."
+        "description": "Nog geen labels. Maak labels aan om taken in je project te ordenen en te filteren."
       },
       "no_modules": {
         "description": "Nog geen modules. Organiseer werk in subprojecten met eigen leads en toegewezenen."
       },
       "no_work_items": {
-        "description": "Nog geen werkitems. Voeg er een toe om je werk beter te structureren."
+        "description": "Nog geen taken. Voeg er een toe om je werk beter te structureren."
       },
       "no_sub_work_items": {
-        "description": "Nog geen subwerkitems. Voeg er een toe om je werk beter te structureren."
+        "description": "Nog geen subtaken. Voeg er een toe om je werk beter te structureren."
       },
       "page": {
         "no_templates": {
@@ -322,7 +322,7 @@
         "page": "Kies uit sjabloon"
       },
       "tooltip": {
-        "work_item": "Kies een werkitemsjabloon"
+        "work_item": "Kies een takenjabloon"
       },
       "no_results": {
         "work_item": "Geen sjablonen gevonden.",

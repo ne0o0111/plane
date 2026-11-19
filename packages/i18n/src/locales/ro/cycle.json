@@ -25,7 +25,7 @@
   "active_cycle_analytics": {
     "empty_state": {
       "progress": {
-        "title": "Adaugă elemente de lucru la ciclu pentru a-i vedea\n progresul"
+        "title": "Adaugă sarcini la ciclu pentru a-i vedea\n progresul"
       },
       "priority": {
         "title": "Observă elementele de lucru cu prioritate ridicată abordate în\n ciclu dintr-o privire."

@@ -240,10 +240,10 @@
         "description": "Zatiaľ žiadne moduly. Zorganizujte prácu do podprojektov s vyhradenými vedúcimi a priradenými."
       },
       "no_work_items": {
-        "description": "Ešte nemáte pracovné položky. Pridajte jednu, aby ste lepšie struktúrovali svoju prácu."
+        "description": "Ešte nemáte úlohy. Pridajte jednu, aby ste lepšie struktúrovali svoju prácu."
       },
       "no_sub_work_items": {
-        "description": "Ešte nemáte pod-pracovné položky. Pridajte jednu, aby ste lepšie struktúrovali svoju prácu."
+        "description": "Ešte nemáte pod-úlohy. Pridajte jednu, aby ste lepšie struktúrovali svoju prácu."
       },
       "page": {
         "no_templates": {

@@ -86,7 +86,7 @@
         "export_separate_files": "De gegevens naar afzonderlijke bestanden exporteren",
         "exporting_projects": "Project exporteren",
         "format": "Formaat",
-        "filters_info": "Pas filters toe om specifieke werkitems te exporteren op basis van je criteria.",
+        "filters_info": "Pas filters toe om specifieke taken te exporteren op basis van je criteria.",
         "modal": {
           "title": "Exporteren naar",
           "toasts": {
@@ -282,12 +282,12 @@
       "templates": {
         "title": "Sjablonen",
         "heading": "Sjablonen",
-        "description": "Bespaar 80% van de tijd die je besteedt aan het aanmaken van projecten, werkitems en pagina's door sjablonen te gebruiken."
+        "description": "Bespaar 80% van de tijd die je besteedt aan het aanmaken van projecten, taken en pagina's door sjablonen te gebruiken."
       },
       "relations": {
         "title": "Relaties",
         "heading": "Relaties",
-        "description": "Maak en beheer relatietypen die werkitems in je hele werkruimte met elkaar verbinden."
+        "description": "Maak en beheer relatietypen die taken in je hele werkruimte met elkaar verbinden."
       },
       "cancel_trial": {
         "title": "Annuleer eerst je proefperiode.",
@@ -464,7 +464,7 @@
         "app_consent_unapproved_description": "Zorg dat je deze app vertrouwt voordat je die met je werkruimte verbindt.",
         "go_to_app": "Naar app",
         "enable_app_mentions": "App-vermeldingen inschakelen",
-        "enable_app_mentions_tooltip": "Wanneer dit is ingeschakeld, kunnen gebruikers deze applicatie vermelden of er werkitems aan toewijzen.",
+        "enable_app_mentions_tooltip": "Wanneer dit is ingeschakeld, kunnen gebruikers deze applicatie vermelden of er taken aan toewijzen.",
         "scopes": "Scopes",
         "select_scopes": "Scopes selecteren",
         "read_access_to": "Alleen-lezentoegang tot",

@@ -19,9 +19,9 @@
     "start_date": "Startdatum",
     "end_date": "Einddatum",
     "in_your_timezone": "In jouw tijdzone",
-    "transfer_work_items": "{count} werkitems overzetten",
+    "transfer_work_items": "{count} taken overzetten",
     "transfer": {
-      "no_cycles_available": "Geen andere cycli beschikbaar om werkitems naartoe over te zetten."
+      "no_cycles_available": "Geen andere cycli beschikbaar om taken naartoe over te zetten."
     },
     "date_range": "Datumbereik",
     "add_date": "Datum toevoegen",
@@ -29,9 +29,9 @@
       "label": "Actieve cyclus",
       "progress": "Voortgang",
       "chart": "Burndown-grafiek",
-      "priority_issue": "Prioriteitswerkitems",
+      "priority_issue": "Prioriteitstaken",
       "assignees": "Toegewezenen",
-      "issue_burndown": "Werkitem-burndown",
+      "issue_burndown": "Taak-burndown",
       "ideal": "Ideaal",
       "current": "Huidig",
       "labels": "Labels",
@@ -113,18 +113,18 @@
         }
       },
       "no_issues": {
-        "title": "Geen werkitems toegevoegd aan de cyclus",
-        "description": "Voeg werkitems toe of maak ze aan die je binnen deze cyclus wilt timeboxen en opleveren",
+        "title": "Geen taken toegevoegd aan de cyclus",
+        "description": "Voeg taken toe of maak ze aan die je binnen deze cyclus wilt timeboxen en opleveren",
         "primary_button": {
-          "text": "Nieuw werkitem aanmaken"
+          "text": "Nieuw taak aanmaken"
         },
         "secondary_button": {
-          "text": "Bestaand werkitem toevoegen"
+          "text": "Bestaand taak toevoegen"
         }
       },
       "completed_no_issues": {
-        "title": "Geen werkitems in de cyclus",
-        "description": "Geen werkitems in de cyclus. De werkitems zijn overgezet of verborgen. Pas je weergave-eigenschappen aan om eventuele verborgen werkitems te zien."
+        "title": "Geen taken in de cyclus",
+        "description": "Geen taken in de cyclus. De taken zijn overgezet of verborgen. Pas je weergave-eigenschappen aan om eventuele verborgen taken te zien."
       },
       "active": {
         "title": "Geen actieve cyclus",
@@ -144,7 +144,7 @@
         "primary_button": {
           "text": "Maak je eerste weergave",
           "comic": {
-            "title": "Weergaven werken bovenop werkitem-eigenschappen.",
+            "title": "Weergaven werken bovenop taak-eigenschappen.",
             "description": "Je kunt hier een weergave aanmaken met zoveel eigenschappen en filters als je wilt."
           }
         },
@@ -154,14 +154,14 @@
         }
       },
       "no_archived_issues": {
-        "title": "Nog geen gearchiveerde werkitems",
-        "description": "Handmatig of via automatisering kun je werkitems archiveren die voltooid of geannuleerd zijn. Vind ze hier terug zodra ze gearchiveerd zijn.",
+        "title": "Nog geen gearchiveerde taken",
+        "description": "Handmatig of via automatisering kun je taken archiveren die voltooid of geannuleerd zijn. Vind ze hier terug zodra ze gearchiveerd zijn.",
         "primary_button": {
           "text": "Automatisering instellen"
         }
       },
       "issues_empty_filter": {
-        "title": "Geen werkitems gevonden die overeenkomen met de toegepaste filters",
+        "title": "Geen taken gevonden die overeenkomen met de toegepaste filters",
         "secondary_button": {
           "text": "Alle filters wissen"
         }
@@ -190,25 +190,25 @@
   "project_issues": {
     "empty_state": {
       "no_issues": {
-        "title": "Maak een werkitem aan en wijs het toe aan iemand, zelfs aan jezelf",
-        "description": "Zie werkitems als klussen, taken, werk of JTBD. Wat we mooi vinden. Een werkitem en zijn subwerkitems zijn meestal tijdgebonden acties die zijn toegewezen aan leden van je team. Je team maakt werkitems aan, wijst ze toe en voltooit ze om je project richting zijn doel te bewegen.",
+        "title": "Maak een taak aan en wijs het toe aan iemand, zelfs aan jezelf",
+        "description": "Zie taken als klussen, taken, werk of JTBD. Wat we mooi vinden. Een taak en zijn subtaken zijn meestal tijdgebonden acties die zijn toegewezen aan leden van je team. Je team maakt taken aan, wijst ze toe en voltooit ze om je project richting zijn doel te bewegen.",
         "primary_button": {
-          "text": "Maak je eerste werkitem",
+          "text": "Maak je eerste taak",
           "comic": {
-            "title": "Werkitems zijn de bouwstenen in Plane.",
-            "description": "De Plane UI opnieuw ontwerpen, het bedrijf een nieuwe merkidentiteit geven of het nieuwe brandstofinjectiesysteem lanceren zijn voorbeelden van werkitems die waarschijnlijk subwerkitems hebben."
+            "title": "Taken zijn de bouwstenen in Plane.",
+            "description": "De Plane UI opnieuw ontwerpen, het bedrijf een nieuwe merkidentiteit geven of het nieuwe brandstofinjectiesysteem lanceren zijn voorbeelden van taken die waarschijnlijk subtaken hebben."
           }
         }
       },
       "no_archived_issues": {
-        "title": "Nog geen gearchiveerde werkitems",
-        "description": "Handmatig of via automatisering kun je werkitems archiveren die voltooid of geannuleerd zijn. Vind ze hier terug zodra ze gearchiveerd zijn.",
+        "title": "Nog geen gearchiveerde taken",
+        "description": "Handmatig of via automatisering kun je taken archiveren die voltooid of geannuleerd zijn. Vind ze hier terug zodra ze gearchiveerd zijn.",
         "primary_button": {
           "text": "Automatisering instellen"
         }
       },
       "issues_empty_filter": {
-        "title": "Geen werkitems gevonden die overeenkomen met de toegepaste filters",
+        "title": "Geen taken gevonden die overeenkomen met de toegepaste filters",
         "secondary_button": {
           "text": "Alle filters wissen"
         }
@@ -225,7 +225,7 @@
     "empty_state": {
       "general": {
         "title": "Breng je projectmijlpalen in kaart met modules en volg geaggregeerd werk eenvoudig.",
-        "description": "Een groep werkitems die tot een logische, hiërarchische bovenliggende eenheid behoort vormt een module. Zie ze als een manier om werk te volgen per projectmijlpaal. Ze hebben hun eigen perioden en deadlines, evenals analyses om je te helpen zien hoe dichtbij of ver je van een mijlpaal bent.",
+        "description": "Een groep taken die tot een logische, hiërarchische bovenliggende eenheid behoort vormt een module. Zie ze als een manier om werk te volgen per projectmijlpaal. Ze hebben hun eigen perioden en deadlines, evenals analyses om je te helpen zien hoe dichtbij of ver je van een mijlpaal bent.",
         "primary_button": {
           "text": "Bouw je eerste module",
           "comic": {
@@ -235,13 +235,13 @@
         }
       },
       "no_issues": {
-        "title": "Geen werkitems in de module",
-        "description": "Maak werkitems aan of voeg ze toe die je als onderdeel van deze module wilt bereiken",
+        "title": "Geen taken in de module",
+        "description": "Maak taken aan of voeg ze toe die je als onderdeel van deze module wilt bereiken",
         "primary_button": {
-          "text": "Nieuwe werkitems aanmaken"
+          "text": "Nieuwe taken aanmaken"
         },
         "secondary_button": {
-          "text": "Een bestaand werkitem toevoegen"
+          "text": "Een bestaand taak toevoegen"
         }
       },
       "archived": {
@@ -272,7 +272,7 @@
     "empty_state": {
       "general": {
         "title": "Schrijf een notitie, een document of een volledige kennisbank. Laat Galileo, de AI-assistent van Plane, je helpen om te beginnen",
-        "description": "Pagina's zijn de ruimte om je gedachten kwijt te kunnen in Plane. Maak notities van vergaderingen, formatteer ze eenvoudig, embed werkitems, deel ze in met een bibliotheek aan componenten en houd ze allemaal binnen de context van je project. Roep Galileo, de AI van Plane, aan met een sneltoets of een klik op de knop om elk document snel af te ronden.",
+        "description": "Pagina's zijn de ruimte om je gedachten kwijt te kunnen in Plane. Maak notities van vergaderingen, formatteer ze eenvoudig, embed taken, deel ze in met een bibliotheek aan componenten en houd ze allemaal binnen de context van je project. Roep Galileo, de AI van Plane, aan met een sneltoets of een klik op de knop om elk document snel af te ronden.",
         "primary_button": {
           "text": "Maak je eerste pagina"
         }
@@ -301,7 +301,7 @@
     "empty_state": {
       "inbox": {
         "title": "Intake is niet ingeschakeld voor het project.",
-        "description": "Intake helpt je binnenkomende verzoeken aan je project te beheren en ze als werkitems toe te voegen aan je workflow. Schakel intake in via de projectinstellingen om verzoeken te beheren.",
+        "description": "Intake helpt je binnenkomende verzoeken aan je project te beheren en ze als taken toe te voegen aan je workflow. Schakel intake in via de projectinstellingen om verzoeken te beheren.",
         "primary_button": {
           "text": "Functies beheren"
         }
@@ -353,7 +353,7 @@
     "order_by": {
       "name": "Naam",
       "progress": "Voortgang",
-      "issues": "Aantal werkitems",
+      "issues": "Aantal taken",
       "due_date": "Vervaldatum",
       "created_at": "Aanmaakdatum",
       "manual": "Handmatig"

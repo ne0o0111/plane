@@ -150,7 +150,7 @@
       "project_updates_empty_state": "Proiectele conectate cu Canale Slack vor apărea aici.",
       "project_updates_form": {
         "title": "Configurează Actualizări Proiect",
-        "description": "Primește notificări de actualizări proiect în Slack când sunt create elemente de lucru",
+        "description": "Primește notificări de actualizări proiect în Slack când sunt create sarcini",
         "failed_to_load_channels": "Nu s-au putut încărca canalele din Slack",
         "project_dropdown": {
           "placeholder": "Selectează un proiect",

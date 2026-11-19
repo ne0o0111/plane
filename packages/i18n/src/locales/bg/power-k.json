@@ -1,12 +1,12 @@
 {
   "power_k": {
     "actions_commands": {
-      "bulk_delete_work_items": "Групово изтриване на работни елементи"
+      "bulk_delete_work_items": "Групово изтриване на задачи"
     },
     "contextual_actions": {
       "work_item": {
         "title": "Действия с работния елемент",
-        "indicator": "Работен елемент",
+        "indicator": "Задача",
         "change_state": "Промени състоянието",
         "change_priority": "Промени приоритета",
         "change_assignees": "Възложи на",
@@ -66,7 +66,7 @@
       }
     },
     "creation_actions": {
-      "create_work_item": "Нов работен елемент",
+      "create_work_item": "Нов задача",
       "create_page": "Нова страница",
       "create_view": "Нов изглед",
       "create_cycle": "Нов цикъл",
@@ -83,9 +83,9 @@
       "nav_account_settings": "Към настройките на акаунта",
       "open_project": "Отвори проект",
       "nav_projects_list": "Към списъка с проекти",
-      "nav_all_workspace_work_items": "Към всички работни елементи",
-      "nav_assigned_workspace_work_items": "Към възложените работни елементи",
-      "nav_created_workspace_work_items": "Към създадените работни елементи",
+      "nav_all_workspace_work_items": "Към всички задачи",
+      "nav_assigned_workspace_work_items": "Към възложените задачи",
+      "nav_created_workspace_work_items": "Към създадените задачи",
       "nav_subscribed_workspace_work_items": "Към работните елементи с абонамент",
       "nav_workspace_analytics": "Към анализите на работното пространство",
       "nav_workspace_drafts": "Към черновите на работното пространство",

@@ -42,14 +42,14 @@
       "empty": {
         "project": "Je recente projecten verschijnen hier zodra je er een bezoekt.",
         "page": "Je recente pagina's verschijnen hier zodra je er een bezoekt.",
-        "issue": "Je recente werkitems verschijnen hier zodra je er een bezoekt.",
+        "issue": "Je recente taken verschijnen hier zodra je er een bezoekt.",
         "default": "Je hebt nog niets recents."
       },
       "filters": {
         "all": "Alles",
         "projects": "Projecten",
         "pages": "Pagina's",
-        "issues": "Werkitems"
+        "issues": "Taken"
       }
     },
     "new_at_plane": {

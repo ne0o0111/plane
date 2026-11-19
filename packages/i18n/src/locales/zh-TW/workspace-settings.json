@@ -86,7 +86,7 @@
         "export_separate_files": "將資料匯出為個別檔案",
         "exporting_projects": "匯出專案",
         "format": "格式",
-        "filters_info": "應用篩選器以根據您的條件匯出特定工作項。",
+        "filters_info": "應用篩選器以根據您的條件匯出特定任務。",
         "modal": {
           "title": "匯出至",
           "toasts": {
@@ -464,7 +464,7 @@
         "app_consent_unapproved_description": "將此應用程式連接到您的工作區之前，請確認您信任它。",
         "go_to_app": "前往應用程式",
         "enable_app_mentions": "啟用應用程式提及",
-        "enable_app_mentions_tooltip": "啟用此功能後，使用者可以提及或指派工作項目給此應用程式。",
+        "enable_app_mentions_tooltip": "啟用此功能後，使用者可以提及或指派任務給此應用程式。",
         "scopes": "範圍",
         "select_scopes": "選擇範圍",
         "read_access_to": "唯讀存取",

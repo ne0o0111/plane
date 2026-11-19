@@ -30,12 +30,12 @@
         "description": "Seleziona una notifica per visualizzarne i dettagli."
       },
       "all": {
-        "title": "Nessun elemento di lavoro assegnato",
-        "description": "Qui puoi vedere gli aggiornamenti degli elementi di lavoro assegnati a te"
+        "title": "Nessun attività assegnato",
+        "description": "Qui puoi vedere gli aggiornamenti degli attività assegnati a te"
       },
       "mentions": {
-        "title": "Nessun elemento di lavoro assegnato",
-        "description": "Qui puoi vedere gli aggiornamenti degli elementi di lavoro assegnati a te"
+        "title": "Nessun attività assegnato",
+        "description": "Qui puoi vedere gli aggiornamenti degli attività assegnati a te"
       }
     },
     "tabs": {

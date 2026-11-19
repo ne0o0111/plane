@@ -9,7 +9,7 @@
       "cant_set_default_inactive_message": "Pred nastavením ako predvolený tento typ aktivujte",
       "set_default_confirmation": {
         "title": "Nastaviť ako predvolený typ pracovnej položky",
-        "description": "Nastavením {name} ako predvoleného sa tento typ importuje do všetkých projektov v tomto pracovnom priestore. Všetky nové pracovné položky budú štandardne používať tento typ.",
+        "description": "Nastavením {name} ako predvoleného sa tento typ importuje do všetkých projektov v tomto pracovnom priestore. Všetky nové úlohy budú štandardne používať tento typ.",
         "confirm_button": "Nastaviť ako predvolený"
       },
       "properties": {
@@ -361,13 +361,13 @@
     "empty_state": {
       "enable": {
         "title": "Povoliť Typy pracovných položiek",
-        "description": "Formujte pracovné položky podľa vašej práce pomocou Typov pracovných položiek. Prispôsobte ich ikonami, pozadiami a vlastnosťami a nakonfigurujte ich pre tento projekt.",
+        "description": "Formujte úlohy podľa vašej práce pomocou Typov pracovných položiek. Prispôsobte ich ikonami, pozadiami a vlastnosťami a nakonfigurujte ich pre tento projekt.",
         "primary_button": {
           "text": "Povoliť"
         },
         "confirmation": {
           "title": "Po povolení nemožno Typy pracovných položiek zakázať.",
-          "description": "Pracovná položka Plane sa stane predvoleným typom pracovnej položky pre tento projekt a zobrazí sa so svojou ikonou a pozadím v tomto projekte.",
+          "description": "Úloha Plane sa stane predvoleným typom pracovnej položky pre tento projekt a zobrazí sa so svojou ikonou a pozadím v tomto projekte.",
           "button": {
             "default": "Povoliť",
             "loading": "Nastavuje sa"
@@ -376,14 +376,14 @@
       },
       "get_pro": {
         "title": "Získajte Pro pre povolenie Typov pracovných položiek.",
-        "description": "Formujte pracovné položky podľa vašej práce pomocou Typov pracovných položiek. Prispôsobte ich ikonami, pozadiami a vlastnosťami a nakonfigurujte ich pre tento projekt.",
+        "description": "Formujte úlohy podľa vašej práce pomocou Typov pracovných položiek. Prispôsobte ich ikonami, pozadiami a vlastnosťami a nakonfigurujte ich pre tento projekt.",
         "primary_button": {
           "text": "Získať Pro"
         }
       },
       "upgrade": {
         "title": "Inovácia pre povolenie Typov pracovných položiek.",
-        "description": "Formujte pracovné položky podľa vašej práce pomocou Typov pracovných položiek. Prispôsobte ich ikonami, pozadiami a vlastnosťami a nakonfigurujte ich pre tento projekt.",
+        "description": "Formujte úlohy podľa vašej práce pomocou Typov pracovných položiek. Prispôsobte ich ikonami, pozadiami a vlastnosťami a nakonfigurujte ich pre tento projekt.",
         "primary_button": {
           "text": "Inovovať"
         }
@@ -439,7 +439,7 @@
       "content": {
         "intro": "Typ pracovnej položky {workItemTypeName} obsahuje:",
         "parent_items": "{count, plural, one {Bude odstránené # nadradené prepojenie} few {Budú odstránené # nadradené prepojenia} other {Bude odstránených # nadradených prepojení}}.",
-        "child_items": "{count, plural, one {podradenú pracovnú položku} few {podradené pracovné položky} other {podradených pracovných položiek}}",
+        "child_items": "{count, plural, one {podradenú pracovnú položku} few {podradené úlohy} other {podradených pracovných položiek}}",
         "parent_line_suffix_when_also_children": ", a ",
         "footer": "Táto zmena odstráni nadradené a podradené vzťahy u existujúcich pracovných položiek typu {workItemTypeName}."
       },

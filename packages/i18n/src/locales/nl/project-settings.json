@@ -21,7 +21,7 @@
       },
       "confirm_project_name_label": "Typ de projectnaam om door te gaan.",
       "leave_project": {
-        "confirm_description": "Weet je zeker dat je het project {projectName} wilt verlaten? Werkitems die aan jou zijn gekoppeld, worden ontoegankelijk."
+        "confirm_description": "Weet je zeker dat je het project {projectName} wilt verlaten? Taken die aan jou zijn gekoppeld, worden ontoegankelijk."
       }
     },
     "members": {
@@ -33,8 +33,8 @@
       "project_subscribers": "Projectabonnees",
       "project_subscribers_description": "Selecteer leden die meldingen voor dit project ontvangen.",
       "guest_super_permissions": {
-        "title": "Geef gastgebruikers weergavetoegang tot alle werkitems:",
-        "sub_heading": "Hiermee krijgen gasten weergavetoegang tot alle werkitems van het project."
+        "title": "Geef gastgebruikers weergavetoegang tot alle taken:",
+        "sub_heading": "Hiermee krijgen gasten weergavetoegang tot alle taken van het project."
       },
       "invite_members": {
         "title": "Leden uitnodigen",
@@ -44,7 +44,7 @@
     },
     "states": {
       "heading": "Statussen",
-      "description": "Definieer en pas workflowstatussen aan om de voortgang van je werkitems te volgen.",
+      "description": "Definieer en pas workflowstatussen aan om de voortgang van je taken te volgen.",
       "describe_this_state_for_your_members": "Beschrijf deze status voor je leden.",
       "empty_state": {
         "title": "Geen statussen beschikbaar voor de groep {groupKey}",
@@ -53,7 +53,7 @@
     },
     "labels": {
       "heading": "Labels",
-      "description": "Maak eigen labels om je werkitems te categoriseren en te ordenen",
+      "description": "Maak eigen labels om je taken te categoriseren en te ordenen",
       "label_title": "Labeltitel",
       "label_title_is_required": "Labeltitel is verplicht",
       "label_max_char": "Labelnaam mag niet langer zijn dan 255 tekens",
@@ -63,7 +63,7 @@
     },
     "estimates": {
       "heading": "Inschattingen",
-      "description": "Stel inschattingssystemen in om de benodigde inspanning voor elk werkitem te volgen en te communiceren.",
+      "description": "Stel inschattingssystemen in om de benodigde inspanning voor elk taak te volgen en te communiceren.",
       "label": "Inschattingen",
       "title": "Inschattingen inschakelen voor mijn project",
       "enable_description": "Ze helpen je om de complexiteit en werklast van het team te communiceren.",
@@ -187,14 +187,14 @@
       "heading": "Automatiseringen",
       "description": "Configureer geautomatiseerde acties om je projectbeheerworkflow te stroomlijnen en handmatige taken te verminderen.",
       "auto-archive": {
-        "title": "Gesloten werkitems automatisch archiveren",
-        "description": "Plane archiveert automatisch werkitems die zijn voltooid of geannuleerd.",
-        "duration": "Archiveer automatisch werkitems die gesloten zijn gedurende"
+        "title": "Gesloten taken automatisch archiveren",
+        "description": "Plane archiveert automatisch taken die zijn voltooid of geannuleerd.",
+        "duration": "Archiveer automatisch taken die gesloten zijn gedurende"
       },
       "auto-close": {
-        "title": "Werkitems automatisch sluiten",
-        "description": "Plane sluit automatisch werkitems die niet zijn voltooid of geannuleerd.",
-        "duration": "Sluit automatisch werkitems die inactief zijn gedurende",
+        "title": "Taken automatisch sluiten",
+        "description": "Plane sluit automatisch taken die niet zijn voltooid of geannuleerd.",
+        "duration": "Sluit automatisch taken die inactief zijn gedurende",
         "auto_close_status": "Status bij automatisch sluiten"
       },
       "auto-remind": {
@@ -206,25 +206,25 @@
     "empty_state": {
       "labels": {
         "title": "Nog geen labels",
-        "description": "Maak labels om werkitems in je project te ordenen en te filteren."
+        "description": "Maak labels om taken in je project te ordenen en te filteren."
       },
       "estimates": {
         "title": "Nog geen inschattingssystemen",
-        "description": "Maak een set inschattingen om de hoeveelheid werk per werkitem te communiceren.",
+        "description": "Maak een set inschattingen om de hoeveelheid werk per taak te communiceren.",
         "primary_button": "Inschattingssysteem toevoegen"
       },
       "integrations": {
         "title": "Geen integraties geconfigureerd",
-        "description": "Configureer GitHub en andere integraties om de werkitems van je project te synchroniseren."
+        "description": "Configureer GitHub en andere integraties om de taken van je project te synchroniseren."
       }
     },
     "workflows": {
       "toggle": {
         "title": "Workflows inschakelen",
-        "description": "Stel workflows in om de verplaatsing van werkitems te sturen",
+        "description": "Stel workflows in om de verplaatsing van taken te sturen",
         "no_states_tooltip": "Er zijn geen statussen toegevoegd aan de workflow.",
-        "no_work_item_types_tooltip": "Er zijn geen werkitemtypen toegevoegd aan de workflow.",
-        "no_states_or_work_item_types_tooltip": "Er zijn geen statussen of werkitemtypen toegevoegd aan de workflow.",
+        "no_work_item_types_tooltip": "Er zijn geen taaktypen toegevoegd aan de workflow.",
+        "no_states_or_work_item_types_tooltip": "Er zijn geen statussen of taaktypen toegevoegd aan de workflow.",
         "toast": {
           "loading": {
             "enabling": "Workflows inschakelen",
@@ -241,7 +241,7 @@
         }
       },
       "heading": "Workflows",
-      "description": "Automatiseer overgangen van werkitems en stel regels in om te bepalen hoe taken door je projectpijplijn bewegen.",
+      "description": "Automatiseer overgangen van taken en stel regels in om te bepalen hoe taken door je projectpijplijn bewegen.",
       "add_button": "Nieuwe workflow toevoegen",
       "search": "Workflows zoeken",
       "detail": {
@@ -249,10 +249,10 @@
         "add_states": "Statussen toevoegen",
         "unmapped_states": {
           "title": "Niet-toegewezen statussen gedetecteerd",
-          "description": "Sommige werkitems van de geselecteerde typen hebben momenteel een status die niet in deze workflow bestaat.",
+          "description": "Sommige taken van de geselecteerde typen hebben momenteel een status die niet in deze workflow bestaat.",
           "note": "Als je deze workflow inschakelt, gaan deze items automatisch naar de beginstatus van deze workflow.",
           "label": "Ontbrekende statussen",
-          "tooltip": "Sommige werkitems hebben een status die niet aan deze workflow is toegewezen. Open de workflow om ze te bekijken."
+          "tooltip": "Sommige taken hebben een status die niet aan deze workflow is toegewezen. Open de workflow om ze te bekijken."
         }
       },
       "select_states": {
@@ -262,7 +262,7 @@
         }
       },
       "default_footer": {
-        "fallback_message": "Deze workflow geldt voor elk werkitemtype dat niet aan een workflow is toegewezen."
+        "fallback_message": "Deze workflow geldt voor elk taaktype dat niet aan een workflow is toegewezen."
       },
       "create": {
         "heading": "Nieuwe workflow aanmaken",
@@ -281,7 +281,7 @@
           }
         },
         "work_item_type": {
-          "label": "Werkitemtype"
+          "label": "Taaktype"
         },
         "success": {
           "title": "Gelukt!",
@@ -325,8 +325,8 @@
       }
     },
     "work_item_types": {
-      "heading": "Werkitemtypen",
-      "description": "Maak en pas verschillende typen werkitems aan met unieke eigenschappen"
+      "heading": "Taaktypen",
+      "description": "Maak en pas verschillende typen taken aan met unieke eigenschappen"
     },
     "features": {
       "cycles": {
@@ -373,25 +373,25 @@
         },
         "in_app": {
           "title": "In-app",
-          "description": "Ontvang nieuwe werkitems van leden en gasten in je werkruimte zonder je bestaande werkitems te verstoren."
+          "description": "Ontvang nieuwe taken van leden en gasten in je werkruimte zonder je bestaande taken te verstoren."
         },
         "email": {
           "title": "E-mail",
-          "description": "Verzamel nieuwe werkitems van iedereen die een e-mail stuurt naar een Plane-e-mailadres.",
+          "description": "Verzamel nieuwe taken van iedereen die een e-mail stuurt naar een Plane-e-mailadres.",
           "fieldName": "E-mail-ID"
         },
         "form": {
           "title": "Formulieren",
-          "description": "Laat mensen buiten je werkruimte via een speciaal en beveiligd formulier mogelijke nieuwe werkitems voor je aanmaken.",
+          "description": "Laat mensen buiten je werkruimte via een speciaal en beveiligd formulier mogelijke nieuwe taken voor je aanmaken.",
           "fieldName": "Standaard formulier-URL",
-          "create_forms": "Maak formulieren met werkitemtypen",
+          "create_forms": "Maak formulieren met taaktypen",
           "manage_forms": "Formulieren beheren",
           "manage_forms_tooltip": "Vraag je werkruimtebeheerder om dit te beheren.",
           "create_form": "Formulier aanmaken",
           "edit_form": "Formuliergegevens bewerken",
           "form_title": "Formuliertitel",
           "form_title_required": "Formuliertitel is verplicht",
-          "work_item_type": "Werkitemtype",
+          "work_item_type": "Taaktype",
           "remove_property": "Eigenschap verwijderen",
           "select_properties": "Eigenschappen selecteren",
           "search_placeholder": "Zoek naar eigenschappen",
@@ -419,16 +419,16 @@
       "time_tracking": {
         "title": "Tijdregistratie",
         "short_title": "Tijdregistratie",
-        "description": "Registreer de tijd die je aan werkitems en projecten besteedt.",
+        "description": "Registreer de tijd die je aan taken en projecten besteedt.",
         "toggle_title": "Tijdregistratie inschakelen",
         "toggle_description": "Projectleden kunnen gewerkte tijd registreren."
       },
       "milestones": {
         "title": "Mijlpalen",
         "short_title": "Mijlpalen",
-        "description": "Mijlpalen bieden een laag om werkitems af te stemmen op gedeelde einddatums.",
+        "description": "Mijlpalen bieden een laag om taken af te stemmen op gedeelde einddatums.",
         "toggle_title": "Mijlpalen inschakelen",
-        "toggle_description": "Organiseer werkitems op mijlpaaldeadlines."
+        "toggle_description": "Organiseer taken op mijlpaaldeadlines."
       },
       "toasts": {
         "loading": "Projectfunctie bijwerken...",
@@ -442,7 +442,7 @@
     },
     "templates": {
       "heading": "Sjablonen",
-      "description": "Bespaar 80% van de tijd die je besteedt aan het aanmaken van projecten, werkitems en pagina's als je sjablonen gebruikt."
+      "description": "Bespaar 80% van de tijd die je besteedt aan het aanmaken van projecten, taken en pagina's als je sjablonen gebruikt."
     },
     "cycles": {
       "auto_schedule": {
@@ -495,8 +495,8 @@
             }
           },
           "auto_rollover": {
-            "label": "Werkitems automatisch doorschuiven",
-            "tooltip": "Verplaats op de dag dat een cyclus eindigt alle onvoltooide werkitems naar de volgende cyclus."
+            "label": "Taken automatisch doorschuiven",
+            "tooltip": "Verplaats op de dag dat een cyclus eindigt alle onvoltooide taken naar de volgende cyclus."
           }
         },
         "toast": {

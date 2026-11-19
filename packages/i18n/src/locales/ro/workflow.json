@@ -2,7 +2,7 @@
   "workflows": {
     "workflow_states": {
       "work_item_creation": "Permite elemente noi de lucru",
-      "work_item_creation_disable_tooltip": "Crearea de elemente de lucru este dezactivată pentru această stare",
+      "work_item_creation_disable_tooltip": "Crearea de sarcini este dezactivată pentru această stare",
       "default_state": "Starea implicită permite tuturor membrilor să creeze elemente noi de lucru. Acest lucru nu poate fi schimbat",
       "state_change_count": "{count, plural, one {1 schimbare de stare permisă} other {{count} schimbări de stare permise}}",
       "movers_count": "{count, plural, one {1 evaluator listat} other {{count} evaluatori listați}}",
@@ -14,19 +14,19 @@
         "move_to": "Schimbă starea la",
         "movers": {
           "label": "Când este evaluat de",
-          "tooltip": "Evaluatorii sunt persoane care au permisiunea de a muta elemente de lucru dintr-o stare în alta.",
+          "tooltip": "Evaluatorii sunt persoane care au permisiunea de a muta sarcini dintr-o stare în alta.",
           "add": "Adaugă evaluatori"
         }
       }
     },
     "workflow_disabled": {
-      "title": "Nu poți muta acest element de lucru aici."
+      "title": "Nu poți muta acest sarcină aici."
     },
     "workflow_enabled": {
       "label": "Schimbare de stare"
     },
     "workflow_tree": {
-      "label": "Pentru elemente de lucru în",
+      "label": "Pentru sarcini în",
       "state_change_label": "poate să-l mute la"
     },
     "empty_state": {

@@ -38,7 +38,7 @@
     "select_issue_sync_direction": "Изберете посока на синхронизация на задачите",
     "allow_bidirectional_sync": "Двупосочна – синхронизира задачи и коментари в двете посоки между GitHub и Plane",
     "allow_unidirectional_sync": "Еднопосочна – синхронизира задачи и коментари само от GitHub към Plane",
-    "allow_unidirectional_sync_warning": "Данните от задачата в GitHub ще заменят данните в свързания работен елемент в Plane (само GitHub → Plane)",
+    "allow_unidirectional_sync_warning": "Данните от задачата в GitHub ще заменят данните в свързания задача в Plane (само GitHub → Plane)",
     "remove_project_issue_sync": "Премахни тази синхронизация на задачи в проекта",
     "remove_project_issue_sync_confirmation": "Сигурни ли сте, че искате да премахнете тази синхронизация на задачи в проекта?",
     "add_pr_state_mapping": "Добави съпоставяне на състояния на pull request за проект в Plane",
@@ -96,7 +96,7 @@
     "select_issue_sync_direction": "Изберете посока на синхронизация на задачите",
     "allow_bidirectional_sync": "Двупосочна – синхронизира задачи и коментари в двете посоки между Gitlab и Plane",
     "allow_unidirectional_sync": "Еднопосочна – синхронизира задачи и коментари само от Gitlab към Plane",
-    "allow_unidirectional_sync_warning": "Данните от задачата в Gitlab ще заменят данните в свързания работен елемент в Plane (само Gitlab → Plane)",
+    "allow_unidirectional_sync_warning": "Данните от задачата в Gitlab ще заменят данните в свързания задача в Plane (само Gitlab → Plane)",
     "remove_project_issue_sync": "Премахни тази синхронизация на задачи в проекта",
     "remove_project_issue_sync_confirmation": "Сигурни ли сте, че искате да премахнете тази синхронизация на задачи в проекта?",
     "ISSUE_OPEN": "Отворена задача",
@@ -150,7 +150,7 @@
       "project_updates_empty_state": "Проектите, свързани с канали в Slack, ще се показват тук.",
       "project_updates_form": {
         "title": "Конфигуриране на канал в Slack",
-        "description": "Получавайте известия за проекта в избрания канал в Slack, когато бъде създаден работен елемент",
+        "description": "Получавайте известия за проекта в избрания канал в Slack, когато бъде създаден задача",
         "failed_to_load_channels": "Каналите от Slack не можаха да бъдат заредени",
         "project_dropdown": {
           "placeholder": "Изберете проект",

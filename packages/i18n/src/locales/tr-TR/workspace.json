@@ -54,7 +54,7 @@
     "empty_state": {
       "general": {
         "title": "Projelerinizin, aktivitenizin ve metriklerinizin genel görünümü",
-        "description": "Plane'e hoş geldiniz, sizi aramızda görmekten heyecan duyuyoruz. İlk projenizi oluşturun ve iş öğelerinizi takip edin, bu sayfa ilerlemenize yardımcı olacak bir alana dönüşecek. Yöneticiler ayrıca ekiplerinin ilerlemesine yardımcı olacak öğeler görecek.",
+        "description": "Plane'e hoş geldiniz, sizi aramızda görmekten heyecan duyuyoruz. İlk projenizi oluşturun ve görevlernizi takip edin, bu sayfa ilerlemenize yardımcı olacak bir alana dönüşecek. Yöneticiler ayrıca ekiplerinin ilerlemesine yardımcı olacak öğeler görecek.",
         "primary_button": {
           "text": "İlk projenizi oluşturun",
           "comic": {
@@ -70,26 +70,26 @@
     "page_label": "{workspace} - Analitik",
     "open_tasks": "Toplam açık görev",
     "error": "Veri alınırken bir hata oluştu.",
-    "work_items_closed_in": "Kapanan iş öğeleri",
+    "work_items_closed_in": "Kapanan görevler",
     "selected_projects": "Seçilen projeler",
     "total_members": "Toplam üye",
     "total_cycles": "Toplam döngü",
     "total_modules": "Toplam modül",
     "pending_work_items": {
-      "title": "Bekleyen iş öğeleri",
-      "empty_state": "Ekip arkadaşlarınız tarafından bekleyen iş öğelerinin analizi burada görünür."
+      "title": "Bekleyen görevler",
+      "empty_state": "Ekip arkadaşlarınız tarafından bekleyen görevlernin analizi burada görünür."
     },
     "work_items_closed_in_a_year": {
-      "title": "Bir yılda kapanan iş öğeleri",
-      "empty_state": "Aynı grafikte analizini görmek için iş öğelerini kapatın."
+      "title": "Bir yılda kapanan görevler",
+      "empty_state": "Aynı grafikte analizini görmek için görevlerni kapatın."
     },
     "most_work_items_created": {
-      "title": "En çok iş öğesi oluşturan",
-      "empty_state": "Ekip arkadaşlarınız ve onların oluşturduğu iş öğesi sayıları burada görünür."
+      "title": "En çok görev oluşturan",
+      "empty_state": "Ekip arkadaşlarınız ve onların oluşturduğu görev sayıları burada görünür."
     },
     "most_work_items_closed": {
-      "title": "En çok iş öğesi kapatan",
-      "empty_state": "Ekip arkadaşlarınız ve onların kapattığı iş öğesi sayıları burada görünür."
+      "title": "En çok görev kapatan",
+      "empty_state": "Ekip arkadaşlarınız ve onların kapattığı görev sayıları burada görünür."
     },
     "tabs": {
       "scope_and_demand": "Kapsam ve Talep",
@@ -110,15 +110,15 @@
     "empty_state": {
       "project_insights": {
         "title": "Henüz veri yok",
-        "description": "Size atanan iş öğeleri, duruma göre ayrılarak burada gösterilecektir."
+        "description": "Size atanan görevler, duruma göre ayrılarak burada gösterilecektir."
       },
       "created_vs_resolved": {
         "title": "Henüz veri yok",
-        "description": "Zaman içinde oluşturulan ve çözümlenen iş öğeleri burada gösterilecektir."
+        "description": "Zaman içinde oluşturulan ve çözümlenen görevler burada gösterilecektir."
       },
       "customized_insights": {
         "title": "Henüz veri yok",
-        "description": "Size atanan iş öğeleri, duruma göre ayrılarak burada gösterilecektir."
+        "description": "Size atanan görevler, duruma göre ayrılarak burada gösterilecektir."
       },
       "general": {
         "title": "İlerlemeyi, iş yüklerini ve tahsisleri takip edin. Eğilimleri tespit edin, engelleri kaldırın ve işi hızlandırın",
@@ -133,19 +133,19 @@
       },
       "cycle_progress": {
         "title": "Henüz veri yok",
-        "description": "Döngü ilerleme analizleri burada görünecek. İlerlemesini izlemeye başlamak için döngülere iş öğeleri ekleyin."
+        "description": "Döngü ilerleme analizleri burada görünecek. İlerlemesini izlemeye başlamak için döngülere görevler ekleyin."
       },
       "module_progress": {
         "title": "Henüz veri yok",
-        "description": "Modül ilerleme analizleri burada görünecek. İlerlemesini izlemeye başlamak için modüllere iş öğeleri ekleyin."
+        "description": "Modül ilerleme analizleri burada görünecek. İlerlemesini izlemeye başlamak için modüllere görevler ekleyin."
       },
       "intake_trends": {
         "title": "Henüz veri yok",
-        "description": "Intake eğilim analizleri burada görünecek. Eğilimleri izlemeye başlamak için intake'e iş öğeleri ekleyin."
+        "description": "Intake eğilim analizleri burada görünecek. Eğilimleri izlemeye başlamak için intake'e görevler ekleyin."
       }
     },
     "upgrade_to_plan": "{tab} sekmesini açmak için {plan} planına geçin",
-    "workitem_resolved_vs_pending": "Çözülen vs bekleyen iş öğeleri",
+    "workitem_resolved_vs_pending": "Çözülen vs bekleyen görevler",
     "projects_by_status": "Durumuna göre projeler",
     "active_users": "Aktif kullanıcılar",
     "intake_trends": "Alım Eğilimleri"
@@ -170,7 +170,7 @@
       "permission": "Bu işlemi yapma izniniz yok.",
       "cycle_delete": "Döngü silinemedi",
       "module_delete": "Modül silinemedi",
-      "issue_delete": "İş öğesi silinemedi"
+      "issue_delete": "Görev silinemedi"
     },
     "state": {
       "backlog": "Bekleme Listesi",
@@ -207,7 +207,7 @@
       },
       "no_projects": {
         "title": "Proje yok",
-        "description": "İş öğesi oluşturmak veya işlerinizi yönetmek için bir proje oluşturmalı veya bir parçası olmalısınız.",
+        "description": "Görev oluşturmak veya işlerinizi yönetmek için bir proje oluşturmalı veya bir parçası olmalısınız.",
         "primary_button": {
           "text": "İlk projenizi başlatın",
           "comic": {
@@ -234,33 +234,33 @@
     "add_view": "Görünüm ekle",
     "empty_state": {
       "all-issues": {
-        "title": "Projede iş öğesi yok",
+        "title": "Projede görev yok",
         "description": "İlk projeniz tamamlandı! Şimdi, işlerinizi izlenebilir parçalara bölün. Hadi başlayalım!",
         "primary_button": {
-          "text": "Yeni iş öğesi oluştur"
+          "text": "Yeni görev oluştur"
         }
       },
       "assigned": {
-        "title": "Henüz iş öğesi yok",
-        "description": "Size atanan iş öğeleri buradan takip edilebilir.",
+        "title": "Henüz görev yok",
+        "description": "Size atanan görevler buradan takip edilebilir.",
         "primary_button": {
-          "text": "Yeni iş öğesi oluştur"
+          "text": "Yeni görev oluştur"
         }
       },
       "created": {
-        "title": "Henüz iş öğesi yok",
-        "description": "Sizin oluşturduğunuz tüm iş öğeleri burada görünecek, doğrudan buradan takip edin.",
+        "title": "Henüz görev yok",
+        "description": "Sizin oluşturduğunuz tüm görevler burada görünecek, doğrudan buradan takip edin.",
         "primary_button": {
-          "text": "Yeni iş öğesi oluştur"
+          "text": "Yeni görev oluştur"
         }
       },
       "subscribed": {
-        "title": "Henüz iş öğesi yok",
-        "description": "İlgilendiğiniz iş öğelerine abone olun, hepsini buradan takip edin."
+        "title": "Henüz görev yok",
+        "description": "İlgilendiğiniz görevlerne abone olun, hepsini buradan takip edin."
       },
       "custom-view": {
-        "title": "Henüz iş öğesi yok",
-        "description": "Filtrelere uyan iş öğeleri burada takip edilebilir."
+        "title": "Henüz görev yok",
+        "description": "Filtrelere uyan görevler burada takip edilebilir."
       }
     },
     "delete_view": {
@@ -269,10 +269,10 @@
     }
   },
   "workspace_draft_issues": {
-    "draft_an_issue": "Taslak iş öğesi oluştur",
+    "draft_an_issue": "Taslak görev oluştur",
     "empty_state": {
-      "title": "Yarı yazılmış iş öğeleri ve yakında yorumlar burada görünecek.",
-      "description": "Bunu denemek için bir iş öğesi eklemeye başlayın ve yarıda bırakın veya ilk taslağınızı aşağıda oluşturun. 😉",
+      "title": "Yarı yazılmış görevler ve yakında yorumlar burada görünecek.",
+      "description": "Bunu denemek için bir görev eklemeye başlayın ve yarıda bırakın veya ilk taslağınızı aşağıda oluşturun. 😉",
       "primary_button": {
         "text": "İlk taslağınızı oluşturun"
       }
@@ -284,7 +284,7 @@
     "toasts": {
       "created": {
         "success": "Taslak oluşturuldu",
-        "error": "İş öğesi oluşturulamadı. Lütfen tekrar deneyin."
+        "error": "Görev oluşturulamadı. Lütfen tekrar deneyin."
       },
       "deleted": {
         "success": "Taslak silindi"
@@ -295,7 +295,7 @@
     "empty_state": {
       "general": {
         "title": "Bir not, bir belge veya tam bir bilgi tabanı yazın. Başlamanıza yardımcı olması için Plane'in yapay zeka asistanı Galileo'yu alın",
-        "description": "Sayfalar, Plane'deki düşünce saksı alanıdır. Toplantı notları alın, bunları kolayca biçimlendirin, iş öğelerini gömin, bunları bir bileşen kitaplığı kullanarak düzenleyin ve hepsini projenizin bağlamında tutun. Herhangi bir belgeyi kısa sürede yapmak için, Plane'in yapay zekası Galileo'yu bir kısayolla veya bir düğmeye tıklayarak çağırın.",
+        "description": "Sayfalar, Plane'deki düşünce saksı alanıdır. Toplantı notları alın, bunları kolayca biçimlendirin, görevlerni gömin, bunları bir bileşen kitaplığı kullanarak düzenleyin ve hepsini projenizin bağlamında tutun. Herhangi bir belgeyi kısa sürede yapmak için, Plane'in yapay zekası Galileo'yu bir kısayolla veya bir düğmeye tıklayarak çağırın.",
         "primary_button": {
           "text": "İlk sayfanızı oluşturun"
         }

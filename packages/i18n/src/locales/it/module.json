@@ -5,9 +5,9 @@
     "select": "Aggiungi moduli",
     "details_drawer": {
       "progress": {
-        "done": "{completed} di {scope, plural, one {# elemento di lavoro} many {# di elementi di lavoro} other {# elementi di lavoro}} completati",
+        "done": "{completed} di {scope, plural, one {# attività} many {# di attività} other {# attività}} completati",
         "points_done": "{completed} di {scope, plural, one {# punto} many {# di punti} other {# punti}} completati",
-        "empty": "Aggiunga elementi di lavoro al modulo per monitorare l’avanzamento."
+        "empty": "Aggiunga attività al modulo per monitorare l’avanzamento."
       }
     }
   }

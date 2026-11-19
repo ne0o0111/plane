@@ -1,12 +1,12 @@
 {
   "power_k": {
     "actions_commands": {
-      "bulk_delete_work_items": "Werkitems in bulk verwijderen"
+      "bulk_delete_work_items": "Taken in bulk verwijderen"
     },
     "contextual_actions": {
       "work_item": {
-        "title": "Werkitemacties",
-        "indicator": "Werkitem",
+        "title": "Taakacties",
+        "indicator": "Taak",
         "change_state": "Status wijzigen",
         "change_priority": "Prioriteit wijzigen",
         "change_assignees": "Toewijzen aan",
@@ -20,14 +20,14 @@
         "unsubscribe": "Afmelden voor meldingen",
         "delete": "Verwijderen",
         "copy_id": "ID kopiëren",
-        "copy_id_toast_success": "Werkitem-ID gekopieerd naar klembord.",
-        "copy_id_toast_error": "Er is een fout opgetreden bij het kopiëren van de werkitem-ID naar het klembord.",
+        "copy_id_toast_success": "Taak-ID gekopieerd naar klembord.",
+        "copy_id_toast_error": "Er is een fout opgetreden bij het kopiëren van de taak-ID naar het klembord.",
         "copy_title": "Titel kopiëren",
-        "copy_title_toast_success": "Werkitemtitel gekopieerd naar klembord.",
-        "copy_title_toast_error": "Er is een fout opgetreden bij het kopiëren van de werkitemtitel naar het klembord.",
+        "copy_title_toast_success": "Taaktitel gekopieerd naar klembord.",
+        "copy_title_toast_error": "Er is een fout opgetreden bij het kopiëren van de taaktitel naar het klembord.",
         "copy_url": "URL kopiëren",
-        "copy_url_toast_success": "Werkitem-URL gekopieerd naar klembord.",
-        "copy_url_toast_error": "Er is een fout opgetreden bij het kopiëren van de werkitem-URL naar het klembord."
+        "copy_url_toast_success": "Taak-URL gekopieerd naar klembord.",
+        "copy_url_toast_error": "Er is een fout opgetreden bij het kopiëren van de taak-URL naar het klembord."
       },
       "cycle": {
         "title": "Cyclusacties",
@@ -66,7 +66,7 @@
       }
     },
     "creation_actions": {
-      "create_work_item": "Nieuw werkitem",
+      "create_work_item": "Nieuw taak",
       "create_page": "Nieuwe pagina",
       "create_view": "Nieuwe weergave",
       "create_cycle": "Nieuwe cyclus",
@@ -83,16 +83,16 @@
       "nav_account_settings": "Ga naar accountinstellingen",
       "open_project": "Een project openen",
       "nav_projects_list": "Ga naar projectenlijst",
-      "nav_all_workspace_work_items": "Ga naar alle werkitems",
-      "nav_assigned_workspace_work_items": "Ga naar toegewezen werkitems",
-      "nav_created_workspace_work_items": "Ga naar aangemaakte werkitems",
-      "nav_subscribed_workspace_work_items": "Ga naar geabonneerde werkitems",
+      "nav_all_workspace_work_items": "Ga naar alle taken",
+      "nav_assigned_workspace_work_items": "Ga naar toegewezen taken",
+      "nav_created_workspace_work_items": "Ga naar aangemaakte taken",
+      "nav_subscribed_workspace_work_items": "Ga naar geabonneerde taken",
       "nav_workspace_analytics": "Ga naar de analyses van de werkruimte",
       "nav_workspace_drafts": "Ga naar concepten van werkruimte",
       "nav_workspace_archives": "Ga naar archieven van werkruimte",
       "open_workspace_setting": "Een instelling van de werkruimte openen",
       "nav_workspace_settings": "Ga naar instellingen van werkruimte",
-      "nav_project_work_items": "Ga naar werkitems",
+      "nav_project_work_items": "Ga naar taken",
       "open_project_cycle": "Een cyclus openen",
       "nav_project_cycles": "Ga naar cycli",
       "open_project_module": "Een module openen",

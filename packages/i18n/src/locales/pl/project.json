@@ -155,7 +155,7 @@
       },
       "no_archived_issues": {
         "title": "Brak zarchiwizowanych elementów pracy",
-        "description": "Ręcznie lub przez automatyzację możesz archiwizować elementy pracy, które są ukończone lub anulowane. Znajdziesz je tutaj po zarchiwizowaniu.",
+        "description": "Ręcznie lub przez automatyzację możesz archiwizować zadania, które są ukończone lub anulowane. Znajdziesz je tutaj po zarchiwizowaniu.",
         "primary_button": {
           "text": "Ustaw automatyzację"
         }
@@ -190,7 +190,7 @@
   "project_issues": {
     "empty_state": {
       "no_issues": {
-        "title": "Utwórz i przypisz element pracy",
+        "title": "Utwórz i przypisz zadanie",
         "description": "Elementy to zadania, które przypisujesz sobie lub zespołowi. Śledź ich postęp.",
         "primary_button": {
           "text": "Utwórz pierwszy element",

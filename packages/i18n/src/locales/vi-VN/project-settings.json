@@ -21,7 +21,7 @@
       },
       "confirm_project_name_label": "Nhập tên dự án để tiếp tục.",
       "leave_project": {
-        "confirm_description": "Bạn có chắc chắn muốn rời dự án {projectName} không? Các mục công việc liên quan đến bạn sẽ không thể truy cập được nữa."
+        "confirm_description": "Bạn có chắc chắn muốn rời dự án {projectName} không? Các task liên quan đến bạn sẽ không thể truy cập được nữa."
       }
     },
     "members": {
@@ -33,8 +33,8 @@
       "project_subscribers": "Người theo dõi dự án",
       "project_subscribers_description": "Chọn các thành viên sẽ nhận thông báo cho dự án này.",
       "guest_super_permissions": {
-        "title": "Cấp quyền cho người dùng khách xem tất cả mục công việc:",
-        "sub_heading": "Điều này sẽ cho phép khách xem tất cả mục công việc của dự án."
+        "title": "Cấp quyền cho người dùng khách xem tất cả task:",
+        "sub_heading": "Điều này sẽ cho phép khách xem tất cả task của dự án."
       },
       "invite_members": {
         "title": "Mời thành viên",
@@ -44,7 +44,7 @@
     },
     "states": {
       "heading": "Trạng thái",
-      "description": "Xác định và tùy chỉnh trạng thái quy trình làm việc để theo dõi tiến độ các mục công việc của bạn.",
+      "description": "Xác định và tùy chỉnh trạng thái quy trình làm việc để theo dõi tiến độ các task của bạn.",
       "describe_this_state_for_your_members": "Mô tả trạng thái này cho thành viên của bạn.",
       "empty_state": {
         "title": "Không có trạng thái trong nhóm {groupKey}",
@@ -53,7 +53,7 @@
     },
     "labels": {
       "heading": "Nhãn",
-      "description": "Tạo nhãn tùy chỉnh để phân loại và tổ chức các mục công việc của bạn",
+      "description": "Tạo nhãn tùy chỉnh để phân loại và tổ chức các task của bạn",
       "label_title": "Tiêu đề nhãn",
       "label_title_is_required": "Tiêu đề nhãn là bắt buộc",
       "label_max_char": "Tên nhãn không nên vượt quá 255 ký tự",
@@ -63,7 +63,7 @@
     },
     "estimates": {
       "heading": "Ước tính",
-      "description": "Thiết lập hệ thống ước tính để theo dõi và truyền đạt nỗ lực cần thiết cho mỗi mục công việc.",
+      "description": "Thiết lập hệ thống ước tính để theo dõi và truyền đạt nỗ lực cần thiết cho mỗi task.",
       "label": "Ước tính",
       "title": "Bật ước tính cho dự án của tôi",
       "enable_description": "Chúng giúp bạn truyền đạt độ phức tạp và khối lượng công việc của nhóm.",
@@ -187,13 +187,13 @@
       "heading": "Tự động hóa",
       "description": "Cấu hình các hành động tự động để tinh giản quy trình quản lý dự án và giảm công việc thủ công.",
       "auto-archive": {
-        "title": "Tự động lưu trữ mục công việc đã đóng",
-        "description": "Plane sẽ tự động lưu trữ các mục công việc đã hoàn thành hoặc đã hủy.",
+        "title": "Tự động lưu trữ task đã đóng",
+        "description": "Plane sẽ tự động lưu trữ các task đã hoàn thành hoặc đã hủy.",
         "duration": "Tự động lưu trữ đã đóng"
       },
       "auto-close": {
-        "title": "Tự động đóng mục công việc",
-        "description": "Plane sẽ tự động đóng các mục công việc chưa hoàn thành hoặc hủy.",
+        "title": "Tự động đóng task",
+        "description": "Plane sẽ tự động đóng các task chưa hoàn thành hoặc hủy.",
         "duration": "Tự động đóng không hoạt động",
         "auto_close_status": "Trạng thái tự động đóng"
       },
@@ -206,25 +206,25 @@
     "empty_state": {
       "labels": {
         "title": "Chưa có nhãn",
-        "description": "Tạo nhãn để giúp tổ chức và lọc mục công việc trong dự án của bạn."
+        "description": "Tạo nhãn để giúp tổ chức và lọc task trong dự án của bạn."
       },
       "estimates": {
         "title": "Chưa có hệ thống ước tính",
-        "description": "Tạo một tập hợp ước tính để truyền đạt khối lượng công việc cho mỗi mục công việc.",
+        "description": "Tạo một tập hợp ước tính để truyền đạt khối lượng công việc cho mỗi task.",
         "primary_button": "Thêm hệ thống ước tính"
       },
       "integrations": {
         "title": "Không có tích hợp nào được cấu hình",
-        "description": "Cấu hình GitHub và các tích hợp khác để đồng bộ hóa các mục công việc dự án của bạn."
+        "description": "Cấu hình GitHub và các tích hợp khác để đồng bộ hóa các task dự án của bạn."
       }
     },
     "workflows": {
       "toggle": {
         "title": "Bật quy trình làm việc",
-        "description": "Thiết lập quy trình làm việc để kiểm soát việc di chuyển mục công việc",
+        "description": "Thiết lập quy trình làm việc để kiểm soát việc di chuyển task",
         "no_states_tooltip": "Chưa có trạng thái nào được thêm vào quy trình làm việc.",
-        "no_work_item_types_tooltip": "Chưa có loại mục công việc nào được thêm vào quy trình làm việc.",
-        "no_states_or_work_item_types_tooltip": "Chưa có trạng thái hoặc loại mục công việc nào được thêm vào quy trình làm việc.",
+        "no_work_item_types_tooltip": "Chưa có loại task nào được thêm vào quy trình làm việc.",
+        "no_states_or_work_item_types_tooltip": "Chưa có trạng thái hoặc loại task nào được thêm vào quy trình làm việc.",
         "toast": {
           "loading": {
             "enabling": "Đang bật quy trình làm việc",
@@ -241,7 +241,7 @@
         }
       },
       "heading": "Quy trình làm việc",
-      "description": "Tự động hóa việc chuyển đổi mục công việc và đặt quy tắc để kiểm soát cách các nhiệm vụ di chuyển qua luồng dự án của bạn.",
+      "description": "Tự động hóa việc chuyển đổi task và đặt quy tắc để kiểm soát cách các nhiệm vụ di chuyển qua luồng dự án của bạn.",
       "add_button": "Thêm quy trình làm việc mới",
       "search": "Tìm kiếm quy trình làm việc",
       "detail": {
@@ -249,10 +249,10 @@
         "add_states": "Thêm trạng thái",
         "unmapped_states": {
           "title": "Đã phát hiện trạng thái chưa ánh xạ",
-          "description": "Một số mục công việc của các loại đã chọn hiện đang ở trạng thái không tồn tại trong quy trình làm việc này.",
+          "description": "Một số task của các loại đã chọn hiện đang ở trạng thái không tồn tại trong quy trình làm việc này.",
           "note": "Nếu bạn bật quy trình làm việc này, các mục này sẽ tự động chuyển sang trạng thái ban đầu của quy trình làm việc.",
           "label": "Trạng thái bị thiếu",
-          "tooltip": "Một số mục công việc đang ở trạng thái không được ánh xạ đến quy trình làm việc này. Mở quy trình làm việc để xem xét."
+          "tooltip": "Một số task đang ở trạng thái không được ánh xạ đến quy trình làm việc này. Mở quy trình làm việc để xem xét."
         }
       },
       "select_states": {
@@ -262,7 +262,7 @@
         }
       },
       "default_footer": {
-        "fallback_message": "Quy trình làm việc này áp dụng cho bất kỳ loại mục công việc nào không được gán cho một quy trình làm việc."
+        "fallback_message": "Quy trình làm việc này áp dụng cho bất kỳ loại task nào không được gán cho một quy trình làm việc."
       },
       "create": {
         "heading": "Tạo quy trình làm việc mới",
@@ -281,7 +281,7 @@
           }
         },
         "work_item_type": {
-          "label": "Loại mục công việc"
+          "label": "Loại task"
         },
         "success": {
           "title": "Thành công!",
@@ -325,8 +325,8 @@
       }
     },
     "work_item_types": {
-      "heading": "Loại mục công việc",
-      "description": "Tạo và tùy chỉnh các loại mục công việc khác nhau với các thuộc tính riêng"
+      "heading": "Loại task",
+      "description": "Tạo và tùy chỉnh các loại task khác nhau với các thuộc tính riêng"
     },
     "features": {
       "cycles": {
@@ -373,25 +373,25 @@
         },
         "in_app": {
           "title": "Trong ứng dụng",
-          "description": "Nhận mục công việc mới từ Thành viên và Khách trong không gian làm việc mà không ảnh hưởng đến mục hiện có."
+          "description": "Nhận task mới từ Thành viên và Khách trong không gian làm việc mà không ảnh hưởng đến mục hiện có."
         },
         "email": {
           "title": "Email",
-          "description": "Thu thập mục công việc mới từ bất kỳ ai gửi email đến địa chỉ email Plane.",
+          "description": "Thu thập task mới từ bất kỳ ai gửi email đến địa chỉ email Plane.",
           "fieldName": "ID email"
         },
         "form": {
           "title": "Biểu mẫu",
-          "description": "Cho phép người ngoài không gian làm việc tạo mục công việc mới tiềm năng cho bạn qua biểu mẫu chuyên dụng và an toàn.",
+          "description": "Cho phép người ngoài không gian làm việc tạo task mới tiềm năng cho bạn qua biểu mẫu chuyên dụng và an toàn.",
           "fieldName": "URL biểu mẫu mặc định",
-          "create_forms": "Tạo biểu mẫu bằng loại mục công việc",
+          "create_forms": "Tạo biểu mẫu bằng loại task",
           "manage_forms": "Quản lý biểu mẫu",
           "manage_forms_tooltip": "Yêu cầu Quản trị viên Không gian làm việc quản lý.",
           "create_form": "Tạo biểu mẫu",
           "edit_form": "Chỉnh sửa chi tiết biểu mẫu",
           "form_title": "Tiêu đề biểu mẫu",
           "form_title_required": "Tiêu đề biểu mẫu là bắt buộc",
-          "work_item_type": "Loại mục công việc",
+          "work_item_type": "Loại task",
           "remove_property": "Xóa thuộc tính",
           "select_properties": "Chọn thuộc tính",
           "search_placeholder": "Tìm thuộc tính",
@@ -419,16 +419,16 @@
       "time_tracking": {
         "title": "Theo dõi thời gian",
         "short_title": "Theo dõi thời gian",
-        "description": "Ghi lại thời gian dành cho các mục công việc và dự án.",
+        "description": "Ghi lại thời gian dành cho các task và dự án.",
         "toggle_title": "Bật theo dõi thời gian",
         "toggle_description": "Thành viên dự án sẽ có thể ghi lại thời gian làm việc."
       },
       "milestones": {
         "title": "Cột mốc",
         "short_title": "Cột mốc",
-        "description": "Cột mốc cung cấp một lớp để điều chỉnh các mục công việc theo các ngày hoàn thành chung.",
+        "description": "Cột mốc cung cấp một lớp để điều chỉnh các task theo các ngày hoàn thành chung.",
         "toggle_title": "Bật cột mốc",
-        "toggle_description": "Tổ chức các mục công việc theo thời hạn cột mốc."
+        "toggle_description": "Tổ chức các task theo thời hạn cột mốc."
       },
       "toasts": {
         "loading": "Đang cập nhật tính năng dự án...",
@@ -442,7 +442,7 @@
     },
     "templates": {
       "heading": "Mẫu",
-      "description": "Tiết kiệm 80% thời gian dành cho việc tạo dự án, mục công việc và trang khi bạn sử dụng mẫu."
+      "description": "Tiết kiệm 80% thời gian dành cho việc tạo dự án, task và trang khi bạn sử dụng mẫu."
     },
     "cycles": {
       "auto_schedule": {
@@ -495,8 +495,8 @@
             }
           },
           "auto_rollover": {
-            "label": "Tự động chuyển các mục công việc",
-            "tooltip": "Vào ngày hoàn thành chu kỳ, chuyển tất cả các mục công việc chưa hoàn thành sang chu kỳ tiếp theo."
+            "label": "Tự động chuyển các task",
+            "tooltip": "Vào ngày hoàn thành chu kỳ, chuyển tất cả các task chưa hoàn thành sang chu kỳ tiếp theo."
           }
         },
         "toast": {

@@ -717,7 +717,7 @@
     "templates": "Templates",
     "business": "Business",
     "members_and_teamspaces": "Members & Teamspaces",
-    "recurring_work_items": "Recurring work items",
+    "recurring_work_items": "Recurring tasks",
     "milestones": "Milestones",
     "open_in_full_screen": "Open {page} in full screen",
     "details": "Details",
@@ -853,7 +853,7 @@
   "in_app": "In-app",
   "forms": "Forms",
   "milestones": "Milestones",
-  "milestones_description": "Milestones provide a layer to align work items toward shared completion dates.",
+  "milestones_description": "Milestones provide a layer to align tasks toward shared completion dates.",
   "file_upload": {
     "upload_text": "Click here to upload file",
     "drag_drop_text": "Drag and Drop",

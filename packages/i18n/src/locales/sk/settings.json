@@ -118,16 +118,16 @@
         "description": "Vytvorte pracovnú položku pre začiatok."
       },
       "assigned": {
-        "title": "Žiadne priradené pracovné položky",
-        "description": "Tu uvidíte priradené pracovné položky."
+        "title": "Žiadne priradené úlohy",
+        "description": "Tu uvidíte priradené úlohy."
       },
       "created": {
-        "title": "Žiadne vytvorené pracovné položky",
-        "description": "Tu sú pracovné položky, ktoré ste vytvorili."
+        "title": "Žiadne vytvorené úlohy",
+        "description": "Tu sú úlohy, ktoré ste vytvorili."
       },
       "subscribed": {
-        "title": "Žiadne odoberané pracovné položky",
-        "description": "Odobierajte pracovné položky, ktoré vás zaujímajú, a sledujte ich tu."
+        "title": "Žiadne odoberané úlohy",
+        "description": "Odobierajte úlohy, ktoré vás zaujímajú, a sledujte ich tu."
       }
     }
   },

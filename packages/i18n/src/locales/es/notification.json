@@ -30,12 +30,12 @@
         "description": "Selecciona una notificación para ver sus detalles."
       },
       "all": {
-        "title": "No hay elementos de trabajo asignados",
-        "description": "Las actualizaciones de elementos de trabajo asignados a ti se pueden\n ver aquí"
+        "title": "No hay tareas asignados",
+        "description": "Las actualizaciones de tareas asignados a ti se pueden\n ver aquí"
       },
       "mentions": {
-        "title": "No hay elementos de trabajo asignados",
-        "description": "Las actualizaciones de elementos de trabajo asignados a ti se pueden\n ver aquí"
+        "title": "No hay tareas asignados",
+        "description": "Las actualizaciones de tareas asignados a ti se pueden\n ver aquí"
       }
     },
     "tabs": {

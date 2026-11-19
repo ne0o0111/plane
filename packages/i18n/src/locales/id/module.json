@@ -5,9 +5,9 @@
     "select": "Tambah modul",
     "details_drawer": {
       "progress": {
-        "done": "{completed} dari {scope, plural, one {# item kerja} other {# item kerja}} selesai",
+        "done": "{completed} dari {scope, plural, one {# tugas} other {# tugas}} selesai",
         "points_done": "{completed} dari {scope, plural, one {# poin} other {# poin}} selesai",
-        "empty": "Tambahkan item kerja ke modul untuk melacak progres."
+        "empty": "Tambahkan tugas ke modul untuk melacak progres."
       }
     }
   }

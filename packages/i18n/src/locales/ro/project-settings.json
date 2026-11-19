@@ -373,25 +373,25 @@
         },
         "in_app": {
           "title": "În aplicație",
-          "description": "Primiți elemente de lucru noi de la membri și invitați în spațiul de lucru fără a perturba cele existente."
+          "description": "Primiți sarcini noi de la membri și invitați în spațiul de lucru fără a perturba cele existente."
         },
         "email": {
           "title": "E-mail",
-          "description": "Colectați elemente de lucru noi de la oricine trimite un e-mail la o adresă Plane.",
+          "description": "Colectați sarcini noi de la oricine trimite un e-mail la o adresă Plane.",
           "fieldName": "ID e-mail"
         },
         "form": {
           "title": "Formulare",
-          "description": "Permiteți persoanelor din afara spațiului de lucru să creeze elemente de lucru noi potențiale printr-un formular dedicat și sigur.",
+          "description": "Permiteți persoanelor din afara spațiului de lucru să creeze sarcini noi potențiale printr-un formular dedicat și sigur.",
           "fieldName": "URL formular implicit",
-          "create_forms": "Creați formulare folosind tipuri de elemente de lucru",
+          "create_forms": "Creați formulare folosind tipuri de sarcini",
           "manage_forms": "Gestionați formularele",
           "manage_forms_tooltip": "Solicitați administratorului spațiului de lucru să gestioneze.",
           "create_form": "Creați formular",
           "edit_form": "Editați detaliile formularului",
           "form_title": "Titlul formularului",
           "form_title_required": "Titlul formularului este obligatoriu",
-          "work_item_type": "Tip element de lucru",
+          "work_item_type": "Tip sarcină",
           "remove_property": "Eliminați proprietatea",
           "select_properties": "Selectați proprietăți",
           "search_placeholder": "Căutați proprietăți",
@@ -419,7 +419,7 @@
       "time_tracking": {
         "title": "Urmărire timp",
         "short_title": "Urmărire timp",
-        "description": "Înregistrați timpul petrecut pe elemente de lucru și proiecte.",
+        "description": "Înregistrați timpul petrecut pe sarcini și proiecte.",
         "toggle_title": "Activați urmărirea timpului",
         "toggle_description": "Membrii proiectului vor putea înregistra timpul lucrat."
       },

@@ -1,54 +1,54 @@
 {
   "issue": {
-    "label": "{count, plural, one {mục công việc} other {mục công việc}}",
-    "all": "Tất cả mục công việc",
-    "edit": "Chỉnh sửa mục công việc",
+    "label": "{count, plural, one {task} other {task}}",
+    "all": "Tất cả task",
+    "edit": "Chỉnh sửa task",
     "properties_overflow": {
       "trigger_aria_label": "{count, plural, one {thêm # thuộc tính} other {thêm # thuộc tính}}",
       "label_overflow_indicator": "{count, plural, one {+# nhãn} other {+# nhãn}}"
     },
     "title": {
-      "label": "Tiêu đề mục công việc",
-      "required": "Tiêu đề mục công việc là bắt buộc"
+      "label": "Tiêu đề task",
+      "required": "Tiêu đề task là bắt buộc"
     },
     "add": {
-      "press_enter": "Nhấn 'Enter' để thêm mục công việc khác",
-      "label": "Thêm mục công việc",
+      "press_enter": "Nhấn 'Enter' để thêm task khác",
+      "label": "Thêm task",
       "cycle": {
-        "failed": "Không thể thêm mục công việc vào chu kỳ. Vui lòng thử lại.",
-        "success": "{count, plural, one {Mục công việc} other {Mục công việc}} đã được thêm vào chu kỳ thành công.",
-        "loading": "Đang thêm {count, plural, one {mục công việc} other {mục công việc}} vào chu kỳ"
+        "failed": "Không thể thêm task vào chu kỳ. Vui lòng thử lại.",
+        "success": "{count, plural, one {Task} other {Task}} đã được thêm vào chu kỳ thành công.",
+        "loading": "Đang thêm {count, plural, one {task} other {task}} vào chu kỳ"
       },
       "assignee": "Thêm người phụ trách",
       "start_date": "Thêm ngày bắt đầu",
       "due_date": "Thêm ngày hết hạn",
-      "parent": "Thêm mục công việc cha",
-      "sub_issue": "Thêm mục công việc con",
+      "parent": "Thêm task cha",
+      "sub_issue": "Thêm task con",
       "dependency": "Thêm phụ thuộc",
       "relation": "Thêm mối quan hệ",
       "link": "Thêm liên kết",
-      "existing": "Thêm mục công việc hiện có"
+      "existing": "Thêm task hiện có"
     },
     "remove": {
-      "label": "Xóa mục công việc",
+      "label": "Xóa task",
       "cycle": {
-        "loading": "Đang xóa mục công việc khỏi chu kỳ",
-        "success": "Đã xóa mục công việc khỏi chu kỳ thành công.",
-        "failed": "Không thể xóa mục công việc khỏi chu kỳ. Vui lòng thử lại."
+        "loading": "Đang xóa task khỏi chu kỳ",
+        "success": "Đã xóa task khỏi chu kỳ thành công.",
+        "failed": "Không thể xóa task khỏi chu kỳ. Vui lòng thử lại."
       },
       "module": {
-        "loading": "Đang xóa mục công việc khỏi mô-đun",
-        "success": "Đã xóa mục công việc khỏi mô-đun thành công.",
-        "failed": "Không thể xóa mục công việc khỏi mô-đun. Vui lòng thử lại."
+        "loading": "Đang xóa task khỏi mô-đun",
+        "success": "Đã xóa task khỏi mô-đun thành công.",
+        "failed": "Không thể xóa task khỏi mô-đun. Vui lòng thử lại."
       },
       "parent": {
-        "label": "Xóa mục công việc cha"
+        "label": "Xóa task cha"
       }
     },
-    "new": "Mục công việc mới",
-    "adding": "Đang thêm mục công việc",
+    "new": "Task mới",
+    "adding": "Đang thêm task",
     "create": {
-      "success": "Đã tạo mục công việc thành công"
+      "success": "Đã tạo task thành công"
     },
     "priority": {
       "urgent": "Khẩn cấp",
@@ -60,15 +60,15 @@
       "properties": {
         "label": "Hiển thị thuộc tính",
         "id": "ID",
-        "issue_type": "Loại mục công việc",
-        "sub_issue_count": "Số lượng mục công việc con",
+        "issue_type": "Loại task",
+        "sub_issue_count": "Số lượng task con",
         "attachment_count": "Số lượng tệp đính kèm",
         "created_on": "Được tạo vào",
-        "sub_issue": "Mục công việc con",
-        "work_item_count": "Số lượng mục công việc"
+        "sub_issue": "Task con",
+        "work_item_count": "Số lượng task"
       },
       "extra": {
-        "show_sub_issues": "Hiển thị mục công việc con",
+        "show_sub_issues": "Hiển thị task con",
         "show_empty_groups": "Hiển thị nhóm trống"
       }
     },
@@ -156,44 +156,44 @@
     },
     "empty_state": {
       "issue_detail": {
-        "title": "Mục công việc không tồn tại",
-        "description": "Mục công việc bạn đang tìm kiếm không tồn tại, đã được lưu trữ hoặc đã bị xóa.",
+        "title": "Task không tồn tại",
+        "description": "Task bạn đang tìm kiếm không tồn tại, đã được lưu trữ hoặc đã bị xóa.",
         "primary_button": {
-          "text": "Xem các mục công việc khác"
+          "text": "Xem các task khác"
         }
       },
       "no_access": {
-        "title": "Bạn không có quyền truy cập vào mục công việc này",
+        "title": "Bạn không có quyền truy cập vào task này",
         "description": "Liên hệ với quản trị viên dự án để yêu cầu quyền truy cập."
       }
     },
     "sibling": {
-      "label": "Mục công việc cùng cấp"
+      "label": "Task cùng cấp"
     },
     "archive": {
-      "description": "Chỉ những mục công việc đã hoàn thành hoặc đã hủy\ncó thể được lưu trữ",
-      "label": "Lưu trữ mục công việc",
-      "confirm_message": "Bạn có chắc chắn muốn lưu trữ mục công việc này không? Tất cả mục công việc đã lưu trữ có thể được khôi phục sau.",
+      "description": "Chỉ những task đã hoàn thành hoặc đã hủy\ncó thể được lưu trữ",
+      "label": "Lưu trữ task",
+      "confirm_message": "Bạn có chắc chắn muốn lưu trữ task này không? Tất cả task đã lưu trữ có thể được khôi phục sau.",
       "success": {
         "label": "Lưu trữ thành công",
         "message": "Mục đã lưu trữ của bạn có thể được tìm thấy trong phần lưu trữ của dự án."
       },
       "failed": {
-        "message": "Không thể lưu trữ mục công việc. Vui lòng thử lại."
+        "message": "Không thể lưu trữ task. Vui lòng thử lại."
       },
-      "banner_message": "Mục công việc này đã được lưu trữ. Truy cập mục Lưu trữ để khôi phục.",
+      "banner_message": "Task này đã được lưu trữ. Truy cập mục Lưu trữ để khôi phục.",
       "go_to_archives": "Đi đến lưu trữ"
     },
     "restore": {
       "success": {
         "title": "Khôi phục thành công",
-        "message": "Mục công việc của bạn có thể được tìm thấy trong mục công việc của dự án."
+        "message": "Task của bạn có thể được tìm thấy trong task của dự án."
       },
       "failed": {
-        "message": "Không thể khôi phục mục công việc. Vui lòng thử lại."
+        "message": "Không thể khôi phục task. Vui lòng thử lại."
       }
     },
-    "archived_banner": "Mục công việc này đã được lưu trữ. Hãy khôi phục để thực hiện thay đổi.",
+    "archived_banner": "Task này đã được lưu trữ. Hãy khôi phục để thực hiện thay đổi.",
     "updated_time_ago": "Đã cập nhật {time}",
     "description_load_failed": "Không thể tải mô tả.",
     "assignee_count": "{count, plural, one {# người phụ trách} other {# người phụ trách}}",
@@ -209,29 +209,29 @@
       "implements": "Thực hiện",
       "implemented_by": "Được thực hiện bởi"
     },
-    "copy_link": "Sao chép liên kết mục công việc",
+    "copy_link": "Sao chép liên kết task",
     "delete": {
-      "label": "Xóa mục công việc",
-      "error": "Đã xảy ra lỗi khi xóa mục công việc"
+      "label": "Xóa task",
+      "error": "Đã xảy ra lỗi khi xóa task"
     },
     "subscription": {
       "actions": {
-        "subscribed": "Đã đăng ký mục công việc thành công",
-        "unsubscribed": "Đã hủy đăng ký mục công việc thành công"
+        "subscribed": "Đã đăng ký task thành công",
+        "unsubscribed": "Đã hủy đăng ký task thành công"
       }
     },
     "select": {
-      "error": "Vui lòng chọn ít nhất một mục công việc",
-      "empty": "Chưa chọn mục công việc",
-      "add_selected": "Thêm mục công việc đã chọn",
+      "error": "Vui lòng chọn ít nhất một task",
+      "empty": "Chưa chọn task",
+      "add_selected": "Thêm task đã chọn",
       "select_all": "Chọn tất cả",
       "deselect_all": "Bỏ chọn tất cả"
     },
-    "open_in_full_screen": "Mở mục công việc trong chế độ toàn màn hình",
+    "open_in_full_screen": "Mở task trong chế độ toàn màn hình",
     "duplicate": {
       "modal": {
         "title": "Tạo một bản sao đến dự án khác",
-        "description1": "Thao tác này tạo một bản sao của mục công việc.",
+        "description1": "Thao tác này tạo một bản sao của task.",
         "description2": "Tất cả dữ liệu thuộc tính sẽ bị xóa khi sao chép.",
         "placeholder": "Chọn một dự án"
       }
@@ -239,10 +239,10 @@
     "toast": {
       "duplicate": {
         "success": {
-          "message": "Đã sao chép mục công việc thành công"
+          "message": "Đã sao chép task thành công"
         },
         "error": {
-          "message": "Không thể sao chép mục công việc"
+          "message": "Không thể sao chép task"
         }
       }
     },
@@ -289,22 +289,22 @@
   },
   "sub_work_item": {
     "update": {
-      "success": "Đã cập nhật mục công việc con thành công",
-      "error": "Đã xảy ra lỗi khi cập nhật mục công việc con"
+      "success": "Đã cập nhật task con thành công",
+      "error": "Đã xảy ra lỗi khi cập nhật task con"
     },
     "remove": {
-      "success": "Đã xóa mục công việc con thành công",
-      "error": "Đã xảy ra lỗi khi xóa mục công việc con"
+      "success": "Đã xóa task con thành công",
+      "error": "Đã xảy ra lỗi khi xóa task con"
     },
     "empty_state": {
       "sub_list_filters": {
-        "title": "Bạn không có mục công việc con nào phù hợp với các bộ lọc mà bạn đã áp dụng.",
-        "description": "Để xem tất cả các mục công việc con, hãy xóa tất cả các bộ lọc đã áp dụng.",
+        "title": "Bạn không có task con nào phù hợp với các bộ lọc mà bạn đã áp dụng.",
+        "description": "Để xem tất cả các task con, hãy xóa tất cả các bộ lọc đã áp dụng.",
         "action": "Xóa bộ lọc"
       },
       "list_filters": {
-        "title": "Bạn không có mục công việc nào phù hợp với các bộ lọc mà bạn đã áp dụng.",
-        "description": "Để xem tất cả các mục công việc, hãy xóa tất cả các bộ lọc đã áp dụng.",
+        "title": "Bạn không có task nào phù hợp với các bộ lọc mà bạn đã áp dụng.",
+        "description": "Để xem tất cả các task, hãy xóa tất cả các bộ lọc đã áp dụng.",
         "action": "Xóa bộ lọc"
       }
     }
@@ -312,10 +312,10 @@
   "issue_relation": {
     "empty_state": {
       "search": {
-        "title": "Không tìm thấy mục công việc phù hợp"
+        "title": "Không tìm thấy task phù hợp"
       },
       "no_issues": {
-        "title": "Không tìm thấy mục công việc"
+        "title": "Không tìm thấy task"
       }
     }
   },
@@ -323,31 +323,31 @@
     "empty_state": {
       "general": {
         "title": "Chưa có bình luận",
-        "description": "Bình luận có thể được sử dụng như không gian thảo luận và theo dõi cho mục công việc"
+        "description": "Bình luận có thể được sử dụng như không gian thảo luận và theo dõi cho task"
       }
     }
   },
   "bulk_operations": {
     "error_details": {
       "invalid_archive_state_group": {
-        "title": "Không thể lưu trữ mục công việc",
-        "message": "Chỉ các mục công việc thuộc nhóm trạng thái Hoàn thành hoặc Đã hủy mới có thể được lưu trữ."
+        "title": "Không thể lưu trữ task",
+        "message": "Chỉ các task thuộc nhóm trạng thái Hoàn thành hoặc Đã hủy mới có thể được lưu trữ."
       },
       "invalid_issue_start_date": {
-        "title": "Không thể cập nhật mục công việc",
-        "message": "Ngày bắt đầu đã chọn vượt quá ngày đến hạn cho một số mục công việc. Đảm bảo ngày bắt đầu phải trước ngày đến hạn."
+        "title": "Không thể cập nhật task",
+        "message": "Ngày bắt đầu đã chọn vượt quá ngày đến hạn cho một số task. Đảm bảo ngày bắt đầu phải trước ngày đến hạn."
       },
       "invalid_issue_target_date": {
-        "title": "Không thể cập nhật mục công việc",
-        "message": "Ngày đến hạn đã chọn trước ngày bắt đầu cho một số mục công việc. Đảm bảo ngày đến hạn phải sau ngày bắt đầu."
+        "title": "Không thể cập nhật task",
+        "message": "Ngày đến hạn đã chọn trước ngày bắt đầu cho một số task. Đảm bảo ngày đến hạn phải sau ngày bắt đầu."
       },
       "invalid_state_transition": {
-        "title": "Không thể cập nhật mục công việc",
-        "message": "Thay đổi trạng thái không được phép cho một số mục công việc. Đảm bảo thay đổi trạng thái được cho phép."
+        "title": "Không thể cập nhật task",
+        "message": "Thay đổi trạng thái không được phép cho một số task. Đảm bảo thay đổi trạng thái được cho phép."
       }
     },
     "upgrade_banner": {
-      "message": "Thay đổi trạng thái, mức ưu tiên và nhiều thứ khác cho nhiều mục công việc cùng lúc. Tiết kiệm trung bình ba phút cho mỗi thao tác.",
+      "message": "Thay đổi trạng thái, mức ưu tiên và nhiều thứ khác cho nhiều task cùng lúc. Tiết kiệm trung bình ba phút cho mỗi thao tác.",
       "cta": "Nâng cấp lên One"
     }
   },
@@ -355,8 +355,8 @@
     "settings": {
       "heading": "Công việc lặp lại",
       "description": "Thiết lập công việc lặp lại một lần, và chúng tôi sẽ chăm sóc các lặp lại. Bạn sẽ thấy tất cả ở đây khi đến lúc.",
-      "new_recurring_work_item": "Tạo mục công việc lặp lại mới",
-      "update_recurring_work_item": "Cập nhật mục công việc lặp lại",
+      "new_recurring_work_item": "Tạo task lặp lại mới",
+      "update_recurring_work_item": "Cập nhật task lặp lại",
       "form": {
         "interval": {
           "title": "Lịch trình",
@@ -372,13 +372,13 @@
           }
         },
         "button": {
-          "create": "Tạo mục công việc lặp lại",
-          "update": "Cập nhật mục công việc lặp lại"
+          "create": "Tạo task lặp lại",
+          "update": "Cập nhật task lặp lại"
         }
       },
       "create_button": {
-        "label": "Tạo mục công việc lặp lại",
-        "no_permission": "Liên hệ quản trị viên dự án của bạn để tạo mục công việc lặp lại"
+        "label": "Tạo task lặp lại",
+        "no_permission": "Liên hệ quản trị viên dự án của bạn để tạo task lặp lại"
       }
     },
     "empty_state": {
@@ -387,46 +387,46 @@
         "description": "Thiết lập một lần. Chúng tôi sẽ tự động lặp lại khi đến hạn. Nâng cấp lên Doanh nghiệp để công việc lặp lại trở nên dễ dàng."
       },
       "no_templates": {
-        "button": "Tạo mục công việc lặp lại đầu tiên của bạn"
+        "button": "Tạo task lặp lại đầu tiên của bạn"
       }
     },
     "toasts": {
       "create": {
         "success": {
-          "title": "Đã tạo mục công việc lặp lại",
-          "message": "{name}, mục công việc lặp lại, hiện đã có trong không gian làm việc của bạn."
+          "title": "Đã tạo task lặp lại",
+          "message": "{name}, task lặp lại, hiện đã có trong không gian làm việc của bạn."
         },
         "error": {
-          "title": "Không thể tạo mục công việc lặp lại lần này.",
-          "message": "Hãy thử lưu lại thông tin của bạn hoặc sao chép sang một mục công việc lặp lại mới, tốt nhất ở tab khác."
+          "title": "Không thể tạo task lặp lại lần này.",
+          "message": "Hãy thử lưu lại thông tin của bạn hoặc sao chép sang một task lặp lại mới, tốt nhất ở tab khác."
         }
       },
       "update": {
         "success": {
-          "title": "Đã thay đổi mục công việc lặp lại",
-          "message": "{name}, mục công việc lặp lại, đã được thay đổi."
+          "title": "Đã thay đổi task lặp lại",
+          "message": "{name}, task lặp lại, đã được thay đổi."
         },
         "error": {
-          "title": "Không thể lưu thay đổi cho mục công việc lặp lại này.",
-          "message": "Hãy thử lưu lại thông tin hoặc quay lại mục công việc lặp lại này sau. Nếu vẫn gặp sự cố, hãy liên hệ với chúng tôi."
+          "title": "Không thể lưu thay đổi cho task lặp lại này.",
+          "message": "Hãy thử lưu lại thông tin hoặc quay lại task lặp lại này sau. Nếu vẫn gặp sự cố, hãy liên hệ với chúng tôi."
         }
       },
       "delete": {
         "success": {
-          "title": "Đã xóa mục công việc lặp lại",
-          "message": "{name}, mục công việc lặp lại, đã bị xóa khỏi không gian làm việc của bạn."
+          "title": "Đã xóa task lặp lại",
+          "message": "{name}, task lặp lại, đã bị xóa khỏi không gian làm việc của bạn."
         },
         "error": {
-          "title": "Không thể xóa mục công việc lặp lại này.",
+          "title": "Không thể xóa task lặp lại này.",
           "message": "Hãy thử xóa lại hoặc quay lại sau. Nếu vẫn không thể xóa, hãy liên hệ với chúng tôi."
         }
       }
     },
     "delete_confirmation": {
-      "title": "Xóa mục công việc lặp lại",
+      "title": "Xóa task lặp lại",
       "description": {
-        "prefix": "Bạn có chắc chắn muốn xóa mục công việc lặp lại-",
-        "suffix": "? Tất cả dữ liệu liên quan đến mục công việc lặp lại này sẽ bị xóa vĩnh viễn. Hành động này không thể hoàn tác."
+        "prefix": "Bạn có chắc chắn muốn xóa task lặp lại-",
+        "suffix": "? Tất cả dữ liệu liên quan đến task lặp lại này sẽ bị xóa vĩnh viễn. Hành động này không thể hoàn tác."
       }
     }
   },

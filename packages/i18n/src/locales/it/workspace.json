@@ -54,7 +54,7 @@
     "empty_state": {
       "general": {
         "title": "Panoramica dei tuoi progetti, attività e metriche",
-        "description": "Benvenuto in Plane, siamo entusiasti di averti qui. Crea il tuo primo progetto e traccia i tuoi elementi di lavoro, e questa pagina si trasformerà in uno spazio che ti aiuta a progredire. Gli amministratori vedranno anche elementi che aiutano il team a progredire.",
+        "description": "Benvenuto in Plane, siamo entusiasti di averti qui. Crea il tuo primo progetto e traccia i tuoi attività, e questa pagina si trasformerà in uno spazio che ti aiuta a progredire. Gli amministratori vedranno anche elementi che aiutano il team a progredire.",
         "primary_button": {
           "text": "Crea il tuo primo progetto",
           "comic": {
@@ -70,26 +70,26 @@
     "page_label": "{workspace} - Analisi",
     "open_tasks": "Totale attività aperte",
     "error": "Si è verificato un errore nel recupero dei dati.",
-    "work_items_closed_in": "Elementi di lavoro chiusi in",
+    "work_items_closed_in": "Attività chiusi in",
     "selected_projects": "Progetti selezionati",
     "total_members": "Totale membri",
     "total_cycles": "Totale cicli",
     "total_modules": "Totale moduli",
     "pending_work_items": {
-      "title": "Elementi di lavoro in sospeso",
-      "empty_state": "L'analisi degli elementi di lavoro in sospeso dei colleghi apparirà qui."
+      "title": "Attività in sospeso",
+      "empty_state": "L'analisi degli attività in sospeso dei colleghi apparirà qui."
     },
     "work_items_closed_in_a_year": {
-      "title": "Elementi di lavoro chiusi in un anno",
-      "empty_state": "Chiudi gli elementi di lavoro per visualizzare l'analisi sotto forma di grafico."
+      "title": "Attività chiusi in un anno",
+      "empty_state": "Chiudi gli attività per visualizzare l'analisi sotto forma di grafico."
     },
     "most_work_items_created": {
-      "title": "Maggiori elementi di lavoro creati",
-      "empty_state": "I colleghi e il numero di elementi di lavoro creati da loro appariranno qui."
+      "title": "Maggiori attività creati",
+      "empty_state": "I colleghi e il numero di attività creati da loro appariranno qui."
     },
     "most_work_items_closed": {
-      "title": "Maggiori elementi di lavoro chiusi",
-      "empty_state": "I colleghi e il numero di elementi di lavoro chiusi da loro appariranno qui."
+      "title": "Maggiori attività chiusi",
+      "empty_state": "I colleghi e il numero di attività chiusi da loro appariranno qui."
     },
     "tabs": {
       "scope_and_demand": "Ambito e Domanda",
@@ -110,15 +110,15 @@
     "empty_state": {
       "project_insights": {
         "title": "Nessun dato disponibile",
-        "description": "Gli elementi di lavoro assegnati a te, suddivisi per stato, verranno visualizzati qui."
+        "description": "Gli attività assegnati a te, suddivisi per stato, verranno visualizzati qui."
       },
       "created_vs_resolved": {
         "title": "Nessun dato disponibile",
-        "description": "Gli elementi di lavoro creati e risolti nel tempo verranno visualizzati qui."
+        "description": "Gli attività creati e risolti nel tempo verranno visualizzati qui."
       },
       "customized_insights": {
         "title": "Nessun dato disponibile",
-        "description": "Gli elementi di lavoro assegnati a te, suddivisi per stato, verranno visualizzati qui."
+        "description": "Gli attività assegnati a te, suddivisi per stato, verranno visualizzati qui."
       },
       "general": {
         "title": "Traccia progressi, carichi di lavoro e allocazioni. Individua tendenze, rimuovi blocchi e lavora più velocemente",
@@ -127,25 +127,25 @@
           "text": "Inizia il tuo primo progetto",
           "comic": {
             "title": "Analytics funziona meglio con Cicli + Moduli",
-            "description": "Prima, incornicia i tuoi elementi di lavoro in Cicli e, se possibile, raggruppa gli elementi che si estendono oltre un ciclo in Moduli. Controlla entrambi nella navigazione sinistra."
+            "description": "Prima, incornicia i tuoi attività in Cicli e, se possibile, raggruppa gli elementi che si estendono oltre un ciclo in Moduli. Controlla entrambi nella navigazione sinistra."
           }
         }
       },
       "cycle_progress": {
         "title": "Nessun dato disponibile",
-        "description": "Le analisi dei progressi del ciclo verranno visualizzate qui. Aggiungi elementi di lavoro ai cicli per iniziare a monitorare i progressi."
+        "description": "Le analisi dei progressi del ciclo verranno visualizzate qui. Aggiungi attività ai cicli per iniziare a monitorare i progressi."
       },
       "module_progress": {
         "title": "Nessun dato disponibile",
-        "description": "Le analisi dei progressi del modulo verranno visualizzate qui. Aggiungi elementi di lavoro ai moduli per iniziare a monitorare i progressi."
+        "description": "Le analisi dei progressi del modulo verranno visualizzate qui. Aggiungi attività ai moduli per iniziare a monitorare i progressi."
       },
       "intake_trends": {
         "title": "Nessun dato disponibile",
-        "description": "Le analisi delle tendenze di intake verranno visualizzate qui. Aggiungi elementi di lavoro all’intake per iniziare a monitorare le tendenze."
+        "description": "Le analisi delle tendenze di intake verranno visualizzate qui. Aggiungi attività all’intake per iniziare a monitorare le tendenze."
       }
     },
     "upgrade_to_plan": "Passa a {plan} per sbloccare {tab}",
-    "workitem_resolved_vs_pending": "Elementi di lavoro risolti vs in sospeso",
+    "workitem_resolved_vs_pending": "Attività risolti vs in sospeso",
     "projects_by_status": "Progetti per stato",
     "active_users": "Utenti attivi",
     "intake_trends": "Tendenze di ammissione"
@@ -170,7 +170,7 @@
       "permission": "Non hai il permesso di eseguire questa azione.",
       "cycle_delete": "Impossibile eliminare il ciclo",
       "module_delete": "Impossibile eliminare il modulo",
-      "issue_delete": "Impossibile eliminare l'elemento di lavoro"
+      "issue_delete": "Impossibile eliminare l'attività"
     },
     "state": {
       "backlog": "Backlog",
@@ -207,7 +207,7 @@
       },
       "no_projects": {
         "title": "Nessun progetto",
-        "description": "Per creare elementi di lavoro o gestire il tuo lavoro, devi creare o far parte di un progetto.",
+        "description": "Per creare attività o gestire il tuo lavoro, devi creare o far parte di un progetto.",
         "primary_button": {
           "text": "Inizia il tuo primo progetto",
           "comic": {
@@ -234,33 +234,33 @@
     "add_view": "Aggiungi visualizzazione",
     "empty_state": {
       "all-issues": {
-        "title": "Nessun elemento di lavoro nel progetto",
-        "description": "Primo progetto fatto! Ora, suddividi il tuo lavoro in parti tracciabili con gli elementi di lavoro. Andiamo!",
+        "title": "Nessun attività nel progetto",
+        "description": "Primo progetto fatto! Ora, suddividi il tuo lavoro in parti tracciabili con gli attività. Andiamo!",
         "primary_button": {
-          "text": "Crea un nuovo elemento di lavoro"
+          "text": "Crea un nuovo attività"
         }
       },
       "assigned": {
-        "title": "Nessun elemento di lavoro ancora",
-        "description": "Gli elementi di lavoro assegnati a te possono essere tracciati da qui.",
+        "title": "Nessun attività ancora",
+        "description": "Gli attività assegnati a te possono essere tracciati da qui.",
         "primary_button": {
-          "text": "Crea un nuovo elemento di lavoro"
+          "text": "Crea un nuovo attività"
         }
       },
       "created": {
-        "title": "Nessun elemento di lavoro ancora",
-        "description": "Tutti gli elementi di lavoro creati da te appariranno qui. Tracciali direttamente da qui.",
+        "title": "Nessun attività ancora",
+        "description": "Tutti gli attività creati da te appariranno qui. Tracciali direttamente da qui.",
         "primary_button": {
-          "text": "Crea un nuovo elemento di lavoro"
+          "text": "Crea un nuovo attività"
         }
       },
       "subscribed": {
-        "title": "Nessun elemento di lavoro ancora",
-        "description": "Iscriviti agli elementi di lavoro che ti interessano, tracciali tutti qui."
+        "title": "Nessun attività ancora",
+        "description": "Iscriviti agli attività che ti interessano, tracciali tutti qui."
       },
       "custom-view": {
-        "title": "Nessun elemento di lavoro ancora",
-        "description": "Gli elementi di lavoro che corrispondono ai filtri, tracciali tutti qui."
+        "title": "Nessun attività ancora",
+        "description": "Gli attività che corrispondono ai filtri, tracciali tutti qui."
       }
     },
     "delete_view": {
@@ -269,10 +269,10 @@
     }
   },
   "workspace_draft_issues": {
-    "draft_an_issue": "Bozza di un elemento di lavoro",
+    "draft_an_issue": "Bozza di un attività",
     "empty_state": {
-      "title": "Le bozze degli elementi di lavoro e, presto, anche i commenti appariranno qui.",
-      "description": "Per provarlo, inizia ad aggiungere un elemento di lavoro e lascialo a metà o crea la tua prima bozza qui sotto. 😉",
+      "title": "Le bozze degli attività e, presto, anche i commenti appariranno qui.",
+      "description": "Per provarlo, inizia ad aggiungere un attività e lascialo a metà o crea la tua prima bozza qui sotto. 😉",
       "primary_button": {
         "text": "Crea la tua prima bozza"
       }
@@ -284,7 +284,7 @@
     "toasts": {
       "created": {
         "success": "Bozza creata",
-        "error": "Impossibile creare l'elemento di lavoro. Per favore, riprova."
+        "error": "Impossibile creare l'attività. Per favore, riprova."
       },
       "deleted": {
         "success": "Bozza eliminata"
@@ -295,7 +295,7 @@
     "empty_state": {
       "general": {
         "title": "Scrivi una nota, un documento o una base di conoscenza completa. Fai partire Galileo, l'assistente AI di Plane, per aiutarti a iniziare",
-        "description": "Le pagine sono spazi di pensiero in Plane. Prendi appunti durante le riunioni, formattali facilmente, incorpora elementi di lavoro, disponili utilizzando una libreria di componenti e mantienili tutti nel contesto del tuo progetto. Per semplificare qualsiasi documento, invoca Galileo, l'AI di Plane, con una scorciatoia o con un clic di un pulsante.",
+        "description": "Le pagine sono spazi di pensiero in Plane. Prendi appunti durante le riunioni, formattali facilmente, incorpora attività, disponili utilizzando una libreria di componenti e mantienili tutti nel contesto del tuo progetto. Per semplificare qualsiasi documento, invoca Galileo, l'AI di Plane, con una scorciatoia o con un clic di un pulsante.",
         "primary_button": {
           "text": "Crea la tua prima pagina"
         }

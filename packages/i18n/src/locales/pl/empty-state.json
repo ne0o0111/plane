@@ -37,8 +37,8 @@
     },
     "work_items": {
       "title": "Zacznij od swojego pierwszego elementu roboczego.",
-      "description": "Elementy robocze są podstawowymi elementami Twojego projektu — przypisuj właścicieli, ustalaj priorytety i łatwo śledź postęp.",
-      "cta_primary": "Utwórz swój pierwszy element roboczy"
+      "description": "Zadania są podstawowymi elementami Twojego projektu — przypisuj właścicieli, ustalaj priorytety i łatwo śledź postęp.",
+      "cta_primary": "Utwórz swój pierwszy zadanie"
     },
     "cycles": {
       "title": "Grupuj i ograniczaj czasowo swoją pracę w Cyklach.",
@@ -47,9 +47,9 @@
     },
     "cycle_work_items": {
       "title": "Brak elementów roboczych do wyświetlenia w tym cyklu",
-      "description": "Utwórz elementy robocze, aby rozpocząć monitorowanie postępów Twojego zespołu w tym cyklu i osiągnąć swoje cele na czas.",
-      "cta_primary": "Utwórz element roboczy",
-      "cta_secondary": "Dodaj istniejący element roboczy"
+      "description": "Utwórz zadania, aby rozpocząć monitorowanie postępów Twojego zespołu w tym cyklu i osiągnąć swoje cele na czas.",
+      "cta_primary": "Utwórz zadanie",
+      "cta_secondary": "Dodaj istniejący zadanie"
     },
     "modules": {
       "title": "Mapuj cele swojego projektu na Moduły i łatwo śledź.",
@@ -58,9 +58,9 @@
     },
     "module_work_items": {
       "title": "Brak elementów roboczych do wyświetlenia w tym Module",
-      "description": "Utwórz elementy robocze, aby rozpocząć monitorowanie tego modułu.",
-      "cta_primary": "Utwórz element roboczy",
-      "cta_secondary": "Dodaj istniejący element roboczy"
+      "description": "Utwórz zadania, aby rozpocząć monitorowanie tego modułu.",
+      "cta_primary": "Utwórz zadanie",
+      "cta_secondary": "Dodaj istniejący zadanie"
     },
     "views": {
       "title": "Zapisz niestandardowe widoki dla swojego projektu",
@@ -69,17 +69,17 @@
     },
     "no_work_items_in_project": {
       "title": "Brak elementów roboczych w projekcie jeszcze",
-      "description": "Dodaj elementy robocze do swojego projektu i podziel swoją pracę na śledzone części za pomocą widoków.",
-      "cta_primary": "Dodaj element roboczy"
+      "description": "Dodaj zadania do swojego projektu i podziel swoją pracę na śledzone części za pomocą widoków.",
+      "cta_primary": "Dodaj zadanie"
     },
     "work_item_filter": {
       "title": "Nie znaleziono elementów roboczych",
       "description": "Twój aktualny filtr nie zwrócił żadnych wyników. Spróbuj zmienić filtry.",
-      "cta_primary": "Dodaj element roboczy"
+      "cta_primary": "Dodaj zadanie"
     },
     "pages": {
       "title": "Dokumentuj wszystko — od notatek po PRD",
-      "description": "Strony pozwalają przechwytywać i organizować informacje w jednym miejscu. Pisz notatki ze spotkań, dokumentację projektu i PRD, osadzaj elementy robocze i strukturyzuj je za pomocą gotowych komponentów.",
+      "description": "Strony pozwalają przechwytywać i organizować informacje w jednym miejscu. Pisz notatki ze spotkań, dokumentację projektu i PRD, osadzaj zadania i strukturyzuj je za pomocą gotowych komponentów.",
       "cta_primary": "Utwórz swoją pierwszą Stronę"
     },
     "archive_pages": {
@@ -92,7 +92,7 @@
       "cta_primary": "Utwórz zgłoszenie przyjmowane"
     },
     "intake_main": {
-      "title": "Wybierz element roboczy Intake, aby wyświetlić jego szczegóły"
+      "title": "Wybierz zadanie Intake, aby wyświetlić jego szczegóły"
     },
     "epics": {
       "title": "Przekształć złożone projekty w uporządkowane epiki.",
@@ -103,7 +103,7 @@
     "epic_work_items": {
       "title": "Nie dodałeś jeszcze elementów roboczych do tego epiku.",
       "description": "Zacznij od dodania elementów roboczych do tego epiku i śledź je tutaj.",
-      "cta_secondary": "Dodaj elementy robocze"
+      "cta_secondary": "Dodaj zadania"
     }
   },
   "workspace_empty_state": {
@@ -113,7 +113,7 @@
     },
     "archive_work_items": {
       "title": "Jeszcze brak zarchiwizowanych elementów roboczych",
-      "description": "Ręcznie lub za pomocą automatyzacji możesz archiwizować ukończone lub anulowane elementy robocze. Znajdź je tutaj po zarchiwizowaniu.",
+      "description": "Ręcznie lub za pomocą automatyzacji możesz archiwizować ukończone lub anulowane zadania. Znajdź je tutaj po zarchiwizowaniu.",
       "cta_primary": "Ustaw automatyzację"
     },
     "archive_cycles": {
@@ -141,12 +141,12 @@
     },
     "views": {
       "title": "Jeszcze brak Widoków",
-      "description": "Dodaj elementy robocze do swojego projektu i używaj widoków do filtrowania, sortowania i monitorowania postępów bez wysiłku.",
-      "cta_primary": "Dodaj element roboczy"
+      "description": "Dodaj zadania do swojego projektu i używaj widoków do filtrowania, sortowania i monitorowania postępów bez wysiłku.",
+      "cta_primary": "Dodaj zadanie"
     },
     "drafts": {
-      "title": "Półnapisane elementy robocze",
-      "description": "Aby to wypróbować, zacznij dodawać element roboczy i zostaw go w połowie lub utwórz swój pierwszy szkic poniżej. 😉",
+      "title": "Półnapisane zadania",
+      "description": "Aby to wypróbować, zacznij dodawać zadanie i zostaw go w połowie lub utwórz swój pierwszy szkic poniżej. 😉",
       "cta_primary": "Utwórz szkic elementu roboczego"
     },
     "projects_archived": {
@@ -188,7 +188,7 @@
     },
     "wiki": {
       "title": "Napisz notatkę, dokument lub pełną bazę wiedzy.",
-      "description": "Strony to przestrzeń do wychwytywania myśli w Plane. Zapisuj notatki ze spotkań, łatwo je formatuj, osadzaj elementy robocze, układaj je za pomocą biblioteki komponentów i zachowuj wszystkie w kontekście projektu.",
+      "description": "Strony to przestrzeń do wychwytywania myśli w Plane. Zapisuj notatki ze spotkań, łatwo je formatuj, osadzaj zadania, układaj je za pomocą biblioteki komponentów i zachowuj wszystkie w kontekście projektu.",
       "cta_primary": "Utwórz swoją stronę"
     },
     "project_overview_state_sidebar": {
@@ -242,8 +242,8 @@
     },
     "recurring_work_items": {
       "title": "Brak powtarzających się elementów roboczych",
-      "description": "Skonfiguruj powtarzające się elementy robocze, aby zautomatyzować powtarzające się zadania i bez wysiłku dotrzymywać harmonogramu.",
-      "cta_primary": "Utwórz powtarzający się element roboczy"
+      "description": "Skonfiguruj powtarzające się zadania, aby zautomatyzować powtarzające się zadania i bez wysiłku dotrzymywać harmonogramu.",
+      "cta_primary": "Utwórz powtarzający się zadanie"
     },
     "worklogs": {
       "title": "Śledź karty czasu pracy dla wszystkich członków",
@@ -263,7 +263,7 @@
       "cta_primary": "Dodaj nowy przepływ pracy",
       "states": {
         "title": "Dodaj stany",
-        "description": "Wybierz stany, przez które przechodzi element pracy."
+        "description": "Wybierz stany, przez które przechodzi zadanie."
       }
     }
   }

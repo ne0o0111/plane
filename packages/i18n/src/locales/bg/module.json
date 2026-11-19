@@ -5,9 +5,9 @@
     "select": "Добави модули",
     "details_drawer": {
       "progress": {
-        "done": "Завършени {completed} от {scope, plural, one {# работен елемент} other {# работни елемента}}",
+        "done": "Завършени {completed} от {scope, plural, one {# задача} other {# работни елемента}}",
         "points_done": "Завършени {completed} от {scope, plural, one {# точка} other {# точки}}",
-        "empty": "Добавете работни елементи към модула, за да следите напредъка."
+        "empty": "Добавете задачи към модула, за да следите напредъка."
       }
     }
   }

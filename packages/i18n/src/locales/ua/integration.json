@@ -19,7 +19,7 @@
   },
   "github_integration": {
     "name": "GitHub",
-    "description": "Підключіть та синхронізуйте ваші робочі елементи GitHub з Плейн.",
+    "description": "Підключіть та синхронізуйте ваші завдання GitHub з Плейн.",
     "connect_org": "Підключити Організацію",
     "connect_org_description": "Підключіть вашу організацію GitHub до Плейн.",
     "processing": "Обробка",
@@ -48,7 +48,7 @@
     "pr_state_mapping_empty_state": "Змаповані стани PR з'являться тут",
     "remove_pr_state_mapping": "Видалити цей Маппінг Стану Пул Ріквесту",
     "remove_pr_state_mapping_confirmation": "Ви впевнені, що хочете видалити цей маппінг стану пул ріквесту?",
-    "issue_sync_message": "Робочі елементи синхронізовані до {project}",
+    "issue_sync_message": "Завдання синхронізовані до {project}",
     "link": "Прив'язати репозиторій GitHub до проджекту Плейн",
     "pull_request_automation": "Автоматизація Пул Ріквестів",
     "pull_request_automation_description": "Налаштуйте маппінг стану пул ріквесту з GitHub до вашого проджекту Плейн",
@@ -150,7 +150,7 @@
       "project_updates_empty_state": "Проєкти, підключені до каналів Slack, з'являться тут.",
       "project_updates_form": {
         "title": "Налаштувати Оновлення Проєкту",
-        "description": "Отримуйте сповіщення про оновлення проєкту в Slack, коли створюються робочі елементи",
+        "description": "Отримуйте сповіщення про оновлення проєкту в Slack, коли створюються завдання",
         "failed_to_load_channels": "Не вдалося завантажити канали зі Slack",
         "project_dropdown": {
           "placeholder": "Виберіть проєкт",

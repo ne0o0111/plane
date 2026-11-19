@@ -19,9 +19,9 @@
     "start_date": "Data de început",
     "end_date": "Data de sfârșit",
     "in_your_timezone": "În fusul tău orar",
-    "transfer_work_items": "Transferați {count} elemente de lucru",
+    "transfer_work_items": "Transferați {count} sarcini",
     "transfer": {
-      "no_cycles_available": "Nu există alte cicluri disponibile pentru a transfera elemente de lucru."
+      "no_cycles_available": "Nu există alte cicluri disponibile pentru a transfera sarcini."
     },
     "date_range": "Interval de date",
     "add_date": "Adaugă data",

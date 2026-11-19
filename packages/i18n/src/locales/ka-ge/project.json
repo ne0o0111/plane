@@ -21,7 +21,7 @@
     "in_your_timezone": "თქვენს დროის სარტყელში",
     "transfer_work_items": "{count} სამუშაო ელემენტის გადატანა",
     "transfer": {
-      "no_cycles_available": "No other cycles available to transfer work items to."
+      "no_cycles_available": "No other cycles available to transfer tasks to."
     },
     "date_range": "თარიღის დიაპაზონი",
     "add_date": "თარიღის დამატება",
@@ -154,14 +154,14 @@
         }
       },
       "no_archived_issues": {
-        "title": "No archived work items yet",
-        "description": "Manually or through automation, you can archive work items that are completed or cancelled. Find them here once archived.",
+        "title": "No archived tasks yet",
+        "description": "Manually or through automation, you can archive tasks that are completed or cancelled. Find them here once archived.",
         "primary_button": {
           "text": "Set automation"
         }
       },
       "issues_empty_filter": {
-        "title": "No work items found matching the filters applied",
+        "title": "No tasks found matching the filters applied",
         "secondary_button": {
           "text": "Clear all filters"
         }

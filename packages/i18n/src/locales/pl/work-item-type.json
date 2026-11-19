@@ -9,7 +9,7 @@
       "cant_set_default_inactive_message": "Aktywuj ten typ przed ustawieniem go jako domyślny",
       "set_default_confirmation": {
         "title": "Ustaw jako domyślny typ elementu pracy",
-        "description": "Ustawienie {name} jako domyślnego zaimportuje go do wszystkich projektów w tym obszarze roboczym. Wszystkie nowe elementy pracy będą domyślnie używać tego typu.",
+        "description": "Ustawienie {name} jako domyślnego zaimportuje go do wszystkich projektów w tym obszarze roboczym. Wszystkie nowe zadania będą domyślnie używać tego typu.",
         "confirm_button": "Ustaw jako domyślny"
       },
       "properties": {
@@ -361,13 +361,13 @@
     "empty_state": {
       "enable": {
         "title": "Włącz Typy Elementów Pracy",
-        "description": "Kształtuj elementy pracy według swojej pracy za pomocą Typów elementów pracy. Dostosuj je za pomocą ikon, teł i właściwości oraz skonfiguruj je dla tego projektu.",
+        "description": "Kształtuj zadania według swojej pracy za pomocą Typów elementów pracy. Dostosuj je za pomocą ikon, teł i właściwości oraz skonfiguruj je dla tego projektu.",
         "primary_button": {
           "text": "Włącz"
         },
         "confirmation": {
           "title": "Po włączeniu Typów Elementów Pracy nie można ich wyłączyć.",
-          "description": "Element pracy Plane stanie się domyślnym typem elementu pracy dla tego projektu i pojawi się ze swoją ikoną i tłem w tym projekcie.",
+          "description": "Zadanie Plane stanie się domyślnym typem elementu pracy dla tego projektu i pojawi się ze swoją ikoną i tłem w tym projekcie.",
           "button": {
             "default": "Włącz",
             "loading": "Konfigurowanie"
@@ -376,14 +376,14 @@
       },
       "get_pro": {
         "title": "Zdobądź Pro, aby włączyć Typy elementów pracy.",
-        "description": "Kształtuj elementy pracy według swojej pracy za pomocą Typów elementów pracy. Dostosuj je za pomocą ikon, teł i właściwości oraz skonfiguruj je dla tego projektu.",
+        "description": "Kształtuj zadania według swojej pracy za pomocą Typów elementów pracy. Dostosuj je za pomocą ikon, teł i właściwości oraz skonfiguruj je dla tego projektu.",
         "primary_button": {
           "text": "Zdobądź Pro"
         }
       },
       "upgrade": {
         "title": "Aktualizuj, aby włączyć Typy elementów pracy.",
-        "description": "Kształtuj elementy pracy według swojej pracy za pomocą Typów elementów pracy. Dostosuj je za pomocą ikon, teł i właściwości oraz skonfiguruj je dla tego projektu.",
+        "description": "Kształtuj zadania według swojej pracy za pomocą Typów elementów pracy. Dostosuj je za pomocą ikon, teł i właściwości oraz skonfiguruj je dla tego projektu.",
         "primary_button": {
           "text": "Aktualizuj"
         }

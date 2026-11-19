@@ -25,10 +25,10 @@
   "active_cycle_analytics": {
     "empty_state": {
       "progress": {
-        "title": "Přidejte pracovní položky do cyklu, abyste viděli jeho\n pokrok"
+        "title": "Přidejte úkoly do cyklu, abyste viděli jeho\n pokrok"
       },
       "priority": {
-        "title": "Pozorujte vysoce prioritní pracovní položky řešené v\n cyklu na první pohled."
+        "title": "Pozorujte vysoce prioritní úkoly řešené v\n cyklu na první pohled."
       },
       "assignee": {
         "title": "Přidejte přiřazení k pracovním položkám, abyste viděli\n rozdělení práce podle přiřazení."

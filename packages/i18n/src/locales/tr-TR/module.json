@@ -5,9 +5,9 @@
     "select": "Modül ekle",
     "details_drawer": {
       "progress": {
-        "done": "{scope, plural, one {# iş öğesinden} other {# iş öğesinden}} {completed} tanesi tamamlandı",
+        "done": "{scope, plural, one {# görevnden} other {# görevnden}} {completed} tanesi tamamlandı",
         "points_done": "{scope, plural, one {# puandan} other {# puandan}} {completed} puan tamamlandı",
-        "empty": "İlerlemeyi takip etmek için modüle iş öğeleri ekleyin."
+        "empty": "İlerlemeyi takip etmek için modüle görevler ekleyin."
       }
     }
   }

@@ -3,23 +3,23 @@
     "workitems": {
       "step_zero": {
         "title": "Welkom in je werkruimte",
-        "description": "Om je op weg te helpen, hebben we een demoproject voor je aangemaakt. Laten we je eerste werkitem toevoegen."
+        "description": "Om je op weg te helpen, hebben we een demoproject voor je aangemaakt. Laten we je eerste taak toevoegen."
       },
       "step_one": {
-        "title": "Klik op “+ Nieuw werkitem”",
-        "description": "Begin door op de knop “+ Nieuw werkitem” te klikken. Je kunt taken, bugs of een aangepast type maken dat bij je behoeften past."
+        "title": "Klik op “+ Nieuw taak”",
+        "description": "Begin door op de knop “+ Nieuw taak” te klikken. Je kunt taken, bugs of een aangepast type maken dat bij je behoeften past."
       },
       "step_two": {
-        "title": "Filter je werkitems",
+        "title": "Filter je taken",
         "description": "Gebruik filters om je lijst snel te verkleinen. Je kunt filteren op status, prioriteit of teamleden. "
       },
       "step_three": {
-        "title": "Bekijk, groepeer en orden werkitems naar wens.",
-        "description": "Bekijk vereiste eigenschappen en groepeer of orden werkitems zoals jij wilt."
+        "title": "Bekijk, groepeer en orden taken naar wens.",
+        "description": "Bekijk vereiste eigenschappen en groepeer of orden taken zoals jij wilt."
       },
       "step_four": {
         "title": "Visualiseer zoals jij wilt",
-        "description": "Selecteer welke eigenschappen je in de lijst wilt zien. Je kunt werkitems ook op jouw manier groeperen en sorteren."
+        "description": "Selecteer welke eigenschappen je in de lijst wilt zien. Je kunt taken ook op jouw manier groeperen en sorteren."
       }
     },
     "cycle": {
@@ -33,29 +33,29 @@
       },
       "step_two": {
         "title": "Klik op “+”",
-        "description": "Begin door op de knop “+” te klikken. Voeg nieuwe of bestaande werkitems direct toe vanaf de cycluspagina."
+        "description": "Begin door op de knop “+” te klikken. Voeg nieuwe of bestaande taken direct toe vanaf de cycluspagina."
       },
       "step_three": {
         "title": "Cyclusoverzicht",
         "description": "Volg de voortgang van de cyclus, de productiviteit van het team en de prioriteiten, en onderzoek het als iets achterloopt."
       },
       "step_four": {
-        "title": "Werkitems overzetten",
+        "title": "Taken overzetten",
         "description": "Na de vervaldatum wordt een cyclus automatisch voltooid. Verplaats onafgerond werk naar een andere cyclus."
       }
     },
     "module": {
       "step_zero": {
         "title": "Deel je project op in modules",
-        "description": "Modules zijn kleinere, gerichte projecten waarmee gebruikers werkitems binnen specifieke periodes kunnen groeperen en organiseren."
+        "description": "Modules zijn kleinere, gerichte projecten waarmee gebruikers taken binnen specifieke periodes kunnen groeperen en organiseren."
       },
       "step_one": {
         "title": "Module aanmaken",
-        "description": "Modules zijn kleinere, gerichte projecten waarmee gebruikers werkitems binnen specifieke periodes kunnen groeperen en organiseren."
+        "description": "Modules zijn kleinere, gerichte projecten waarmee gebruikers taken binnen specifieke periodes kunnen groeperen en organiseren."
       },
       "step_two": {
         "title": "Klik op “+”",
-        "description": "Begin door op de knop “+” te klikken. Voeg nieuwe of bestaande werkitems direct toe vanaf de modulepagina."
+        "description": "Begin door op de knop “+” te klikken. Voeg nieuwe of bestaande taken direct toe vanaf de modulepagina."
       },
       "step_three": {
         "title": "Modulestatussen",
@@ -95,7 +95,7 @@
     "intake": {
       "step_zero": {
         "title": "Stroomlijn verzoeken met intake",
-        "description": "Een functie die alleen in Plane beschikbaar is en waarmee gasten werkitems kunnen aanmaken voor bugs, verzoeken of tickets."
+        "description": "Een functie die alleen in Plane beschikbaar is en waarmee gasten taken kunnen aanmaken voor bugs, verzoeken of tickets."
       },
       "step_one": {
         "title": "Open/gesloten intakeverzoeken",
@@ -103,11 +103,11 @@
       },
       "step_two": {
         "title": "Een openstaand verzoek accepteren/afwijzen",
-        "description": "Accepteer om het werkitem te bewerken en naar je project te verplaatsen, of wijs het af om het als Geannuleerd te markeren."
+        "description": "Accepteer om het taak te bewerken en naar je project te verplaatsen, of wijs het af om het als Geannuleerd te markeren."
       },
       "step_three": {
         "title": "Voorlopig uitstellen",
-        "description": "Een werkitem kan worden uitgesteld om het later te beoordelen. Het wordt naar onderaan je lijst met openstaande verzoeken verplaatst."
+        "description": "Een taak kan worden uitgesteld om het later te beoordelen. Het wordt naar onderaan je lijst met openstaande verzoeken verplaatst."
       }
     },
     "mcp_connectors": {
@@ -163,7 +163,7 @@
           "title": "Een project aanmaken"
         },
         "item_2": {
-          "title": "Een werkitem aanmaken"
+          "title": "Een taak aanmaken"
         },
         "item_3": {
           "title": "Teamleden uitnodigen"

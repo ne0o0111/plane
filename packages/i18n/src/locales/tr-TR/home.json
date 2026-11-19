@@ -42,14 +42,14 @@
       "empty": {
         "project": "Bir projeyi ziyaret ettikten sonra son projeleriniz burada görünecek.",
         "page": "Bir sayfayı ziyaret ettikten sonra son sayfalarınız burada görünecek.",
-        "issue": "Bir iş öğesini ziyaret ettikten sonra son iş öğeleriniz burada görünecek.",
+        "issue": "Bir görevni ziyaret ettikten sonra son görevlerniz burada görünecek.",
         "default": "Henüz hiç sonunuz yok."
       },
       "filters": {
         "all": "Tüm öğeler",
         "projects": "Projeler",
         "pages": "Sayfalar",
-        "issues": "İş öğeleri"
+        "issues": "Görevler"
       }
     },
     "new_at_plane": {

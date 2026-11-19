@@ -66,16 +66,18 @@ These are common nouns. **Translate them into the target language** using the ca
 
 Use the table verbatim — never coin new variants; never leave the Latin form in the locale value.
 
-| Source      | zh-CN | zh-TW | ja         | ko     | ru       | ua       | bg       | de     | fr      | es      | it     | pt-BR   | pl     | cs      | sk      | ro      | tr-TR    | vi-VN  | id      |
-| ----------- | ----- | ----- | ---------- | ------ | -------- | -------- | -------- | ------ | ------- | ------- | ------ | ------- | ------ | ------- | ------- | ------- | -------- | ------ | ------- |
-| **Cycle**   | 周期  | 週期  | サイクル   | 사이클 | Цикл     | Цикл     | Цикъл    | Zyklus | Cycle   | Ciclo   | Ciclo  | Ciclo   | Cykl   | Cyklus  | Cyklus  | Ciclu   | Döngü    | Chu kỳ | Siklus  |
-| **Cycles**  | 周期  | 週期  | サイクル   | 사이클 | Циклы    | Цикли    | Цикли    | Zyklen | Cycles  | Ciclos  | Cicli  | Ciclos  | Cykle  | Cykly   | Cykly   | Cicluri | Döngüler | Chu kỳ | Siklus  |
-| **Module**  | 模块  | 模組  | モジュール | 모듈   | Модуль   | Модуль   | Модул    | Modul  | Module  | Módulo  | Modulo | Módulo  | Moduł  | Modul   | Modul   | Modul   | Modül    | Mô-đun | Modul   |
-| **Modules** | 模块  | 模組  | モジュール | 모듈   | Модули   | Модулі   | Модули   | Module | Modules | Módulos | Moduli | Módulos | Moduły | Moduly  | Moduly  | Module  | Modüller | Mô-đun | Modul   |
-| **Epic**    | 史诗  | 史詩  | エピック   | 에픽   | Эпик     | Епік     | Епик     | Epic   | Epic    | Epic    | Epic   | Epic    | Epik   | Epik    | Epik    | Epic    | Epik     | Epic   | Epik    |
-| **Epics**   | 史诗  | 史詩  | エピック   | 에픽   | Эпики    | Епіки    | Епици    | Epics  | Epics   | Epics   | Epics  | Epics   | Epiki  | Epiky   | Epiky   | Epice   | Epikler  | Epic   | Epik    |
-| **Page**    | 页面  | 頁面  | ページ     | 페이지 | Страница | Сторінка | Страница | Seite  | Page    | Página  | Pagina | Página  | Strona | Stránka | Stránka | Pagină  | Sayfa    | Trang  | Halaman |
-| **Pages**   | 页面  | 頁面  | ページ     | 페이지 | Страницы | Сторінки | Страници | Seiten | Pages   | Páginas | Pagine | Páginas | Strony | Stránky | Stránky | Pagini  | Sayfalar | Trang  | Halaman |
+| Source      | zh-CN | zh-TW | ja         | ko     | ru       | ua       | bg       | de       | fr      | es      | it       | pt-BR   | pl      | cs      | sk      | ro      | tr-TR    | vi-VN  | id      |
+| ----------- | ----- | ----- | ---------- | ------ | -------- | -------- | -------- | -------- | ------- | ------- | -------- | ------- | ------- | ------- | ------- | ------- | -------- | ------ | ------- |
+| **Cycle**   | 周期  | 週期  | サイクル   | 사이클 | Цикл     | Цикл     | Цикъл    | Zyklus   | Cycle   | Ciclo   | Ciclo    | Ciclo   | Cykl    | Cyklus  | Cyklus  | Ciclu   | Döngü    | Chu kỳ | Siklus  |
+| **Cycles**  | 周期  | 週期  | サイクル   | 사이클 | Циклы    | Цикли    | Цикли    | Zyklen   | Cycles  | Ciclos  | Cicli    | Ciclos  | Cykle   | Cykly   | Cykly   | Cicluri | Döngüler | Chu kỳ | Siklus  |
+| **Module**  | 模块  | 模組  | モジュール | 모듈   | Модуль   | Модуль   | Модул    | Modul    | Module  | Módulo  | Modulo   | Módulo  | Moduł   | Modul   | Modul   | Modul   | Modül    | Mô-đun | Modul   |
+| **Modules** | 模块  | 模組  | モジュール | 모듈   | Модули   | Модулі   | Модули   | Module   | Modules | Módulos | Moduli   | Módulos | Moduły  | Moduly  | Moduly  | Module  | Modüller | Mô-đun | Modul   |
+| **Epic**    | 史诗  | 史詩  | エピック   | 에픽   | Эпик     | Епік     | Епик     | Epic     | Epic    | Epic    | Epic     | Epic    | Epik    | Epik    | Epik    | Epic    | Epik     | Epic   | Epik    |
+| **Epics**   | 史诗  | 史詩  | エピック   | 에픽   | Эпики    | Епіки    | Епици    | Epics    | Epics   | Epics   | Epics    | Epics   | Epiki   | Epiky   | Epiky   | Epice   | Epikler  | Epic   | Epik    |
+| **Page**    | 页面  | 頁面  | ページ     | 페이지 | Страница | Сторінка | Страница | Seite    | Page    | Página  | Pagina   | Página  | Strona  | Stránka | Stránka | Pagină  | Sayfa    | Trang  | Halaman |
+| **Pages**   | 页面  | 頁面  | ページ     | 페이지 | Страницы | Сторінки | Страници | Seiten   | Pages   | Páginas | Pagine   | Páginas | Strony  | Stránky | Stránky | Pagini  | Sayfalar | Trang  | Halaman |
+| **Task**    | 任务  | 任務  | タスク     | 작업   | Задача   | Завдання | Задача   | Aufgabe  | Tâche   | Tarea   | Attività | Tarefa  | Zadanie | Úkol    | Úloha   | Sarcină | Görev    | Task   | Tugas   |
+| **Tasks**   | 任务  | 任務  | タスク     | 작업   | Задачи   | Завдання | Задачи   | Aufgaben | Tâches  | Tareas  | Attività | Tarefas | Zadania | Úkoly   | Úlohy   | Sarcini | Görevler | Tasks  | Tugas   |
 
 Notes:
 
