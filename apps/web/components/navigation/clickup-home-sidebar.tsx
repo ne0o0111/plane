@@ -6,15 +6,18 @@
 
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, usePathname, useRouter } from "next/navigation";
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
+import { useProject } from "@/hooks/store/use-project";
+import { useWorkspace } from "@/hooks/store/use-workspace";
 
 /**
  * ClickUp Home sidebar mock (Figma 8005:995).
  * Header hover reveals Search / Filter / Collapse.
- * "New" → New work item; "Inbox" → notifications.
+ * New → work item; Inbox → notifications.
+ * Space tree: parent "Space" nests Plane projects as lists (e.g. School Health).
  */
 
 const FONT = "Roboto, Helvetica, Arial, sans-serif";
@@ -107,6 +110,23 @@ function CreateMenuButton() {
   );
 }
 
+function ListIcon({ color = TEXT_FAINT }: { color?: string }) {
+  return (
+    <span
+      aria-hidden
+      style={{
+        display: "block",
+        width: 16,
+        height: 16,
+        flexShrink: 0,
+        backgroundColor: color,
+        WebkitMask: "url(/clickup-home/list.svg) center / contain no-repeat",
+        mask: "url(/clickup-home/list.svg) center / contain no-repeat",
+      }}
+    />
+  );
+}
+
 function Row(props: {
   icon?: React.ReactNode;
   label: string;
@@ -116,6 +136,7 @@ function Row(props: {
   active?: boolean;
   indent?: boolean;
   showRail?: boolean;
+  trailing?: React.ReactNode;
   onClick?: () => void;
 }) {
   const {
@@ -127,6 +148,7 @@ function Row(props: {
     active = false,
     indent = false,
     showRail = false,
+    trailing,
     onClick,
   } = props;
   const [hovered, setHovered] = useState(false);
@@ -141,7 +163,7 @@ function Row(props: {
     marginLeft: indent ? 0 : 8,
     marginRight: 8,
     paddingLeft: indent ? 6 : 8,
-    paddingRight: 8,
+    paddingRight: trailing ? 4 : 8,
     borderRadius: 7,
     background: highlighted ? "rgba(0,0,0,0.06)" : "transparent",
     gap: 10,
@@ -150,7 +172,7 @@ function Row(props: {
     border: "none",
     font: "inherit",
     textAlign: "left",
-    cursor: "pointer",
+    cursor: onClick ? "pointer" : "default",
     transition: "background 80ms ease",
   };
 
@@ -188,11 +210,12 @@ function Row(props: {
           {count}
         </span>
       ) : null}
+      {trailing}
     </>
   );
 
   return (
-    <div style={{ position: "relative", paddingLeft: indent ? 20 : 0, marginLeft: indent ? 0 : 0 }}>
+    <div style={{ position: "relative", paddingLeft: indent ? 20 : 0 }}>
       {showRail && (
         <div
           style={{
@@ -219,7 +242,15 @@ function Row(props: {
   );
 }
 
-function SectionLabel({ label, action }: { label: string; action?: React.ReactNode }) {
+function SectionLabel({
+  label,
+  action,
+  onActionClick,
+}: {
+  label: string;
+  action?: React.ReactNode;
+  onActionClick?: () => void;
+}) {
   return (
     <div
       style={{
@@ -243,17 +274,169 @@ function SectionLabel({ label, action }: { label: string; action?: React.ReactNo
       >
         {label}
       </span>
-      {action}
+      {action ? (
+        onActionClick ? (
+          <button
+            type="button"
+            aria-label={`Add ${label}`}
+            onClick={onActionClick}
+            style={{
+              display: "flex",
+              padding: 0,
+              border: "none",
+              background: "transparent",
+              cursor: "pointer",
+            }}
+          >
+            {action}
+          </button>
+        ) : (
+          action
+        )
+      ) : null}
     </div>
   );
 }
 
+const LIST_ICON_COLORS = ["#838383", "#29C56A", "#3E8BFF", "#F5A623", "#E06C75", "#C678DD"];
+
+/** ClickUp-style Space parent; nested rows are Plane projects (lists). */
+const SpaceTree = observer(function SpaceTree({ workspaceSlug }: { workspaceSlug: string }) {
+  const pathname = usePathname();
+  const router = useRouter();
+  const { toggleCreateProjectModal } = useCommandPalette();
+  const { joinedProjectIds, getPartialProjectById, fetchProjectAnalyticsCount, getProjectAnalyticsCountById } =
+    useProject();
+  const [isOpen, setIsOpen] = useState(true);
+  const [hovered, setHovered] = useState(false);
+
+  useEffect(() => {
+    if (!workspaceSlug) return;
+    void fetchProjectAnalyticsCount(workspaceSlug, { fields: "total_issues" });
+  }, [workspaceSlug, fetchProjectAnalyticsCount]);
+
+  // Keep accordion open when navigating into a nested project
+  useEffect(() => {
+    if (joinedProjectIds.some((id) => pathname.includes(`/projects/${id}`))) {
+      setIsOpen(true);
+    }
+  }, [pathname, joinedProjectIds]);
+
+  return (
+    <div>
+      <div
+        style={{ position: "relative", display: "flex", alignItems: "center" }}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <Row
+            icon={
+              hovered ? (
+                <span
+                  aria-hidden
+                  style={{
+                    display: "flex",
+                    width: 20,
+                    height: 20,
+                    borderRadius: 5,
+                    background: "rgba(0,0,0,0.06)",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                    transform: isOpen ? "none" : "rotate(-90deg)",
+                    transition: "transform 140ms ease",
+                  }}
+                >
+                  <Icon src="/clickup-home/chevron.svg" size={14} />
+                </span>
+              ) : (
+                <span
+                  style={{
+                    display: "flex",
+                    width: 20,
+                    height: 20,
+                    borderRadius: 5,
+                    background: "#6049e7",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: 12,
+                    fontWeight: 700,
+                    color: "#fff",
+                    flexShrink: 0,
+                  }}
+                >
+                  S
+                </span>
+              )
+            }
+            label="Space"
+            onClick={() => setIsOpen((open) => !open)}
+            trailing={<span style={{ width: 20, height: 20, flexShrink: 0 }} aria-hidden />}
+          />
+        </div>
+        <button
+          type="button"
+          aria-label="Add project"
+          onClick={() => toggleCreateProjectModal(true)}
+          style={{
+            position: "absolute",
+            right: 12,
+            top: "50%",
+            transform: "translateY(-50%)",
+            display: "flex",
+            width: 20,
+            height: 20,
+            borderRadius: 5,
+            alignItems: "center",
+            justifyContent: "center",
+            border: "none",
+            background: "transparent",
+            padding: 0,
+            cursor: "pointer",
+            zIndex: 1,
+          }}
+        >
+          <Icon src="/clickup-home/plus-sm.svg" />
+        </button>
+      </div>
+
+      {isOpen
+        ? joinedProjectIds.map((projectId, index) => {
+            const project = getPartialProjectById(projectId);
+            if (!project) return null;
+            const isActive = pathname.includes(`/projects/${projectId}`);
+            const count = getProjectAnalyticsCountById(projectId)?.total_issues;
+            const iconColor = isActive ? TEXT_DARK : LIST_ICON_COLORS[index % LIST_ICON_COLORS.length];
+            return (
+              <Row
+                key={projectId}
+                indent
+                showRail
+                active={isActive}
+                icon={<ListIcon color={iconColor} />}
+                label={project.name}
+                count={count}
+                onClick={() => {
+                  if (workspaceSlug) router.push(`/${workspaceSlug}/projects/${projectId}/issues/`);
+                }}
+              />
+            );
+          })
+        : null}
+    </div>
+  );
+});
+
 export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
   const [headerHovered, setHeaderHovered] = useState(false);
-  const { toggleCreateIssueModal } = useCommandPalette();
+  const { toggleCreateIssueModal, toggleCreateProjectModal } = useCommandPalette();
   const { workspaceSlug } = useParams();
+  const pathname = usePathname();
   const router = useRouter();
   const slug = workspaceSlug?.toString() ?? "";
+  const { currentWorkspace } = useWorkspace();
+  const workspaceName = currentWorkspace?.name ?? slug;
 
   return (
     <aside
@@ -391,6 +574,7 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
 
         <SectionLabel
           label="Spaces"
+          onActionClick={() => toggleCreateProjectModal(true)}
           action={
             <span
               style={{
@@ -433,37 +617,22 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
             </span>
           }
           label="All Tasks"
-          suffix=" - School Health"
+          suffix={workspaceName ? ` - ${workspaceName}` : undefined}
+          active={pathname.includes("/workspace-views/all-issues")}
+          onClick={() => {
+            if (slug) router.push(`/${slug}/workspace-views/all-issues/`);
+          }}
         />
 
-        <Row
-          icon={
-            <span
-              style={{
-                display: "flex",
-                width: 20,
-                height: 20,
-                borderRadius: 5,
-                background: "#6049e7",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 12,
-                fontWeight: 700,
-                color: "#fff",
-                flexShrink: 0,
-              }}
-            >
-              S
-            </span>
-          }
-          label="Space"
-        />
-
-        <Row indent showRail icon={<Icon src="/clickup-home/list.svg" />} label="SCRUM Sprint Planning" count={3} />
-        <Row indent showRail active icon={<Icon src="/clickup-home/checklist.svg" />} label="Bug Tracking" count={9} />
+        {slug ? <SpaceTree workspaceSlug={slug} /> : null}
 
         <Row icon={<Icon src="/clickup-home/more-muted.svg" />} label="More" labelColor={TEXT_FAINT} />
-        <Row icon={<Icon src="/clickup-home/plus.svg" />} label="New Space" labelColor={TEXT_MUTED} />
+        <Row
+          icon={<Icon src="/clickup-home/plus.svg" />}
+          label="New Space"
+          labelColor={TEXT_MUTED}
+          onClick={() => toggleCreateProjectModal(true)}
+        />
       </div>
     </aside>
   );
