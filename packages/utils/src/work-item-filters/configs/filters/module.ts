@@ -20,7 +20,7 @@ export type TCreateModuleFilterParams = TCreateFilterConfigParams &
   };
 
 /**
- * Helper to get the module multi select config
+ * Helper to get the epic multi select config
  * @param params - The filter params
  * @returns The module multi select config
  */
@@ -43,17 +43,17 @@ export const getModuleMultiSelectConfig = (params: TCreateModuleFilterParams) =>
   );
 
 /**
- * Get the module filter config
+ * Get the epic filter config
  * @template K - The filter key
  * @param key - The filter key to use
- * @returns A function that takes parameters and returns the module filter config
+ * @returns A function that takes parameters and returns the epic filter config
  */
 export const getModuleFilterConfig =
   <P extends TFilterProperty>(key: P): TCreateFilterConfig<P, TCreateModuleFilterParams> =>
   (params: TCreateModuleFilterParams) =>
     createFilterConfig<P>({
       id: key,
-      label: "Module",
+      label: "Epic",
       ...params,
       icon: params.filterIcon,
       supportedOperatorConfigsMap: new Map([

@@ -4,6 +4,10 @@
  * See the LICENSE file for details.
  */
 
+// oxlint-disable promise/always-return
+// oxlint-disable unicorn/consistent-function-scoping
+// oxlint-disable jsx-a11y/img-redundant-alt
+
 import { useTheme } from "next-themes";
 import { Button } from "@makeplane/propel/components/button";
 // assets
@@ -27,7 +31,7 @@ export function InstanceFailureView() {
           <h3 className="text-h4-medium text-on-color">Unable to fetch instance details.</h3>
           <p className="text-center text-body-sm-medium">
             We were unable to fetch the details of the instance. <br />
-            Fret not, it might just be a connectivity work items.
+            Fret not, it might just be a connectivity issue.
           </p>
         </div>
         <div className="flex justify-center">

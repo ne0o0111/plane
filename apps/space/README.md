@@ -9,7 +9,7 @@
 <h3 align="center"><b>Plane Space</b></h3>
 <p align="center"><b>Open-source, self-hosted project planning tool</b></p>
 
-Plane Space serves the public view of a Plane instance at `/spaces`: the work items of projects that have been published to the web (`/issues/:anchor`). It is a [React Router](https://reactrouter.com/) app that talks to the Plane API.
+Plane Space serves the public view of a Plane instance at `/spaces`: the tasks of projects that have been published to the web (`/issues/:anchor`). It is a [React Router](https://reactrouter.com/) app that talks to the Plane API.
 
 ## Development
 

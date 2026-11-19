@@ -29,7 +29,7 @@ export interface IIssueProperties {
 }
 
 /**
- * A public work item's property chips, read-only, in row order. Builds the same entry list the
+ * A public task's property chips, read-only, in row order. Builds the same entry list the
  * web app hands to `@plane/blocks`, and renders it with the shared wrapping list.
  */
 export const IssueProperties = observer(function IssueProperties(props: IIssueProperties) {

@@ -21,7 +21,7 @@ type Props = {
   className?: string;
 };
 
-/** The work item modules as a read-only `ModuleSelect` chip. */
+/** The task modules as a read-only `ModuleSelect` chip. */
 export const IssueBlockModules = observer(function IssueBlockModules(props: Props) {
   const { moduleIds, variant = "pill-md", className } = props;
   // i18n

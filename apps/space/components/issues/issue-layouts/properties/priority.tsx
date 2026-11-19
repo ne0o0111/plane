@@ -19,7 +19,7 @@ type Props = {
   className?: string;
 };
 
-/** The work item priority as a read-only `PrioritySelect` chip. */
+/** The task priority as a read-only `PrioritySelect` chip. */
 export function IssueBlockPriority(props: Props) {
   const { priority, variant = "pill-md", className } = props;
   // i18n

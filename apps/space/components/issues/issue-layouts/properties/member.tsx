@@ -30,7 +30,7 @@ const toMemberOption = (member: TPublicMember): MemberOption => ({
   avatar_url: member.member__avatar ? getFileURL(member.member__avatar) : undefined,
 });
 
-/** The work item assignees as a read-only `MemberSelect` chip: faces when assigned, an icon when not. */
+/** The task assignees as a read-only `MemberSelect` chip: faces when assigned, an icon when not. */
 export const IssueBlockMembers = observer(function IssueBlockMembers(props: Props) {
   const { memberIds, variant, placeholder, className } = props;
   // i18n

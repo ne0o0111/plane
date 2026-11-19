@@ -22,7 +22,7 @@ type Props = {
   className?: string;
 };
 
-/** The work item state as a read-only `StateSelect` chip. */
+/** The task state as a read-only `StateSelect` chip. */
 export const IssueBlockState = observer(function IssueBlockState(props: Props) {
   const { stateId, variant = "pill-md", className } = props;
   // i18n

@@ -76,7 +76,7 @@ export const IssuePeekOverview = observer(function IssuePeekOverview(props: TIss
   // ladder cannot express the `w-1/2` side sheet or the `h-[70%] w-3/5` / `size-[95%]` modal/full
   // geometry, so (as in EE) both panels are hand-rolled: Escape and outside-press close, Tab is
   // trapped inside the panel, and focus moves in on open and back to the trigger on close.
-  // A click on another work item's card (`peekId=` link) switches the peek instead of closing it.
+  // A click on another task's card (`peekId=` link) switches the peek instead of closing it.
   useEffect(() => {
     if (!isPeekOpen) return;
 

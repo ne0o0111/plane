@@ -30,7 +30,7 @@ type Props = {
   className?: string;
 };
 
-/** A work item start or due date as a read-only `DateSelect` chip, toned when the due date is close or past. */
+/** A task start or due date as a read-only `DateSelect` chip, toned when the due date is close or past. */
 export const IssueBlockDate = observer(function IssueBlockDate(props: Props) {
   const { date, stateId, type = "due", variant = "pill-md", placeholder, className } = props;
   // i18n

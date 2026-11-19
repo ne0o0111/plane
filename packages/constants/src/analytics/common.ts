@@ -152,7 +152,7 @@ export const ANALYTICS_X_AXIS_VALUES: { value: ChartXAxisProperty; label: string
   },
   {
     value: ChartXAxisProperty.MODULES,
-    label: "Module",
+    label: "Epic",
   },
   {
     value: ChartXAxisProperty.COMPLETED_AT,

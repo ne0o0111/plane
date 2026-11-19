@@ -36,7 +36,7 @@ const toCycleOption = (cycle: TPublicCycle): CycleOption => {
   };
 };
 
-/** The work item cycle as a read-only `CycleSelect` chip. */
+/** The task cycle as a read-only `CycleSelect` chip. */
 export const IssueBlockCycle = observer(function IssueBlockCycle(props: Props) {
   const { cycleId, variant = "pill-md", className } = props;
   // i18n

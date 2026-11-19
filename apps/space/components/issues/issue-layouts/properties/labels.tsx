@@ -26,7 +26,7 @@ type Props = {
   className?: string;
 };
 
-/** The work item labels as read-only pills, or a read-only `LabelSelect` summary chip. */
+/** The task labels as read-only pills, or a read-only `LabelSelect` summary chip. */
 export const IssueBlockLabels = observer(function IssueBlockLabels(props: Props) {
   const { labelIds, variant = "pill-md", placeholder, className } = props;
   // i18n
