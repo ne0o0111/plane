@@ -42,7 +42,7 @@ export const FilterStatus = observer(function FilterStatus() {
 
   return (
     <FilterSubmenu
-      label="Work item Status"
+      label="Task Status"
       options={options}
       appliedFilters={filterValue}
       onToggle={handleStatusFilterSelect}

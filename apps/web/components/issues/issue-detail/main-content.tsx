@@ -82,7 +82,7 @@ export const IssueMainContent = observer(function IssueMainContent(props: Props)
 
   const isPeekModeActive = Boolean(peekIssue);
 
-  // `description_html` only arrives with the work item details, so its absence means they are still
+  // `description_html` only arrives with the task details, so its absence means they are still
   // loading or failed to load. The editor reads `initialValue` once, so it mounts only once it's here.
   // The store keeps its fetching flag after a failed fetch, so it is trusted only until a retry.
   const isDescriptionLoading =

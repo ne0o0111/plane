@@ -27,7 +27,7 @@ import { IssueIdentifier } from "@/components/issues/issue-detail/issue-identifi
 
 export type TPowerKSearchResultGroupDetails = {
   icon?: React.ComponentType<{ className?: string }>;
-  /** Rendered before the name and kept out of its truncation, e.g. a work item identifier. */
+  /** Rendered before the name and kept out of its truncation, e.g. a task identifier. */
   iconNode?: (item: any) => React.ReactNode;
   itemName: (item: any) => React.ReactNode;
   path: (item: any, projectId: string | undefined) => string;
@@ -66,7 +66,7 @@ export const POWER_K_SEARCH_RESULTS_GROUPS_MAP: Record<TPowerKSearchResultsKeys,
         projectIdentifier: workItem.project__identifier,
         sequenceId: workItem?.sequence_id,
       }),
-    title: "Work items",
+    title: "Tasks",
   },
   issue_view: {
     icon: WorkItemsOutline,

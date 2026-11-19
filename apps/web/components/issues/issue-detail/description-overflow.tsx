@@ -19,7 +19,7 @@ type Props = {
 };
 
 /**
- * Clips long work item descriptions to `maxHeight` with a fade and a "Show all" / "Show less" toggle.
+ * Clips long task descriptions to `maxHeight` with a fade and a "Show all" / "Show less" toggle.
  * Purely presentational: the content is always mounted, and focusing inside it (e.g. to edit)
  * expands it so the editor is never clipped while in use.
  */

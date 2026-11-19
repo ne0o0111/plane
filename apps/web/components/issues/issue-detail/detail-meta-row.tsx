@@ -34,7 +34,7 @@ function PropertyDivider() {
 }
 
 /**
- * Inline bar of the primary work item properties (state, priority, assignees, start and due date),
+ * Inline bar of the primary task properties (state, priority, assignees, start and due date),
  * rendered under the title on the detail page and in the peek overview.
  */
 export const IssueDetailMetaRow = observer(function IssueDetailMetaRow(props: Props) {

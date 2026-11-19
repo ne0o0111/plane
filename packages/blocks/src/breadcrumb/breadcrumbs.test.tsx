@@ -70,7 +70,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
       <Breadcrumbs ariaLabel={TRAIL_LABEL} collapseBreakpoint={ALWAYS_COLLAPSED}>
         <Breadcrumbs.Item component={plainCrumb("Plane")} />
         <Breadcrumbs.Item component={<ProjectCrumb projectId="p-1" projectName="Web app" crumbLabel="Web app" />} />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -86,7 +86,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
     render(
       <Breadcrumbs ariaLabel={TRAIL_LABEL} collapseBreakpoint={ALWAYS_COLLAPSED}>
         <Breadcrumbs.Item component={<ProjectCrumb projectId="p-1" projectName="Web app" aria-label="Web app" />} />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -99,7 +99,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
     render(
       <Breadcrumbs ariaLabel={TRAIL_LABEL} collapseBreakpoint={ALWAYS_COLLAPSED}>
         <Breadcrumbs.Item crumbLabel="Web app" component={<ProjectCrumb projectId="p-1" projectName="Web app" />} />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -116,7 +116,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
             <ProjectCrumb projectId="p-1" projectName="Web app" crumbLabel="Web app" crumbHref="#/projects/p-1" />
           }
         />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -134,7 +134,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
             <ProjectCrumb projectId="p-1" projectName="Web app" crumbLabel="Web app" crumbOnClick={crumbOnClick} />
           }
         />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -148,7 +148,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
     render(
       <Breadcrumbs ariaLabel={TRAIL_LABEL} collapseBreakpoint={ALWAYS_COLLAPSED}>
         <Breadcrumbs.Item component={<ProjectCrumb projectId="p-1" projectName="Web app" crumbLabel="Web app" />} />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -167,7 +167,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
     render(
       <Breadcrumbs ariaLabel={TRAIL_LABEL} collapseBreakpoint={ALWAYS_COLLAPSED}>
         <Breadcrumbs.Item component={plainCrumb("Plane")} />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -183,7 +183,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
         {/* `CommonProjectBreadcrumbs`'s shape: ids only, markup (or `null`) inside the wrapper. */}
         <ProjectCrumb projectId="p-1" projectName="Web app" />
         <Breadcrumbs.Item component={<ProjectCrumb projectId="p-2" projectName="Mobile" />} />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -196,7 +196,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
     render(
       <Breadcrumbs ariaLabel={TRAIL_LABEL} collapseBreakpoint={ALWAYS_COLLAPSED}>
         <HiddenCrumb projectId="p-1" />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -204,7 +204,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
     // No ellipsis opening onto blank, disabled rows — and no separator left dangling before the page.
     expect(within(trail).queryByRole("button")).toBeNull();
     expect(within(trail).getAllByRole("listitem")).toHaveLength(1);
-    expect(within(trail).getByText("Work items")).toBeTruthy();
+    expect(within(trail).getByText("Tasks")).toBeTruthy();
   });
 
   it("names and routes a `BreadcrumbNavigationSelect` crumb from its selected row", async () => {
@@ -224,7 +224,7 @@ describe("Breadcrumbs collapsed overflow rows", () => {
             />
           }
         />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
 
@@ -281,7 +281,7 @@ describe("Breadcrumbs static ancestors", () => {
     render(
       <Breadcrumbs ariaLabel={TRAIL_LABEL}>
         <Breadcrumbs.Item component={<Breadcrumbs.ItemWrapper type="text">Workspace</Breadcrumbs.ItemWrapper>} />
-        <Breadcrumbs.Item component={plainCrumb("Work items", true)} />
+        <Breadcrumbs.Item component={plainCrumb("Tasks", true)} />
       </Breadcrumbs>
     );
     const ancestor = screen.getByText("Workspace");
@@ -289,7 +289,7 @@ describe("Breadcrumbs static ancestors", () => {
     expect(ancestor.tagName).toBe("SPAN");
     expect(ancestor.hasAttribute("href")).toBe(false);
     expect(ancestor.hasAttribute("tabindex")).toBe(false);
-    expect(screen.getByText("Work items").closest('[aria-current="page"]')).not.toBeNull();
+    expect(screen.getByText("Tasks").closest('[aria-current="page"]')).not.toBeNull();
   });
 });
 

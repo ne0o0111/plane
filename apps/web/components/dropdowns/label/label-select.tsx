@@ -47,7 +47,7 @@ const toOption = (label: IIssueLabel): LabelOption => ({ id: label.id, name: lab
  * label store (fetched on first open when the project has not been loaded yet), filters them by the
  * search query, and lets project admins create a label from an unmatched search.
  *
- * CE change: EE switches on a `scope` (work item / release / initiative / project) and a governed
+ * CE change: EE switches on a `scope` (task / release / initiative / project) and a governed
  * label catalog; CE only has project work-item labels, so the binding takes a `projectId` instead.
  */
 export const LabelSelect = observer(function LabelSelect(props: LabelSelectWebProps) {

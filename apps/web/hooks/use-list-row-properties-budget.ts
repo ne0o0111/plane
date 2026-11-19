@@ -8,7 +8,7 @@ import { useLayoutEffect, useState } from "react";
 
 // Fixed parts of a single-line list row; they mirror the classes in `issue-layouts/list/block.tsx`
 // (and the workspace draft row) and must move with them.
-/** Room always kept for the work item title. A budget figure only — never a CSS min-width. */
+/** Room always kept for the task title. A budget figure only — never a CSS min-width. */
 const TITLE_MIN_WIDTH_PX = 240;
 /** `gap-0.5` between the leading group (checkbox, identifier, chevron) and the title. */
 const LEADING_GAP_PX = 2;

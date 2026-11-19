@@ -40,7 +40,7 @@ export function DeclineIssueModal(props: Props) {
     try {
       await onSubmit();
     } catch (error) {
-      console.error("Failed to decline the intake work item", error);
+      console.error("Failed to decline the intake task", error);
     } finally {
       setIsDeclining(false);
     }
@@ -56,7 +56,7 @@ export function DeclineIssueModal(props: Props) {
       // TODO: Need to translate the confirmation message
       content={
         <>
-          Are you sure you want to decline work item{" "}
+          Are you sure you want to decline task{" "}
           <span className="font-medium break-words text-primary">
             {projectDetails?.identifier}-{data?.sequence_id}
           </span>

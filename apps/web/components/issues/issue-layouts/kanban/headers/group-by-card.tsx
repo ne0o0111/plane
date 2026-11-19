@@ -77,13 +77,13 @@ export const HeaderGroupByCard = observer(function HeaderGroupByCard(props: IHea
       setToast({
         type: "success",
         title: "Success!",
-        message: "Work items added to the cycle successfully.",
+        message: "Tasks added to the cycle successfully.",
       });
     } catch (_error) {
       setToast({
         type: "error",
         title: "Error!",
-        message: "Selected work items could not be added to the cycle. Please try again.",
+        message: "Selected tasks could not be added to the cycle. Please try again.",
       });
     }
   };
@@ -165,13 +165,13 @@ export const HeaderGroupByCard = observer(function HeaderGroupByCard(props: IHea
               />
               <MenuContent side="bottom" align="end">
                 <MenuItem
-                  label="Create work item"
+                  label="Create task"
                   onClick={() => {
                     setIsOpen(true);
                   }}
                 />
                 <MenuItem
-                  label="Add an existing work item"
+                  label="Add an existing task"
                   onClick={() => {
                     setOpenExistingIssueListModal(true);
                   }}

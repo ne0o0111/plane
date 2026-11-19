@@ -12,6 +12,7 @@ export type TClickUpRailItemProps = {
   href?: string;
   isActive?: boolean;
   tracking?: "nav" | "utility";
+  onClick?: () => void;
 };
 
 /**
@@ -19,7 +20,7 @@ export type TClickUpRailItemProps = {
  * parent gap 12 → 62px pitch between items.
  */
 export function ClickUpRailItem(props: TClickUpRailItemProps) {
-  const { label, icon, href, isActive = false, tracking = "nav" } = props;
+  const { label, icon, href, isActive = false, tracking = "nav", onClick } = props;
 
   const content = (
     <>
@@ -83,7 +84,7 @@ export function ClickUpRailItem(props: TClickUpRailItemProps) {
     overflow: "visible",
   };
 
-  if (href) {
+  if (href && !onClick) {
     return (
       <Link href={href} style={style} aria-current={isActive ? "page" : undefined}>
         {content}
@@ -92,7 +93,7 @@ export function ClickUpRailItem(props: TClickUpRailItemProps) {
   }
 
   return (
-    <button type="button" style={style} aria-label={label}>
+    <button type="button" style={style} aria-label={label} onClick={onClick}>
       {content}
     </button>
   );

@@ -102,7 +102,7 @@ export const SubIssuesCollapsibleContent = observer(function SubIssuesCollapsibl
         setSubIssueHelpers(helperId, "issue_visibility", parentIssueId);
       }
     } catch (error) {
-      console.error("Error fetching sub-work items:", error);
+      console.error("Error fetching sub-tasks:", error);
     } finally {
       if (subIssueHelpersByIssueId(helperId).preview_loader.includes(parentIssueId)) {
         setSubIssueHelpers(helperId, "preview_loader", parentIssueId);

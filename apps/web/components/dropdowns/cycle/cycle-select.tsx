@@ -16,7 +16,7 @@ import type { ICycle, TCycleGroups, TPaginatedResponse } from "@plane/types";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 
-/** Statuses a work item can be assigned to — completed cycles are never offered. */
+/** Statuses a task can be assigned to — completed cycles are never offered. */
 const DEFAULT_CYCLE_STATUSES: TCycleGroups[] = ["current", "upcoming", "draft"];
 
 type CycleSelectWebProps = {
@@ -36,7 +36,7 @@ type CycleSelectWebProps = {
   clearable?: boolean;
   /** Label for the clear row. Defaults to `t("cycle.no_cycle")`. */
   clearLabel?: string;
-  /** Hides these cycles from the options (e.g. the cycle the work items are being moved out of). */
+  /** Hides these cycles from the options (e.g. the cycle the tasks are being moved out of). */
   excludeIds?: string[];
   className?: string;
   tooltip?: SelectTooltip;

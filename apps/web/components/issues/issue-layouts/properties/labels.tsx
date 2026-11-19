@@ -51,7 +51,7 @@ const swallowEvent = (e: React.SyntheticEvent) => {
 };
 
 /**
- * Label property of a work item row (list, kanban, draft, spreadsheet). Adapter over the
+ * Label property of a task row (list, kanban, draft, spreadsheet). Adapter over the
  * `LabelSelect` binding: a borderless full-width cell renders as a table cell, everything else as a
  * small pill (EE `LabelsChip`).
  */

@@ -51,7 +51,7 @@ const formatAuditDate = (date: string | null | undefined) =>
   date ? renderFormattedDate(new Date(date), AUDIT_DATE_FORMAT) : undefined;
 
 /**
- * Work item properties shared by the detail page sidebar and the peek overview: grouped into
+ * Task properties shared by the detail page sidebar and the peek overview: grouped into
  * collapsible "Details" and "Project structure" sections, followed by created/updated metadata.
  */
 export const IssueDetailSidebarSections = observer(function IssueDetailSidebarSections(props: Props) {

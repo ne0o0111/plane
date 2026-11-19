@@ -22,7 +22,7 @@ describe("EntityDetailWidgetToolbar", () => {
     render(
       <EntityDetailWidgetToolbar aria-label="Actions">
         <EntityDetailWidgetToolbarGroup>
-          <EntityDetailWidgetToolbarTextButton icon={<svg />} label="Add sub-work item" />
+          <EntityDetailWidgetToolbarTextButton icon={<svg />} label="Add sub-task" />
         </EntityDetailWidgetToolbarGroup>
         {showRelations && (
           <EntityDetailWidgetToolbarGroup>
@@ -39,7 +39,7 @@ describe("EntityDetailWidgetToolbar", () => {
     expect(screen.getByRole("toolbar", { name: "Actions" })).toBeTruthy();
     expect(screen.getAllByRole("group")).toHaveLength(2);
     expect(screen.getAllByRole("separator")).toHaveLength(1);
-    expect(screen.getByRole("button", { name: "Add sub-work item" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Add sub-task" })).toBeTruthy();
     expect(screen.queryByRole("button", { name: "Add relation" })).toBeNull();
   });
 

@@ -7,6 +7,7 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
+import { useClickUpHomeSidebar } from "@/components/navigation/clickup-home-sidebar-context";
 import type { TClickUpRailItemProps } from "./clickup-rail-item";
 import { ClickUpRailIcon } from "./clickup-rail-icon";
 
@@ -23,6 +24,7 @@ export function withDockItems<P extends WithDockItemsProps>(WrappedComponent: Re
   const ComponentWithDockItems = observer(function ComponentWithDockItems(props: Omit<P, keyof WithDockItemsProps>) {
     const { workspaceSlug } = useParams();
     const pathname = usePathname();
+    const { collapsed, setCollapsed } = useClickUpHomeSidebar();
     const slug = workspaceSlug?.toString() ?? "";
     const isHome = pathname === `/${slug}` || pathname === `/${slug}/`;
     const isSpaces = pathname.includes(`/${slug}/projects`);
@@ -32,9 +34,14 @@ export function withDockItems<P extends WithDockItemsProps>(WrappedComponent: Re
     const dockItems: TAppRailDockItem[] = [
       {
         label: "Home",
-        icon: <ClickUpRailIcon src="/clickup-rail/home.svg" alt="Home" withGlow />,
-        href: `/${slug}/`,
-        isActive: isHome,
+        icon: collapsed ? (
+          <ClickUpRailIcon src="/clickup-rail/expand-chevrons.svg" alt="Open Home sidebar" />
+        ) : (
+          <ClickUpRailIcon src="/clickup-rail/home.svg" alt="Home" withGlow />
+        ),
+        href: collapsed ? undefined : `/${slug}/`,
+        onClick: collapsed ? () => setCollapsed(false) : undefined,
+        isActive: isHome || collapsed,
         shouldRender: true,
         section: "top",
       },

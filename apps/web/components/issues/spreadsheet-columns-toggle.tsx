@@ -42,7 +42,7 @@ export const SpreadsheetColumnsToggle = observer(function SpreadsheetColumnsTogg
     .filter((key) => key !== "estimate" || isEstimateEnabled)
     .map((key) => {
       const details = SPREADSHEET_PROPERTY_DETAILS[key];
-      // Matches the column header, which names the sub-item count after the epic's work items.
+      // Matches the column header, which names the sub-item count after the epic's tasks.
       const label =
         key === "sub_issue_count" && isEpic ? t("issue.label", { count: 2 }) : details ? t(details.i18n_title) : key;
       return { key, label, icon: details?.icon };

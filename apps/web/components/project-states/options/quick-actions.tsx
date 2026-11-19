@@ -64,7 +64,7 @@ export const StateQuickActions = observer(function StateQuickActions(props: TSta
         title: "Error!",
         message:
           errorStatus.status === 400
-            ? "This state contains some work items within it, please move them to some other state to delete this state."
+            ? "This state contains some tasks within it, please move them to some other state to delete this state."
             : "State could not be deleted. Please try again.",
       });
     } finally {

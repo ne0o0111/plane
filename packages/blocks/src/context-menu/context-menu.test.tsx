@@ -182,9 +182,9 @@ describe("ContextMenu rows", () => {
   it("stays open after a closeOnClick: false row is pressed", async () => {
     const user = userEvent.setup();
     const toggle = vi.fn();
-    render(<Harness items={[{ key: "toggle", title: "Show sub-work items", closeOnClick: false, action: toggle }]} />);
+    render(<Harness items={[{ key: "toggle", title: "Show sub-tasks", closeOnClick: false, action: toggle }]} />);
     await openMenu();
-    await user.click(row("Show sub-work items"));
+    await user.click(row("Show sub-tasks"));
     expect(toggle).toHaveBeenCalledTimes(1);
     // a closing surface drops `data-open` before it unmounts, so this catches a close in flight too
     expect(screen.getByRole("menu").hasAttribute("data-open")).toBe(true);

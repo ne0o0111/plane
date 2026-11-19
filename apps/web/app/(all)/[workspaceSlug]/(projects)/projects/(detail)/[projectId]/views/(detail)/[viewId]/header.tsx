@@ -246,7 +246,7 @@ export const ProjectViewIssuesHeader = observer(function ProjectViewIssuesHeader
             variant="primary"
             size="md"
             stretch="auto"
-            label="Add work item"
+            label="Add task"
             onClick={() => {
               toggleCreateIssueModal(true, EIssuesStoreType.PROJECT_VIEW);
             }}

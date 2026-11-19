@@ -87,7 +87,7 @@ export function SelectDuplicateInboxIssueModal(props: Props) {
   const issueList =
     filteredIssues.length > 0 ? (
       <div>
-        {query === "" && <h2 className="mb-2 text-caption-sm-semibold text-primary">Select work item</h2>}
+        {query === "" && <h2 className="mb-2 text-caption-sm-semibold text-primary">Select task</h2>}
         <ComboboxList aria-label={t("inbox_issue.actions.mark_as_duplicate")}>
           {filteredIssues.map((issue) => (
             <ComboboxItem
@@ -130,7 +130,7 @@ export function SelectDuplicateInboxIssueModal(props: Props) {
     >
       <DialogContent size="md">
         {/* `inline` renders the list in place (the dialog is the surface) instead of in a popup
-            positioner. Values are work item ids, so the selection is id-first (Ruling 46). */}
+            positioner. Values are task ids, so the selection is id-first (Ruling 46). */}
         <Combobox<string>
           inline
           open={isOpen}

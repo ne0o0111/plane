@@ -24,7 +24,7 @@ type Props = {
 const ORDERED_STATE_GROUPS: TStateGroups[] = ["backlog", "unstarted", "started", "completed", "cancelled"];
 
 /**
- * Completed / total sub-work items as a compact ring + count chip next to the section title. Hovering it
+ * Completed / total sub-tasks as a compact ring + count chip next to the section title. Hovering it
  * opens a breakdown by state group.
  */
 export const SubIssuesProgressChip = observer(function SubIssuesProgressChip(props: Props) {

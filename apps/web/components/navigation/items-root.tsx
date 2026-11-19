@@ -27,6 +27,7 @@ function Component({ dockItems, section = "top" }: Props) {
             href={item.href}
             isActive={item.isActive}
             tracking={item.tracking}
+            onClick={item.onClick}
           />
         ))}
     </>

@@ -14,6 +14,7 @@ import { useLocalStorage } from "@plane/hooks";
 import { ResizableSidebar } from "@/components/sidebar/resizable-sidebar";
 // hooks
 import { useAppTheme } from "@/hooks/store/use-app-theme";
+import { useAppRailVisibility } from "@/lib/app-rail";
 // local imports
 import { ExtendedAppSidebar } from "./extended-sidebar";
 import { AppSidebar } from "./sidebar";
@@ -28,6 +29,7 @@ export const ProjectAppSidebar = observer(function ProjectAppSidebar() {
     isExtendedSidebarOpened,
     isAnySidebarDropdownOpen,
   } = useAppTheme();
+  const { shouldRenderAppRail } = useAppRailVisibility();
   const { storedValue, setValue } = useLocalStorage("sidebarWidth", SIDEBAR_WIDTH);
   // states
   const [sidebarWidth, setSidebarWidth] = useState<number>(storedValue ?? SIDEBAR_WIDTH);
@@ -42,6 +44,8 @@ export const ProjectAppSidebar = observer(function ProjectAppSidebar() {
   // handlers
   const handleWidthChange = (width: number) => setValue(width);
 
+  // ClickUp Home sidebar replaces the legacy workspace Home nav while app rail is on
+  if (shouldRenderAppRail) return null;
   if (isNotificationsPath) return null;
 
   return (

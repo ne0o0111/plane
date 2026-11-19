@@ -21,7 +21,7 @@ type TCreateIssueToastActionArgs = {
 /**
  * propel: Propel's toast is a closed, portaled surface with no markup escape hatch, so its actions
  * cross the boundary as data (`{ label, onClick | href }`) — a component here would be dropped at
- * runtime. This hook keeps the store reads (the work item is only in the store once the create
+ * runtime. This hook keeps the store reads (the task is only in the store once the create
  * settles) and hands the call site a builder it can invoke inside `setToast`.
  */
 export function useCreateIssueToastActions() {

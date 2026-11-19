@@ -92,7 +92,7 @@ export function LabelsStepDownChip(props: TLabelsStepDownChipProps) {
       className={cn("relative flex min-w-0 shrink-0 items-center rounded-md", {
         "has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-accent-strong": showPills,
       })}
-      // Read-only pills let presses through to the row; keep them from opening the work item.
+      // Read-only pills let presses through to the row; keep them from opening the task.
       onClick={showPills && disabled ? swallowRowEvent : undefined}
     >
       <div className={showPills ? "absolute inset-0" : "flex min-w-0 items-center"}>

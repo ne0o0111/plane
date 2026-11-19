@@ -66,7 +66,7 @@ export const IssueModuleSelect = observer(function IssueModuleSelect(props: TIss
         })
         // CE change: swallow a failed step so the queue stays usable (the store already rolled back).
         .catch((error: unknown) => {
-          console.error("Error updating work item modules:", error);
+          console.error("Error updating task modules:", error);
         })
         .finally(() => setIsUpdating(false));
     },

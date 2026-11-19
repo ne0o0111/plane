@@ -136,7 +136,7 @@ describe("setToast", () => {
   it("routes a `primary` item to Propel's right-aligned slot and the rest to the left cluster", () => {
     setToast({
       type: "success",
-      title: "Work item created",
+      title: "Task created",
       actionItems: [
         { label: "Copy link", onClick: vi.fn() },
         { label: "PROJ-1", onClick: vi.fn() },
@@ -183,7 +183,7 @@ describe("dropped action items", () => {
   it("warns and truncates when more items are passed than the toast can render", () => {
     setToast({
       type: "success",
-      title: "Work item created",
+      title: "Task created",
       actionItems: [
         { label: "View", href: "/x" },
         { label: "Copy link", onClick: vi.fn() },

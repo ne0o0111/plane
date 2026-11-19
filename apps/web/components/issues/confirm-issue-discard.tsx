@@ -57,9 +57,7 @@ export function ConfirmIssueDiscard(props: Props) {
           <DialogHeader>
             <DialogHeading>
               <DialogTitle>Save this draft?</DialogTitle>
-              <DialogDescription>
-                You can save this work item to Drafts so you can come back to it later.
-              </DialogDescription>
+              <DialogDescription>You can save this task to Drafts so you can come back to it later.</DialogDescription>
             </DialogHeading>
           </DialogHeader>
         </DialogMain>

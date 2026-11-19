@@ -24,14 +24,14 @@ const STATE_GROUP_COLOR_CLASS: Record<TStateGroups, string> = {
 
 type Props = {
   plotType: TModulePlotType;
-  /** Work item counts, or estimate points when `plotType` is "points", per state group. */
+  /** Task counts, or estimate points when `plotType` is "points", per state group. */
   stateGroupCounts: Record<TStateGroups, number>;
   total: number;
   /** Rounded completion with cancelled items left out of the scope. */
   percentage: number;
   completed: number;
   scope: number;
-  /** Whether the state group tiles filter the module's work items. */
+  /** Whether the state group tiles filter the module's tasks. */
   isFilterable: boolean;
   selectedStateGroups: string[];
   onStateGroupClick: (stateGroup: TStateGroups) => void;
