@@ -17,7 +17,7 @@ function renderDialog(overrides: Partial<ConfirmDialogProps> = {}) {
     isOpen: true,
     isSubmitting: false,
     title: "Delete sprint",
-    content: "This cycle and its links will be deleted.",
+    content: "This sprint and its links will be deleted.",
     handleClose,
     handleSubmit,
     ...overrides,

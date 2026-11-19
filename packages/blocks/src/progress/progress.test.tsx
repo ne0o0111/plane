@@ -57,9 +57,9 @@ describe("SegmentedProgress", () => {
 
 describe("ProgressRing", () => {
   it("exposes a clamped progress value when labelled", () => {
-    render(<ProgressRing value={140} aria-label="Module progress" />);
+    render(<ProgressRing value={140} aria-label="Epic progress" />);
 
-    const ring = screen.getByRole("progressbar", { name: "Module progress" });
+    const ring = screen.getByRole("progressbar", { name: "Epic progress" });
     expect(ring.getAttribute("aria-valuenow")).toBe("100");
   });
 

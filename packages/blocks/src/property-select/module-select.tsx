@@ -29,7 +29,7 @@ type ModuleSelectBaseProps = {
   /** Shows each option's `identifier` as a pill, for a picker scoped across several projects. */
   showIdentifier?: boolean;
   tooltip?: SelectTooltip;
-  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the work item create modal). */
+  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the task create modal). */
   tabIndex?: number;
 };
 
@@ -52,7 +52,7 @@ export type ModuleSelectProps =
 function triggerLabel(selected: ModuleOption[], showCountOnMultiple: boolean, placeholder?: string): string {
   if (selected.length === 0) return placeholder ?? "";
   if (selected.length === 1) return selected[0]?.name ?? "";
-  if (showCountOnMultiple) return `${selected.length} modules`;
+  if (showCountOnMultiple) return `${selected.length} epics`;
   return selected.map((module) => module.name).join(", ");
 }
 
@@ -70,7 +70,7 @@ export function ModuleSelect(props: ModuleSelectProps) {
       variant,
       disabled = false,
       placeholder = "",
-      searchPlaceholder = "Search modules...",
+      searchPlaceholder = "Search epics...",
       onClose,
       className,
       showIdentifier = false,
@@ -124,7 +124,7 @@ export function ModuleSelect(props: ModuleSelectProps) {
     variant,
     disabled = false,
     placeholder = "",
-    searchPlaceholder = "Search modules...",
+    searchPlaceholder = "Search epics...",
     onClose,
     className,
     showIdentifier = false,
@@ -132,7 +132,7 @@ export function ModuleSelect(props: ModuleSelectProps) {
     tabIndex,
   } = props;
 
-  // "table-cell" / "pill" summarise as "N modules"; "select" / "select-ghost" list per-module pills instead.
+  // "table-cell" / "pill" summarise as "N epics"; "select" / "select-ghost" list per-epic pills instead.
   const showCountOnMultiple = variant === "table-cell" || variant.startsWith("pill-");
 
   return (

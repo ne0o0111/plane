@@ -47,7 +47,7 @@ export type StateSelectProps = {
   appendElement?: ReactNode;
   /** Forwarded to `Select.Trigger`'s `testId` — see its doc comment (value-agnostic e2e selector). */
   testId?: string;
-  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the work item create modal). */
+  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the task create modal). */
   tabIndex?: number;
 };
 

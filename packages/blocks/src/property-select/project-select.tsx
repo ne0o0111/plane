@@ -31,7 +31,7 @@ type ProjectSelectBaseProps = {
   tooltip?: SelectTooltip;
   /** Optional context rendered below the selected project's name in the trigger. */
   selectedDescription?: ReactNode;
-  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the work item create modal). */
+  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the task create modal). */
   tabIndex?: number;
   /**
    * Shows the placeholder in the value's own colour, for pickers where an empty selection is itself

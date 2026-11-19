@@ -385,7 +385,7 @@ export type SelectTriggerProps<T> = {
   /** Opt-in hover tooltip on the trigger: heading + the selected value(s), comma-joined via `getOptionLabel`. */
   tooltip?: SelectTooltip;
   /**
-   * Tab order of the trigger element, for forms that sequence focus explicitly (the work item,
+   * Tab order of the trigger element, for forms that sequence focus explicitly (the task,
    * intake and customer create modals order every control through `ETabIndices`). Threaded to
    * whichever element the variant renders — the resting button, the mounted base-ui trigger, and
    * the `search-input` chips field alike.

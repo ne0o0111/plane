@@ -18,7 +18,7 @@ import { ProjectSelect } from "./project-select";
 import { StateSelect } from "./state-select";
 
 // CE addition: every property select takes an optional `tabIndex` and puts it on its trigger, so
-// forms that order their controls explicitly (the work item create modal) keep that order.
+// forms that order their controls explicitly (the task create modal) keep that order.
 
 /** Real callers pass a computed index (`getTabIndex(...).getIndex("state_id")`), never a literal. */
 const FORM_TAB_INDEX = 4;

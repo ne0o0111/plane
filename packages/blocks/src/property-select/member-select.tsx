@@ -110,7 +110,7 @@ type MemberSelectCommonProps = {
   tooltip?: SelectTooltip;
   /** Forwarded to the trigger as `data-testid` — value-agnostic e2e selector. */
   testId?: string;
-  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the work item create modal). */
+  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the task create modal). */
   tabIndex?: number;
   /** Re-filters the rendered list every render — unlike `getValues`, also catches an already-fetched, still-open list. */
   filterOption?: (member: MemberOption) => boolean;

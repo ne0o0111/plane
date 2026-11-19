@@ -148,8 +148,8 @@ const toActionSlots = (
     console.warn(
       `[@plane/blocks/toast] Dropped \`actionItems\`: got ${describeActionItems(actionItems)}. ` +
         "Propel's toast renders actions as data, not markup, so JSX action items cannot be shown. " +
-        'Pass `ToastActionItem[]` instead, e.g. [{ label: "View cycle", href: "/…" }] or ' +
-        '[{ label: "View cycle", onClick }].'
+        'Pass `ToastActionItem[]` instead, e.g. [{ label: "View sprint", href: "/…" }] or ' +
+        '[{ label: "View sprint", onClick }].'
     );
   }
   return {};

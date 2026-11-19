@@ -20,7 +20,7 @@ export type WorkItemPropertyMenuRow = {
    * from its own `onClose` — the menu stays open while an editor is, and needs to hear it close.
    */
   editor?: (helpers: { onEditorClose: () => void }) => ReactNode;
-  /** Action rows with no editor (e.g. counts that open the work item). Ignored when `editor` is set. */
+  /** Action rows with no editor (e.g. counts that open the task). Ignored when `editor` is set. */
   onSelect?: () => void;
   /** Read-only: the row still shows its preview but cannot be picked. */
   disabled?: boolean;
@@ -35,7 +35,7 @@ export type WorkItemPropertyVariant = {
   chip: ReactNode;
 };
 
-/** A property chip in a work item row, with what the row needs to fit or collapse it. */
+/** A property chip in a task row, with what the row needs to fit or collapse it. */
 export type WorkItemPropertyEntry = {
   /** Stable key — usually the display-property key. */
   key: string;

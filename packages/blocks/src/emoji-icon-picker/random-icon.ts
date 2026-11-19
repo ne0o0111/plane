@@ -8,7 +8,7 @@ import { LUCIDE_ICONS_LIST } from "./lucide-icons";
 
 /**
  * A random icon name from {@link LUCIDE_ICONS_LIST} — the seed for a newly created entity's logo,
- * so a work item type or collection has a glyph before anyone picks one.
+ * so a task type or collection has a glyph before anyone picks one.
  *
  * It lived in the retired UI package, and its only input is the picker's own icon list,
  * so it belongs beside that list rather than in `@plane/utils` — which has no propel dependency and

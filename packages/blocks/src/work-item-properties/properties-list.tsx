@@ -15,7 +15,7 @@ export type WorkItemPropertiesListProps = {
 };
 
 /**
- * Every property chip of a work item in row order, wrapping as the container allows — for board
+ * Every property chip of a task in row order, wrapping as the container allows — for board
  * cards and other places with no width budget. Unlike `PropertiesOverflowRow` it never measures or
  * collapses chips, so it adds no observers per card.
  */

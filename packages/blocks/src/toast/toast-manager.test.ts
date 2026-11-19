@@ -242,9 +242,9 @@ describe("setPromiseToast", () => {
   });
 
   it("wires loading, success and error into the Propel promise options", () => {
-    const value = Promise.resolve({ name: "Cycle" });
+    const value = Promise.resolve({ name: "Sprint" });
     setPromiseToast(value, {
-      loading: "Creating cycle...",
+      loading: "Creating sprint...",
       success: { title: "Created", message: (data) => `Created ${data.name}` },
       // The legacy API types the error callback against the resolved value; preserved verbatim.
       error: { title: "Failed", message: (error) => `Failed: ${error.name}` },
@@ -253,10 +253,10 @@ describe("setPromiseToast", () => {
     expect(promise).toHaveBeenCalledTimes(1);
     const [passedPromise, options] = promise.mock.calls[0];
     expect(passedPromise).toBe(value);
-    expect(options.loading).toMatchObject({ title: "Creating cycle...", timeout: 0, data: { variant: "neutral" } });
-    expect(options.success({ name: "Cycle" })).toMatchObject({
+    expect(options.loading).toMatchObject({ title: "Creating sprint...", timeout: 0, data: { variant: "neutral" } });
+    expect(options.success({ name: "Sprint" })).toMatchObject({
       title: "Created",
-      description: "Created Cycle",
+      description: "Created Sprint",
       data: { variant: "success" },
     });
     expect(options.error({ name: "boom" })).toMatchObject({

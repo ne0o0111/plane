@@ -5,7 +5,7 @@
  */
 
 /**
- * Work item property keys from the one kept longest to the one collapsed first. A key's index is
+ * Task property keys from the one kept longest to the one collapsed first. A key's index is
  * its hide priority; keys not listed collapse after all of these.
  */
 export const WORK_ITEM_PROPERTY_HIDE_ORDER = [

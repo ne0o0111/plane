@@ -49,11 +49,11 @@ export type LabelSelectProps = {
   className?: string;
   showIdentifier?: boolean;
   tooltip?: SelectTooltip;
-  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the work item create modal). */
+  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the task create modal). */
   tabIndex?: number;
   /**
    * Shows the label property icon in the trigger while nothing is selected. Turn it off where the
-   * property row already labels the field, e.g. the work item sidebar.
+   * property row already labels the field, e.g. the task sidebar.
    *
    * @default true
    */

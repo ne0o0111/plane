@@ -24,7 +24,7 @@ export type WorkItemPropertyCountChipProps = {
 };
 
 /**
- * An outlined count chip for a work item's sub-work items, attachments or links. With `onClick` it
+ * An outlined count chip for a task's sub-tasks, attachments or links. With `onClick` it
  * is a button; without, it is a display-only chip that is not focusable.
  */
 export function WorkItemPropertyCountChip(props: WorkItemPropertyCountChipProps) {

@@ -31,7 +31,7 @@ export type PrioritySelectProps = {
   tooltip?: SelectTooltip;
   /** Forwarded to the trigger as `data-testid` — value-agnostic e2e selector. */
   testId?: string;
-  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the work item create modal). */
+  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the task create modal). */
   tabIndex?: number;
 };
 

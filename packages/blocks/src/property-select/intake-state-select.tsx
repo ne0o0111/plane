@@ -30,7 +30,7 @@ export type IntakeStateSelectProps = {
   placeholder?: string;
   onClose?: () => void;
   className?: string;
-  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the work item create modal). */
+  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the task create modal). */
   tabIndex?: number;
 };
 

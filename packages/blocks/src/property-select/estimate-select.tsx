@@ -41,7 +41,7 @@ export type EstimateSelectProps = {
   /** Label for the clear row. Defaults to `placeholder`, then `"No estimate"`. */
   clearLabel?: string;
   tooltip?: SelectTooltip;
-  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the work item create modal). */
+  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the task create modal). */
   tabIndex?: number;
 };
 

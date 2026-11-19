@@ -20,7 +20,7 @@ export type LabelPillProps = {
   /** The label to show — only its name and colour are read. */
   label: { name: string; color?: string | null };
   /**
-   * `soft` (filled, borderless) for label lists such as the work item sidebar; `outline` where the
+   * `soft` (filled, borderless) for label lists such as the task sidebar; `outline` where the
    * pill sits among other outlined property chips, e.g. a list row.
    *
    * @default "soft"

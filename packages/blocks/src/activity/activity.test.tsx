@@ -33,7 +33,7 @@ describe("ActivityTimelineItem", () => {
   it("drops the rail and spacing for the last entry", () => {
     const { container } = render(
       <ActivityTimelineItem id="activity-2" icon={<svg />} showConnector={false}>
-        created the work item
+        created the task
       </ActivityTimelineItem>
     );
 

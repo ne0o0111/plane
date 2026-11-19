@@ -32,7 +32,7 @@ export type PropertiesOverflowRowProps = {
 };
 
 /**
- * A work item's property chips on one line: the chips that fit `availableWidth` (most important
+ * A task's property chips on one line: the chips that fit `availableWidth` (most important
  * first, see `WORK_ITEM_PROPERTY_HIDE_ORDER`) followed by a "+N" pill whose Properties menu holds
  * the rest. Entries with `variants` shrink before they collapse.
  */

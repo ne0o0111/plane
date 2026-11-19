@@ -19,21 +19,21 @@ import { ProjectIdentifierElement } from "./shared/project-identifier-element";
 export type CycleOption = {
   id: string;
   name: string;
-  /** Date-derived cycle status; omit for the "No cycle" clear row. */
+  /** Date-derived cycle status; omit for the "No sprint" clear row. */
   status?: TCycleGroups;
   /** Owning project's short code, shown as a pill when `showIdentifier` is set. */
   identifier?: string;
 };
 
-/** Id for the "No cycle" clear option — an empty string maps back to `null` via `id || null`. */
+/** Id for the "No sprint" clear option — an empty string maps back to `null` via `id || null`. */
 const CLEAR_OPTION_ID = "";
 
 export type CycleSelectProps = {
   /** Paginated fetcher, bound by the client to the cycle lite service (cursor + optional server search). */
   getValues: (params: SelectPaginationParams) => Promise<TPaginatedResponse<CycleOption[]>>;
-  /** Selected cycle as a full object (resolved by the client from `cycle_id`), or `null` when none. */
+  /** Selected sprint as a full object (resolved by the client from `cycle_id`), or `null` when none. */
   value: CycleOption | null;
-  /** Emits the next selected cycle id (empty string clears the selection). */
+  /** Emits the next selected sprint id (empty string clears the selection). */
   onChange: (id: string) => void;
   /** Controls trigger chrome, button sizing, and arrow visibility. */
   variant: SelectVariant;
@@ -42,14 +42,14 @@ export type CycleSelectProps = {
   searchPlaceholder?: string;
   onClose?: () => void;
   className?: string;
-  /** Pins a "No cycle" row to the top of the list; selecting it emits an empty string (clears the selection). Defaults to `true`. */
+  /** Pins a "No sprint" row to the top of the list; selecting it emits an empty string (clears the selection). Defaults to `true`. */
   clearable?: boolean;
   /** Label for the clear row. Defaults to `placeholder`, then `"No sprint"`. */
   clearLabel?: string;
   /** Shows each option's `identifier` as a pill, for a picker scoped across several projects. */
   showIdentifier?: boolean;
   tooltip?: SelectTooltip;
-  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the work item create modal). */
+  /** Tab order of the trigger, for forms that sequence focus explicitly (e.g. the task create modal). */
   tabIndex?: number;
 };
 

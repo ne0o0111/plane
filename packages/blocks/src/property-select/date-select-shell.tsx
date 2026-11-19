@@ -61,7 +61,7 @@ export type DateSelectCommonProps = {
   /** Fired when the popover closes. */
   onClose?: () => void;
   /**
-   * Tab order of the trigger button. For forms that sequence focus explicitly (the work item and
+   * Tab order of the trigger button. For forms that sequence focus explicitly (the task and
    * intake create modals order every control through `ETabIndices`).
    */
   tabIndex?: number;
