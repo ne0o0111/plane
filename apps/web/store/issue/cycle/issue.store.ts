@@ -170,7 +170,7 @@ export class CycleIssues extends BaseIssuesStore implements ICycleIssues {
         this.rootIssueStore.rootStore.cycle.updateCycleDistribution(distributionUpdates, cycleId);
       }
     } catch (_e) {
-      console.warn("could not update cycle statistics");
+      console.warn("could not update sprint statistics");
     }
   };
 

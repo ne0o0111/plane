@@ -16,7 +16,7 @@ import type { ICycle, TCycleGroups, TPaginatedResponse } from "@plane/types";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 
-/** Statuses a task can be assigned to — completed cycles are never offered. */
+/** Statuses a task can be assigned to — completed sprints are never offered. */
 const DEFAULT_CYCLE_STATUSES: TCycleGroups[] = ["current", "upcoming", "draft"];
 
 type CycleSelectWebProps = {
@@ -32,11 +32,11 @@ type CycleSelectWebProps = {
   onClose?: () => void;
   /** Status filter. Defaults to `["current", "upcoming", "draft"]`. */
   status?: TCycleGroups[];
-  /** Adds a "No cycle" row that clears the selection (emits `null`). Defaults to `true`. */
+  /** Adds a "No sprint" row that clears the selection (emits `null`). Defaults to `true`. */
   clearable?: boolean;
   /** Label for the clear row. Defaults to `t("cycle.no_cycle")`. */
   clearLabel?: string;
-  /** Hides these cycles from the options (e.g. the cycle the tasks are being moved out of). */
+  /** Hides these sprints from the options (e.g. the sprint the tasks are being moved out of). */
   excludeIds?: string[];
   className?: string;
   tooltip?: SelectTooltip;
@@ -55,7 +55,7 @@ const toOption = (cycle: ICycle): CycleOption => ({
 });
 
 /**
- * Web binding for the presentational `CycleSelect` block. Resolves the project's cycles from the cycle
+ * Web binding for the presentational `CycleSelect` block. Resolves the project's sprints from the cycle
  * store (fetched on first open when the project has not been loaded yet), keeps the allowed statuses,
  * filters them by the search query and maps the selected id to a `CycleOption`.
  *

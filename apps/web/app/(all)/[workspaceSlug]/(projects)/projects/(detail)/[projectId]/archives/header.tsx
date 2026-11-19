@@ -44,7 +44,7 @@ const PROJECT_ARCHIVES_BREADCRUMB_LIST: {
     icon: CyclesOutline,
   },
   modules: {
-    label: "Modules",
+    label: "Epics",
     href: "/modules",
     icon: ModuleOutline,
   },

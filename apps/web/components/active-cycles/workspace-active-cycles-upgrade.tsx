@@ -36,12 +36,12 @@ export const WORKSPACE_ACTIVE_CYCLES_DETAILS = [
     key: "10000_feet_view",
     title: "10,000-feet view of all active sprints.",
     description:
-      "Zoom out to see running cycles across all your projects at once instead of going from Cycle to Cycle in each project.",
+      "Zoom out to see running sprints across all your projects at once instead of going from Sprint to Sprint in each project.",
     icon: FolderOutline,
   },
   {
     key: "get_snapshot_of_each_active_cycle",
-    title: "Get a snapshot of each active cycle.",
+    title: "Get a snapshot of each active sprint.",
     description:
       "Track high-level metrics for all active sprints, see their state of progress, and get a sense of scope against deadlines.",
     icon: CircleDashedOutline,
@@ -56,7 +56,7 @@ export const WORKSPACE_ACTIVE_CYCLES_DETAILS = [
     key: "quickly_see_make_or_break_issues",
     title: "Quickly see make-or-break tasks. ",
     description:
-      "Preview high-priority tasks for each sprint against due dates. See all of them per cycle in one click.",
+      "Preview high-priority tasks for each sprint against due dates. See all of them per sprint in one click.",
     icon: AlertOctagonOutline,
   },
   {
@@ -69,7 +69,7 @@ export const WORKSPACE_ACTIVE_CYCLES_DETAILS = [
     key: "stay_ahead_of_blockers",
     title: "Stay ahead of blockers.",
     description:
-      "Spot challenges from one project to another and see inter-cycle dependencies that aren’t obvious from any other view.",
+      "Spot challenges from one project to another and see inter-sprint dependencies that aren’t obvious from any other view.",
     icon: AnalyticsOutline,
   },
 ];

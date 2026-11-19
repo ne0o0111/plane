@@ -69,7 +69,7 @@ export const TransferIssuesModal = observer(function TransferIssuesModal(props: 
       });
   };
 
-  /**To update issue counts in target cycle and current cycle */
+  /** To update issue counts in target sprint and current sprint */
   const getCycleDetails = async (newCycleId: string) => {
     const cyclesFetch = [
       fetchActiveCycleProgress(workspaceSlug.toString(), projectId.toString(), cycleId),
@@ -117,7 +117,7 @@ export const TransferIssuesModal = observer(function TransferIssuesModal(props: 
             <SearchOutline className="size-4 shrink-0 text-placeholder" />
             <input
               className="w-full bg-transparent text-body-xs-regular outline-none placeholder:text-placeholder"
-              placeholder="Search for a cycle..."
+              placeholder="Search for a sprint..."
               onChange={(e) => setQuery(e.target.value)}
               value={query}
             />
@@ -159,7 +159,7 @@ export const TransferIssuesModal = observer(function TransferIssuesModal(props: 
                   <div className="flex w-full items-center justify-center gap-2 p-5 text-body-xs-regular">
                     <WarningCircleOutline className="size-4 shrink-0 text-secondary" />
                     <span className="text-center text-secondary">
-                      You don’t have any current cycle. Please create one to transfer the tasks.
+                      You don’t have any current sprint. Please create one to transfer the tasks.
                     </span>
                   </div>
                 )

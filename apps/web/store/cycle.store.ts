@@ -4,6 +4,8 @@
  * See the LICENSE file for details.
  */
 
+// oxlint-disable promise/always-return
+
 import { isPast, isToday } from "date-fns";
 import { sortBy, set, isEmpty } from "lodash-es";
 import { action, computed, observable, makeObservable, runInAction } from "mobx";
@@ -604,7 +606,7 @@ export class CycleStore implements ICycleStore {
       this.fetchCycleDetails(workspaceSlug, projectId, cycleId);
       return response;
     } catch (error) {
-      console.log("Failed to patch cycle from cycle store");
+      console.log("Failed to patch sprint from cycle store");
       this.fetchAllCycles(workspaceSlug, projectId);
       this.fetchActiveCycle(workspaceSlug, projectId);
       throw error;
@@ -697,7 +699,7 @@ export class CycleStore implements ICycleStore {
         });
       })
       .catch((error) => {
-        console.error("Failed to archive cycle in cycle store", error);
+        console.error("Failed to archive sprint in cycle store", error);
       });
   };
 
@@ -719,7 +721,7 @@ export class CycleStore implements ICycleStore {
         });
       })
       .catch((error) => {
-        console.error("Failed to restore cycle in cycle store", error);
+        console.error("Failed to restore sprint in cycle store", error);
       });
   };
 }

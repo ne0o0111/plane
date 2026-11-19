@@ -20,7 +20,7 @@ export type TFilterSubmenuOption<V extends string | number = string> = {
   value: V;
   label: string;
   icon?: ReactNode;
-  /** Content pinned at the row's end, e.g. a marker for the current cycle. */
+  /** Content pinned at the row's end, e.g. a marker for the current sprint. */
   trailing?: ReactNode;
   /** Text the search matches besides `label`, e.g. a member's name on a row labelled "You". */
   searchText?: string;

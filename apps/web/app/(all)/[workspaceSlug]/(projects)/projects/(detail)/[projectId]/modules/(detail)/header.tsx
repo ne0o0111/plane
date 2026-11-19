@@ -133,7 +133,7 @@ export const ModuleIssuesHeader = observer(function ModuleIssuesHeader() {
               <Breadcrumbs.Item
                 component={
                   <BreadcrumbLink
-                    label="Modules"
+                    label="Epics"
                     href={`/${workspaceSlug}/projects/${projectId}/modules/`}
                     icon={<ModuleOutline className="h-4 w-4 text-tertiary" />}
                     isLast

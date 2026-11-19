@@ -27,12 +27,12 @@ export const INDIVIDUAL_WEBHOOK_OPTIONS: {
   {
     key: "issue",
     label: "Tasks",
-    description: "Task created, updated, deleted, added to a sprint or module",
+    description: "Task created, updated, deleted, added to a sprint or epic",
   },
   {
     key: "module",
-    label: "Modules",
-    description: "Module created, updated, or deleted",
+    label: "Epics",
+    description: "Epic created, updated, or deleted",
   },
   {
     key: "issue_comment",

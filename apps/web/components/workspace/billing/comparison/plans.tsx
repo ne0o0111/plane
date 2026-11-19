@@ -76,7 +76,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     features: [
       {
         title: "Spaces",
-        description: "Add projects to house tasks, sprints, and modules.",
+        description: "Add projects to house tasks, sprints, and epics.",
         cloud: {
           free: true,
           one: true,
@@ -87,7 +87,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Tasks",
-        description: "Add work via tasks, set properties for tracking, and add to\nsprints or modules.",
+        description: "Add work via tasks, set properties for tracking, and add to\nsprints or epics.",
         cloud: {
           free: true,
           one: true,
@@ -119,8 +119,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Modules",
-        description: "Group replicable work in modules with their own\nleads.",
+        title: "Epics",
+        description: "Group replicable work in epics with their own\nleads.",
         cloud: {
           free: true,
           one: true,
@@ -160,7 +160,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     features: [
       {
         title: "Bulk Ops",
-        description: "Add several tasks to sprints or modules, transfer\nthem, or edit their properties.",
+        description: "Add several tasks to sprints or epics, transfer\nthem, or edit their properties.",
         cloud: {
           free: false,
           one: "Limited props",
@@ -246,9 +246,9 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Auto-transfer Cycle Tasks",
+        title: "Auto-transfer Sprint Tasks",
         description:
-          "Transfer incomplete tasks from a completed cycle\nto the next cycle or to the default project state. ",
+          "Transfer incomplete tasks from a completed sprint\nto the next sprint or to the default project state. ",
         cloud: {
           free: false,
           one: false,
@@ -259,7 +259,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Epics",
-        description: "Organize long-term work in epics that house tasks,\nsprints, and modules.",
+        description: "Organize long-term work in epics that house tasks and\nsprints.",
         cloud: {
           free: false,
           one: false,
@@ -294,8 +294,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Module Overview",
-        description: "Like Sprint Overviews, see relevant details and\nprogress charts for each module.",
+        title: "Epic Overview",
+        description: "Like Sprint Overviews, see relevant details and\nprogress charts for each epic.",
         cloud: {
           free: false,
           one: false,
@@ -305,7 +305,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Auto-assignment In Modules",
+        title: "Auto-assignment In Epics",
         description: "Choose assignment rules for tasks in a\nmodule including Linear, Round Robin, or Capacity.",
         cloud: {
           free: false,
@@ -378,7 +378,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Teamspace Cycles",
+        title: "Teamspace Sprints",
         description: "See multiple sprints in multiple projects at once.",
         cloud: {
           free: false,
@@ -537,7 +537,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       {
         title: "Progress Charts",
         description:
-          "Track progress in cycles, modules, and overviews\nthroughout Plane without switching to dashboards\nor Analytics.",
+          "Track progress in sprints, epics, and overviews\nthroughout Plane without switching to dashboards\nor Analytics.",
         cloud: {
           free: false,
           one: false,
@@ -1302,7 +1302,7 @@ export const PLANE_PLANS: PlanePlans = {
     },
   },
   planHighlights: {
-    free: ["Upto 12 users", "Pages", "Unlimited projects", "Unlimited cycles and modules"],
+    free: ["Upto 12 users", "Pages", "Unlimited projects", "Unlimited sprints and epics"],
     one: ["Upto 50 users", "OIDC and SAML", "Active sprints", "Limited time tracking"],
     pro: ["Unlimited users", "Custom tasks + Properties", "Task templates", "Full Time Tracking"],
     business: ["RBAC", "Project Templates", "Baselines And Deviations", "Custom Reports"],

@@ -30,7 +30,7 @@ function ModuleIssuesPage({ params }: Route.ComponentProps) {
   // const { issuesFilter } = useIssues(EIssuesStoreType.MODULE);
   // local storage
   const { setValue, storedValue } = useLocalStorage("module_sidebar_collapsed", "false");
-  const isSidebarCollapsed = storedValue ? (storedValue === "true" ? true : false) : false;
+  const isSidebarCollapsed = storedValue === "true";
   // fetching module details
   const { error } = useSWR(`CURRENT_MODULE_DETAILS_${moduleId}`, () =>
     fetchModuleDetails(workspaceSlug, projectId, moduleId)
@@ -53,11 +53,11 @@ function ModuleIssuesPage({ params }: Route.ComponentProps) {
           align="center"
           assetKey="module"
           assetClassName="size-40"
-          title="Module does not exist"
-          description="The module you are looking for does not exist or has been deleted."
+          title="Epic does not exist"
+          description="The epic you are looking for does not exist or has been deleted."
           actions={[
             {
-              label: "View other modules",
+              label: "View other epics",
               variant: "primary",
               onClick: () => router.push(`/${workspaceSlug}/projects/${projectId}/modules`),
             },

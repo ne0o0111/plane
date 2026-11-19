@@ -58,8 +58,8 @@ function CycleDetailPage({ params }: Route.ComponentProps) {
           align="center"
           assetKey="cycle"
           assetClassName="size-40"
-          title="Cycle does not exist"
-          description="The cycle you are looking for does not exist or has been deleted."
+          title="Sprint does not exist"
+          description="The sprint you are looking for does not exist or has been deleted."
           actions={[
             {
               label: "View other sprints",
