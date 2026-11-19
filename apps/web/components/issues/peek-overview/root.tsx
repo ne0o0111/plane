@@ -4,6 +4,9 @@
  * See the LICENSE file for details.
  */
 
+// oxlint-disable promise/always-return
+// oxlint-disable no-shadow
+
 import { useState, useMemo, useCallback } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
@@ -170,7 +173,7 @@ export const IssuePeekOverview = observer(function IssuePeekOverview(props: IWor
           await removeFromCyclePromise;
           fetchActivities(workspaceSlug, projectId, issueId);
         } catch (error) {
-          console.error("Error removing issue from cycle", error);
+          console.error("Error removing issue from sprint", error);
         }
       },
       changeModulesInIssue: async (

@@ -87,14 +87,14 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
     );
 
     setPromiseToast(addToFavoritePromise, {
-      loading: "Adding module to favorites...",
+      loading: "Adding epic to favorites...",
       success: {
         title: "Success!",
-        message: () => "Module added to favorites.",
+        message: () => "Epic added to favorites.",
       },
       error: {
         title: "Error!",
-        message: () => "Couldn't add the module to favorites. Please try again.",
+        message: () => "Couldn't add the epic to favorites. Please try again.",
       },
     });
   };
@@ -111,14 +111,14 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
     );
 
     setPromiseToast(removeFromFavoritePromise, {
-      loading: "Removing module from favorites...",
+      loading: "Removing epic from favorites...",
       success: {
         title: "Success!",
-        message: () => "Module removed from favorites.",
+        message: () => "Epic removed from favorites.",
       },
       error: {
         title: "Error!",
-        message: () => "Couldn't remove the module from favorites. Please try again.",
+        message: () => "Couldn't remove the epic from favorites. Please try again.",
       },
     });
   };
@@ -136,14 +136,14 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
         setToast({
           type: "success",
           title: "Success!",
-          message: "Module updated successfully.",
+          message: "Epic updated successfully.",
         });
       })
       .catch((err) => {
         setToast({
           type: "error",
           title: "Error!",
-          message: err?.detail ?? "Module could not be updated. Please try again.",
+          message: err?.detail ?? "Epic could not be updated. Please try again.",
         });
       });
   };

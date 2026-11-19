@@ -53,14 +53,14 @@ export const ModuleEmptyState = observer(function ModuleEmptyState() {
         setToast({
           type: "success",
           title: "Success!",
-          message: "Tasks added to the module successfully.",
+          message: "Tasks added to the epic successfully.",
         })
       )
       .catch(() =>
         setToast({
           type: "error",
           title: "Error!",
-          message: "Selected tasks could not be added to the module. Please try again.",
+          message: "Selected tasks could not be added to the epic. Please try again.",
         })
       );
   };

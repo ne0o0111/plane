@@ -38,12 +38,6 @@ export const FilterModule = observer(function FilterModule(props: Props) {
   });
 
   return (
-    <FilterSubmenu
-      label="Module"
-      options={options}
-      appliedFilters={appliedFilters}
-      onToggle={handleUpdate}
-      searchable
-    />
+    <FilterSubmenu label="Epic" options={options} appliedFilters={appliedFilters} onToggle={handleUpdate} searchable />
   );
 });

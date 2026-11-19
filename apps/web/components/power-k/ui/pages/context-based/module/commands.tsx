@@ -4,6 +4,8 @@
  * See the LICENSE file for details.
  */
 
+// oxlint-disable promise/always-return
+
 import { useCallback } from "react";
 import { useParams } from "next/navigation";
 import { LinkOutline, MembersOutline, StarOffOutline, StarOutline } from "@makeplane/propel/icons";
@@ -47,7 +49,7 @@ export const usePowerKModuleContextBasedActions = (): TPowerKCommandConfig[] => 
           setToast({
             type: "error",
             title: "Error!",
-            message: "Module could not be updated. Please try again.",
+            message: "Epic could not be updated. Please try again.",
           });
         }
       );

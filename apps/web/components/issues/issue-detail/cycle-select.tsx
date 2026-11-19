@@ -22,7 +22,7 @@ type TIssueCycleSelect = {
   issueId: string;
   issueOperations: TIssueOperations;
   disabled?: boolean;
-  /** Adds a "No cycle" row that clears the selection. Defaults to `true`. */
+  /** Adds a "No sprint" row that clears the selection. Defaults to `true`. */
   clearable?: boolean;
   /** Label for the clear row. Defaults to `t("cycle.no_cycle")`. */
   clearLabel?: string;

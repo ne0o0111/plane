@@ -4,6 +4,8 @@
  * See the LICENSE file for details.
  */
 
+// oxlint-disable promise/always-return
+
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useForm } from "react-hook-form";
@@ -65,14 +67,14 @@ export const CreateUpdateModuleModal = observer(function CreateUpdateModuleModal
         setToast({
           type: "success",
           title: "Success!",
-          message: "Module created successfully.",
+          message: "Epic created successfully.",
         });
       })
       .catch((err) => {
         setToast({
           type: "error",
           title: "Error!",
-          message: err?.detail ?? err?.error ?? "Module could not be created. Please try again.",
+          message: err?.detail ?? err?.error ?? "Epic could not be created. Please try again.",
         });
       });
   };
@@ -88,14 +90,14 @@ export const CreateUpdateModuleModal = observer(function CreateUpdateModuleModal
         setToast({
           type: "success",
           title: "Success!",
-          message: "Module updated successfully.",
+          message: "Epic updated successfully.",
         });
       })
       .catch((err) => {
         setToast({
           type: "error",
           title: "Error!",
-          message: err?.detail ?? err?.error ?? "Module could not be updated. Please try again.",
+          message: err?.detail ?? err?.error ?? "Epic could not be updated. Please try again.",
         });
       });
   };

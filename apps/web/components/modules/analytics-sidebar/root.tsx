@@ -182,7 +182,7 @@ export const ModuleAnalyticsSidebar = observer(function ModuleAnalyticsSidebar(p
         setToast({
           type: "success",
           title: "Success!",
-          message: "Module link deleted successfully.",
+          message: "Epic link deleted successfully.",
         });
       } catch (_error) {
         setToast({
@@ -203,7 +203,7 @@ export const ModuleAnalyticsSidebar = observer(function ModuleAnalyticsSidebar(p
     setToast({
       type: "success",
       title: "Success!",
-      message: "Module updated successfully.",
+      message: "Epic updated successfully.",
     });
   };
 

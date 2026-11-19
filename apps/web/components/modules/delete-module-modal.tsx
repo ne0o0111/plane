@@ -52,7 +52,7 @@ export const DeleteModuleModal = observer(function DeleteModuleModal(props: Prop
       setToast({
         type: "success",
         title: "Success!",
-        message: "Module deleted successfully.",
+        message: "Epic deleted successfully.",
       });
     } catch (errors) {
       const isPermissionError =
@@ -77,7 +77,7 @@ export const DeleteModuleModal = observer(function DeleteModuleModal(props: Prop
       handleSubmit={handleDeletion}
       isSubmitting={isDeleteLoading}
       isOpen={isOpen}
-      title="Delete module"
+      title="Delete epic"
       content={
         <>
           Are you sure you want to delete module-{" "}

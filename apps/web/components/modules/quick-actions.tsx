@@ -4,6 +4,8 @@
  * See the LICENSE file for details.
  */
 
+// oxlint-disable promise/always-return
+
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { MoreHorizontalOutline } from "@makeplane/propel/icons";
@@ -66,7 +68,7 @@ export const ModuleQuickActions = observer(function ModuleQuickActions(props: Pr
       setToast({
         type: "success",
         title: "Link Copied!",
-        message: "Module link copied to clipboard.",
+        message: "Epic link copied to clipboard.",
       });
     });
   const handleOpenInNewTab = () => window.open(`/${moduleLink}`, "_blank");
@@ -77,14 +79,14 @@ export const ModuleQuickActions = observer(function ModuleQuickActions(props: Pr
       setToast({
         type: "success",
         title: "Restore success",
-        message: "Your module can be found in project modules.",
+        message: "Your epic can be found in project epics.",
       });
       router.push(`/${workspaceSlug}/projects/${projectId}/archives/modules`);
     } catch (_error) {
       setToast({
         type: "error",
         title: "Error!",
-        message: "Module could not be restored. Please try again.",
+        message: "Epic could not be restored. Please try again.",
       });
     }
   };
