@@ -15,9 +15,9 @@
       "press_enter": "Press 'Enter' to add another task",
       "label": "Add task",
       "cycle": {
-        "failed": "Task could not be added to the cycle. Please try again.",
-        "success": "{count, plural, one {Task} other {Tasks}} added to the cycle successfully.",
-        "loading": "Adding {count, plural, one {task} other {tasks}} to the cycle"
+        "failed": "Task could not be added to the sprint. Please try again.",
+        "success": "{count, plural, one {Task} other {Tasks}} added to the sprint successfully.",
+        "loading": "Adding {count, plural, one {task} other {tasks}} to the sprint"
       },
       "assignee": "Add assignees",
       "start_date": "Add start date",
@@ -32,9 +32,9 @@
     "remove": {
       "label": "Remove task",
       "cycle": {
-        "loading": "Removing task from the cycle",
-        "success": "Task removed from the cycle successfully.",
-        "failed": "Task could not be removed from the cycle. Please try again."
+        "loading": "Removing task from the sprint",
+        "success": "Task removed from the sprint successfully.",
+        "failed": "Task could not be removed from the sprint. Please try again."
       },
       "module": {
         "loading": "Removing task from the module",

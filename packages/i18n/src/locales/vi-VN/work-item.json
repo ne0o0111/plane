@@ -15,9 +15,9 @@
       "press_enter": "Nhấn 'Enter' để thêm task khác",
       "label": "Thêm task",
       "cycle": {
-        "failed": "Không thể thêm task vào chu kỳ. Vui lòng thử lại.",
-        "success": "{count, plural, one {Task} other {Task}} đã được thêm vào chu kỳ thành công.",
-        "loading": "Đang thêm {count, plural, one {task} other {task}} vào chu kỳ"
+        "failed": "Không thể thêm task vào sprint. Vui lòng thử lại.",
+        "success": "{count, plural, one {Task} other {Task}} đã được thêm vào sprint thành công.",
+        "loading": "Đang thêm {count, plural, one {task} other {task}} vào sprint"
       },
       "assignee": "Thêm người phụ trách",
       "start_date": "Thêm ngày bắt đầu",
@@ -32,9 +32,9 @@
     "remove": {
       "label": "Xóa task",
       "cycle": {
-        "loading": "Đang xóa task khỏi chu kỳ",
-        "success": "Đã xóa task khỏi chu kỳ thành công.",
-        "failed": "Không thể xóa task khỏi chu kỳ. Vui lòng thử lại."
+        "loading": "Đang xóa task khỏi sprint",
+        "success": "Đã xóa task khỏi sprint thành công.",
+        "failed": "Không thể xóa task khỏi sprint. Vui lòng thử lại."
       },
       "module": {
         "loading": "Đang xóa task khỏi mô-đun",
