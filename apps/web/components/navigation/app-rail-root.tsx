@@ -30,6 +30,10 @@ function ensureRobotoFont() {
   document.head.appendChild(link);
 }
 
+/**
+ * Figma 8005:1300 — black rail 52×full at x=6.
+ * Wrapper is 64px: 6 left + 52 rail + 6 gap before Home (Main starts at x=64).
+ */
 export const AppRailRoot = observer(() => {
   const { preferences, updateDisplayMode } = useAppRailPreferences();
   const { isCollapsed, toggleAppRail } = useAppRailVisibility();
@@ -39,7 +43,17 @@ export const AppRailRoot = observer(() => {
   }, []);
 
   return (
-    <div style={{ zIndex: 26, height: "100%", width: 58, flexShrink: 0, padding: "6px 0 6px 6px" }}>
+    <div
+      style={{
+        zIndex: 26,
+        height: "100%",
+        width: 64,
+        flexShrink: 0,
+        boxSizing: "border-box",
+        paddingLeft: 6,
+        paddingRight: 6,
+      }}
+    >
       <ContextMenu>
         <ContextMenuTrigger render={<div style={{ height: "100%" }} />}>
           <div
@@ -57,7 +71,6 @@ export const AppRailRoot = observer(() => {
               boxShadow: "0px 4px 6px -1px rgba(0,0,0,0.11), 0px 2px 4px -2px rgba(0,0,0,0.11)",
             }}
           >
-            {/* Item height ~50px + gap 12px = 62px pitch (Figma) */}
             <div
               style={{
                 display: "flex",

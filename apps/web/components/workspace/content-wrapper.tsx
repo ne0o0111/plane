@@ -9,6 +9,7 @@ import { observer } from "mobx-react";
 // plane imports
 import { cn } from "@plane/utils";
 import { AppRailRoot } from "@/components/navigation";
+import { ClickUpHomeSidebar } from "@/components/navigation/clickup-home-sidebar";
 import { useAppRailVisibility } from "@/lib/app-rail";
 import { TopNavigationRoot } from "@/components/navigation/top-navigation-root";
 
@@ -17,24 +18,24 @@ export const WorkspaceContentWrapper = observer(function WorkspaceContentWrapper
 }: {
   children: React.ReactNode;
 }) {
-  // Use the context to determine if app rail should render
   const { shouldRenderAppRail } = useAppRailVisibility();
 
   return (
     <div className="relative flex size-full flex-col overflow-hidden bg-canvas transition-all duration-300 ease-in-out">
       <TopNavigationRoot />
       <div className="relative flex size-full overflow-hidden">
-        {/* Conditionally render AppRailRoot based on context */}
         {shouldRenderAppRail && <AppRailRoot />}
         <div
           className={cn(
-            "relative size-full flex-grow overflow-hidden pr-2 pb-2 pl-2 transition-all duration-300 ease-in-out",
-            {
-              "pl-0!": shouldRenderAppRail,
-            }
+            "relative flex size-full min-w-0 flex-grow overflow-hidden pr-2 pb-2 transition-all duration-300 ease-in-out",
+            shouldRenderAppRail ? "pl-0" : "pl-2"
           )}
         >
-          {children}
+          {/* Shared card: border + radius wrap Home + Plane content (Figma Main panel) */}
+          <div className="relative flex size-full overflow-hidden rounded-lg border border-subtle bg-surface-1">
+            {shouldRenderAppRail && <ClickUpHomeSidebar />}
+            <div className="relative flex size-full min-w-0 flex-grow overflow-hidden">{children}</div>
+          </div>
         </div>
       </div>
     </div>
