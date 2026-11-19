@@ -7,11 +7,14 @@
 "use client";
 
 import { useState } from "react";
+import { observer } from "mobx-react";
+import { useParams, useRouter } from "next/navigation";
+import { useCommandPalette } from "@/hooks/store/use-command-palette";
 
 /**
- * Static ClickUp Home sidebar mock (Figma 8005:995).
- * UI-only — no navigation / actions wired.
- * Header hover reveals Search / Filter / Collapse (matches ClickUp recording).
+ * ClickUp Home sidebar mock (Figma 8005:995).
+ * Header hover reveals Search / Filter / Collapse.
+ * "New" → New work item; "Inbox" → notifications.
  */
 
 const FONT = "Roboto, Helvetica, Arial, sans-serif";
@@ -113,8 +116,80 @@ function Row(props: {
   active?: boolean;
   indent?: boolean;
   showRail?: boolean;
+  onClick?: () => void;
 }) {
-  const { icon, label, labelColor = TEXT, suffix, count, active = false, indent = false, showRail = false } = props;
+  const {
+    icon,
+    label,
+    labelColor = TEXT,
+    suffix,
+    count,
+    active = false,
+    indent = false,
+    showRail = false,
+    onClick,
+  } = props;
+  const [hovered, setHovered] = useState(false);
+
+  // Figma / ClickUp: hover = rgba(0,0,0,0.06) pill, radius 7px
+  const highlighted = active || hovered;
+
+  const rowStyle: React.CSSProperties = {
+    display: "flex",
+    alignItems: "center",
+    height: 28,
+    marginLeft: indent ? 0 : 8,
+    marginRight: 8,
+    paddingLeft: indent ? 6 : 8,
+    paddingRight: 8,
+    borderRadius: 7,
+    background: highlighted ? "rgba(0,0,0,0.06)" : "transparent",
+    gap: 10,
+    boxSizing: "border-box",
+    width: indent ? "calc(100% - 8px)" : "calc(100% - 16px)",
+    border: "none",
+    font: "inherit",
+    textAlign: "left",
+    cursor: "pointer",
+    transition: "background 80ms ease",
+  };
+
+  const content = (
+    <>
+      {icon}
+      <span
+        style={{
+          flex: 1,
+          minWidth: 0,
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          whiteSpace: "nowrap",
+          fontFamily: FONT,
+          fontSize: 14,
+          fontWeight: 400,
+          lineHeight: "16px",
+          letterSpacing: "-0.154px",
+          color: highlighted ? TEXT_DARK : labelColor,
+        }}
+      >
+        {label}
+        {suffix ? <span style={{ color: TEXT_MUTED, fontSize: 12, letterSpacing: 0 }}>{suffix}</span> : null}
+      </span>
+      {count != null ? (
+        <span
+          style={{
+            fontFamily: FONT,
+            fontSize: 12,
+            lineHeight: "12px",
+            color: highlighted ? TEXT_DARK : TEXT_FAINT,
+            flexShrink: 0,
+          }}
+        >
+          {count}
+        </span>
+      ) : null}
+    </>
+  );
 
   return (
     <div style={{ position: "relative", paddingLeft: indent ? 20 : 0, marginLeft: indent ? 0 : 0 }}>
@@ -130,55 +205,16 @@ function Row(props: {
           }}
         />
       )}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          height: 28,
-          marginLeft: indent ? 0 : 8,
-          marginRight: 8,
-          paddingLeft: indent ? 6 : 8,
-          paddingRight: 8,
-          borderRadius: 7,
-          background: active ? "rgba(0,0,0,0.06)" : "transparent",
-          gap: 10,
-          boxSizing: "border-box",
-          width: indent ? "calc(100% - 8px)" : "calc(100% - 16px)",
-        }}
+      <button
+        type="button"
+        onClick={onClick}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        style={rowStyle}
+        aria-label={label}
       >
-        {icon}
-        <span
-          style={{
-            flex: 1,
-            minWidth: 0,
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            fontFamily: FONT,
-            fontSize: 14,
-            fontWeight: 400,
-            lineHeight: "16px",
-            letterSpacing: "-0.154px",
-            color: active ? TEXT_DARK : labelColor,
-          }}
-        >
-          {label}
-          {suffix ? <span style={{ color: TEXT_MUTED, fontSize: 12, letterSpacing: 0 }}>{suffix}</span> : null}
-        </span>
-        {count != null ? (
-          <span
-            style={{
-              fontFamily: FONT,
-              fontSize: 12,
-              lineHeight: "12px",
-              color: active ? TEXT_DARK : TEXT_FAINT,
-              flexShrink: 0,
-            }}
-          >
-            {count}
-          </span>
-        ) : null}
-      </div>
+        {content}
+      </button>
     </div>
   );
 }
@@ -212,8 +248,12 @@ function SectionLabel({ label, action }: { label: string; action?: React.ReactNo
   );
 }
 
-export function ClickUpHomeSidebar() {
+export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
   const [headerHovered, setHeaderHovered] = useState(false);
+  const { toggleCreateIssueModal } = useCommandPalette();
+  const { workspaceSlug } = useParams();
+  const router = useRouter();
+  const slug = workspaceSlug?.toString() ?? "";
 
   return (
     <aside
@@ -305,13 +345,15 @@ export function ClickUpHomeSidebar() {
 
       {/* Scrollable tree */}
       <div style={{ flex: 1, overflowY: "auto", overflowX: "hidden", paddingTop: 8, paddingBottom: 20 }}>
-        <Row icon={<Icon src="/clickup-home/new.svg" />} label="New" />
-        <Row icon={<Icon src="/clickup-home/inbox.svg" />} label="Inbox" />
-        <Row icon={<Icon src="/clickup-home/replies.svg" />} label="Replies" />
+        <Row icon={<Icon src="/clickup-home/new.svg" />} label="New" onClick={() => toggleCreateIssueModal(true)} />
+        <Row
+          icon={<Icon src="/clickup-home/inbox.svg" />}
+          label="Inbox"
+          onClick={() => {
+            if (slug) router.push(`/${slug}/notifications/`);
+          }}
+        />
         <Row icon={<Icon src="/clickup-home/assigned-comments.svg" />} label="Assigned Comments" />
-        <Row icon={<Icon src="/clickup-home/posts.svg" />} label="Posts" />
-        <Row icon={<Icon src="/clickup-home/skills.svg" />} label="Skills" />
-        <Row icon={<Icon src="/clickup-home/artifacts.svg" />} label="Artifacts" />
         <Row icon={<Icon src="/clickup-home/meetings.svg" />} label="Meetings" />
         <Row icon={<Icon src="/clickup-home/my-tasks.svg" />} label="My Tasks" />
 
@@ -347,10 +389,6 @@ export function ClickUpHomeSidebar() {
 
         <div style={{ height: 1, background: DIVIDER, margin: "12px 12px 8px" }} />
 
-        <SectionLabel label="AI Chats" />
-        <Row icon={<Icon src="/clickup-home/plus.svg" />} label="Ask, Build, Create" labelColor={TEXT_MUTED} />
-
-        <div style={{ height: 10 }} />
         <SectionLabel
           label="Spaces"
           action={
@@ -426,89 +464,7 @@ export function ClickUpHomeSidebar() {
 
         <Row icon={<Icon src="/clickup-home/more-muted.svg" />} label="More" labelColor={TEXT_FAINT} />
         <Row icon={<Icon src="/clickup-home/plus.svg" />} label="New Space" labelColor={TEXT_MUTED} />
-
-        <div style={{ height: 10 }} />
-        <SectionLabel label="Channels" />
-        <Row icon={<Icon src="/clickup-home/hash.svg" />} label="Welcome" />
-        <Row
-          icon={
-            <span style={{ position: "relative", width: 16, height: 16, flexShrink: 0 }}>
-              <Icon src="/clickup-home/hash-general.svg" />
-              <span
-                style={{
-                  position: "absolute",
-                  right: -3,
-                  bottom: -3,
-                  width: 10,
-                  height: 10,
-                  borderRadius: 4,
-                  background: "#12a594",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: 7,
-                  fontWeight: 700,
-                  color: "#fff",
-                }}
-              >
-                S
-              </span>
-            </span>
-          }
-          label="General"
-          suffix=" - School Health"
-        />
-        <Row icon={<Icon src="/clickup-home/plus.svg" />} label="Add Channel" labelColor={TEXT_MUTED} />
-
-        <div style={{ height: 10 }} />
-        <SectionLabel label="Direct Messages" />
-        <Row
-          icon={
-            <span
-              style={{
-                display: "flex",
-                width: 20,
-                height: 20,
-                borderRadius: 999,
-                background: TEXT_DARK,
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 10,
-                fontWeight: 700,
-                color: "#fff",
-                flexShrink: 0,
-              }}
-            >
-              J!
-            </span>
-          }
-          label="JustyLove !"
-        />
-        <Row
-          icon={
-            <span
-              style={{
-                display: "flex",
-                width: 20,
-                height: 20,
-                borderRadius: 999,
-                background: "#5f55ee",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 10,
-                fontWeight: 700,
-                color: "#fff",
-                flexShrink: 0,
-              }}
-            >
-              N
-            </span>
-          }
-          label="Ne0o"
-          suffix=" — You"
-        />
-        <Row icon={<Icon src="/clickup-home/plus.svg" />} label="New message" labelColor={TEXT_MUTED} />
       </div>
     </aside>
   );
-}
+});
