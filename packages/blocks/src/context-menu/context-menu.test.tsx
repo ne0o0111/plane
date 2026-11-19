@@ -208,7 +208,7 @@ describe("ContextMenu rows", () => {
           {
             key: "archive",
             title: "Archive",
-            description: "Only completed cycles can be archived",
+            description: "Only completed sprints can be archived",
             disabled: true,
             action: vi.fn(),
           },
@@ -218,7 +218,7 @@ describe("ContextMenu rows", () => {
     await openMenu();
     const archiveRow = row(/Archive/);
     const label = screen.getByText("Archive");
-    const description = screen.getByText("Only completed cycles can be archived");
+    const description = screen.getByText("Only completed sprints can be archived");
     expect(archiveRow.contains(description)).toBe(true);
     // label over description in one text column nested in the row — not a label plus an inline-end
     // slot sitting directly in the row

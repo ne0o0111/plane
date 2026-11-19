@@ -1,3 +1,5 @@
+// oxlint-disable promise/always-return
+// oxlint-disable no-unneeded-ternary
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -60,7 +62,7 @@ function CycleDetailPage({ params }: Route.ComponentProps) {
           description="The cycle you are looking for does not exist or has been deleted."
           actions={[
             {
-              label: "View other cycles",
+              label: "View other sprints",
               variant: "primary",
               onClick: () => router.push(`/${workspaceSlug}/projects/${projectId}/cycles`),
             },

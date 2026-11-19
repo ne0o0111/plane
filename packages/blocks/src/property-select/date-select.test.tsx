@@ -82,7 +82,7 @@ describe("DateSelect", () => {
         variant="select-md"
         placeholder="Set date"
         showTooltip
-        tooltipHeading="Cycle"
+        tooltipHeading="Sprint"
         tooltipContent="10 Jun - 24 Jun"
       />
     );
@@ -90,7 +90,7 @@ describe("DateSelect", () => {
     await user.hover(screen.getByRole("button", { name: /jun/i }));
     // Propel's Tooltip folds the heading and the value into one label, and the override replaces
     // what the trigger's own formatting would have said.
-    expect((await popup().findByRole("tooltip")).textContent).toBe("Cycle: 10 Jun - 24 Jun");
+    expect((await popup().findByRole("tooltip")).textContent).toBe("Sprint: 10 Jun - 24 Jun");
   });
 
   it("clears the selection from the footer", async () => {

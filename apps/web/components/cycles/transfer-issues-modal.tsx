@@ -79,7 +79,7 @@ export const TransferIssuesModal = observer(function TransferIssuesModal(props: 
       setToast({
         type: "error",
         title: "Error",
-        message: error.error || "Unable to fetch cycle details",
+        message: error.error || "Unable to fetch sprint details",
       });
     });
   };

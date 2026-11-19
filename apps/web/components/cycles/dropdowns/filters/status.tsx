@@ -26,7 +26,7 @@ export const FilterStatus = observer(function FilterStatus(props: Props) {
 
   return (
     <FilterSubmenu
-      label="Status of the cycle"
+      label="Status of the sprint"
       options={options}
       appliedFilters={appliedFilters}
       onToggle={handleUpdate}

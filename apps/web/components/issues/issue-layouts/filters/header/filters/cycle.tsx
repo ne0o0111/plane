@@ -46,6 +46,12 @@ export const FilterCycle = observer(function FilterCycle(props: Props) {
   });
 
   return (
-    <FilterSubmenu label="Cycle" options={options} appliedFilters={appliedFilters} onToggle={handleUpdate} searchable />
+    <FilterSubmenu
+      label="Sprint"
+      options={options}
+      appliedFilters={appliedFilters}
+      onToggle={handleUpdate}
+      searchable
+    />
   );
 });

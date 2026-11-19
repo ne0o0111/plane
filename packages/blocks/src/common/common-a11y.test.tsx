@@ -24,8 +24,8 @@ describe("FavoriteStar", () => {
   });
 
   it("takes the accessible name from the caller when given", () => {
-    render(<FavoriteStar selected={false} onClick={vi.fn()} aria-label="Star cycle" />);
-    expect(screen.getByRole("button", { name: "Star cycle" })).toBeDefined();
+    render(<FavoriteStar selected={false} onClick={vi.fn()} aria-label="Star sprint" />);
+    expect(screen.getByRole("button", { name: "Star sprint" })).toBeDefined();
   });
 
   it("is keyboard focusable and activates without submitting its form", async () => {

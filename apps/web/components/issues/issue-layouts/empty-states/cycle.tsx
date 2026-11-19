@@ -59,14 +59,14 @@ export const CycleEmptyState = observer(function CycleEmptyState() {
         setToast({
           type: "success",
           title: "Success!",
-          message: "Tasks added to the cycle successfully.",
+          message: "Tasks added to the sprint successfully.",
         })
       )
       .catch(() =>
         setToast({
           type: "error",
           title: "Error!",
-          message: "Selected tasks could not be added to the cycle. Please try again.",
+          message: "Selected tasks could not be added to the sprint. Please try again.",
         })
       );
   };

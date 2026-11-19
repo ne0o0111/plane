@@ -16,7 +16,7 @@ function renderDialog(overrides: Partial<ConfirmDialogProps> = {}) {
   const props = {
     isOpen: true,
     isSubmitting: false,
-    title: "Delete cycle",
+    title: "Delete sprint",
     content: "This cycle and its links will be deleted.",
     handleClose,
     handleSubmit,
@@ -32,7 +32,7 @@ const cancelButton = (name: string | RegExp = "Cancel") => screen.findByRole("bu
 
 /** The intent badge is the header's leading, decorative element; the title column follows it. */
 function getBadge(dialog: HTMLElement): Element | null {
-  const header = screen.getByRole("heading", { name: "Delete cycle" }).parentElement?.parentElement;
+  const header = screen.getByRole("heading", { name: "Delete sprint" }).parentElement?.parentElement;
   const first = header?.firstElementChild ?? null;
   return first?.getAttribute("aria-hidden") === "true" && dialog.contains(first) ? first : null;
 }
@@ -51,7 +51,7 @@ describe("ConfirmDialog open state", () => {
         </>
       ),
     });
-    const dialog = await screen.findByRole("alertdialog", { name: "Delete cycle" });
+    const dialog = await screen.findByRole("alertdialog", { name: "Delete sprint" });
     const description = document.getElementById(dialog.getAttribute("aria-describedby") ?? "");
     expect(description?.textContent).toBe("Delete Sprint 4?");
     expect(dialog.hasAttribute("data-prevent-outside-click")).toBe(true);

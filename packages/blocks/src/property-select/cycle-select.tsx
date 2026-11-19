@@ -44,7 +44,7 @@ export type CycleSelectProps = {
   className?: string;
   /** Pins a "No cycle" row to the top of the list; selecting it emits an empty string (clears the selection). Defaults to `true`. */
   clearable?: boolean;
-  /** Label for the clear row. Defaults to `placeholder`, then `"No cycle"`. */
+  /** Label for the clear row. Defaults to `placeholder`, then `"No sprint"`. */
   clearLabel?: string;
   /** Shows each option's `identifier` as a pill, for a picker scoped across several projects. */
   showIdentifier?: boolean;
@@ -65,7 +65,7 @@ export function CycleSelect(props: CycleSelectProps) {
     onChange,
     disabled = false,
     placeholder = "",
-    searchPlaceholder = "Search cycles...",
+    searchPlaceholder = "Search sprints...",
     onClose,
     variant,
     className,

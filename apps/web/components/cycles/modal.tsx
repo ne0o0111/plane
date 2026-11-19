@@ -1,3 +1,5 @@
+// oxlint-disable promise/always-return
+// oxlint-disable no-shadow
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -63,14 +65,14 @@ export function CycleCreateUpdateModal(props: CycleModalProps) {
         setToast({
           type: "success",
           title: "Success!",
-          message: "Cycle created successfully.",
+          message: "Sprint created successfully.",
         });
       })
       .catch((err) => {
         setToast({
           type: "error",
           title: "Error!",
-          message: err?.detail ?? "Error in creating cycle. Please try again.",
+          message: err?.detail ?? "Error in creating sprint. Please try again.",
         });
       });
   };
@@ -84,14 +86,14 @@ export function CycleCreateUpdateModal(props: CycleModalProps) {
         setToast({
           type: "success",
           title: "Success!",
-          message: "Cycle updated successfully.",
+          message: "Sprint updated successfully.",
         });
       })
       .catch((err) => {
         setToast({
           type: "error",
           title: "Error!",
-          message: err?.detail ?? "Error in updating cycle. Please try again.",
+          message: err?.detail ?? "Error in updating sprint. Please try again.",
         });
       });
   };
@@ -152,7 +154,8 @@ export function CycleCreateUpdateModal(props: CycleModalProps) {
       setToast({
         type: "error",
         title: "Error!",
-        message: "You already have a cycle on the given dates, if you want to create a draft cycle, remove the dates.",
+        message:
+          "You already have a sprint on the given dates, if you want to create a draft sprint, remove the dates.",
       });
   };
 

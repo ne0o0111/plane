@@ -76,7 +76,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     features: [
       {
         title: "Spaces",
-        description: "Add projects to house tasks, cycles, and modules.",
+        description: "Add projects to house tasks, sprints, and modules.",
         cloud: {
           free: true,
           one: true,
@@ -87,7 +87,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Tasks",
-        description: "Add work via tasks, set properties for tracking, and add to\ncycles or modules.",
+        description: "Add work via tasks, set properties for tracking, and add to\nsprints or modules.",
         cloud: {
           free: true,
           one: true,
@@ -108,7 +108,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Cycles",
+        title: "Sprints",
         description: "Track work in timeboxes with differing frequency.",
         cloud: {
           free: true,
@@ -160,7 +160,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     features: [
       {
         title: "Bulk Ops",
-        description: "Add several tasks to cycles or modules, transfer\nthem, or edit their properties.",
+        description: "Add several tasks to sprints or modules, transfer\nthem, or edit their properties.",
         cloud: {
           free: false,
           one: "Limited props",
@@ -191,8 +191,8 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Active Cycles",
-        description: "See all running cycles across all projects, or soon, in\na single project.",
+        title: "Active Sprints",
+        description: "See all running sprints across all projects, or soon, in\na single project.",
         cloud: {
           free: false,
           one: true,
@@ -236,7 +236,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Task Transfers",
-        description: "Move a task from a project or a cycle to\nanother.",
+        description: "Move a task from a project or a sprint to\nanother.",
         cloud: {
           free: false,
           one: false,
@@ -259,7 +259,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Epics",
-        description: "Organize long-term work in epics that house tasks,\ncycles, and modules.",
+        description: "Organize long-term work in epics that house tasks,\nsprints, and modules.",
         cloud: {
           free: false,
           one: false,
@@ -295,7 +295,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Module Overview",
-        description: "Like Cycle Overviews, see relevant details and\nprogress charts for each module.",
+        description: "Like Sprint Overviews, see relevant details and\nprogress charts for each module.",
         cloud: {
           free: false,
           one: false,
@@ -379,7 +379,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
       },
       {
         title: "Teamspace Cycles",
-        description: "See multiple cycles in multiple projects at once.",
+        description: "See multiple sprints in multiple projects at once.",
         cloud: {
           free: false,
           one: false,
@@ -547,8 +547,9 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         },
       },
       {
-        title: "Cycle Reports",
-        description: "Get on-demand cycle reports during and after a\ncycle. Revisit reports anytime from permalinks.",
+        title: "Sprint Reports",
+        description:
+          "Get on-demand sprint reports during and after a\nsprint. Revisit reports anytime from permalinks.",
         cloud: {
           free: false,
           one: false,
@@ -1302,7 +1303,7 @@ export const PLANE_PLANS: PlanePlans = {
   },
   planHighlights: {
     free: ["Upto 12 users", "Pages", "Unlimited projects", "Unlimited cycles and modules"],
-    one: ["Upto 50 users", "OIDC and SAML", "Active cycles", "Limited time tracking"],
+    one: ["Upto 50 users", "OIDC and SAML", "Active sprints", "Limited time tracking"],
     pro: ["Unlimited users", "Custom tasks + Properties", "Task templates", "Full Time Tracking"],
     business: ["RBAC", "Project Templates", "Baselines And Deviations", "Custom Reports"],
     enterprise: ["Private + managed deployments", "GAC", "LDAP support", "Databases + Formulas"],

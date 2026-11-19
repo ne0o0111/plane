@@ -82,7 +82,7 @@ describe("PropertiesOverflowRow", () => {
     renderRow(
       [
         entry("state", 0),
-        entry("cycle", 7, { menuRow: { icon: null, label: "Cycle", preview: "Sprint 4", disabled: true } }),
+        entry("cycle", 7, { menuRow: { icon: null, label: "Sprint", preview: "Sprint 4", disabled: true } }),
       ],
       ONE_CHIP_BUDGET
     );

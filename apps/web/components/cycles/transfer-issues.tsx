@@ -23,7 +23,7 @@ export function TransferIssues(props: Props) {
       <Banner
         placement="page"
         variant="neutral"
-        title="Completed cycles are not editable."
+        title="Completed sprints are not editable."
         actions={
           canTransferIssues && (
             <Button

@@ -124,8 +124,8 @@ describe("setToast", () => {
 
   it("forwards data action items to Propel `data.actions`", () => {
     const onClick = vi.fn();
-    setToast({ type: "success", title: "Cycle created", actionItems: [{ label: "View cycle", onClick }] });
-    expect(add.mock.calls[0][0]).toMatchObject({ data: { actions: [{ label: "View cycle", onClick }] } });
+    setToast({ type: "success", title: "Sprint created", actionItems: [{ label: "View sprint", onClick }] });
+    expect(add.mock.calls[0][0]).toMatchObject({ data: { actions: [{ label: "View sprint", onClick }] } });
   });
 
   it("drops ReactNode action items rather than passing markup to Propel", () => {

@@ -77,13 +77,13 @@ export const HeaderGroupByCard = observer(function HeaderGroupByCard(props: IHea
       setToast({
         type: "success",
         title: "Success!",
-        message: "Tasks added to the cycle successfully.",
+        message: "Tasks added to the sprint successfully.",
       });
     } catch (_error) {
       setToast({
         type: "error",
         title: "Error!",
-        message: "Selected tasks could not be added to the cycle. Please try again.",
+        message: "Selected tasks could not be added to the sprint. Please try again.",
       });
     }
   };

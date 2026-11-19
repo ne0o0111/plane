@@ -34,7 +34,7 @@ import { useUser } from "@/hooks/store/user";
 export const WORKSPACE_ACTIVE_CYCLES_DETAILS = [
   {
     key: "10000_feet_view",
-    title: "10,000-feet view of all active cycles.",
+    title: "10,000-feet view of all active sprints.",
     description:
       "Zoom out to see running cycles across all your projects at once instead of going from Cycle to Cycle in each project.",
     icon: FolderOutline,
@@ -43,26 +43,26 @@ export const WORKSPACE_ACTIVE_CYCLES_DETAILS = [
     key: "get_snapshot_of_each_active_cycle",
     title: "Get a snapshot of each active cycle.",
     description:
-      "Track high-level metrics for all active cycles, see their state of progress, and get a sense of scope against deadlines.",
+      "Track high-level metrics for all active sprints, see their state of progress, and get a sense of scope against deadlines.",
     icon: CircleDashedOutline,
   },
   {
     key: "compare_burndowns",
     title: "Compare burndowns.",
-    description: "Monitor how each of your teams are performing with a peek into each cycle’s burndown report.",
+    description: "Monitor how each of your teams are performing with a peek into each sprint’s burndown report.",
     icon: BarOutline,
   },
   {
     key: "quickly_see_make_or_break_issues",
     title: "Quickly see make-or-break tasks. ",
     description:
-      "Preview high-priority tasks for each cycle against due dates. See all of them per cycle in one click.",
+      "Preview high-priority tasks for each sprint against due dates. See all of them per cycle in one click.",
     icon: AlertOctagonOutline,
   },
   {
     key: "zoom_into_cycles_that_need_attention",
-    title: "Zoom into cycles that need attention. ",
-    description: "Investigate the state of any cycle that doesn’t conform to expectations in one click.",
+    title: "Zoom into sprints that need attention. ",
+    description: "Investigate the state of any sprint that doesn’t conform to expectations in one click.",
     icon: SearchOutline,
   },
   {
