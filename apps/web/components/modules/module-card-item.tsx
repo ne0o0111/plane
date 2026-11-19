@@ -1,3 +1,5 @@
+// oxlint-disable promise/always-return
+// oxlint-disable unicorn/consistent-function-scoping
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -175,11 +177,11 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
 
   const issueCount = moduleDetails
     ? !moduleTotalIssues || moduleTotalIssues === 0
-      ? `0 work items`
+      ? `0 tasks`
       : moduleTotalIssues === moduleCompletedIssues
-        ? `${moduleTotalIssues} Work item${moduleTotalIssues > 1 ? `s` : ``}`
-        : `${moduleCompletedIssues}/${moduleTotalIssues} Work items`
-    : `0 work items`;
+        ? `${moduleTotalIssues} Task${moduleTotalIssues > 1 ? `s` : ``}`
+        : `${moduleCompletedIssues}/${moduleTotalIssues} Tasks`
+    : `0 tasks`;
 
   const moduleLeadDetails = moduleDetails.lead_id ? getUserDetails(moduleDetails.lead_id) : undefined;
   // One segment per state group; the bar normalises the counts, so an empty module shows only the track.
@@ -237,7 +239,7 @@ export const ModuleCardItem = observer(function ModuleCardItem(props: Props) {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5 text-secondary">
               <WorkItemsOutline className="size-4 text-tertiary" />
-              <span className="text-caption-sm-regular text-tertiary">{issueCount ?? "0 Work item"}</span>
+              <span className="text-caption-sm-regular text-tertiary">{issueCount ?? "0 Task"}</span>
             </div>
             <span className="relative z-[1] flex shrink-0 items-center">
               {moduleLeadDetails ? (

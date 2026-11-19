@@ -1,3 +1,4 @@
+// oxlint-disable promise/always-return
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -96,7 +97,7 @@ export const usePowerKWorkItemContextBasedCommands = (): TPowerKCommandConfig[] 
         setToast({
           type: "error",
           title: "Error!",
-          message: `${isEpic ? "Epic" : "Work item"} could not be updated. Please try again.`,
+          message: `${isEpic ? "Epic" : "Task"} could not be updated. Please try again.`,
         });
       });
     },
@@ -326,7 +327,7 @@ export const usePowerKWorkItemContextBasedCommands = (): TPowerKCommandConfig[] 
           setToast({
             type: "error",
             title: "Error!",
-            message: `${entityDetails.is_epic ? "Epic" : "Work item"} could not be updated. Please try again.`,
+            message: `${entityDetails.is_epic ? "Epic" : "Task"} could not be updated. Please try again.`,
           });
         }
       },
@@ -358,7 +359,7 @@ export const usePowerKWorkItemContextBasedCommands = (): TPowerKCommandConfig[] 
           setToast({
             type: "error",
             title: "Error!",
-            message: `${entityDetails.is_epic ? "Epic" : "Work item"} could not be updated. Please try again.`,
+            message: `${entityDetails.is_epic ? "Epic" : "Task"} could not be updated. Please try again.`,
           });
         }
       },

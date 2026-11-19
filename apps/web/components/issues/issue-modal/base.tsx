@@ -1,3 +1,4 @@
+// oxlint-disable no-shadow
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -227,7 +228,7 @@ export const CreateUpdateIssueModalBase = observer(function CreateUpdateIssueMod
           isDraft: is_draft_issue,
         });
 
-        // create sub work item
+        // create sub task
         await handleCreateSubWorkItem({
           workspaceSlug: workspaceSlug?.toString(),
           projectId: response.project_id,

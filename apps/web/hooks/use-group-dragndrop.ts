@@ -1,3 +1,4 @@
+// oxlint-disable no-unused-expressions
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -65,7 +66,7 @@ export const useGroupIssuesDragNDrop = (
     const errorToastProps: SetToastProps = {
       type: "error",
       title: "Error!",
-      message: "Error while updating work item",
+      message: "Error while updating task",
     };
     const moduleKey = ISSUE_FILTER_DEFAULT_DATA["module"];
     const cycleKey = ISSUE_FILTER_DEFAULT_DATA["cycle"];

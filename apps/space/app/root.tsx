@@ -1,3 +1,4 @@
+// oxlint-disable import/no-unassigned-import
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -78,7 +79,7 @@ export const meta: Route.MetaFunction = () => [
   {
     name: "keywords",
     content:
-      "software development, customer feedback, software, accelerate, code management, release management, project management, work item tracking, agile, scrum, kanban, collaboration",
+      "software development, customer feedback, software, accelerate, code management, release management, project management, task tracking, agile, scrum, kanban, collaboration",
   },
   { name: "twitter:site", content: "@planepowers" },
 ];

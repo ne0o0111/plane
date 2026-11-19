@@ -1,3 +1,4 @@
+// oxlint-disable promise/always-return
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -93,7 +94,7 @@ function WorkspaceInvitationPage() {
               align="center"
               assetKey="inbox"
               title={`You have been invited to ${invitationDetail.workspace.name}`}
-              description="Your workspace is where you'll create projects, collaborate on your work items, and organize different streams of work in your Plane account."
+              description="Your workspace is where you'll create projects, collaborate on your tasks, and organize different streams of work in your Plane account."
               actions={[
                 { label: "Accept", variant: "primary", onClick: handleAccept },
                 { label: "Ignore", variant: "secondary", onClick: handleReject },
@@ -106,7 +107,7 @@ function WorkspaceInvitationPage() {
               align="center"
               assetKey="project"
               title={`You are already a member of ${invitationDetail.workspace.name}`}
-              description="Your workspace is where you'll create projects, collaborate on your work items, and organize different streams of work in your Plane account."
+              description="Your workspace is where you'll create projects, collaborate on your tasks, and organize different streams of work in your Plane account."
               customButton={
                 <Button
                   variant="primary"
@@ -123,7 +124,7 @@ function WorkspaceInvitationPage() {
               align="center"
               assetKey="invalid-link"
               title="This invitation link is not active anymore."
-              description="Your workspace is where you'll create projects, collaborate on your work items, and organize different streams of work in your Plane account."
+              description="Your workspace is where you'll create projects, collaborate on your tasks, and organize different streams of work in your Plane account."
               customButton={
                 <div className="flex flex-col items-center gap-4">
                   <Button

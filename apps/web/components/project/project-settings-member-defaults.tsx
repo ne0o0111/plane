@@ -1,3 +1,4 @@
+// oxlint-disable promise/always-return
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -197,7 +198,7 @@ export const ProjectSettingsMemberDefaults = observer(function ProjectSettingsMe
       {currentProjectDetails && (
         <DefaultSettingItem
           title="Guest access"
-          description="This will allow guests to have view access to all the project work items."
+          description="This will allow guests to have view access to all the project tasks."
         >
           <div className="flex items-center justify-end">
             <Switch

@@ -1,3 +1,4 @@
+// oxlint-disable promise/always-return
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -325,14 +326,14 @@ export const InboxIssueActionsHeader = observer(function InboxIssueActionsHeader
                 variant="secondary"
                 size="md"
                 icon={<Icon icon={ChevronUpOutline} />}
-                aria-label="Previous work item"
+                aria-label="Previous task"
                 onClick={() => handleInboxIssueNavigation("prev")}
               />
               <IconButton
                 variant="secondary"
                 size="md"
                 icon={<Icon icon={ChevronDownOutline} />}
-                aria-label="Next work item"
+                aria-label="Next task"
                 onClick={() => handleInboxIssueNavigation("next")}
               />
             </div>
@@ -436,7 +437,7 @@ export const InboxIssueActionsHeader = observer(function InboxIssueActionsHeader
                             handleActionWithPermission(
                               isProjectAdmin,
                               () => setSelectDuplicateIssue(true),
-                              "Only project admins can mark work item as duplicate"
+                              "Only project admins can mark task as duplicate"
                             )
                           }
                         />

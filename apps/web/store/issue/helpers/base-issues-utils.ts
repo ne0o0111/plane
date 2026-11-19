@@ -1,3 +1,4 @@
+// oxlint-disable no-shadow
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -235,8 +236,8 @@ export const getPreviousIssuesState = (issues: TIssue[]) => {
 };
 
 /**
- * Filters the given work items based on the provided filters and display filters.
- * @param work items - The array of work items to be filtered.
+ * Filters the given tasks based on the provided filters and display filters.
+ * @param tasks - The array of tasks to be filtered.
  * @param filters - The filters to be applied to the issues.
  * @param displayFilters - The display filters to be applied to the issues.
  * @returns The filtered array of issues.
@@ -272,10 +273,10 @@ export const getFilteredWorkItems = (workItems: TIssue[], filters: IIssueFilterO
 };
 
 /**
- * Orders the given work items based on the provided order by key.
- * @param workItems - The array of work items to be ordered.
+ * Orders the given tasks based on the provided order by key.
+ * @param workItems - The array of tasks to be ordered.
  * @param orderByKey - The key to order the issues by.
- * @returns The ordered array of work items.
+ * @returns The ordered array of tasks.
  */
 export const getOrderedWorkItems = (workItems: TIssue[], orderByKey: TIssueOrderByOptions): string[] => {
   switch (orderByKey) {
@@ -329,14 +330,14 @@ export const getGroupedWorkItemIds = (
     }
   };
 
-  // Group work items
+  // Group tasks
   const groupKey = getDefaultGroupKey(groupByKey);
   const groupedWorkItems = groupBy(workItems, (item) => {
     const value = groupKey ? item[groupKey] : null;
     if (Array.isArray(value)) {
       if (value.length === 0) return "None";
       // Sort & join to build deterministic set-like key
-      return value.slice().sort().join(",");
+      return value.slice().toSorted().join(",");
     }
     return value ?? "None";
   });
@@ -351,11 +352,11 @@ export const getGroupedWorkItemIds = (
 };
 
 /**
- * Updates the filters for a given work item.
- * @param filtersMap - The map of filters for the work item.
+ * Updates the filters for a given task.
+ * @param filtersMap - The map of filters for the task.
  * @param filterType - The type of filter to update.
  * @param filters - The filters to update.
- * @param workItemId - The ID of the work item to update.
+ * @param workItemId - The ID of the task to update.
  */
 export const updateSubWorkItemFilters = (
   filtersMap: Record<string, Partial<ISubWorkItemFilters>>,

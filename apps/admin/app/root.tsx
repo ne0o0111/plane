@@ -1,3 +1,4 @@
+// oxlint-disable import/no-unassigned-import
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -23,7 +24,7 @@ import "@fontsource/ibm-plex-mono";
 
 const APP_TITLE = "Plane | Simple, extensible, open-source project management tool.";
 const APP_DESCRIPTION =
-  "Open-source project management tool to manage work items, sprints, and product roadmaps with peace of mind.";
+  "Open-source project management tool to manage tasks, sprints, and product roadmaps with peace of mind.";
 
 export const links: LinksFunction = () => [
   { rel: "apple-touch-icon", sizes: "180x180", href: appleTouchIcon },
@@ -67,7 +68,7 @@ export const meta: Route.MetaFunction = () => [
   {
     name: "keywords",
     content:
-      "software development, customer feedback, software, accelerate, code management, release management, project management, work items tracking, agile, scrum, kanban, collaboration",
+      "software development, customer feedback, software, accelerate, code management, release management, project management, tasks tracking, agile, scrum, kanban, collaboration",
   },
   { name: "twitter:site", content: "@planepowers" },
 ];

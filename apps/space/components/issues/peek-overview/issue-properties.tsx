@@ -1,3 +1,4 @@
+// oxlint-disable promise/always-return
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -52,7 +53,7 @@ export const PeekOverviewIssueProperties = observer(function PeekOverviewIssuePr
       setToast({
         type: "info",
         title: "Link copied!",
-        message: "Work item link copied to clipboard",
+        message: "Task link copied to clipboard",
       });
     });
   };

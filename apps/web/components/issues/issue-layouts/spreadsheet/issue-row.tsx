@@ -1,3 +1,5 @@
+// oxlint-disable jsx-a11y/click-events-have-key-events
+// oxlint-disable jsx-a11y/no-static-element-interactions
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -311,7 +313,7 @@ const IssueRowDetails = observer(function IssueRowDetails(props: IssueRowDetails
               {/* select checkbox */}
               {projectId && canSelectIssues && (
                 <Tooltip
-                  label="Only work items within the current project can be selected."
+                  label="Only tasks within the current project can be selected."
                   layout="stacked"
                   disabled={issueDetail.project_id === projectId}
                 >

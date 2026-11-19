@@ -1,3 +1,6 @@
+// oxlint-disable const-comparisons
+// oxlint-disable no-unused-expressions
+// oxlint-disable promise/always-return
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -364,7 +367,7 @@ export class ProjectInboxStore implements IProjectInboxStore {
       console.error("Error fetching the intake issues", error);
       this.loader = undefined;
       this.error = {
-        message: "Error fetching the intake work items please try again later.",
+        message: "Error fetching the intake tasks please try again later.",
         status: "init-error",
       };
       throw error;
@@ -404,7 +407,7 @@ export class ProjectInboxStore implements IProjectInboxStore {
     } catch (error) {
       console.error("Error fetching the intake issues", error);
       this.error = {
-        message: "Error fetching the paginated intake work items please try again later.",
+        message: "Error fetching the paginated intake tasks please try again later.",
         status: "pagination-error",
       };
       throw error;

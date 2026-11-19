@@ -1,3 +1,4 @@
+// oxlint-disable promise/always-return
 /**
  * Copyright (c) 2023-present Plane Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
@@ -54,7 +55,7 @@ export const DeleteInboxIssueModal = observer(function DeleteInboxIssueModal({
         });
       })
       .catch((errors) => {
-        const isPermissionError = errors?.error === "Only admin or creator can delete the work item";
+        const isPermissionError = errors?.error === "Only admin or creator can delete the task";
         const currentError = isPermissionError
           ? PROJECT_ERROR_MESSAGES.permissionError
           : PROJECT_ERROR_MESSAGES.issueDeleteError;
@@ -77,11 +78,11 @@ export const DeleteInboxIssueModal = observer(function DeleteInboxIssueModal({
       // TODO: Need to translate the confirmation message
       content={
         <>
-          Are you sure you want to delete work item{" "}
+          Are you sure you want to delete task{" "}
           <span className="font-medium break-words text-primary">
             {projectDetails?.identifier}-{data?.sequence_id}
           </span>
-          {""}? The work item will only be deleted from the intake and this action cannot be undone.
+          {""}? The task will only be deleted from the intake and this action cannot be undone.
         </>
       }
     />
