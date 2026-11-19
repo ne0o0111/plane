@@ -6,8 +6,6 @@
 
 "use client";
 import { observer } from "mobx-react";
-import { useParams, usePathname } from "next/navigation";
-import { SettingsOutline } from "@makeplane/propel/icons";
 import {
   ContextMenu,
   ContextMenuContent,
@@ -15,9 +13,6 @@ import {
   ContextMenuSeparator,
   ContextMenuTrigger,
 } from "@makeplane/propel/components/context-menu";
-import { cn } from "@plane/utils";
-// components
-import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
 // hooks
 import { useAppRailPreferences } from "@/hooks/use-navigation-preferences";
 import { useAppRailVisibility } from "@/lib/app-rail/context";
@@ -25,45 +20,32 @@ import { useAppRailVisibility } from "@/lib/app-rail/context";
 import { AppSidebarItemsRoot } from "./items-root";
 
 export const AppRailRoot = observer(() => {
-  // router
-  const { workspaceSlug, projectId } = useParams();
-  const pathname = usePathname();
   // preferences
   const { preferences, updateDisplayMode } = useAppRailPreferences();
   const { isCollapsed, toggleAppRail } = useAppRailVisibility();
   // derived values
-  const isWorkspaceSettingsPath = pathname.includes(`/${workspaceSlug}/settings`) && !projectId;
   const showLabel = preferences.displayMode === "icon_with_label";
-  const railWidth = showLabel ? "3.75rem" : "3rem";
+  const railWidth = showLabel ? "3.5rem" : "3rem";
 
   return (
     <div
-      className="z-[26] h-full flex-shrink-0 bg-canvas transition-all duration-300 ease-in-out"
+      className="z-[26] h-full flex-shrink-0 py-1.5 pl-1.5 transition-all duration-300 ease-in-out"
       style={{
-        width: railWidth,
+        width: `calc(${railWidth} + 0.375rem)`,
         display: "block",
       }}
     >
       <ContextMenu>
         <ContextMenuTrigger render={<div className="h-full" />}>
-          <div className="flex h-full flex-col justify-between gap-4 px-2 py-3">
-            <div
-              className={cn("flex flex-col", {
-                "gap-4": showLabel,
-                "gap-3": !showLabel,
-              })}
-            >
-              <AppSidebarItemsRoot showLabel={showLabel} />
-              <div className="mx-2 border-t border-strong" />
-              <AppSidebarItem
-                item={{
-                  label: "Settings",
-                  icon: <SettingsOutline className="size-5" />,
-                  href: `/${workspaceSlug}/settings`,
-                  isActive: isWorkspaceSettingsPath,
-                  showLabel,
-                }}
-              />
+          <div
+            className="flex h-full flex-col justify-between rounded-lg px-1.5 py-3"
+            style={{ backgroundColor: "#000000" }}
+          >
+            <div className="flex flex-col gap-4">
+              <AppSidebarItemsRoot showLabel={showLabel} section="top" />
+            </div>
+            <div className="flex flex-col gap-4">
+              <AppSidebarItemsRoot showLabel={showLabel} section="bottom" />
             </div>
           </div>
         </ContextMenuTrigger>

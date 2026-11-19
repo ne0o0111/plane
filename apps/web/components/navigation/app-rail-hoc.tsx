@@ -4,30 +4,72 @@
  * See the LICENSE file for details.
  */
 
-// hoc/withDockItems.tsx
 import React from "react";
 import { observer } from "mobx-react";
-import { useParams } from "next/navigation";
-import { Projects } from "@makeplane/propel/icons";
+import { useParams, usePathname } from "next/navigation";
 import type { AppSidebarItemData } from "@/components/sidebar/sidebar-item";
-import { useWorkspacePaths } from "@/hooks/use-workspace-paths";
+import { ClickUpRailIcon } from "./clickup-rail-icon";
+
+export type TAppRailDockItem = AppSidebarItemData & {
+  shouldRender: boolean;
+  section: "top" | "bottom";
+};
 
 type WithDockItemsProps = {
-  dockItems: (AppSidebarItemData & { shouldRender: boolean })[];
+  dockItems: TAppRailDockItem[];
 };
 
 export function withDockItems<P extends WithDockItemsProps>(WrappedComponent: React.ComponentType<P>) {
   const ComponentWithDockItems = observer(function ComponentWithDockItems(props: Omit<P, keyof WithDockItemsProps>) {
     const { workspaceSlug } = useParams();
-    const { isProjectsPath, isNotificationsPath } = useWorkspacePaths();
+    const pathname = usePathname();
+    const slug = workspaceSlug?.toString() ?? "";
+    const isHome = pathname === `/${slug}` || pathname === `/${slug}/`;
+    const isSpaces = pathname.includes(`/${slug}/projects`);
+    const isPlanner = pathname.includes(`/${slug}/active-cycles`);
 
-    const dockItems: (AppSidebarItemData & { shouldRender: boolean })[] = [
+    const dockItems: TAppRailDockItem[] = [
       {
-        label: "Projects",
-        icon: <Projects className="size-5" />,
-        href: `/${workspaceSlug}/`,
-        isActive: isProjectsPath && !isNotificationsPath,
+        label: "Home",
+        icon: <ClickUpRailIcon src="/clickup-rail/home.svg" alt="Home" withGlow />,
+        href: `/${slug}/`,
+        isActive: isHome,
         shouldRender: true,
+        section: "top",
+      },
+      {
+        label: "Spaces",
+        icon: <ClickUpRailIcon src="/clickup-rail/spaces.svg" alt="Spaces" />,
+        href: `/${slug}/projects/`,
+        isActive: isSpaces,
+        shouldRender: true,
+        section: "top",
+      },
+      {
+        label: "Planner",
+        icon: <ClickUpRailIcon src="/clickup-rail/planner.svg" alt="Planner" />,
+        href: `/${slug}/active-cycles/`,
+        isActive: isPlanner,
+        shouldRender: true,
+        section: "top",
+      },
+      {
+        label: "Docs",
+        icon: <ClickUpRailIcon src="/clickup-rail/docs.svg" alt="Docs" />,
+        shouldRender: true,
+        section: "top",
+      },
+      {
+        label: "Dashboards",
+        icon: <ClickUpRailIcon src="/clickup-rail/dashboards.svg" alt="Dashboards" />,
+        shouldRender: true,
+        section: "top",
+      },
+      {
+        label: "Invite",
+        icon: <ClickUpRailIcon src="/clickup-rail/invite.svg" alt="Invite" />,
+        shouldRender: true,
+        section: "bottom",
       },
     ];
 

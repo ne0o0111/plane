@@ -75,7 +75,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     title: "Project + work tracking",
     features: [
       {
-        title: "Projects",
+        title: "Spaces",
         description: "Add projects to house work items, cycles, and modules.",
         cloud: {
           free: true,

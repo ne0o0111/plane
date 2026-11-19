@@ -38,12 +38,6 @@ export const FilterProjects = observer(function FilterProjects(props: Props) {
   });
 
   return (
-    <FilterSubmenu
-      label="Project"
-      options={options}
-      appliedFilters={appliedFilters}
-      onToggle={handleUpdate}
-      searchable
-    />
+    <FilterSubmenu label="Space" options={options} appliedFilters={appliedFilters} onToggle={handleUpdate} searchable />
   );
 });

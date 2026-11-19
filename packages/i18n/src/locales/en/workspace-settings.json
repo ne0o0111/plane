@@ -79,12 +79,12 @@
       },
       "exports": {
         "heading": "Exports",
-        "description": "Export your project data in various formats and access your export history with download links.",
+        "description": "Export your space data in various formats and access your export history with download links.",
         "title": "Exports",
         "exporting": "Exporting",
         "previous_exports": "Previous exports",
         "export_separate_files": "Export the data into separate files",
-        "exporting_projects": "Exporting project",
+        "exporting_projects": "Exporting space",
         "format": "Format",
         "filters_info": "Apply filters to export specific work items based on your criteria.",
         "modal": {
@@ -103,7 +103,7 @@
       },
       "webhooks": {
         "heading": "Webhooks",
-        "description": "Automate notifications to external services when project events occur.",
+        "description": "Automate notifications to external services when space events occur.",
         "title": "Webhooks",
         "add_webhook": "Add webhook",
         "modal": {
@@ -192,27 +192,27 @@
       "imports": {
         "title": "Imports",
         "heading": "Imports",
-        "description": "Connect and import data from your existing project management tools to streamline your workflow integration."
+        "description": "Connect and import data from your existing space management tools to streamline your workflow integration."
       },
       "worklogs": {
         "title": "Worklogs",
         "heading": "Worklogs",
-        "description": "Download worklogs AKA timesheets for anyone in any project."
+        "description": "Download worklogs AKA timesheets for anyone in any space."
       },
       "group_syncing": {
         "title": "Group syncing",
         "heading": "Group syncing",
-        "description": "Link identity provider groups to projects and roles. User access updates automatically when group membership changes in your IdP, simplifying onboarding and offboarding.",
+        "description": "Link identity provider groups to spaces and roles. User access updates automatically when group membership changes in your IdP, simplifying onboarding and offboarding.",
         "enable": {
           "title": "Enable group syncing",
-          "description": "Automatically add users to projects based on identity provider groups."
+          "description": "Automatically add users to spaces based on identity provider groups."
         },
         "config": {
           "title": "Configure group sync",
-          "description": "Set up how identity provider groups are mapped to projects and roles.",
+          "description": "Set up how identity provider groups are mapped to spaces and roles.",
           "sync_on_login": {
             "title": "Sync on login",
-            "description": "Update group membership and project access when a user signs in."
+            "description": "Update group membership and space access when a user signs in."
           },
           "sync_offline": {
             "title": "Offline sync",
@@ -220,7 +220,7 @@
           },
           "auto_remove": {
             "title": "Auto remove",
-            "description": "Automatically remove users from projects when they no longer match the group."
+            "description": "Automatically remove users from spaces when they no longer match the group."
           },
           "group_attribute_key": {
             "title": "Group attribute key",
@@ -230,7 +230,7 @@
         },
         "group_mapping": {
           "title": "Group mapping",
-          "description": "Link identity provider groups to projects and roles.",
+          "description": "Link identity provider groups to spaces and roles.",
           "button_text": "Add new group sync"
         },
         "toast": {
@@ -240,7 +240,7 @@
         },
         "delete_modal": {
           "title": "Delete group sync",
-          "content": "New users from this identity group will no longer be added to the project. Users already added will keep their current role."
+          "content": "New users from this identity group will no longer be added to the space. Users already added will keep their current role."
         },
         "modal": {
           "idp_group_name": {
@@ -249,14 +249,14 @@
             "placeholder": "Enter the IdP group names"
           },
           "project": {
-            "text": "Project",
-            "required": "Project is required",
-            "placeholder": "Select a project"
+            "text": "Space",
+            "required": "Space is required",
+            "placeholder": "Select a space"
           },
           "default_role": {
-            "text": "Project role",
-            "required": "Project role is required",
-            "placeholder": "Select a project role"
+            "text": "Space role",
+            "required": "Space role is required",
+            "placeholder": "Select a space role"
           }
         }
       },
@@ -266,23 +266,23 @@
         "description": "Configure your domain and enable Single sign-on"
       },
       "project_states": {
-        "title": "Project states",
-        "heading": "See progress overview for all projects.",
-        "description": "Project States is a Plane-only feature for tracking progress of all your projects by any project property.",
+        "title": "Space states",
+        "heading": "See progress overview for all spaces.",
+        "description": "Space States is a Plane-only feature for tracking progress of all your spaces by any space property.",
         "go_to_settings": "Go to settings"
       },
       "projects": {
-        "title": "Projects",
-        "description": "Manage project states, and enable project labels, and other configuration.",
+        "title": "Spaces",
+        "description": "Manage space states, and enable space labels, and other configuration.",
         "tabs": {
-          "states": "Project states",
-          "labels": "Project labels"
+          "states": "Space states",
+          "labels": "Space labels"
         }
       },
       "templates": {
         "title": "Templates",
         "heading": "Templates",
-        "description": "Save 80% time spent on creating projects, work items, and pages when you use templates."
+        "description": "Save 80% time spent on creating spaces, work items, and pages when you use templates."
       },
       "relations": {
         "title": "Relations",
@@ -469,13 +469,13 @@
         "select_scopes": "Select Scopes",
         "read_access_to": "Read-only access to",
         "write_access_to": "Write access to",
-        "global_permission_expiration": "Global scopes are expiring soon. Use granular scopes instead. For example, use project:read instead of a global read.",
+        "global_permission_expiration": "Global scopes are expiring soon. Use granular scopes instead. For example, use space:read instead of a global read.",
         "selected_scopes": "{count} selected",
         "scopes_and_permissions": "Scopes & Permissions",
         "read": "Read",
         "write": "Write",
         "scope_description": {
-          "projects": "Access to projects, and all project related entities",
+          "projects": "Access to spaces, and all space related entities",
           "wiki": "Access to wiki, and all wiki related entities",
           "workspaces": "Access to workspaces, and all workspace related entities",
           "stickies": "Access to stickies, and all sticky related entities",

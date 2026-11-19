@@ -4,25 +4,28 @@
  * See the LICENSE file for details.
  */
 
-// components/AppSidebarItemsRoot.tsx
-
 import React from "react";
-import type { AppSidebarItemData } from "@/components/sidebar/sidebar-item";
 import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
+import type { TAppRailDockItem } from "./app-rail-hoc";
 import { withDockItems } from "./app-rail-hoc";
 
 type Props = {
-  dockItems: (AppSidebarItemData & { shouldRender: boolean })[];
+  dockItems: TAppRailDockItem[];
   showLabel?: boolean;
+  section?: "top" | "bottom";
 };
 
-function Component({ dockItems, showLabel = true }: Props) {
+function Component({ dockItems, showLabel = true, section = "top" }: Props) {
   return (
     <>
       {dockItems
-        .filter((item) => item.shouldRender)
+        .filter((item) => item.shouldRender && item.section === section)
         .map((item) => (
-          <AppSidebarItem key={item.label} item={{ ...item, showLabel }} variant="link" />
+          <AppSidebarItem
+            key={item.label}
+            item={{ ...item, showLabel, tone: "inverse" }}
+            variant={item.href ? "link" : "button"}
+          />
         ))}
     </>
   );

@@ -16,7 +16,7 @@ export const INDIVIDUAL_WEBHOOK_OPTIONS: {
 }[] = [
   {
     key: "project",
-    label: "Projects",
+    label: "Spaces",
     description: "Project created, updated, or deleted",
   },
   {
