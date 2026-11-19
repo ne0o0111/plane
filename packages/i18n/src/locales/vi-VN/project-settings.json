@@ -337,11 +337,11 @@
         "toggle_description": "Lập kế hoạch công việc trong khung thời gian tập trung."
       },
       "modules": {
-        "title": "Mô-đun",
-        "short_title": "Mô-đun",
+        "title": "Epic",
+        "short_title": "Epic",
         "description": "Tổ chức công việc thành các dự án phụ với người dẫn đầu và người được phân công chuyên trách.",
-        "toggle_title": "Bật mô-đun",
-        "toggle_description": "Thành viên dự án sẽ có thể tạo và chỉnh sửa mô-đun."
+        "toggle_title": "Bật epic",
+        "toggle_description": "Thành viên dự án sẽ có thể tạo và chỉnh sửa epic."
       },
       "views": {
         "title": "Chế độ xem",

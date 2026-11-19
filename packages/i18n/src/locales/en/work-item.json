@@ -37,9 +37,9 @@
         "failed": "Task could not be removed from the sprint. Please try again."
       },
       "module": {
-        "loading": "Removing task from the module",
-        "success": "Task removed from the module successfully.",
-        "failed": "Task could not be removed from the module. Please try again."
+        "loading": "Removing task from the epic",
+        "success": "Task removed from the epic successfully.",
+        "failed": "Task could not be removed from the epic. Please try again."
       },
       "parent": {
         "label": "Remove parent task"

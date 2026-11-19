@@ -37,9 +37,9 @@
         "failed": "Không thể xóa task khỏi sprint. Vui lòng thử lại."
       },
       "module": {
-        "loading": "Đang xóa task khỏi mô-đun",
-        "success": "Đã xóa task khỏi mô-đun thành công.",
-        "failed": "Không thể xóa task khỏi mô-đun. Vui lòng thử lại."
+        "loading": "Đang xóa task khỏi epic",
+        "success": "Đã xóa task khỏi epic thành công.",
+        "failed": "Không thể xóa task khỏi epic. Vui lòng thử lại."
       },
       "parent": {
         "label": "Xóa task cha"

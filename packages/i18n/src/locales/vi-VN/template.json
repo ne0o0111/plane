@@ -237,7 +237,7 @@
         "description": "Chưa có nhãn nào. Tạo nhãn để giúp tổ chức và lọc task trong dự án của bạn."
       },
       "no_modules": {
-        "description": "Chưa có mô-đun nào. Tổ chức công việc thành các dự án phụ với người dẫn đầu và người được phân công chuyên trách."
+        "description": "Chưa có epic nào. Tổ chức công việc thành các dự án phụ với người dẫn đầu và người được phân công chuyên trách."
       },
       "no_work_items": {
         "description": "Chưa có task nào. Thêm một để cấu trúc công việc của bạn tốt hơn."

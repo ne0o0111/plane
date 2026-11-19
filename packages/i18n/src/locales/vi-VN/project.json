@@ -216,27 +216,27 @@
     }
   },
   "project_module": {
-    "add_module": "Thêm mô-đun",
-    "update_module": "Cập nhật mô-đun",
-    "create_module": "Tạo mô-đun",
-    "archive_module": "Lưu trữ mô-đun",
-    "restore_module": "Khôi phục mô-đun",
-    "delete_module": "Xóa mô-đun",
+    "add_module": "Thêm epic",
+    "update_module": "Cập nhật epic",
+    "create_module": "Tạo epic",
+    "archive_module": "Lưu trữ epic",
+    "restore_module": "Khôi phục epic",
+    "delete_module": "Xóa epic",
     "empty_state": {
       "general": {
-        "title": "Ánh xạ cột mốc dự án vào mô-đun, dễ dàng theo dõi công việc tổng hợp.",
-        "description": "Một nhóm task thuộc cấp cha trong cấu trúc logic tạo thành một mô-đun. Xem nó như một cách theo dõi công việc theo cột mốc dự án. Chúng có sprint riêng và thời hạn cùng với các tính năng phân tích giúp bạn hiểu bạn đang ở đâu so với cột mốc.",
+        "title": "Ánh xạ cột mốc dự án vào epic, dễ dàng theo dõi công việc tổng hợp.",
+        "description": "Một nhóm task thuộc cấp cha trong cấu trúc logic tạo thành một epic. Xem nó như một cách theo dõi công việc theo cột mốc dự án. Chúng có sprint riêng và thời hạn cùng với các tính năng phân tích giúp bạn hiểu bạn đang ở đâu so với cột mốc.",
         "primary_button": {
-          "text": "Xây dựng mô-đun đầu tiên của bạn",
+          "text": "Xây dựng epic đầu tiên của bạn",
           "comic": {
-            "title": "Mô-đun giúp nhóm công việc theo cấu trúc phân cấp.",
-            "description": "Mô-đun giỏ hàng, mô-đun khung gầm và mô-đun kho đều là ví dụ tốt về nhóm như vậy."
+            "title": "Epic giúp nhóm công việc theo cấu trúc phân cấp.",
+            "description": "Epic giỏ hàng, epic khung gầm và epic kho đều là ví dụ tốt về nhóm như vậy."
           }
         }
       },
       "no_issues": {
-        "title": "Không có task trong mô-đun",
-        "description": "Tạo hoặc thêm task bạn muốn hoàn thành như một phần của mô-đun này",
+        "title": "Không có task trong epic",
+        "description": "Tạo hoặc thêm task bạn muốn hoàn thành như một phần của epic này",
         "primary_button": {
           "text": "Tạo task mới"
         },
@@ -245,26 +245,26 @@
         }
       },
       "archived": {
-        "title": "Chưa có mô-đun đã lưu trữ",
-        "description": "Để tổ chức dự án của bạn, hãy lưu trữ mô-đun đã hoàn thành hoặc đã hủy. Bạn có thể tìm thấy chúng ở đây sau khi lưu trữ."
+        "title": "Chưa có epic đã lưu trữ",
+        "description": "Để tổ chức dự án của bạn, hãy lưu trữ epic đã hoàn thành hoặc đã hủy. Bạn có thể tìm thấy chúng ở đây sau khi lưu trữ."
       },
       "sidebar": {
-        "in_active": "Mô-đun này chưa được kích hoạt.",
+        "in_active": "Epic này chưa được kích hoạt.",
         "invalid_date": "Ngày không hợp lệ. Vui lòng nhập ngày hợp lệ."
       }
     },
     "quick_actions": {
-      "archive_module": "Lưu trữ mô-đun",
-      "archive_module_description": "Chỉ mô-đun đã hoàn thành hoặc đã hủy\ncó thể được lưu trữ.",
-      "delete_module": "Xóa mô-đun"
+      "archive_module": "Lưu trữ epic",
+      "archive_module_description": "Chỉ epic đã hoàn thành hoặc đã hủy\ncó thể được lưu trữ.",
+      "delete_module": "Xóa epic"
     },
     "toast": {
       "copy": {
-        "success": "Đã sao chép liên kết mô-đun vào bảng tạm"
+        "success": "Đã sao chép liên kết epic vào bảng tạm"
       },
       "delete": {
-        "success": "Đã xóa mô-đun thành công",
-        "error": "Xóa mô-đun thất bại"
+        "success": "Đã xóa epic thành công",
+        "error": "Xóa epic thất bại"
       }
     }
   },
@@ -314,8 +314,8 @@
         }
       },
       "module": {
-        "title": "Dự án chưa bật tính năng mô-đun.",
-        "description": "Mô-đun là khối xây dựng cơ bản của dự án. Bật mô-đun từ cài đặt dự án để bắt đầu sử dụng chúng.",
+        "title": "Dự án chưa bật tính năng epic.",
+        "description": "Epic là khối xây dựng cơ bản của dự án. Bật epic từ cài đặt dự án để bắt đầu sử dụng chúng.",
         "primary_button": {
           "text": "Quản lý tính năng"
         }

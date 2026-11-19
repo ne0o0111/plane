@@ -70,8 +70,8 @@ Use the table verbatim — never coin new variants; never leave the Latin form i
 | ----------- | ----- | ----- | ---------- | -------- | -------- | -------- | --------- | -------- | ------- | ------- | -------- | ------- | ------- | ------- | ------- | --------- | --------- | ------ | ------- |
 | **Sprint**  | 冲刺  | 衝刺  | スプリント | 스프린트 | Спринт   | Спринт   | Спринт    | Sprint   | Sprint  | Sprint  | Sprint   | Sprint  | Sprint  | Sprint  | Sprint  | Sprint    | Sprint    | Sprint | Sprint  |
 | **Sprints** | 冲刺  | 衝刺  | スプリント | 스프린트 | Спринты  | Спринти  | Спринтове | Sprints  | Sprints | Sprints | Sprint   | Sprints | Sprinty | Sprinty | Sprinty | Sprinturi | Sprintler | Sprint | Sprint  |
-| **Module**  | 模块  | 模組  | モジュール | 모듈     | Модуль   | Модуль   | Модул     | Modul    | Module  | Módulo  | Modulo   | Módulo  | Moduł   | Modul   | Modul   | Modul     | Modül     | Mô-đun | Modul   |
-| **Modules** | 模块  | 模組  | モジュール | 모듈     | Модули   | Модулі   | Модули    | Module   | Modules | Módulos | Moduli   | Módulos | Moduły  | Moduly  | Moduly  | Module    | Modüller  | Mô-đun | Modul   |
+| **Module**  | 史诗  | 史詩  | エピック   | 에픽     | Эпик     | Епік     | Епик      | Epic     | Epic    | Epic    | Epic     | Epic    | Epik    | Epik    | Epik    | Epic      | Epik      | Epic   | Epik    |
+| **Modules** | 史诗  | 史詩  | エピック   | 에픽     | Эпики    | Епіки    | Епици     | Epics    | Epics   | Epics   | Epics    | Epics   | Epiki   | Epiky   | Epiky   | Epice     | Epikler   | Epic   | Epik    |
 | **Epic**    | 史诗  | 史詩  | エピック   | 에픽     | Эпик     | Епік     | Епик      | Epic     | Epic    | Epic    | Epic     | Epic    | Epik    | Epik    | Epik    | Epic      | Epik      | Epic   | Epik    |
 | **Epics**   | 史诗  | 史詩  | エピック   | 에픽     | Эпики    | Епіки    | Епици     | Epics    | Epics   | Epics   | Epics    | Epics   | Epiki   | Epiky   | Epiky   | Epice     | Epikler   | Epic   | Epik    |
 | **Page**    | 页面  | 頁面  | ページ     | 페이지   | Страница | Сторінка | Страница  | Seite    | Page    | Página  | Pagina   | Página  | Strona  | Stránka | Stránka | Pagină    | Sayfa     | Trang  | Halaman |
@@ -83,7 +83,8 @@ Notes:
 
 - Single-form locales (zh-CN, zh-TW, ja, ko, vi-VN, id) use the same form for singular and plural — the column repeats by design.
 - Slavic locales (ru, ua, pl, cs, sk) show **nominative singular** and **nominative plural**. Inside ICU `{count, plural, ...}` blocks, use the case-correct form per CLDR keyword (see the Slavic case-form table further down).
-- Some Latin locales (fr, vi-VN, id) have forms identical to English (`Sprint`, `Module`, `Page`) — that's the natural cognate, not a Latin-preservation rule.
+- Some Latin locales (fr, vi-VN, id) have forms identical to English (`Sprint`, `Epic`, `Page`) — that's the natural cognate, not a Latin-preservation rule.
+- **Module / Modules** (product feature formerly named Module) displays as **Epic / Epics** in all locales — use the same glossary forms as Epic/Epics. API keys and code identifiers remain `module`.
 - **Epic / Epics**: stays Latin in most Latin locales because there's no clean cognate (Spanish `épico` is for poetry/film; same for it/pt-BR/de/fr). Slavic locales use phonetic transliteration that's standard in their software industry (Эпик, Епік, Epik). CJK locales use the literal/transliterated form (史诗, エピック, 에픽).
 - **Generic uses translate normally and don't follow this glossary:** `next page` (paginator), `the page` (browser refresh), `status page`, `web page`, `life cycle`, `release cycle`, `rate-limit cycle`, `cycle of releases` — these are not the Plane Sprint/Page feature; translate them as ordinary words in the surrounding prose.
 - When editing an existing file, migrate occurrences you are already touching. Do not bulk-rewrite unrelated strings in the same PR — land a separate sweep PR with the `chore(i18n):` prefix.
@@ -92,28 +93,28 @@ Notes:
 
 When a Slavic plural block counts a Plane feature noun, use these forms:
 
-| Locale | Term     | one (nom.sg.) | few      | many     | other    |
-| ------ | -------- | ------------- | -------- | -------- | -------- |
-| **ru** | Спринт   | Спринт        | Спринта  | Спринтов | Спринта  |
-| **ru** | Модуль   | Модуль        | Модуля   | Модулей  | Модуля   |
-| **ru** | Эпик     | Эпик          | Эпика    | Эпиков   | Эпика    |
-| **ru** | Страница | Страница      | Страницы | Страниц  | Страницы |
-| **ua** | Спринт   | Спринт        | Спринта  | Спринтів | Спринта  |
-| **ua** | Модуль   | Модуль        | Модуля   | Модулів  | Модуля   |
-| **ua** | Епік     | Епік          | Епіка    | Епіків   | Епіка    |
-| **ua** | Сторінка | Сторінка      | Сторінки | Сторінок | Сторінки |
-| **pl** | Sprint   | Sprint        | Sprinty  | Sprintów | Sprintu  |
-| **pl** | Moduł    | Moduł         | Moduły   | Modułów  | Modułu   |
-| **pl** | Epik     | Epik          | Epiki    | Epików   | Epika    |
-| **pl** | Strona   | Strona        | Strony   | Stron    | Strony   |
-| **cs** | Sprint   | Sprint        | Sprinty  | Sprintu  | Sprintů  |
-| **cs** | Modul    | Modul         | Moduly   | Modulu   | Modulů   |
-| **cs** | Epik     | Epik          | Epiky    | Epiku    | Epiků    |
-| **cs** | Stránka  | Stránka       | Stránky  | Stránky  | Stránek  |
-| **sk** | Sprint   | Sprint        | Sprinty  | Sprintu  | Sprintov |
-| **sk** | Modul    | Modul         | Moduly   | Modulu   | Modulov  |
-| **sk** | Epik     | Epik          | Epiky    | Epiku    | Epikov   |
-| **sk** | Stránka  | Stránka       | Stránky  | Stránky  | Stránok  |
+| Locale | Term          | one (nom.sg.) | few      | many     | other    |
+| ------ | ------------- | ------------- | -------- | -------- | -------- |
+| **ru** | Спринт        | Спринт        | Спринта  | Спринтов | Спринта  |
+| **ru** | Эпик (Module) | Эпик          | Эпика    | Эпиков   | Эпика    |
+| **ru** | Эпик          | Эпик          | Эпика    | Эпиков   | Эпика    |
+| **ru** | Страница      | Страница      | Страницы | Страниц  | Страницы |
+| **ua** | Спринт        | Спринт        | Спринта  | Спринтів | Спринта  |
+| **ua** | Епік (Module) | Епік          | Епіка    | Епіків   | Епіка    |
+| **ua** | Епік          | Епік          | Епіка    | Епіків   | Епіка    |
+| **ua** | Сторінка      | Сторінка      | Сторінки | Сторінок | Сторінки |
+| **pl** | Sprint        | Sprint        | Sprinty  | Sprintów | Sprintu  |
+| **pl** | Epik (Module) | Epik          | Epiki    | Epików   | Epika    |
+| **pl** | Epik          | Epik          | Epiki    | Epików   | Epika    |
+| **pl** | Strona        | Strona        | Strony   | Stron    | Strony   |
+| **cs** | Sprint        | Sprint        | Sprinty  | Sprintu  | Sprintů  |
+| **cs** | Epik (Module) | Epik          | Epiky    | Epiku    | Epiků    |
+| **cs** | Epik          | Epik          | Epiky    | Epiku    | Epiků    |
+| **cs** | Stránka       | Stránka       | Stránky  | Stránky  | Stránek  |
+| **sk** | Sprint        | Sprint        | Sprinty  | Sprintu  | Sprintov |
+| **sk** | Epik (Module) | Epik          | Epiky    | Epiku    | Epikov   |
+| **sk** | Epik          | Epik          | Epiky    | Epiku    | Epikov   |
+| **sk** | Stránka       | Stránka       | Stránky  | Stránky  | Stránok  |
 
 Per CLDR for ru/ua: `one` fires for 1, 21, 31… (nom.sg.); `few` for 2–4, 22–24… (gen.sg.); `many` for 0, 5–20, 25–30… (gen.pl.); `other` for non-integer counts (gen.sg.). For pl: `one` (1), `few` (2–4 not 12–14, nom.pl.), `many` (0, 5–20, gen.pl.), `other` (decimals, gen.sg.). cs/sk: `one` (1), `few` (2–4, nom.pl.), `many` (decimals, gen.sg.), `other` (0, 5+, gen.pl.).
 
@@ -321,8 +322,8 @@ For every translated string, verify before saving:
 Variables **may be repositioned** for grammatical fit:
 
 ```
-en:  "Welcome, {name}! You have {count} new work items."
-fr:  "Bienvenue, {name} ! Vous avez {count} nouveaux work items."
+en:  "Welcome, {name}! You have {count} new tasks."
+fr:  "Bienvenue, {name} ! Vous avez {count} nouvelles tâches."
 ja:  "{name}さん、ようこそ。{count}件の新しい作業項目があります。"
 ```
 
@@ -381,7 +382,7 @@ General writing rules (apply across all locales):
 - No exclamation marks except in genuine celebrations (first success, milestone).
 - No emoji in UI copy.
 - No slang, idioms, humor, cultural references — they don't translate.
-- Consistent terminology — if "work item" is used once, never switch to "issue" / "ticket" mid-flow.
+- Consistent terminology — if "task" is used once, never switch to "issue" / "ticket" / "work item" mid-flow.
 - Active voice, present tense.
 - Write out abbreviations on first use if not on the DNT list.
 

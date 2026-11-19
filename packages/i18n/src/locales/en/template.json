@@ -237,7 +237,7 @@
         "description": "No labels yet. Create labels to help organize and filter tasks in you space."
       },
       "no_modules": {
-        "description": "No modules yet. Organize work into sub-spaces with dedicated leads and assignees."
+        "description": "No epics yet. Organize work into sub-spaces with dedicated leads and assignees."
       },
       "no_work_items": {
         "description": "No tasks yet. Add one to structure your work better."

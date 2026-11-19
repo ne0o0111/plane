@@ -216,27 +216,27 @@
     }
   },
   "project_module": {
-    "add_module": "Add Module",
-    "update_module": "Update Module",
-    "create_module": "Create Module",
-    "archive_module": "Archive Module",
-    "restore_module": "Restore Module",
-    "delete_module": "Delete module",
+    "add_module": "Add Epic",
+    "update_module": "Update Epic",
+    "create_module": "Create Epic",
+    "archive_module": "Archive Epic",
+    "restore_module": "Restore Epic",
+    "delete_module": "Delete epic",
     "empty_state": {
       "general": {
-        "title": "Map your space milestones to Modules and track aggregated work easily.",
-        "description": "A group of tasks that belong to a logical, hierarchical parent form a module. Think of them as a way to track work by space milestones. They have their own periods and deadlines as well as analytics to help you see how close or far you are from a milestone.",
+        "title": "Map your space milestones to Epics and track aggregated work easily.",
+        "description": "A group of tasks that belong to a logical, hierarchical parent form a epic. Think of them as a way to track work by space milestones. They have their own periods and deadlines as well as analytics to help you see how close or far you are from a milestone.",
         "primary_button": {
-          "text": "Build your first module",
+          "text": "Build your first epic",
           "comic": {
-            "title": "Modules help group work by hierarchy.",
-            "description": "A cart module, a chassis module, and a warehouse module are all good example of this grouping."
+            "title": "Epics help group work by hierarchy.",
+            "description": "A cart epic, a chassis epic, and a warehouse epic are all good example of this grouping."
           }
         }
       },
       "no_issues": {
-        "title": "No tasks in the module",
-        "description": "Create or add tasks which you want to accomplish as part of this module",
+        "title": "No tasks in the epic",
+        "description": "Create or add tasks which you want to accomplish as part of this epic",
         "primary_button": {
           "text": "Create new tasks"
         },
@@ -245,26 +245,26 @@
         }
       },
       "archived": {
-        "title": "No archived Modules yet",
-        "description": "To tidy up your space, archive completed or cancelled modules. Find them here once archived."
+        "title": "No archived Epics yet",
+        "description": "To tidy up your space, archive completed or cancelled epics. Find them here once archived."
       },
       "sidebar": {
-        "in_active": "This module isn't active yet.",
+        "in_active": "This epic isn't active yet.",
         "invalid_date": "Invalid date. Please enter valid date."
       }
     },
     "quick_actions": {
-      "archive_module": "Archive module",
-      "archive_module_description": "Only completed or canceled\nmodule can be archived.",
-      "delete_module": "Delete module"
+      "archive_module": "Archive epic",
+      "archive_module_description": "Only completed or canceled\nepic can be archived.",
+      "delete_module": "Delete epic"
     },
     "toast": {
       "copy": {
-        "success": "Module link copied to clipboard"
+        "success": "Epic link copied to clipboard"
       },
       "delete": {
-        "success": "Module deleted successfully",
-        "error": "Failed to delete module"
+        "success": "Epic deleted successfully",
+        "error": "Failed to delete epic"
       }
     }
   },
@@ -314,8 +314,8 @@
         }
       },
       "module": {
-        "title": "Modules are not enabled for the space.",
-        "description": "Modules are the building blocks of your space. Enable modules from space settings to start using them.",
+        "title": "Epics are not enabled for the space.",
+        "description": "Epics are the building blocks of your space. Enable epics from space settings to start using them.",
         "primary_button": {
           "text": "Manage features"
         }

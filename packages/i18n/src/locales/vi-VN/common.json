@@ -216,7 +216,7 @@
   "open_project": "Mở dự án",
   "issues": "Task",
   "cycles": "Sprint",
-  "modules": "Mô-đun",
+  "modules": "Epic",
   "pages": "Trang",
   "intake": "Thu thập",
   "renew": "Gia hạn",
@@ -436,8 +436,8 @@
     "project": "Dự án",
     "cycle": "Sprint",
     "cycles": "Sprint",
-    "module": "Mô-đun",
-    "modules": "Mô-đun",
+    "module": "Epic",
+    "modules": "Epic",
     "labels": "Nhãn",
     "label": "Nhãn",
     "admins": "Quản trị viên",
@@ -806,7 +806,7 @@
     },
     "member": {
       "title": "Thành viên",
-      "description": "Có thể đọc, viết, chỉnh sửa và xóa thực thể trong dự án, sprint và mô-đun"
+      "description": "Có thể đọc, viết, chỉnh sửa và xóa thực thể trong dự án, sprint và epic"
     },
     "admin": {
       "title": "Quản trị viên",

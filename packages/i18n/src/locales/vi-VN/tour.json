@@ -46,24 +46,24 @@
     },
     "module": {
       "step_zero": {
-        "title": "Chia dự án của bạn thành các Mô-đun",
-        "description": "Mô-đun là các dự án nhỏ hơn, tập trung giúp người dùng nhóm và tổ chức các task trong khung thời gian cụ thể."
+        "title": "Chia dự án của bạn thành các Epic",
+        "description": "Epic là các dự án nhỏ hơn, tập trung giúp người dùng nhóm và tổ chức các task trong khung thời gian cụ thể."
       },
       "step_one": {
-        "title": "Tạo Mô-đun",
-        "description": "Mô-đun là các dự án nhỏ hơn, tập trung giúp người dùng nhóm và tổ chức các task trong khung thời gian cụ thể."
+        "title": "Tạo Epic",
+        "description": "Epic là các dự án nhỏ hơn, tập trung giúp người dùng nhóm và tổ chức các task trong khung thời gian cụ thể."
       },
       "step_two": {
         "title": "Nhấp vào \"+\"",
-        "description": "Bắt đầu bằng cách nhấp vào nút \"+\". Thêm các task mới hoặc hiện có trực tiếp từ trang Mô-đun."
+        "description": "Bắt đầu bằng cách nhấp vào nút \"+\". Thêm các task mới hoặc hiện có trực tiếp từ trang Epic."
       },
       "step_three": {
-        "title": "Trạng thái mô-đun",
-        "description": "Mô-đun sử dụng các trạng thái này để giúp người dùng lập kế hoạch và theo dõi rõ ràng tiến độ và giai đoạn."
+        "title": "Trạng thái epic",
+        "description": "Epic sử dụng các trạng thái này để giúp người dùng lập kế hoạch và theo dõi rõ ràng tiến độ và giai đoạn."
       },
       "step_four": {
-        "title": "Tiến độ mô-đun",
-        "description": "Tiến độ mô-đun được theo dõi thông qua các mục đã hoàn thành, với phân tích để giám sát hiệu suất."
+        "title": "Tiến độ epic",
+        "description": "Tiến độ epic được theo dõi thông qua các mục đã hoàn thành, với phân tích để giám sát hiệu suất."
       }
     },
     "page": {

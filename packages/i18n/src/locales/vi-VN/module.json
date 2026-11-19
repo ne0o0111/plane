@@ -1,13 +1,13 @@
 {
   "module": {
-    "label": "{count, plural, one {mô-đun} other {mô-đun}}",
-    "no_module": "Không có mô-đun",
-    "select": "Thêm mô-đun",
+    "label": "{count, plural, one {Epic} other {Epic}}",
+    "no_module": "Không có epic",
+    "select": "Thêm epic",
     "details_drawer": {
       "progress": {
         "done": "Đã hoàn thành {completed}/{scope, plural, one {# task} other {# task}}",
         "points_done": "Đã hoàn thành {completed}/{scope, plural, one {# điểm} other {# điểm}}",
-        "empty": "Thêm task vào mô-đun để theo dõi tiến độ."
+        "empty": "Thêm task vào epic để theo dõi tiến độ."
       }
     }
   }

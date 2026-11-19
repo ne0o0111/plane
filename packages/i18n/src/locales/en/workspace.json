@@ -74,7 +74,7 @@
     "selected_projects": "Selected spaces",
     "total_members": "Total members",
     "total_cycles": "Total sprints",
-    "total_modules": "Total modules",
+    "total_modules": "Total epics",
     "pending_work_items": {
       "title": "Pending tasks",
       "empty_state": "Analysis of pending tasks by co-workers appears here."
@@ -126,8 +126,8 @@
         "primary_button": {
           "text": "Start your first space",
           "comic": {
-            "title": "Analytics works best with Sprints + Modules",
-            "description": "First, timebox your issues into Sprints and, if you can, group issues that span more than a sprint into Modules. Check out both on the left nav."
+            "title": "Analytics works best with Sprints + Epics",
+            "description": "First, timebox your issues into Sprints and, if you can, group issues that span more than a sprint into Epics. Check out both on the left nav."
           }
         }
       },
@@ -137,7 +137,7 @@
       },
       "module_progress": {
         "title": "No data yet",
-        "description": "Module progress analytics will appear here. Add tasks to modules to start tracking progress."
+        "description": "Epic progress analytics will appear here. Add tasks to epics to start tracking progress."
       },
       "intake_trends": {
         "title": "No data yet",
@@ -169,7 +169,7 @@
     "error": {
       "permission": "You don't have permission to perform this action.",
       "cycle_delete": "Failed to delete sprint",
-      "module_delete": "Failed to delete module",
+      "module_delete": "Failed to delete epic",
       "issue_delete": "Failed to delete task"
     },
     "state": {
@@ -196,7 +196,7 @@
     "empty_state": {
       "general": {
         "title": "No active spaces",
-        "description": "Think of each space as the parent for goal-oriented work. Spaces are where Jobs, Sprints, and Modules live and, along with your colleagues, help you achieve that goal. Create a new space or filter for archived spaces.",
+        "description": "Think of each space as the parent for goal-oriented work. Spaces are where Jobs, Sprints, and Epics live and, along with your colleagues, help you achieve that goal. Create a new space or filter for archived spaces.",
         "primary_button": {
           "text": "Start your first space",
           "comic": {

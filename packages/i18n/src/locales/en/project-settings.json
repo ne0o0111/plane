@@ -337,11 +337,11 @@
         "toggle_description": "Plan work in focused timeframes."
       },
       "modules": {
-        "title": "Modules",
-        "short_title": "Modules",
+        "title": "Epics",
+        "short_title": "Epics",
         "description": "Organize work into sub-spaces with dedicated leads and assignees.",
-        "toggle_title": "Enable modules",
-        "toggle_description": "Space members will be able to create and edit modules."
+        "toggle_title": "Enable epics",
+        "toggle_description": "Space members will be able to create and edit epics."
       },
       "views": {
         "title": "Views",

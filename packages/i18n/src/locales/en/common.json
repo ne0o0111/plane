@@ -216,7 +216,7 @@
   "open_project": "Open space",
   "issues": "Tasks",
   "cycles": "Sprints",
-  "modules": "Modules",
+  "modules": "Epics",
   "pages": "Pages",
   "intake": "Intake",
   "renew": "Renew",
@@ -436,8 +436,8 @@
     "project": "Space",
     "cycle": "Sprint",
     "cycles": "Sprints",
-    "module": "Module",
-    "modules": "Modules",
+    "module": "Epic",
+    "modules": "Epics",
     "labels": "Labels",
     "label": "Label",
     "admins": "Admins",
@@ -806,7 +806,7 @@
     },
     "member": {
       "title": "Member",
-      "description": "Ability to read, write, edit, and delete entities inside spaces, sprints, and modules"
+      "description": "Ability to read, write, edit, and delete entities inside spaces, sprints, and epics"
     },
     "admin": {
       "title": "Admin",
