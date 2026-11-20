@@ -775,8 +775,6 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
           }}
         />
 
-        <Row icon={<Icon src="/clickup-home/more.svg" />} label="More" />
-
         <div style={{ height: 1, background: DIVIDER, margin: "12px 12px 8px" }} />
 
         <SectionLabel

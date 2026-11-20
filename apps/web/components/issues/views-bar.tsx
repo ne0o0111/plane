@@ -14,6 +14,7 @@ import { EIssueFilterType } from "@plane/constants";
 import { EIssueLayoutTypes, EIssuesStoreType } from "@plane/types";
 // components
 import { ClickUpAddViewMenu } from "@/components/issues/clickup-add-view-menu";
+import { ClickUpViewOptionsMenu } from "@/components/issues/clickup-view-options-menu";
 // hooks
 import { useIssues } from "@/hooks/store/use-issues";
 
@@ -88,7 +89,11 @@ export const IssuesViewsBar = observer(function IssuesViewsBar() {
   const [activeId, setActiveId] = useState(DEFAULT_BOARD_TAB_ID);
   const [tabs, setTabs] = useState<TViewTab[]>(INITIAL_TABS);
   const [addViewOpen, setAddViewOpen] = useState(false);
+  const [optionsOpen, setOptionsOpen] = useState(false);
+  const [optionsTabId, setOptionsTabId] = useState<string | null>(null);
   const addViewRef = useRef<HTMLButtonElement>(null);
+  const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({});
+  const optionsAnchorRef = useRef<HTMLElement | null>(null);
   const didApplyDefaultLayout = useRef(false);
 
   const currentLayout = issueFilters?.displayFilters?.layout;
@@ -125,11 +130,31 @@ export const IssuesViewsBar = observer(function IssuesViewsBar() {
     }
   }, [workspaceSlug, projectId, issueFilters?.displayFilters, applyLayout]);
 
+  const closeOptions = useCallback(() => {
+    setOptionsOpen(false);
+    setOptionsTabId(null);
+    optionsAnchorRef.current = null;
+  }, []);
+
   const handleSelectTab = (tab: TViewTab) => {
-    if (activeId === tab.id) return;
+    // Active tab click → open view options popover (ClickUp pattern)
+    if (activeId === tab.id) {
+      setAddViewOpen(false);
+      if (optionsOpen && optionsTabId === tab.id) {
+        closeOptions();
+        return;
+      }
+      optionsAnchorRef.current = tabRefs.current[tab.id] ?? null;
+      setOptionsTabId(tab.id);
+      setOptionsOpen(true);
+      return;
+    }
+    closeOptions();
     setActiveId(tab.id);
     applyLayout(tab.viewType);
   };
+
+  const optionsTab = tabs.find((t) => t.id === optionsTabId);
 
   const handleAddView = (viewTypeId: string) => {
     if (!isWorkingViewType(viewTypeId)) {
@@ -182,9 +207,15 @@ export const IssuesViewsBar = observer(function IssuesViewsBar() {
           return (
             <button
               key={tab.id}
+              ref={(el) => {
+                tabRefs.current[tab.id] = el;
+              }}
               type="button"
               role="tab"
               aria-selected={isActive}
+              aria-haspopup={isActive ? "menu" : undefined}
+              aria-expanded={isActive && optionsOpen && optionsTabId === tab.id ? true : undefined}
+              data-prevent-outside-click
               onClick={() => handleSelectTab(tab)}
               style={{
                 position: "relative",
@@ -233,7 +264,10 @@ export const IssuesViewsBar = observer(function IssuesViewsBar() {
           type="button"
           aria-haspopup="dialog"
           aria-expanded={addViewOpen}
-          onClick={() => setAddViewOpen((v) => !v)}
+          onClick={() => {
+            closeOptions();
+            setAddViewOpen((v) => !v);
+          }}
           style={{
             display: "flex",
             alignItems: "center",
@@ -275,6 +309,13 @@ export const IssuesViewsBar = observer(function IssuesViewsBar() {
         onClose={() => setAddViewOpen(false)}
         onSelect={handleAddView}
         anchorRef={addViewRef}
+      />
+
+      <ClickUpViewOptionsMenu
+        open={optionsOpen}
+        onClose={closeOptions}
+        anchorRef={optionsAnchorRef}
+        viewLabel={optionsTab?.label}
       />
     </div>
   );
