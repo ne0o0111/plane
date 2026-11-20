@@ -25,7 +25,7 @@ import { LeaveProjectModal } from "@/components/project/leave-project-modal";
 import { PublishProjectModal } from "@/components/project/publish-project/modal";
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";
-import { useUserPermissions } from "@/hooks/store/user";
+import { useUser, useUserPermissions } from "@/hooks/store/user";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 
 /**
@@ -649,12 +649,15 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
   const [headerHovered, setHeaderHovered] = useState(false);
   const { setCollapsed } = useClickUpHomeSidebar();
   const { toggleCreateIssueModal, toggleCreateProjectModal } = useCommandPalette();
+  const { data: currentUser } = useUser();
   const { workspaceSlug } = useParams();
   const pathname = usePathname();
   const router = useRouter();
   const slug = workspaceSlug?.toString() ?? "";
   const { currentWorkspace } = useWorkspace();
   const workspaceName = currentWorkspace?.name ?? slug;
+  const myTasksHref = currentUser?.id ? `/${slug}/profile/${currentUser.id}/assigned` : undefined;
+  const isOnMyTasks = !!myTasksHref && pathname.includes(`/profile/${currentUser.id}/assigned`);
 
   return (
     <aside
@@ -762,11 +765,19 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
         />
         <Row icon={<Icon src="/clickup-home/assigned-comments.svg" />} label="Assigned Comments" />
         <Row icon={<Icon src="/clickup-home/meetings.svg" />} label="Meetings" />
-        <Row icon={<Icon src="/clickup-home/my-tasks.svg" />} label="My Tasks" />
+        <Row
+          icon={<Icon src="/clickup-home/my-tasks.svg" />}
+          label="My Tasks"
+          active={isOnMyTasks}
+          onClick={() => {
+            if (myTasksHref) router.push(myTasksHref);
+          }}
+        />
 
         <Row
           indent
           showRail
+          active={isOnMyTasks}
           icon={
             <span
               style={{
@@ -788,6 +799,9 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
             </span>
           }
           label="Assigned to me"
+          onClick={() => {
+            if (myTasksHref) router.push(myTasksHref);
+          }}
         />
         <Row indent showRail icon={<Icon src="/clickup-home/today-overdue.svg" />} label="Today & Overdue" />
         <Row indent showRail icon={<Icon src="/clickup-home/personal-list.svg" />} label="Personal List" />
