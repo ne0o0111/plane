@@ -73,14 +73,17 @@ export function Logo({ logo, size = 16, type = "material" }: LogoProps) {
 
     if (!isMaterialSymbolsFontLoaded) return loadingSkeleton;
 
-    // Material icon
+    // Fixed square, no scale; slight lift so Material glyphs optically center on 13/16 text
     return (
       <span
-        className="material-symbols-rounded"
+        className="material-symbols-rounded grid place-items-center"
         style={{
           fontSize: size,
+          height: size,
+          width: size,
+          lineHeight: 1,
           color,
-          scale: "115%",
+          transform: "translateY(-0.5px)",
         }}
       >
         {value}

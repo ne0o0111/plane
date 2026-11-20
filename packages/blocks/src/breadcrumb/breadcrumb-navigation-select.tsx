@@ -93,11 +93,12 @@ export type BreadcrumbNavigationSelectProps = {
 /**
  * The navigating half owns its hover surface independently of the dropdown control.
  */
+/** Project crumb — no border (Tasks keeps the pill); compact 8px label beside a larger logo. */
 const NAVIGATION_CLASSNAME =
-  "text-body-xs-medium flex h-full min-w-0 items-center gap-1.5 rounded-md px-1 outline-none focus-visible:outline-solid focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent-strong";
+  "flex h-7 min-w-0 items-center gap-2 rounded-md px-1 text-[8px] font-semibold leading-4 text-[#1E293B] outline-none hover:bg-layer-transparent-hover focus-visible:outline-solid focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent-strong";
 
 /** Adjacent controls have no layout gap; each paints its own rounded surface. */
-const PAIR_CLASSNAME = "inline-flex h-6 min-w-0 items-center";
+const PAIR_CLASSNAME = "inline-flex h-7 min-w-0 items-center";
 
 /**
  * The hand-drawn dropdown row, used only when an item brings its own `content`. Every other list
@@ -188,7 +189,7 @@ export function BreadcrumbNavigationSelect(props: BreadcrumbNavigationSelectProp
   // The label's own control: a link when the crumb only has a URL, a button otherwise. `isLast`
   // leaves it inert — you are already on this page.
   const navigation = navigationHref ? (
-    <a href={navigationHref} className={cn(NAVIGATION_CLASSNAME, "text-tertiary hover:bg-layer-transparent-hover")}>
+    <a href={navigationHref} className={cn(NAVIGATION_CLASSNAME, "cursor-pointer")}>
       {navigationContent}
     </a>
   ) : (
@@ -200,11 +201,7 @@ export function BreadcrumbNavigationSelect(props: BreadcrumbNavigationSelectProp
       onClick={() => {
         if (canNavigate) handleOnClick?.();
       }}
-      className={cn(
-        NAVIGATION_CLASSNAME,
-        isLast ? "text-primary" : "text-tertiary",
-        isNavigable ? "cursor-pointer hover:bg-layer-transparent-hover" : "cursor-default"
-      )}
+      className={cn(NAVIGATION_CLASSNAME, isNavigable ? "cursor-pointer" : "cursor-default")}
     >
       {navigationContent}
     </button>

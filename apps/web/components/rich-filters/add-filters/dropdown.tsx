@@ -105,6 +105,8 @@ export const AddFilterDropdown = observer(function AddFilterDropdown<
 
   const combobox = (trigger: React.ReactNode) => (
     <Combobox
+      // Non-modal: a modal combobox marks the page inert, showing a not-allowed cursor around the popup.
+      modal={false}
       value=""
       onValueChange={(value) => {
         if (typeof value === "string" && value) handleFilterSelect(value as P);

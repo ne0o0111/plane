@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { observer } from "mobx-react";
 import { v4 as uuidv4 } from "uuid";
 // plane imports
@@ -43,7 +43,7 @@ export const WorkItemFiltersHOC = observer(function WorkItemFiltersHOC(props: TW
 type TWorkItemFilterProps = TSharedWorkItemFiltersProps &
   TAdditionalWorkItemFiltersProps & {
     initialWorkItemFilters: IIssueFilters;
-    children: React.ReactNode | ((props: { filter: IWorkItemFilterInstance }) => React.ReactNode);
+    children: React.ReactNode | ((props: { filter: IWorkItemFilterInstance | undefined }) => React.ReactNode);
   };
 
 const WorkItemFilterRoot = observer(function WorkItemFilterRoot(props: TWorkItemFilterProps) {
@@ -61,7 +61,7 @@ const WorkItemFilterRoot = observer(function WorkItemFilterRoot(props: TWorkItem
     ...entityConfigProps
   } = props;
   // store hooks
-  const { getOrCreateFilter, deleteFilter } = useWorkItemFilters();
+  const { getFilter, getOrCreateFilter, deleteFilter } = useWorkItemFilters();
   // derived values
   const workItemEntityID = useMemo(
     () => (isTemporary ? `TEMP-${entityId ?? uuidv4()}` : entityId),
@@ -73,40 +73,56 @@ const WorkItemFilterRoot = observer(function WorkItemFilterRoot(props: TWorkItem
     allowedFilters: filtersToShowByLayout ? filtersToShowByLayout : [],
     ...entityConfigProps,
   });
-  // get or create filter instance
-  const workItemLayoutFilter = useMemo(
-    () =>
-      getOrCreateFilter({
-        entityType,
-        entityId: workItemEntityID,
-        initialExpression: initialUserFilters,
-        onExpressionChange: updateFilters,
-        expressionOptions: {
-          saveViewOptions,
-          updateViewOptions,
-        },
-        showOnMount,
-      }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [entityType, workItemEntityID, saveViewOptions, updateViewOptions, updateFilters]
-  );
+  const latestCreateParamsRef = useRef({
+    initialUserFilters,
+    updateFilters,
+    saveViewOptions,
+    updateViewOptions,
+    showOnMount,
+  });
+  latestCreateParamsRef.current = {
+    initialUserFilters,
+    updateFilters,
+    saveViewOptions,
+    updateViewOptions,
+    showOnMount,
+  };
 
-  // delete filter instance when component unmounts
-  useEffect(
-    () => () => {
+  // Create and delete in the same effect: StrictMode re-runs effects after a simulated unmount,
+  // so a filter created during render would be deleted by the cleanup and never re-registered,
+  // leaving the header toggle (which reads the store) with no instance.
+  useEffect(() => {
+    const params = latestCreateParamsRef.current;
+    getOrCreateFilter({
+      entityType,
+      entityId: workItemEntityID,
+      initialExpression: params.initialUserFilters,
+      onExpressionChange: params.updateFilters,
+      expressionOptions: {
+        saveViewOptions: params.saveViewOptions,
+        updateViewOptions: params.updateViewOptions,
+      },
+      showOnMount: params.showOnMount,
+    });
+    return () => {
       deleteFilter(entityType, workItemEntityID);
-    },
-    [deleteFilter, entityType, workItemEntityID]
-  );
+    };
+  }, [getOrCreateFilter, deleteFilter, entityType, workItemEntityID]);
+
+  const workItemLayoutFilter = getFilter(entityType, workItemEntityID);
+
+  // keep options and callback current on the existing instance
+  useEffect(() => {
+    if (!workItemLayoutFilter) return;
+    workItemLayoutFilter.updateExpressionOptions({ saveViewOptions, updateViewOptions });
+    if (updateFilters) workItemLayoutFilter.onExpressionChange = updateFilters;
+  }, [workItemLayoutFilter, saveViewOptions, updateViewOptions, updateFilters]);
 
   useEffect(() => {
+    if (!workItemLayoutFilter) return;
     workItemLayoutFilter.configManager.setAreConfigsReady(workItemFiltersConfig.areAllConfigsInitialized);
     workItemLayoutFilter.configManager.registerAll(workItemFiltersConfig.configs);
-  }, [
-    workItemFiltersConfig.areAllConfigsInitialized,
-    workItemFiltersConfig.configs,
-    workItemLayoutFilter.configManager,
-  ]);
+  }, [workItemFiltersConfig.areAllConfigsInitialized, workItemFiltersConfig.configs, workItemLayoutFilter]);
 
   return <>{typeof children === "function" ? children({ filter: workItemLayoutFilter }) : children}</>;
 });

@@ -117,7 +117,7 @@ function BreadcrumbIcon(props: BreadcrumbIconProps) {
   return (
     <div
       className={cn(
-        "flex size-4 shrink-0 items-center justify-center overflow-hidden text-icon-secondary [&>svg]:size-4",
+        "flex size-3.5 shrink-0 items-center justify-center text-icon-secondary [&>svg]:size-3.5",
         className
       )}
     >
@@ -136,7 +136,7 @@ type BreadcrumbLabelProps = {
 function BreadcrumbLabel(props: BreadcrumbLabelProps) {
   const { children, className } = props;
   return (
-    <div className={cn("relative line-clamp-1 block max-w-[150px] truncate overflow-hidden", className)}>
+    <div className={cn("relative line-clamp-1 flex max-w-[150px] items-center truncate leading-4", className)}>
       {children}
     </div>
   );

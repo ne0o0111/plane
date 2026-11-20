@@ -17,10 +17,16 @@ import {
   ViewsOutline,
   WorkItemsOutline,
 } from "@makeplane/propel/icons";
+import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
+import { ProjectActionsMenu } from "@/components/navigation/project-actions-menu";
 import { useClickUpHomeSidebar } from "@/components/navigation/clickup-home-sidebar-context";
 import { SpaceCreateMenu } from "@/components/navigation/clickup-space-create-menu";
+import { useProjectActions } from "@/components/navigation/use-project-actions";
+import { LeaveProjectModal } from "@/components/project/leave-project-modal";
+import { PublishProjectModal } from "@/components/project/publish-project/modal";
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";
+import { useUserPermissions } from "@/hooks/store/user";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 
 /**
@@ -186,30 +192,10 @@ function Row(props: {
   const indentLevel = indentLevelProp ?? (indent ? 1 : 0);
   const [hovered, setHovered] = useState(false);
 
-  // Figma / ClickUp: hover = rgba(0,0,0,0.06) pill, radius 7px
+  // Figma / ClickUp: hover = rgba(0,0,0,0.06) pill, radius 7px — covers label + trailing as one surface
   const highlighted = active || hovered;
   const padLeft = indentLevel === 0 ? 0 : indentLevel === 1 ? 20 : 40;
   const railLeft = indentLevel === 2 ? 35.5 : 15.5;
-
-  const rowStyle: React.CSSProperties = {
-    display: "flex",
-    alignItems: "center",
-    height: 28,
-    marginLeft: indentLevel === 0 ? 8 : 0,
-    marginRight: 8,
-    paddingLeft: indentLevel === 0 ? 8 : 6,
-    paddingRight: trailing ? 4 : 8,
-    borderRadius: 7,
-    background: highlighted ? "rgba(0,0,0,0.06)" : "transparent",
-    gap: 10,
-    boxSizing: "border-box",
-    width: indentLevel === 0 ? "calc(100% - 16px)" : "calc(100% - 8px)",
-    border: "none",
-    font: "inherit",
-    textAlign: "left",
-    cursor: onClick ? "pointer" : "default",
-    transition: "background 80ms ease",
-  };
 
   const content = (
     <>
@@ -245,7 +231,6 @@ function Row(props: {
           {count}
         </span>
       ) : null}
-      {trailing}
     </>
   );
 
@@ -275,9 +260,22 @@ function Row(props: {
           }}
         />
       )}
-      <button
-        type="button"
-        onClick={onClick}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 0,
+          height: 28,
+          width: indentLevel === 0 ? "calc(100% - 16px)" : "calc(100% - 8px)",
+          marginLeft: indentLevel === 0 ? 8 : 0,
+          marginRight: 8,
+          paddingLeft: indentLevel === 0 ? 8 : 6,
+          paddingRight: trailing ? 2 : 8,
+          borderRadius: 7,
+          background: highlighted ? "rgba(0,0,0,0.06)" : "transparent",
+          boxSizing: "border-box",
+          transition: "background 80ms ease",
+        }}
         onMouseEnter={() => {
           setHovered(true);
           onMouseEnter?.();
@@ -286,11 +284,30 @@ function Row(props: {
           setHovered(false);
           onMouseLeave?.();
         }}
-        style={rowStyle}
-        aria-label={label}
       >
-        {content}
-      </button>
+        <button
+          type="button"
+          onClick={onClick}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 10,
+            flex: 1,
+            minWidth: 0,
+            height: "100%",
+            padding: 0,
+            border: "none",
+            background: "transparent",
+            font: "inherit",
+            textAlign: "left",
+            cursor: onClick ? "pointer" : "default",
+          }}
+          aria-label={label}
+        >
+          {content}
+        </button>
+        {trailing ? <div style={{ flexShrink: 0, display: "flex", alignItems: "center" }}>{trailing}</div> : null}
+      </div>
     </div>
   );
 }
@@ -334,9 +351,20 @@ const SpaceProjectItem = observer(function SpaceProjectItem({
   const pathname = usePathname();
   const router = useRouter();
   const { getPartialProjectById, getProjectAnalyticsCountById } = useProject();
+  const { allowPermissions } = useUserPermissions();
   const project = getPartialProjectById(projectId);
   const [isOpen, setIsOpen] = useState(false);
   const [hovered, setHovered] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const {
+    publishModalOpen,
+    leaveProjectModalOpen,
+    handleLeaveProject,
+    handleCopyText,
+    handlePublishModal,
+    handleLeaveProjectModal,
+  } = useProjectActions({ workspaceSlug, projectId });
 
   const navItems = useMemo((): ProjectNavItem[] => {
     if (!project) return [];
@@ -392,20 +420,35 @@ const SpaceProjectItem = observer(function SpaceProjectItem({
 
   if (!project) return null;
 
+  const isAdmin = allowPermissions([EUserPermissions.ADMIN], EUserPermissionsLevel.PROJECT, workspaceSlug, project.id);
+  const isAuthorized = allowPermissions(
+    [EUserPermissions.ADMIN, EUserPermissions.MEMBER],
+    EUserPermissionsLevel.PROJECT,
+    workspaceSlug,
+    project.id
+  );
+
   const onProjectPath = pathname.includes(`/projects/${projectId}`);
   const onNavChild = navItems.some((item) => pathname.includes(item.href));
   const isActive = onProjectPath && !onNavChild;
   const count = getProjectAnalyticsCountById(projectId)?.total_issues;
   const iconColor = isActive || isOpen ? TEXT_DARK : LIST_ICON_COLORS[index % LIST_ICON_COLORS.length];
+  const showActions = hovered || menuOpen;
 
   return (
     <div>
+      <PublishProjectModal isOpen={publishModalOpen} projectId={projectId} onClose={() => handlePublishModal(false)} />
+      <LeaveProjectModal
+        project={project}
+        isOpen={leaveProjectModalOpen}
+        onClose={() => handleLeaveProjectModal(false)}
+      />
       <Row
         indentLevel={1}
         showRail
         active={isActive}
         icon={
-          hovered ? (
+          hovered || menuOpen ? (
             <span
               aria-hidden
               style={{
@@ -426,10 +469,30 @@ const SpaceProjectItem = observer(function SpaceProjectItem({
           )
         }
         label={project.name}
-        count={count}
+        count={showActions ? undefined : count}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         onClick={() => setIsOpen((open) => !open)}
+        trailing={
+          <div
+            style={{
+              opacity: showActions ? 1 : 0,
+              pointerEvents: showActions ? "auto" : "none",
+              transition: "opacity 120ms ease",
+            }}
+          >
+            <ProjectActionsMenu
+              workspaceSlug={workspaceSlug}
+              project={project}
+              isAdmin={isAdmin}
+              isAuthorized={isAuthorized}
+              onCopyText={handleCopyText}
+              onLeaveProject={handleLeaveProject}
+              onPublishModal={() => handlePublishModal(true)}
+              onOpenChange={setMenuOpen}
+            />
+          </div>
+        }
       />
       {isOpen
         ? navItems.map((item) => {

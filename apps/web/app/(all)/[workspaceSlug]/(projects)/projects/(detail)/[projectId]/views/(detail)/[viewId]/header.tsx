@@ -23,7 +23,7 @@ import { IconButton as IconButtonElement } from "@makeplane/propel/elements/icon
 import { LockOutline, PreferencesOutline, ViewsOutline } from "@makeplane/propel/icons";
 import { Tooltip } from "@makeplane/propel/components/tooltip";
 import type { IIssueDisplayFilterOptions, IIssueDisplayProperties } from "@plane/types";
-import { EIssuesStoreType, EViewAccess, EIssueLayoutTypes } from "@plane/types";
+import { EIssuesStoreType, EViewAccess } from "@plane/types";
 import type { BreadcrumbNavigationItem } from "@plane/blocks/breadcrumb";
 import { Breadcrumbs, BreadcrumbNavigationSelect } from "@plane/blocks/breadcrumb";
 import { Header } from "@plane/blocks/layout";
@@ -31,7 +31,7 @@ import { getPublishViewLink } from "@plane/utils";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { SwitcherIcon, SwitcherLabel } from "@/components/common/switcher-label";
-import { DisplayFiltersSelection, FiltersDropdown, LayoutSelection } from "@/components/issues/issue-layouts/filters";
+import { DisplayFiltersSelection, FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 import { ViewQuickActions } from "@/components/views/quick-actions";
 import { WorkItemFiltersToggle } from "@/components/work-item-filters/filters-toggle";
 // hooks
@@ -67,20 +67,6 @@ export const ProjectViewIssuesHeader = observer(function ProjectViewIssuesHeader
   const { projectViewIds, getViewById } = useProjectView();
 
   const activeLayout = issueFilters?.displayFilters?.layout;
-
-  const handleLayoutChange = useCallback(
-    (layout: EIssueLayoutTypes) => {
-      if (!workspaceSlug || !projectId || !viewId) return;
-      updateFilters(
-        workspaceSlug.toString(),
-        projectId.toString(),
-        EIssueFilterType.DISPLAY_FILTERS,
-        { layout: layout },
-        viewId.toString()
-      );
-    },
-    [workspaceSlug, projectId, viewId, updateFilters]
-  );
 
   const handleDisplayFilters = useCallback(
     (updatedDisplayFilter: Partial<IIssueDisplayFilterOptions>) => {
@@ -203,19 +189,6 @@ export const ProjectViewIssuesHeader = observer(function ProjectViewIssuesHeader
           </a>
         )}
         <>
-          {!viewDetails.is_locked && (
-            <LayoutSelection
-              layouts={[
-                EIssueLayoutTypes.LIST,
-                EIssueLayoutTypes.KANBAN,
-                EIssueLayoutTypes.CALENDAR,
-                EIssueLayoutTypes.SPREADSHEET,
-                EIssueLayoutTypes.GANTT,
-              ]}
-              onChange={(layout) => handleLayoutChange(layout)}
-              selectedLayout={activeLayout}
-            />
-          )}
           {viewId && <WorkItemFiltersToggle entityType={EIssuesStoreType.PROJECT_VIEW} entityId={viewId} />}
           {!viewDetails.is_locked && (
             <FiltersDropdown

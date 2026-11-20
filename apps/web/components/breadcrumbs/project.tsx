@@ -69,7 +69,7 @@ export const ProjectBreadcrumb = observer(function ProjectBreadcrumb(props: TPro
             router.push(`/${workspaceSlug}/projects/${value}/issues`);
           }}
           label={currentProjectDetails.name}
-          icon={<Logo logo={currentProjectDetails.logo_props} size={14} />}
+          icon={<Logo logo={currentProjectDetails.logo_props} size={20} />}
           handleOnClick={() => {
             if (handleOnClick) handleOnClick();
             else router.push(`/${workspaceSlug}/projects/${currentProjectDetails.id}/issues/`);
