@@ -807,7 +807,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
     title: "Knowledge management",
     features: [
       {
-        title: "Pages",
+        title: "Docs",
         description: "Build knowledge bases for your teams which are\naccessible & shareable.",
         cloud: {
           free: true,
@@ -1302,7 +1302,7 @@ export const PLANE_PLANS: PlanePlans = {
     },
   },
   planHighlights: {
-    free: ["Upto 12 users", "Pages", "Unlimited projects", "Unlimited sprints and epics"],
+    free: ["Upto 12 users", "Docs", "Unlimited projects", "Unlimited sprints and epics"],
     one: ["Upto 50 users", "OIDC and SAML", "Active sprints", "Limited time tracking"],
     pro: ["Unlimited users", "Custom tasks + Properties", "Task templates", "Full Time Tracking"],
     business: ["RBAC", "Project Templates", "Baselines And Deviations", "Custom Reports"],

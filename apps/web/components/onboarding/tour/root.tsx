@@ -73,7 +73,7 @@ const TOUR_STEPS: {
   {
     key: "pages",
     title: "Document with pages",
-    description: "Use Pages to quickly jot down tasks when you're in a meeting or starting a day.",
+    description: "Use Docs to quickly jot down tasks when you're in a meeting or starting a day.",
     image: PagesTour,
     prevStep: "views",
   },

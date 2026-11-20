@@ -59,6 +59,7 @@ export const PagesListMainContent = observer(function PagesListMainContent(props
     };
 
     await createPage(payload)
+      // oxlint-disable-next-line promise/always-return
       .then((res) => {
         const pageId = `/${workspaceSlug}/projects/${currentProjectDetails?.id}/pages/${res?.id}`;
         router.push(pageId);
@@ -67,7 +68,7 @@ export const PagesListMainContent = observer(function PagesListMainContent(props
         setToast({
           type: "error",
           title: "Error!",
-          message: err?.data?.error || "Page could not be created. Please try again.",
+          message: err?.data?.error || "Doc could not be created. Please try again.",
         });
       })
       .finally(() => setIsCreatingPage(false));

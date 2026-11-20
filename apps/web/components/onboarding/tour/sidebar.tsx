@@ -37,7 +37,7 @@ const sidebarOptions: {
   },
   {
     key: "pages",
-    label: "Pages",
+    label: "Docs",
     Icon: PagesOutline,
   },
 ];

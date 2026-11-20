@@ -167,18 +167,18 @@
         }
       },
       "public": {
-        "title": "No public pages yet",
-        "description": "See pages shared with everyone in your space right here.",
+        "title": "No public docs yet",
+        "description": "See docs shared with everyone in your space right here.",
         "primary_button": {
           "text": "Create your first page"
         }
       },
       "archived": {
-        "title": "No archived pages yet",
-        "description": "Archive pages not on your radar. Access them here when needed."
+        "title": "No archived docs yet",
+        "description": "Archive docs not on your radar. Access them here when needed."
       },
       "shared": {
-        "title": "No shared pages yet",
+        "title": "No shared docs yet",
         "description": "Pages that others have shared with you will appear here."
       }
     },
@@ -278,22 +278,22 @@
         }
       },
       "private": {
-        "title": "No private pages yet",
+        "title": "No private docs yet",
         "description": "Keep your private thoughts here. When you're ready to share, the team's just a click away.",
         "primary_button": {
           "text": "Create your first page"
         }
       },
       "public": {
-        "title": "No public pages yet",
-        "description": "See pages shared with everyone in your space right here.",
+        "title": "No public docs yet",
+        "description": "See docs shared with everyone in your space right here.",
         "primary_button": {
           "text": "Create your first page"
         }
       },
       "archived": {
-        "title": "No archived pages yet",
-        "description": "Archive pages not on your radar. Access them here when needed."
+        "title": "No archived docs yet",
+        "description": "Archive docs not on your radar. Access them here when needed."
       }
     }
   },
@@ -321,8 +321,8 @@
         }
       },
       "page": {
-        "title": "Pages are not enabled for the space.",
-        "description": "Pages are the building blocks of your space. Enable pages from space settings to start using them.",
+        "title": "Docs are not enabled for the space.",
+        "description": "Docs are the building blocks of your space. Enable docs from space settings to start using them.",
         "primary_button": {
           "text": "Manage features"
         }

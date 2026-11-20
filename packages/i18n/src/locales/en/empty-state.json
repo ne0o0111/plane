@@ -79,12 +79,12 @@
     },
     "pages": {
       "title": "Document everything — from notes to PRDs",
-      "description": "Pages let you capture and organize information in one place. Write meeting notes, space documentation, and PRDs, embed tasks, and structure them with ready-to-use components.",
+      "description": "Docs let you capture and organize information in one place. Write meeting notes, space documentation, and PRDs, embed tasks, and structure them with ready-to-use components.",
       "cta_primary": "Create your first Page"
     },
     "archive_pages": {
-      "title": "No archived pages yet",
-      "description": "Archive pages not on your radar. Access them here when needed."
+      "title": "No archived docs yet",
+      "description": "Archive docs not on your radar. Access them here when needed."
     },
     "intake_sidebar": {
       "title": "Log Intake requests",
@@ -188,7 +188,7 @@
     },
     "wiki": {
       "title": "Write a note, a doc, or a full knowledge base.",
-      "description": "Pages are thought spotting space in Plane. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your space's context.",
+      "description": "Docs are thought spotting space in Plane. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your space's context.",
       "cta_primary": "Create your page"
     },
     "project_overview_state_sidebar": {

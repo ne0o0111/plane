@@ -804,7 +804,6 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
           }}
         />
         <Row indent showRail icon={<Icon src="/clickup-home/today-overdue.svg" />} label="Today & Overdue" />
-        <Row indent showRail icon={<Icon src="/clickup-home/personal-list.svg" />} label="Personal List" />
 
         <Row icon={<Icon src="/clickup-home/more.svg" />} label="More" />
 

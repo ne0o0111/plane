@@ -114,6 +114,17 @@ const defaultValues: TFormValues = {
   content_variety: "everything",
 };
 
+const initiateDownload = (blob: Blob, filename: string) => {
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  link.click();
+  setTimeout(() => {
+    URL.revokeObjectURL(url);
+  }, 1000);
+};
+
 export function ExportPageModal(props: Props) {
   const { editorRef, isOpen, onClose, pageTitle } = props;
   // states
@@ -144,17 +155,6 @@ export function ExportPageModal(props: Props) {
     setTimeout(() => {
       reset();
     }, 300);
-  };
-
-  const initiateDownload = (blob: Blob, filename: string) => {
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = filename;
-    link.click();
-    setTimeout(() => {
-      URL.revokeObjectURL(url);
-    }, 1000);
   };
 
   // handle export as a PDF
@@ -200,7 +200,7 @@ export function ExportPageModal(props: Props) {
       setToast({
         type: "success",
         title: "Success!",
-        message: "Page exported successfully.",
+        message: "Doc exported successfully.",
       });
       handleClose();
     } catch (error) {
@@ -208,7 +208,7 @@ export function ExportPageModal(props: Props) {
       setToast({
         type: "error",
         title: "Error!",
-        message: "Page could not be exported. Please try again later.",
+        message: "Doc could not be exported. Please try again later.",
       });
     } finally {
       setIsExporting(false);
@@ -263,13 +263,13 @@ export function ExportPageModal(props: Props) {
               </div>
               {isPDFSelected && (
                 <div className="flex items-center justify-between gap-2">
-                  <span className="shrink-0 text-body-sm-medium text-primary">Page format</span>
+                  <span className="shrink-0 text-body-sm-medium text-primary">Doc format</span>
                   <Controller
                     control={control}
                     name="page_format"
                     render={({ field: { onChange, value } }) => (
                       <ExportOptionSelect
-                        label="Page format"
+                        label="Doc format"
                         options={PAGE_FORMATS}
                         value={value}
                         onChange={(val) => onChange(val as TPageFormats)}

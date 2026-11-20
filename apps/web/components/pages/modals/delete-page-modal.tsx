@@ -53,7 +53,7 @@ export const DeletePageModal = observer(function DeletePageModal(props: TConfirm
       setToast({
         type: "success",
         title: "Success!",
-        message: "Page deleted successfully.",
+        message: "Doc deleted successfully.",
       });
 
       if (routePageId) {
@@ -63,7 +63,7 @@ export const DeletePageModal = observer(function DeletePageModal(props: TConfirm
       setToast({
         type: "error",
         title: "Error!",
-        message: "Page could not be deleted. Please try again.",
+        message: "Doc could not be deleted. Please try again.",
       });
     } finally {
       setIsDeleting(false);
@@ -78,11 +78,11 @@ export const DeletePageModal = observer(function DeletePageModal(props: TConfirm
       handleSubmit={handleDelete}
       isSubmitting={isDeleting}
       isOpen={isOpen}
-      title="Delete page"
+      title="Delete doc"
       content={
         <>
           Are you sure you want to delete page-{" "}
-          <span className="font-medium break-words break-all text-primary">{getPageName(name)}</span> ? The Page will be
+          <span className="font-medium break-words break-all text-primary">{getPageName(name)}</span> ? The Doc will be
           deleted permanently. This action cannot be undone.
         </>
       }
