@@ -41,7 +41,7 @@
       "title": "Recents",
       "empty": {
         "project": "Your recent spaces will appear here once you visit one.",
-        "page": "Your recent pages will appear here once you visit one.",
+        "page": "Your recent Docs will appear here once you visit one.",
         "issue": "Your recent tasks will appear here once you visit one.",
         "default": "You don't have any recents yet."
       },

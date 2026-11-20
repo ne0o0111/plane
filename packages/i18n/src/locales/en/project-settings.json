@@ -353,9 +353,9 @@
       "pages": {
         "title": "Docs",
         "short_title": "Docs",
-        "description": "Create and edit free-form content; notes, docs, anything.",
-        "toggle_title": "Enable docs",
-        "toggle_description": "Space members will be able to create and edit docs."
+        "description": "Create and edit free-form content; notes, Docs, anything.",
+        "toggle_title": "Enable Docs",
+        "toggle_description": "Space members will be able to create and edit Docs."
       },
       "intake": {
         "intake_responsibility": "Intake responsibility",

@@ -5,7 +5,7 @@
       "description": "Save 80% time spent on creating spaces, tasks, and pages when you use templates.",
       "new_project_template": "New space template",
       "new_work_item_template": "New task template",
-      "new_page_template": "New page template",
+      "new_page_template": "New Doc template",
       "options": {
         "project": {
           "label": "Space templates"
@@ -98,7 +98,7 @@
         "page": {
           "template": {
             "name": {
-              "placeholder": "Name your page template.",
+              "placeholder": "Name your Doc template.",
               "validation": {
                 "required": "Template name is required",
                 "maxLength": "Template name should be less than 255 characters"
@@ -115,8 +115,8 @@
             }
           },
           "button": {
-            "create": "Create page template",
-            "update": "Update page template"
+            "create": "Create Doc template",
+            "update": "Update Doc template"
           }
         },
         "publish": {
@@ -227,7 +227,7 @@
     "empty_state": {
       "upgrade": {
         "title": "Templates",
-        "description": "With space, task, and page templates in Plane, you don't have to create a space from scratch or set task props manually.",
+        "description": "With space, task, and Doc templates in Plane, you don't have to create a space from scratch or set task props manually.",
         "sub_description": "Get 80% of your admin time back when you use Templates."
       },
       "no_templates": {

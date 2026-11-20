@@ -167,18 +167,18 @@
         }
       },
       "public": {
-        "title": "No public docs yet",
-        "description": "See docs shared with everyone in your space right here.",
+        "title": "No public Docs yet",
+        "description": "See Docs shared with everyone in your space right here.",
         "primary_button": {
           "text": "Create your first page"
         }
       },
       "archived": {
-        "title": "No archived docs yet",
-        "description": "Archive docs not on your radar. Access them here when needed."
+        "title": "No archived Docs yet",
+        "description": "Archive Docs not on your radar. Access them here when needed."
       },
       "shared": {
-        "title": "No shared docs yet",
+        "title": "No shared Docs yet",
         "description": "Pages that others have shared with you will appear here."
       }
     },
@@ -271,29 +271,29 @@
   "project_page": {
     "empty_state": {
       "general": {
-        "title": "Write a note, a doc, or a full knowledge base. Get Galileo, Plane's AI assistant, to help you get started",
-        "description": "Pages are thoughts potting space in Plane. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your space's context. To make short work of any doc, invoke Galileo, Plane's AI, with a shortcut or the click of a button.",
+        "title": "Write a note, a Doc, or a full knowledge base. Get Galileo, Plane's AI assistant, to help you get started",
+        "description": "Pages are thoughts potting space in Plane. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your space's context. To make short work of any Doc, invoke Galileo, Plane's AI, with a shortcut or the click of a button.",
         "primary_button": {
           "text": "Create your first page"
         }
       },
       "private": {
-        "title": "No private docs yet",
+        "title": "No private Docs yet",
         "description": "Keep your private thoughts here. When you're ready to share, the team's just a click away.",
         "primary_button": {
           "text": "Create your first page"
         }
       },
       "public": {
-        "title": "No public docs yet",
-        "description": "See docs shared with everyone in your space right here.",
+        "title": "No public Docs yet",
+        "description": "See Docs shared with everyone in your space right here.",
         "primary_button": {
           "text": "Create your first page"
         }
       },
       "archived": {
-        "title": "No archived docs yet",
-        "description": "Archive docs not on your radar. Access them here when needed."
+        "title": "No archived Docs yet",
+        "description": "Archive Docs not on your radar. Access them here when needed."
       }
     }
   },
@@ -322,7 +322,7 @@
       },
       "page": {
         "title": "Docs are not enabled for the space.",
-        "description": "Docs are the building blocks of your space. Enable docs from space settings to start using them.",
+        "description": "Docs are the building blocks of your space. Enable Docs from space settings to start using them.",
         "primary_button": {
           "text": "Manage features"
         }

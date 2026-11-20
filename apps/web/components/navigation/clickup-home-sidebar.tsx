@@ -656,8 +656,9 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
   const slug = workspaceSlug?.toString() ?? "";
   const { currentWorkspace } = useWorkspace();
   const workspaceName = currentWorkspace?.name ?? slug;
-  const myTasksHref = currentUser?.id ? `/${slug}/profile/${currentUser.id}/assigned` : undefined;
-  const isOnMyTasks = !!myTasksHref && pathname.includes(`/profile/${currentUser.id}/assigned`);
+  const yourWorkHref = currentUser?.id ? `/${slug}/profile/${currentUser.id}/` : undefined;
+  const isOnYourWork =
+    !!currentUser?.id && pathname.includes(`/profile/${currentUser.id}`) && !pathname.includes("/activity");
 
   return (
     <aside
@@ -767,43 +768,12 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
         <Row icon={<Icon src="/clickup-home/meetings.svg" />} label="Meetings" />
         <Row
           icon={<Icon src="/clickup-home/my-tasks.svg" />}
-          label="My Tasks"
-          active={isOnMyTasks}
+          label="Your work"
+          active={isOnYourWork}
           onClick={() => {
-            if (myTasksHref) router.push(myTasksHref);
+            if (yourWorkHref) router.push(yourWorkHref);
           }}
         />
-
-        <Row
-          indent
-          showRail
-          active={isOnMyTasks}
-          icon={
-            <span
-              style={{
-                display: "flex",
-                width: 16,
-                height: 16,
-                borderRadius: 999,
-                background: TEXT_DARK,
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 10,
-                fontWeight: 700,
-                color: "#fff",
-                letterSpacing: "-0.15px",
-                flexShrink: 0,
-              }}
-            >
-              N
-            </span>
-          }
-          label="Assigned to me"
-          onClick={() => {
-            if (myTasksHref) router.push(myTasksHref);
-          }}
-        />
-        <Row indent showRail icon={<Icon src="/clickup-home/today-overdue.svg" />} label="Today & Overdue" />
 
         <Row icon={<Icon src="/clickup-home/more.svg" />} label="More" />
 

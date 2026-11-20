@@ -80,7 +80,7 @@ export function PageForm(props: Props) {
       <DialogMain>
         <DialogHeader>
           <DialogHeading>
-            <DialogTitle>Create doc</DialogTitle>
+            <DialogTitle>Create Doc</DialogTitle>
           </DialogHeading>
         </DialogHeader>
         <DialogBody tabIndex={0}>

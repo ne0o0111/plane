@@ -83,8 +83,8 @@
       "cta_primary": "Create your first Page"
     },
     "archive_pages": {
-      "title": "No archived docs yet",
-      "description": "Archive docs not on your radar. Access them here when needed."
+      "title": "No archived Docs yet",
+      "description": "Archive Docs not on your radar. Access them here when needed."
     },
     "intake_sidebar": {
       "title": "Log Intake requests",
@@ -125,7 +125,7 @@
       "description": "To tidy up your space, archive completed or cancelled epics. Find them here once archived."
     },
     "home_widget_quick_links": {
-      "title": "Keep important references, resources, or docs handy for your work"
+      "title": "Keep important references, resources, or Docs handy for your work"
     },
     "inbox_sidebar_all": {
       "title": "Updates for your subscribed tasks will appear here"
@@ -187,7 +187,7 @@
       "cta_primary": "Create new dashboard"
     },
     "wiki": {
-      "title": "Write a note, a doc, or a full knowledge base.",
+      "title": "Write a note, a Doc, or a full knowledge base.",
       "description": "Docs are thought spotting space in Plane. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your space's context.",
       "cta_primary": "Create your page"
     },

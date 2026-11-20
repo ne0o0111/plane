@@ -90,7 +90,7 @@ export const PagesListHeader = observer(function PagesListHeader() {
             variant="primary"
             size="md"
             stretch="auto"
-            label={isCreatingPage ? "Adding" : "Add page"}
+            label={isCreatingPage ? "Adding" : "Add Doc"}
             onClick={handleCreatePage}
             loading={isCreatingPage}
           />
