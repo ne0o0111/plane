@@ -61,7 +61,7 @@ export const IssueView = observer(function IssueView(props: IIssueView) {
   // translation
   const { t } = useTranslation();
   // states
-  const [peekMode, setPeekMode] = useState<TPeekModes>("side-peek");
+  const [peekMode, setPeekMode] = useState<TPeekModes>("modal");
   const [isSubmitting, setIsSubmitting] = useState<TNameDescriptionLoader>("saved");
   const [isDeleteIssueModalOpen, setIsDeleteIssueModalOpen] = useState(false);
   const [isArchiveIssueModalOpen, setIsArchiveIssueModalOpen] = useState(false);
