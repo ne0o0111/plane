@@ -32,7 +32,7 @@ import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import { useWorkFlowFDragNDrop } from "@/components/workflow";
 import type { TRenderQuickActions } from "../list/list-view-types";
 import type { GroupDropLocation } from "../utils";
-import { getGroupByColumns, isWorkspaceLevel, getApproximateCardHeight } from "../utils";
+import { getGroupByColumns, getKanbanColumnThemeStyle, isWorkspaceLevel, getApproximateCardHeight } from "../utils";
 // components
 import {
   KANBAN_COLLAPSED_COLUMN_WIDTH,
@@ -189,17 +189,22 @@ export const KanBan = observer(function KanBan(props: IKanBan) {
             />
           );
 
+          const columnThemeStyle = getKanbanColumnThemeStyle(subList.color);
+          const hasThemeColor = !!subList.color;
+
           // A collapsed column is one expand button. On the flat board it carries the vertical header; a swimlane
           // band cell is an empty extra target whose hover is shared with the column's other pieces.
           if (!groupByVisibilityToggle.showIssues)
             return (
               <div
                 key={subList.id}
-                className={cn("relative flex flex-shrink-0 flex-col bg-layer-1", {
+                className={cn("relative flex flex-shrink-0 flex-col", {
+                  "bg-layer-1": !hasThemeColor,
                   [`${KANBAN_COLLAPSED_COLUMN_WIDTH} rounded-lg`]: !sub_group_by,
                   [`${KANBAN_SWIMLANE_COLLAPSED_COLUMN_WIDTH} min-h-30`]: !!sub_group_by,
                   "rounded-b-lg": !!sub_group_by && isLastSubGroup,
                 })}
+                style={columnThemeStyle}
               >
                 <KanbanCollapsedColumnTrigger
                   columnId={subList.id}
@@ -207,7 +212,7 @@ export const KanBan = observer(function KanBan(props: IKanBan) {
                   count={getGroupIssueCount(subList.id, sub_group_by ? sub_group_id : undefined, false) ?? 0}
                   onExpand={() => handleCollapsedGroups("group_by", subList.id)}
                   focusable={!sub_group_by}
-                  className="flex flex-1 flex-col items-center rounded-[inherit] px-1 py-1.5"
+                  className="relative z-[1] flex flex-1 flex-col items-center rounded-[inherit] px-1 py-1.5"
                 >
                   {!sub_group_by && groupHeaderCard}
                 </KanbanCollapsedColumnTrigger>
@@ -219,13 +224,23 @@ export const KanBan = observer(function KanBan(props: IKanBan) {
               key={subList.id}
               className={cn("group relative flex flex-shrink-0 flex-col", {
                 "w-[336px]": groupByVisibilityToggle.showIssues,
-                "rounded-lg bg-layer-1 p-2": sub_group_by === null,
-                "bg-layer-1 px-2 pt-1 pb-2": !!sub_group_by,
+                "rounded-lg p-2": sub_group_by === null,
+                "px-2 pt-1 pb-2": !!sub_group_by,
+                "bg-layer-1": !hasThemeColor,
                 "rounded-b-lg": !!sub_group_by && isLastSubGroup,
               })}
+              style={columnThemeStyle}
             >
               {sub_group_by === null && (
-                <div className="sticky top-0 z-[2] w-full flex-shrink-0 bg-layer-1 px-1 py-1.5">{groupHeaderCard}</div>
+                <div
+                  className={cn("sticky top-0 z-[2] w-full flex-shrink-0 px-1 py-1.5", {
+                    "bg-layer-1": !hasThemeColor,
+                  })}
+                  // Same solid tint as the column (color-mix) — avoids a stacked rgba “border” ring.
+                  style={hasThemeColor ? { backgroundColor: "var(--kanban-column-tint)" } : undefined}
+                >
+                  {groupHeaderCard}
+                </div>
               )}
 
               {groupByVisibilityToggle.showIssues && (

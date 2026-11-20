@@ -6,7 +6,7 @@
 
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import {
@@ -20,7 +20,6 @@ import {
 import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
 import { ProjectActionsMenu } from "@/components/navigation/project-actions-menu";
 import { useClickUpHomeSidebar } from "@/components/navigation/clickup-home-sidebar-context";
-import { SpaceCreateMenu } from "@/components/navigation/clickup-space-create-menu";
 import { useProjectActions } from "@/components/navigation/use-project-actions";
 import { LeaveProjectModal } from "@/components/project/leave-project-modal";
 import { PublishProjectModal } from "@/components/project/publish-project/modal";
@@ -575,12 +574,9 @@ const LIST_ICON_COLORS = ["#838383", "#29C56A", "#3E8BFF", "#F5A623", "#E06C75",
 /** ClickUp-style Space parent; nested rows are Plane projects (lists). */
 const SpaceTree = observer(function SpaceTree({ workspaceSlug }: { workspaceSlug: string }) {
   const pathname = usePathname();
-  const { toggleCreateProjectModal } = useCommandPalette();
   const { joinedProjectIds, fetchProjectAnalyticsCount } = useProject();
   const [isOpen, setIsOpen] = useState(true);
   const [hovered, setHovered] = useState(false);
-  const [createMenuOpen, setCreateMenuOpen] = useState(false);
-  const createButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!workspaceSlug) return;
@@ -594,104 +590,51 @@ const SpaceTree = observer(function SpaceTree({ workspaceSlug }: { workspaceSlug
     }
   }, [pathname, joinedProjectIds]);
 
-  const handleCreateSelect = (id: string) => {
-    setCreateMenuOpen(false);
-    // List = Plane project (Space nested lists map to projects)
-    if (id === "list") toggleCreateProjectModal(true);
-  };
-
   return (
-    <div>
-      <div
-        style={{ position: "relative", display: "flex", alignItems: "center" }}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-      >
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <Row
-            icon={
-              hovered || createMenuOpen ? (
-                <span
-                  aria-hidden
-                  style={{
-                    display: "flex",
-                    width: 20,
-                    height: 20,
-                    borderRadius: 5,
-                    background: "rgba(0,0,0,0.06)",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexShrink: 0,
-                    transform: isOpen ? "none" : "rotate(-90deg)",
-                    transition: "transform 140ms ease",
-                  }}
-                >
-                  <Icon src="/clickup-home/chevron.svg" size={14} />
-                </span>
-              ) : (
-                <span
-                  style={{
-                    display: "flex",
-                    width: 20,
-                    height: 20,
-                    borderRadius: 5,
-                    background: "#6049e7",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: 12,
-                    fontWeight: 700,
-                    color: "#fff",
-                    flexShrink: 0,
-                  }}
-                >
-                  S
-                </span>
-              )
-            }
-            label="Space"
-            onClick={() => setIsOpen((open) => !open)}
-            trailing={<span style={{ width: 20, height: 20, flexShrink: 0 }} aria-hidden />}
-          />
-        </div>
-        <button
-          ref={createButtonRef}
-          type="button"
-          data-prevent-outside-click
-          aria-label="Create in Space"
-          aria-haspopup="menu"
-          aria-expanded={createMenuOpen}
-          onClick={(e) => {
-            e.stopPropagation();
-            setCreateMenuOpen((open) => !open);
-          }}
-          style={{
-            position: "absolute",
-            right: 12,
-            top: "50%",
-            transform: createMenuOpen ? "translateY(-50%) rotate(45deg)" : "translateY(-50%) rotate(0deg)",
-            display: "flex",
-            width: 20,
-            height: 20,
-            borderRadius: 5,
-            alignItems: "center",
-            justifyContent: "center",
-            border: "none",
-            background: createMenuOpen ? "rgba(0,0,0,0.06)" : "transparent",
-            padding: 0,
-            cursor: "pointer",
-            zIndex: 1,
-            transition: "background 160ms cubic-bezier(0.16, 1, 0.3, 1), transform 180ms cubic-bezier(0.16, 1, 0.3, 1)",
-          }}
-        >
-          <Icon src="/clickup-home/plus-sm.svg" />
-        </button>
-        <SpaceCreateMenu
-          open={createMenuOpen}
-          anchorRef={createButtonRef}
-          onClose={() => setCreateMenuOpen(false)}
-          onSelect={handleCreateSelect}
-        />
-      </div>
+    <div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+      <Row
+        icon={
+          hovered ? (
+            <span
+              aria-hidden
+              style={{
+                display: "flex",
+                width: 20,
+                height: 20,
+                borderRadius: 5,
+                background: "rgba(0,0,0,0.06)",
+                alignItems: "center",
+                justifyContent: "center",
+                flexShrink: 0,
+                transform: isOpen ? "none" : "rotate(-90deg)",
+                transition: "transform 140ms ease",
+              }}
+            >
+              <Icon src="/clickup-home/chevron.svg" size={14} />
+            </span>
+          ) : (
+            <span
+              style={{
+                display: "flex",
+                width: 20,
+                height: 20,
+                borderRadius: 5,
+                background: "#6049e7",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 12,
+                fontWeight: 700,
+                color: "#fff",
+                flexShrink: 0,
+              }}
+            >
+              S
+            </span>
+          )
+        }
+        label="Space"
+        onClick={() => setIsOpen((open) => !open)}
+      />
 
       {isOpen
         ? joinedProjectIds.map((projectId, index) => (

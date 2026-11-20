@@ -330,7 +330,13 @@ export const KanbanGroup = observer(function KanbanGroup(props: IKanbanGroup) {
       {enableQuickIssueCreate &&
         !disableIssueCreation &&
         !getIsWorkflowWorkItemCreationDisabled(groupId, sub_group_id) && (
-          <div className="sticky bottom-0 w-full bg-layer-1 pt-1">
+          <div
+            className="sticky bottom-0 w-full pt-1"
+            style={{
+              // Match the column theme wash when present; otherwise fall back to layer-1.
+              backgroundColor: "var(--kanban-column-tint, var(--background-color-layer-1))",
+            }}
+          >
             <QuickAddIssueRoot
               layout={EIssueLayoutTypes.KANBAN}
               QuickAddButton={KanbanQuickAddIssueButton}

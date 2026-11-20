@@ -137,6 +137,8 @@ export interface IGroupByColumn {
   id: string;
   name: string;
   icon?: React.ReactElement | undefined;
+  /** Theme color for the group (status/label hex). Used for board column tint washes. */
+  color?: string;
   payload: Partial<TIssue>;
   isDropDisabled?: boolean;
   dropErrorMessage?: string;

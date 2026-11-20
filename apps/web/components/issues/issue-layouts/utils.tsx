@@ -77,6 +77,20 @@ import {
 export const HIGHLIGHT_CLASS = "highlight";
 export const HIGHLIGHT_WITH_LINE = "highlight-with-line";
 
+/**
+ * ClickUp Board column wash (Figma `cu3-board`).
+ * Solid `color-mix` against layer-1 — not translucent rgba — so a sticky header
+ * nested inside the padded column does not double-stack into a darker “frame” ring.
+ */
+export const getKanbanColumnThemeStyle = (color: string | undefined): CSSProperties | undefined => {
+  if (!color) return undefined;
+  const tint = `color-mix(in srgb, ${color} 8%, var(--background-color-layer-1))`;
+  return {
+    backgroundColor: tint,
+    ["--kanban-column-tint" as string]: tint,
+  };
+};
+
 export type GroupDropLocation = {
   columnId: string;
   groupId: string;
@@ -247,6 +261,7 @@ const getStateColumns = ({ projectId }: TGetColumns): IGroupByColumn[] | undefin
   return _states.map((state) => ({
     id: state.id,
     name: state.name,
+    color: state.color,
     icon: (
       <div className="size-4 rounded-full">
         <StateGroupIcon stateGroup={state.group} color={state.color} size={EIconSize.LG} percentage={state.order} />
@@ -262,6 +277,7 @@ const getStateGroupColumns = (): IGroupByColumn[] => {
   return Object.values(stateGroups).map((stateGroup) => ({
     id: stateGroup.key,
     name: stateGroup.label,
+    color: stateGroup.color,
     icon: (
       <div className="size-4 rounded-full">
         <StateGroupIcon stateGroup={stateGroup.key} size={EIconSize.LG} />
@@ -293,6 +309,7 @@ const getLabelsColumns = ({ isWorkspaceLevel }: TGetColumns): IGroupByColumn[] =
   return labels.map((label) => ({
     id: label.id,
     name: label.name,
+    color: label.color ? label.color : "#666",
     icon: (
       <div className="h-[12px] w-[12px] rounded-full" style={{ backgroundColor: label.color ? label.color : "#666" }} />
     ),

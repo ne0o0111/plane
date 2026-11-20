@@ -127,12 +127,13 @@ export const IssueView = observer(function IssueView(props: IIssueView) {
 
   const peekOverviewIssueClassName = cn(
     !embedIssue
-      ? "absolute z-[25] flex flex-col overflow-hidden rounded-sm border border-subtle bg-surface-1 transition-all duration-300"
+      ? "absolute z-[25] flex flex-col overflow-hidden rounded-sm border border-subtle bg-surface-1 transition-all duration-300 motion-reduce:animate-none"
       : `h-full w-full`,
     !embedIssue && {
       "top-0 right-0 bottom-0 w-full border-0 border-l md:w-[50%]": peekMode === "side-peek",
-      "top-[8.33%] left-[8.33%] size-5/6": peekMode === "modal",
-      "absolute inset-0 m-4": peekMode === "full-screen",
+      // Modal opens with a short fade + upward slide (propel `slide-up`).
+      "top-[8.33%] left-[8.33%] size-5/6 animate-slide-up": peekMode === "modal",
+      "absolute inset-0 m-4 animate-fade-in": peekMode === "full-screen",
     }
   );
 
@@ -144,7 +145,7 @@ export const IssueView = observer(function IssueView(props: IIssueView) {
     <div className="w-full text-body-sm-regular">
       {/* Modal mode dims the page behind the peek; a press on it closes the peek like any outside click. */}
       {issueId && !embedIssue && peekMode === "modal" && (
-        <div aria-hidden className="absolute inset-0 z-[25] bg-backdrop transition-opacity duration-300" />
+        <div aria-hidden className="absolute inset-0 z-[25] animate-fade-in bg-backdrop motion-reduce:animate-none" />
       )}
       {issueId && (
         <div

@@ -28,7 +28,7 @@ import { useWorkFlowFDragNDrop } from "@/components/workflow";
 // local imports
 import type { TRenderQuickActions } from "../list/list-view-types";
 import type { GroupDropLocation } from "../utils";
-import { getGroupByColumns, isWorkspaceLevel } from "../utils";
+import { getGroupByColumns, getKanbanColumnThemeStyle, isWorkspaceLevel } from "../utils";
 import {
   KANBAN_SWIMLANE_COLLAPSED_COLUMN_WIDTH,
   KANBAN_SWIMLANES_ATTRIBUTE,
@@ -106,14 +106,19 @@ const SubGroupSwimlaneHeader = observer(function SubGroupSwimlaneHeader({
             />
           );
 
+          const columnThemeStyle = getKanbanColumnThemeStyle(_list.color);
+          const hasThemeColor = !!_list.color;
+
           return (
             <div
               key={`${sub_group_by}_${_list.id}`}
               className={cn(
-                "flex flex-shrink-0 flex-col rounded-t-lg bg-layer-1",
+                "relative flex flex-shrink-0 flex-col rounded-t-lg",
                 // Collapsed: the cell stretches to the row so all of it is the expand target.
-                isCollapsed ? `${KANBAN_SWIMLANE_COLLAPSED_COLUMN_WIDTH} self-stretch` : "w-[336px] p-3"
+                isCollapsed ? `${KANBAN_SWIMLANE_COLLAPSED_COLUMN_WIDTH} self-stretch` : "w-[336px] p-3",
+                { "bg-layer-1": !hasThemeColor }
               )}
+              style={columnThemeStyle}
             >
               {isCollapsed ? (
                 <>
@@ -123,7 +128,7 @@ const SubGroupSwimlaneHeader = observer(function SubGroupSwimlaneHeader({
                     title={_list.name}
                     count={groupCount}
                     onExpand={() => handleCollapsedGroups("group_by", _list.id)}
-                    className="flex flex-1 items-center justify-center rounded-t-lg py-3"
+                    className="relative z-[1] flex flex-1 items-center justify-center rounded-t-lg py-3"
                   >
                     {headerCard}
                   </KanbanCollapsedColumnTrigger>
