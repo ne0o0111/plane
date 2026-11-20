@@ -11,17 +11,13 @@ import { useParams } from "next/navigation";
 import { EUserPermissions, EUserPermissionsLevel, SPACE_BASE_PATH, SPACE_BASE_URL } from "@plane/constants";
 import { useTranslation } from "@plane/i18n";
 import { Button } from "@makeplane/propel/elements/button";
-import { NewTabOutline, WorkItemsOutline } from "@makeplane/propel/icons";
+import { NewTabOutline } from "@makeplane/propel/icons";
 import { Tooltip } from "@makeplane/propel/components/tooltip";
 import { EIssuesStoreType } from "@plane/types";
 import { Breadcrumbs } from "@plane/blocks/breadcrumb";
 import { Header } from "@plane/blocks/layout";
 // components
-import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
-import { CountChip } from "@/components/common/count-chip";
-// constants
 import { HeaderFilters } from "@/components/issues/filters";
-// helpers
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useIssues } from "@/hooks/store/use-issues";
@@ -31,6 +27,28 @@ import { usePlatformOS } from "@/hooks/use-platform-os";
 // plane web imports
 import { CommonProjectBreadcrumbs } from "@/components/breadcrumbs/common";
 import { useProjectCrumbProps } from "@/components/breadcrumbs/use-project-crumb-props";
+
+/** Lucide-style Layers — blue accent in Tasks crumb */
+function TasksLayersIcon() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#2563EB"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+      style={{ display: "block", flexShrink: 0 }}
+    >
+      <path d="m12.83 2.18 8.08 4.45a1 1 0 0 1 0 1.74l-8.08 4.45a2 2 0 0 1-1.94 0L2.75 8.37a1 1 0 0 1 0-1.74l8.08-4.45a2 2 0 0 1 1.94 0z" />
+      <path d="m22 12.5-8.91 4.91a2 2 0 0 1-1.94 0L2.24 12.5" />
+      <path d="m22 17.5-8.91 4.91a2 2 0 0 1-1.94 0L2.24 17.5" />
+    </svg>
+  );
+}
 
 export const IssuesHeader = observer(function IssuesHeader() {
   // router
@@ -72,26 +90,65 @@ export const IssuesHeader = observer(function IssuesHeader() {
             />
             <Breadcrumbs.Item
               component={
-                <BreadcrumbLink
-                  label="Tasks"
-                  href={`/${workspaceSlug}/projects/${projectId}/issues/`}
-                  icon={<WorkItemsOutline className="h-4 w-4 text-tertiary" />}
-                  isLast
-                />
+                <Tooltip
+                  label={
+                    issuesCount && issuesCount > 0
+                      ? `There are ${issuesCount} ${issuesCount > 1 ? "tasks" : "task"} in this project`
+                      : "Tasks"
+                  }
+                  layout="stacked"
+                  side="bottom"
+                  disabled={isMobile}
+                >
+                  <span
+                    aria-current="page"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 8,
+                      height: 28,
+                      padding: "0 10px 0 8px",
+                      borderRadius: 4,
+                      border: "1px solid #E2E8F0",
+                      background: "#FFFFFF",
+                      whiteSpace: "nowrap",
+                      boxSizing: "border-box",
+                    }}
+                  >
+                    <TasksLayersIcon />
+                    <span
+                      style={{
+                        color: "#1E293B",
+                        fontSize: 13,
+                        fontWeight: 600,
+                        lineHeight: "16px",
+                      }}
+                    >
+                      Tasks
+                    </span>
+                    {issuesCount && issuesCount > 0 ? (
+                      <span
+                        style={{
+                          marginLeft: 2,
+                          padding: "2px 6px",
+                          borderRadius: 6,
+                          background: "#EFF6FF",
+                          color: "#2563EB",
+                          fontSize: 11,
+                          fontWeight: 700,
+                          lineHeight: "14px",
+                          fontVariantNumeric: "tabular-nums",
+                        }}
+                      >
+                        {issuesCount}
+                      </span>
+                    ) : null}
+                  </span>
+                </Tooltip>
               }
               isLast
             />
           </Breadcrumbs>
-          {issuesCount && issuesCount > 0 ? (
-            <Tooltip
-              label={`There are ${issuesCount} ${issuesCount > 1 ? "tasks" : "task"} in this project`}
-              layout="stacked"
-              side="bottom"
-              disabled={isMobile}
-            >
-              <CountChip count={issuesCount} />
-            </Tooltip>
-          ) : null}
         </div>
         {currentProjectDetails?.anchor ? (
           <a
