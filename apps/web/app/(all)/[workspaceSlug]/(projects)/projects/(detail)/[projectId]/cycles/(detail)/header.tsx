@@ -142,7 +142,7 @@ export const CycleIssuesHeader = observer(function CycleIssuesHeader() {
                   <BreadcrumbLink
                     label="Sprints"
                     href={`/${workspaceSlug}/projects/${projectId}/cycles/`}
-                    icon={<CyclesOutline className="h-4 w-4 text-tertiary" />}
+                    icon={<CyclesOutline className="h-3.5 w-3.5" style={{ color: "#7C3AED" }} />}
                   />
                 }
               />

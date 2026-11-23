@@ -15,7 +15,6 @@ import { ModuleOutline } from "@makeplane/propel/icons";
 import { Breadcrumbs } from "@plane/blocks/breadcrumb";
 import { Header } from "@plane/blocks/layout";
 // components
-import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { ModuleViewHeader } from "@/components/modules";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
@@ -24,6 +23,8 @@ import { useUserPermissions } from "@/hooks/store/user";
 // plane web imports
 import { CommonProjectBreadcrumbs } from "@/components/breadcrumbs/common";
 import { useProjectCrumbProps } from "@/components/breadcrumbs/use-project-crumb-props";
+
+const EPIC_ACCENT = "#059669";
 
 export const ModulesListHeader = observer(function ModulesListHeader() {
   // router
@@ -46,8 +47,8 @@ export const ModulesListHeader = observer(function ModulesListHeader() {
   return (
     <Header>
       <Header.LeftItem>
-        <div>
-          <Breadcrumbs isLoading={loader === "init-loader"}>
+        <div className="flex items-center gap-2.5">
+          <Breadcrumbs isLoading={loader === "init-loader"} className="flex-grow-0">
             <CommonProjectBreadcrumbs
               workspaceSlug={workspaceSlug?.toString()}
               projectId={projectId?.toString()}
@@ -55,12 +56,33 @@ export const ModulesListHeader = observer(function ModulesListHeader() {
             />
             <Breadcrumbs.Item
               component={
-                <BreadcrumbLink
-                  label="Epics"
-                  href={`/${workspaceSlug}/projects/${projectId}/modules/`}
-                  icon={<ModuleOutline className="h-4 w-4 text-tertiary" />}
-                  isLast
-                />
+                <span
+                  aria-current="page"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 8,
+                    height: 28,
+                    padding: "0 10px 0 8px",
+                    borderRadius: 4,
+                    border: "1px solid #E2E8F0",
+                    background: "#FFFFFF",
+                    whiteSpace: "nowrap",
+                    boxSizing: "border-box",
+                  }}
+                >
+                  <ModuleOutline className="h-3.5 w-3.5 shrink-0" style={{ color: EPIC_ACCENT }} />
+                  <span
+                    style={{
+                      color: "#1E293B",
+                      fontSize: 13,
+                      fontWeight: 600,
+                      lineHeight: "16px",
+                    }}
+                  >
+                    Epics
+                  </span>
+                </span>
               }
               isLast
             />

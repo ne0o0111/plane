@@ -133,7 +133,7 @@ export const ProjectViewIssuesHeader = observer(function ProjectViewIssuesHeader
               <BreadcrumbLink
                 label="Views"
                 href={`/${workspaceSlug}/projects/${projectId}/views/`}
-                icon={<ViewsOutline className="h-4 w-4 text-tertiary" />}
+                icon={<ViewsOutline className="h-3.5 w-3.5" style={{ color: "#D97706" }} />}
               />
             }
           />

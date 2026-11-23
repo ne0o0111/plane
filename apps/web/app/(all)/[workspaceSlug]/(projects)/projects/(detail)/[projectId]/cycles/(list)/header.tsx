@@ -14,7 +14,6 @@ import { CyclesOutline } from "@makeplane/propel/icons";
 import { Breadcrumbs } from "@plane/blocks/breadcrumb";
 import { Header } from "@plane/blocks/layout";
 // components
-import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { CyclesViewHeader } from "@/components/cycles/cycles-view-header";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
@@ -23,6 +22,8 @@ import { useUserPermissions } from "@/hooks/store/user";
 // plane web imports
 import { CommonProjectBreadcrumbs } from "@/components/breadcrumbs/common";
 import { useProjectCrumbProps } from "@/components/breadcrumbs/use-project-crumb-props";
+
+const SPRINT_ACCENT = "#7C3AED";
 
 export const CyclesListHeader = observer(function CyclesListHeader() {
   // router
@@ -43,24 +44,47 @@ export const CyclesListHeader = observer(function CyclesListHeader() {
   return (
     <Header>
       <Header.LeftItem>
-        <Breadcrumbs isLoading={loader === "init-loader"}>
-          <CommonProjectBreadcrumbs
-            workspaceSlug={workspaceSlug?.toString()}
-            projectId={projectId?.toString()}
-            {...projectCrumb}
-          />
-          <Breadcrumbs.Item
-            component={
-              <BreadcrumbLink
-                label="Sprints"
-                href={`/${workspaceSlug}/projects/${currentProjectDetails?.id}/cycles/`}
-                icon={<CyclesOutline className="h-4 w-4 text-tertiary" />}
-                isLast
-              />
-            }
-            isLast
-          />
-        </Breadcrumbs>
+        <div className="flex items-center gap-2.5">
+          <Breadcrumbs isLoading={loader === "init-loader"} className="flex-grow-0">
+            <CommonProjectBreadcrumbs
+              workspaceSlug={workspaceSlug?.toString()}
+              projectId={projectId?.toString()}
+              {...projectCrumb}
+            />
+            <Breadcrumbs.Item
+              component={
+                <span
+                  aria-current="page"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 8,
+                    height: 28,
+                    padding: "0 10px 0 8px",
+                    borderRadius: 4,
+                    border: "1px solid #E2E8F0",
+                    background: "#FFFFFF",
+                    whiteSpace: "nowrap",
+                    boxSizing: "border-box",
+                  }}
+                >
+                  <CyclesOutline className="h-3.5 w-3.5 shrink-0" style={{ color: SPRINT_ACCENT }} />
+                  <span
+                    style={{
+                      color: "#1E293B",
+                      fontSize: 13,
+                      fontWeight: 600,
+                      lineHeight: "16px",
+                    }}
+                  >
+                    Sprints
+                  </span>
+                </span>
+              }
+              isLast
+            />
+          </Breadcrumbs>
+        </div>
       </Header.LeftItem>
       {canUserCreateCycle && currentProjectDetails ? (
         <Header.RightItem>

@@ -11,7 +11,7 @@ import { useParams } from "next/navigation";
 import { EUserPermissions, EUserPermissionsLevel, SPACE_BASE_PATH, SPACE_BASE_URL } from "@plane/constants";
 import { useTranslation } from "@plane/i18n";
 import { Button } from "@makeplane/propel/elements/button";
-import { NewTabOutline } from "@makeplane/propel/icons";
+import { NewTabOutline, WorkItemsOutline } from "@makeplane/propel/icons";
 import { Tooltip } from "@makeplane/propel/components/tooltip";
 import { EIssuesStoreType } from "@plane/types";
 import { Breadcrumbs } from "@plane/blocks/breadcrumb";
@@ -28,27 +28,7 @@ import { usePlatformOS } from "@/hooks/use-platform-os";
 import { CommonProjectBreadcrumbs } from "@/components/breadcrumbs/common";
 import { useProjectCrumbProps } from "@/components/breadcrumbs/use-project-crumb-props";
 
-/** Lucide-style Layers — blue accent in Tasks crumb */
-function TasksLayersIcon() {
-  return (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="#2563EB"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-      style={{ display: "block", flexShrink: 0 }}
-    >
-      <path d="m12.83 2.18 8.08 4.45a1 1 0 0 1 0 1.74l-8.08 4.45a2 2 0 0 1-1.94 0L2.75 8.37a1 1 0 0 1 0-1.74l8.08-4.45a2 2 0 0 1 1.94 0z" />
-      <path d="m22 12.5-8.91 4.91a2 2 0 0 1-1.94 0L2.24 12.5" />
-      <path d="m22 17.5-8.91 4.91a2 2 0 0 1-1.94 0L2.24 17.5" />
-    </svg>
-  );
-}
+const TASK_ACCENT = "#2563EB";
 
 export const IssuesHeader = observer(function IssuesHeader() {
   // router
@@ -115,7 +95,7 @@ export const IssuesHeader = observer(function IssuesHeader() {
                       boxSizing: "border-box",
                     }}
                   >
-                    <TasksLayersIcon />
+                    <WorkItemsOutline className="h-3.5 w-3.5 shrink-0" style={{ color: TASK_ACCENT }} />
                     <span
                       style={{
                         color: "#1E293B",
