@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Ergonic Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -144,13 +144,12 @@ export const ProfileSetupStep = observer(function ProfileSetupStep({ handleStepC
 
   // Check for all available fields validation and if password field is available, then checks for password validation (strength + confirmation).
   // Also handles the condition for optional password i.e if password field is optional it only checks for above validation if it's not empty.
-  const isButtonDisabled =
-    !isSubmitting && isValid ? (isPasswordAlreadySetup ? false : isValidPassword ? false : true) : true;
+  const isButtonDisabled = isSubmitting || !isValid || (!isPasswordAlreadySetup && !isValidPassword);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-10">
       {/* Header */}
-      <CommonOnboardingHeader title="Create your profile." description="This is how you will appear in Plane." />
+      <CommonOnboardingHeader title="Create your profile." description="This is how you will appear in Ergonic." />
 
       {/* Profile Picture Section */}
       <Controller
@@ -221,6 +220,7 @@ export const ProfileSetupStep = observer(function ProfileSetupStep({ handleStepC
                 required
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
+                // oxlint-disable-next-line eslint-plugin-jsx-a11y/no-autofocus -- onboarding focus on name field
                 autoFocus
                 placeholder="Enter your full name"
                 autoComplete="on"

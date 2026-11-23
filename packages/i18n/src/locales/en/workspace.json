@@ -1,7 +1,7 @@
 {
   "workspace_creation": {
     "heading": "Create your workspace",
-    "subheading": "To start using Plane, you need to create or join a workspace.",
+    "subheading": "To start using Ergonic, you need to create or join a workspace.",
     "form": {
       "name": {
         "label": "Name your workspace",
@@ -54,11 +54,11 @@
     "empty_state": {
       "general": {
         "title": "Overview of your spaces, activity, and metrics",
-        "description": "Welcome to Plane, we are excited to have you here. Create your first space and track your tasks, and this page will transform into a space that helps you progress. Admins will also see items which help their team progress.",
+        "description": "Welcome to Ergonic, we are excited to have you here. Create your first space and track your tasks, and this page will transform into a space that helps you progress. Admins will also see items which help their team progress.",
         "primary_button": {
           "text": "Build your first space",
           "comic": {
-            "title": "Everything starts with a space in Plane",
+            "title": "Everything starts with a space in Ergonic",
             "description": "A space could be a product's roadmap, a marketing campaign, or launching a new car."
           }
         }
@@ -200,7 +200,7 @@
         "primary_button": {
           "text": "Start your first space",
           "comic": {
-            "title": "Everything starts with a space in Plane",
+            "title": "Everything starts with a space in Ergonic",
             "description": "A space could be a product's roadmap, a marketing campaign, or launching a new car."
           }
         }
@@ -211,7 +211,7 @@
         "primary_button": {
           "text": "Start your first space",
           "comic": {
-            "title": "Everything starts with a space in Plane",
+            "title": "Everything starts with a space in Ergonic",
             "description": "A space could be a product's roadmap, a marketing campaign, or launching a new car."
           }
         }
@@ -294,8 +294,8 @@
   "workspace_pages": {
     "empty_state": {
       "general": {
-        "title": "Write a note, a Doc, or a full knowledge base. Get Galileo, Plane's AI assistant, to help you get started",
-        "description": "Pages are thoughts potting space in Plane. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your space's context. To make short work of any Doc, invoke Galileo, Plane's AI, with a shortcut or the click of a button.",
+        "title": "Write a note, a Doc, or a full knowledge base. Get Galileo, Ergonic's AI assistant, to help you get started",
+        "description": "Pages are thoughts potting space in Ergonic. Take down meeting notes, format them easily, embed tasks, lay them out using a library of components, and keep them all in your space's context. To make short work of any Doc, invoke Galileo, Ergonic's AI, with a shortcut or the click of a button.",
         "primary_button": {
           "text": "Create your first page"
         }

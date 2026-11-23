@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Ergonic Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -64,14 +64,14 @@ export const AdminSidebarHelpSection = observer(function AdminSidebarHelpSection
       })}
     >
       {isSidebarCollapsed ? (
-        <Tooltip label="Redirect to Plane" side="right">
+        <Tooltip label="Redirect to Ergonic" side="right">
           <IconButton
             variant="secondary"
             size="md"
-            aria-label="Redirect to Plane"
+            aria-label="Redirect to Ergonic"
             showTooltip={false}
             nativeButton={false}
-            render={<a href={redirectionLink} aria-label="Redirect to Plane" />}
+            render={<a href={redirectionLink} aria-label="Redirect to Ergonic" />}
             icon={<Icon icon={NewTabOutline} />}
           />
         </Tooltip>
@@ -81,9 +81,9 @@ export const AdminSidebarHelpSection = observer(function AdminSidebarHelpSection
           size="sm"
           stretch="auto"
           nativeButton={false}
-          render={<a href={redirectionLink} aria-label="Redirect to Plane" />}
+          render={<a href={redirectionLink} aria-label="Redirect to Ergonic" />}
           icon={<Icon icon={NewTabOutline} />}
-          label="Redirect to Plane"
+          label="Redirect to Ergonic"
         />
       )}
       <div className={cn("flex items-center gap-1", isSidebarCollapsed ? "flex-col" : "ml-auto")}>

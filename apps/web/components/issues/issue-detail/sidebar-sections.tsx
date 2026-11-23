@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Ergonic Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -70,7 +70,9 @@ export const IssueDetailSidebarSections = observer(function IssueDetailSidebarSe
 
   const projectDetails = getProjectById(issue.project_id);
   const createdByDetails = getUserDetails(issue.created_by);
-  const createdByName = createdByDetails?.display_name?.includes("-intake") ? "Plane" : createdByDetails?.display_name;
+  const createdByName = createdByDetails?.display_name?.includes("-intake")
+    ? "Ergonic"
+    : createdByDetails?.display_name;
   const hasProjectStructureProperties = !!projectDetails?.cycle_view || !!projectDetails?.module_view;
 
   const auditRows = [

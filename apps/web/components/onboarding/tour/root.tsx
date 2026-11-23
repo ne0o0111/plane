@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Ergonic Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -40,7 +40,7 @@ const TOUR_STEPS: {
     key: "work-items",
     title: "Plan with tasks",
     description:
-      "The task is the building block of the Plane. Most concepts in Plane are either associated with tasks and their properties.",
+      "The task is the building block of the Ergonic. Most concepts in Ergonic are either associated with tasks and their properties.",
     image: IssuesTour,
     nextStep: "cycles",
   },
@@ -100,10 +100,10 @@ export const TourRoot = observer(function TourRoot(props: TOnboardingTourProps) 
             </div>
             <div className="flex flex-col overflow-y-auto p-6">
               <h3 className="font-semibold sm:text-h5-regular">
-                Welcome to Plane, {currentUser?.first_name} {currentUser?.last_name}
+                Welcome to Ergonic, {currentUser?.first_name} {currentUser?.last_name}
               </h3>
               <p className="mt-3 text-body-xs-regular text-secondary">
-                We{"'"}re glad that you decided to try out Plane. You can now manage your projects with ease. Get
+                We{"'"}re glad that you decided to try out Ergonic. You can now manage your projects with ease. Get
                 started by creating a project.
               </p>
               <div className="flex h-full items-end">

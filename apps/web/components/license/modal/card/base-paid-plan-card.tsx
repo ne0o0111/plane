@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Ergonic Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -70,7 +70,7 @@ export const BasePaidPlanCard = observer(function BasePaidPlanCard(props: TBaseP
         {prices.map((price: TSubscriptionPrice) => (
           <TabsPanel key={price.key} value={price.recurring}>
             <div className="pt-3 text-center">
-              <div className="text-h4-medium">Plane {planeName}</div>
+              <div className="text-h4-medium">Ergonic {planeName}</div>
               {renderActionButton(price)}
             </div>
             <div className="px-2 pt-6 pb-2">

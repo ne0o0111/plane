@@ -367,7 +367,7 @@
         },
         "confirmation": {
           "title": "Once enabled, Task Types can't be disabled.",
-          "description": "Plane's Task will become the default task type for this space and will show up with its icon and background in this space.",
+          "description": "Ergonic's Task will become the default task type for this space and will show up with its icon and background in this space.",
           "button": {
             "default": "Enable",
             "loading": "Setting up"

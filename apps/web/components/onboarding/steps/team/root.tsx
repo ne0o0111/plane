@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Ergonic Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -269,6 +269,7 @@ export const InviteTeamStep = observer(function InviteTeamStep(props: Props) {
           message: "Invitations sent successfully.",
         });
         await nextStep();
+        return undefined;
       })
       .catch((err) => {
         setToast({
@@ -308,7 +309,7 @@ export const InviteTeamStep = observer(function InviteTeamStep(props: Props) {
     >
       <CommonOnboardingHeader
         title="Invite your teammates"
-        description="Work in plane happens best with your team. Invite them now to use Plane to its potential."
+        description="Work in plane happens best with your team. Invite them now to use Ergonic to its potential."
       />
       <div className="flex w-full flex-col gap-6">
         <div className="flex flex-col gap-3">
