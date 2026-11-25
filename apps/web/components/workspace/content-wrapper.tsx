@@ -10,11 +10,8 @@ import { usePathname } from "next/navigation";
 // plane imports
 import { cn } from "@plane/utils";
 import { AppRailRoot } from "@/components/navigation";
-import { ClickUpHomeSidebar } from "@/components/navigation/clickup-home-sidebar";
-import {
-  ClickUpHomeSidebarProvider,
-  useClickUpHomeSidebar,
-} from "@/components/navigation/clickup-home-sidebar-context";
+import { HomeSidebar } from "@/components/navigation/home-sidebar";
+import { HomeSidebarProvider, useHomeSidebar } from "@/components/navigation/home-sidebar-context";
 import { useAppRailVisibility } from "@/lib/app-rail";
 import { TopNavigationRoot } from "@/components/navigation/top-navigation-root";
 
@@ -22,7 +19,7 @@ const HOME_SIDEBAR_WIDTH = 256;
 const HOME_SIDEBAR_EASE = "cubic-bezier(0.32, 0.72, 0, 1)";
 const HOME_SIDEBAR_MS = 280;
 
-/** Project settings has its own sidebar — hide ClickUp Home without mutating the saved preference. */
+/** Project settings has its own sidebar — hide Home without mutating the saved preference. */
 function isProjectSettingsPath(pathname: string | null): boolean {
   return /\/settings\/projects(\/|$)/.test(pathname ?? "");
 }
@@ -30,7 +27,7 @@ function isProjectSettingsPath(pathname: string | null): boolean {
 const WorkspaceShell = observer(function WorkspaceShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const { shouldRenderAppRail } = useAppRailVisibility();
-  const { collapsed, toggleCollapsed } = useClickUpHomeSidebar();
+  const { collapsed, toggleCollapsed } = useHomeSidebar();
   const homeHidden = collapsed || isProjectSettingsPath(pathname);
 
   useEffect(() => {
@@ -82,7 +79,7 @@ const WorkspaceShell = observer(function WorkspaceShell({ children }: { children
                     pointerEvents: homeHidden ? "none" : "auto",
                   }}
                 >
-                  <ClickUpHomeSidebar />
+                  <HomeSidebar />
                 </div>
               </div>
             ) : null}
@@ -100,8 +97,8 @@ export const WorkspaceContentWrapper = observer(function WorkspaceContentWrapper
   children: React.ReactNode;
 }) {
   return (
-    <ClickUpHomeSidebarProvider>
+    <HomeSidebarProvider>
       <WorkspaceShell>{children}</WorkspaceShell>
-    </ClickUpHomeSidebarProvider>
+    </HomeSidebarProvider>
   );
 });

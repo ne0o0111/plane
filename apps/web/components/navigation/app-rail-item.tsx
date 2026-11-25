@@ -6,7 +6,7 @@
 
 import Link from "next/link";
 
-export type TClickUpRailItemProps = {
+export type TAppRailItemProps = {
   label: string;
   icon: React.ReactNode;
   href?: string;
@@ -19,7 +19,7 @@ export type TClickUpRailItemProps = {
  * Figma cu-simple-bar-item — column stack (icon 32 + label 18 = 50),
  * parent gap 12 → 62px pitch between items.
  */
-export function ClickUpRailItem(props: TClickUpRailItemProps) {
+export function AppRailItem(props: TAppRailItemProps) {
   const { label, icon, href, isActive = false, tracking = "nav", onClick } = props;
 
   const content = (

@@ -36,7 +36,7 @@ export const AppRailVisibilityProvider = observer(function AppRailVisibilityProv
     setIsCollapsed(!isCollapsed);
   }, [isCollapsed, setIsCollapsed]);
 
-  // The ClickUp-style rail stays visible whenever the feature is on.
+  // The  rail stays visible whenever the feature is on.
   const shouldRenderAppRail = isEnabled;
 
   const value: IAppRailVisibilityContext = useMemo(

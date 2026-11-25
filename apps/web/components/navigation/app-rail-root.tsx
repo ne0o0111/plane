@@ -18,7 +18,7 @@ import { useAppRailPreferences } from "@/hooks/use-navigation-preferences";
 import { useAppRailVisibility } from "@/lib/app-rail/context";
 import { AppSidebarItemsRoot } from "./items-root";
 
-const ROBOTO_LINK_ID = "clickup-rail-roboto-font";
+const ROBOTO_LINK_ID = "app-rail-roboto-font";
 
 function ensureRobotoFont() {
   if (typeof document === "undefined") return;

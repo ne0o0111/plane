@@ -15,7 +15,7 @@ function WorkspaceLayout() {
   return (
     <>
       <ProjectsAppPowerKProvider />
-      {/* Border + radius live on WorkspaceContentWrapper (wraps ClickUp Home + this shell). */}
+      {/* Border + radius live on WorkspaceContentWrapper (wraps Home + this shell). */}
       <div className="relative flex h-full w-full flex-col overflow-hidden">
         <div id="full-screen-portal" className="absolute inset-0 w-full" />
         <div className="relative flex size-full overflow-hidden">

@@ -8,17 +8,17 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
-const STORAGE_KEY = "clickup_home_sidebar_collapsed";
+const STORAGE_KEY = "home_sidebar_collapsed";
 
-type TClickUpHomeSidebarContext = {
+type THomeSidebarContext = {
   collapsed: boolean;
   setCollapsed: (collapsed: boolean) => void;
   toggleCollapsed: () => void;
 };
 
-const ClickUpHomeSidebarContext = createContext<TClickUpHomeSidebarContext | undefined>(undefined);
+const HomeSidebarContext = createContext<THomeSidebarContext | undefined>(undefined);
 
-export function ClickUpHomeSidebarProvider({ children }: { children: React.ReactNode }) {
+export function HomeSidebarProvider({ children }: { children: React.ReactNode }) {
   const [collapsed, setCollapsedState] = useState(false);
   const [hydrated, setHydrated] = useState(false);
 
@@ -58,13 +58,13 @@ export function ClickUpHomeSidebarProvider({ children }: { children: React.React
     [collapsed, hydrated, setCollapsed, toggleCollapsed]
   );
 
-  return <ClickUpHomeSidebarContext.Provider value={value}>{children}</ClickUpHomeSidebarContext.Provider>;
+  return <HomeSidebarContext.Provider value={value}>{children}</HomeSidebarContext.Provider>;
 }
 
-export function useClickUpHomeSidebar() {
-  const ctx = useContext(ClickUpHomeSidebarContext);
+export function useHomeSidebar() {
+  const ctx = useContext(HomeSidebarContext);
   if (!ctx) {
-    throw new Error("useClickUpHomeSidebar must be used within ClickUpHomeSidebarProvider");
+    throw new Error("useHomeSidebar must be used within HomeSidebarProvider");
   }
   return ctx;
 }

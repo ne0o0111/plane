@@ -44,7 +44,7 @@ export const ProjectAppSidebar = observer(function ProjectAppSidebar() {
   // handlers
   const handleWidthChange = (width: number) => setValue(width);
 
-  // ClickUp Home sidebar replaces the legacy workspace Home nav while app rail is on
+  // Home sidebar replaces the legacy workspace Home nav while app rail is on
   if (shouldRenderAppRail) return null;
   if (isNotificationsPath) return null;
 

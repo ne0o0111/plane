@@ -7,7 +7,7 @@
 import React from "react";
 import type { TAppRailDockItem } from "./app-rail-hoc";
 import { withDockItems } from "./app-rail-hoc";
-import { ClickUpRailItem } from "./clickup-rail-item";
+import { AppRailItem } from "./app-rail-item";
 
 type Props = {
   dockItems: TAppRailDockItem[];
@@ -20,7 +20,7 @@ function Component({ dockItems, section = "top" }: Props) {
       {dockItems
         .filter((item) => item.shouldRender && item.section === section)
         .map((item) => (
-          <ClickUpRailItem
+          <AppRailItem
             key={item.label}
             label={item.label}
             icon={item.icon}

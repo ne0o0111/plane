@@ -11,7 +11,7 @@ import { createPortal } from "react-dom";
 import { useOutsideClickDetector } from "@plane/hooks";
 
 /**
- * ClickUp view-tab options popover — mock UI only (no persistence / API).
+ * View-tab options popover — mock UI only (no persistence / API).
  */
 
 const FONT = "Roboto, Helvetica, Arial, sans-serif";
@@ -66,14 +66,14 @@ const Chevron = (
 );
 
 const ICONS = {
-  pencil: <img src="/clickup-views/rename.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
-  link: <img src="/clickup-views/copy-link.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
-  gear: <img src="/clickup-views/settings.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
-  pin: <img src="/clickup-views/pin.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
-  lock: <img src="/clickup-views/lock.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
-  shield: <img src="/clickup-views/protect.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
-  save: <img src="/clickup-views/autosave.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
-  home: <img src="/clickup-views/default-view.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
+  pencil: <img src="/icons/views/rename.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
+  link: <img src="/icons/views/copy-link.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
+  gear: <img src="/icons/views/settings.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
+  pin: <img src="/icons/views/pin.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
+  lock: <img src="/icons/views/lock.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
+  shield: <img src="/icons/views/protect.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
+  save: <img src="/icons/views/autosave.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
+  home: <img src="/icons/views/default-view.svg" alt="" width={16} height={16} style={{ display: "block" }} />,
   duplicate: (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
       <rect x="5.2" y="5.2" width="8" height="8" rx="1.4" stroke="currentColor" strokeWidth="1.25" />
@@ -211,7 +211,7 @@ function Divider() {
   return <div style={{ height: 1, background: DIVIDER, margin: "4px 8px" }} />;
 }
 
-export function ClickUpViewOptionsMenu({ open, onClose, anchorRef, viewLabel }: Props) {
+export function ViewOptionsMenu({ open, onClose, anchorRef, viewLabel }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState<{ top: number; left: number } | null>(null);
   const [mounted, setMounted] = useState(false);

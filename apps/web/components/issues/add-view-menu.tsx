@@ -10,19 +10,19 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState, type RefObje
 import { createPortal } from "react-dom";
 import { useOutsideClickDetector } from "@plane/hooks";
 
-/** Figma cu3-icon exports — single copy in public/clickup-views/ (native 16×16) */
-const VIEW_LIST_ICON = "/clickup-views/view-list.svg";
-const VIEW_BOARD_ICON = "/clickup-views/view-board.svg";
-const VIEW_CALENDAR_ICON = "/clickup-views/view-calendar.svg";
-const VIEW_TABLE_ICON = "/clickup-views/view-table.svg";
-const VIEW_TIMELINE_ICON = "/clickup-views/view-timeline.svg";
-const VIEW_FORM_ICON = "/clickup-views/view-form.svg";
-const VIEW_DOC_ICON = "/clickup-views/view-doc.svg";
-const VIEW_WHITEBOARD_ICON = "/clickup-views/view-whiteboard.svg";
-const VIEW_DASHBOARD_ICON = "/clickup-views/view-dashboard.svg";
+/** Figma cu3-icon exports — single copy in public/icons/views/ (native 16×16) */
+const VIEW_LIST_ICON = "/icons/views/view-list.svg";
+const VIEW_BOARD_ICON = "/icons/views/view-board.svg";
+const VIEW_CALENDAR_ICON = "/icons/views/view-calendar.svg";
+const VIEW_TABLE_ICON = "/icons/views/view-table.svg";
+const VIEW_TIMELINE_ICON = "/icons/views/view-timeline.svg";
+const VIEW_FORM_ICON = "/icons/views/view-form.svg";
+const VIEW_DOC_ICON = "/icons/views/view-doc.svg";
+const VIEW_WHITEBOARD_ICON = "/icons/views/view-whiteboard.svg";
+const VIEW_DASHBOARD_ICON = "/icons/views/view-dashboard.svg";
 
 /**
- * ClickUp “+ View” → Create a view picker.
+ * “+ View” → Create a view picker.
  * Anchored under the + View control; title + 4-col icon grid.
  */
 
@@ -91,7 +91,7 @@ function computePosition(anchor: DOMRect): { top: number; left: number } {
   return { top, left };
 }
 
-export function ClickUpAddViewMenu({ open, onClose, onSelect, anchorRef }: Props) {
+export function AddViewMenu({ open, onClose, onSelect, anchorRef }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState<{ top: number; left: number } | null>(null);
   const [mounted, setMounted] = useState(false);

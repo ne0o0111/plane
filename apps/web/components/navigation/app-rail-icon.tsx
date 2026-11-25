@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-type TClickUpRailIconProps = {
+type TAppRailIconProps = {
   src: string;
   alt: string;
   withGlow?: boolean;
@@ -12,7 +12,7 @@ type TClickUpRailIconProps = {
 };
 
 /** 20×20 glyph centered in the parent 32×32 hit target. */
-export function ClickUpRailIcon(props: TClickUpRailIconProps) {
+export function AppRailIcon(props: TAppRailIconProps) {
   const { src, alt, withGlow = false, badge } = props;
 
   return (
@@ -43,7 +43,7 @@ export function ClickUpRailIcon(props: TClickUpRailIconProps) {
           }}
         >
           <img
-            src="/clickup-rail/home-glow.png"
+            src="/icons/app-rail/home-glow.png"
             alt=""
             width={40}
             height={40}

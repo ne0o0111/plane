@@ -19,7 +19,7 @@ import {
 } from "@makeplane/propel/icons";
 import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
 import { ProjectActionsMenu } from "@/components/navigation/project-actions-menu";
-import { useClickUpHomeSidebar } from "@/components/navigation/clickup-home-sidebar-context";
+import { useHomeSidebar } from "@/components/navigation/home-sidebar-context";
 import { useProjectActions } from "@/components/navigation/use-project-actions";
 import { LeaveProjectModal } from "@/components/project/leave-project-modal";
 import { PublishProjectModal } from "@/components/project/publish-project/modal";
@@ -29,7 +29,7 @@ import { useUser, useUserPermissions } from "@/hooks/store/user";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 
 /**
- * ClickUp Home sidebar mock (Figma 8005:995).
+ * Home sidebar mock (Figma 8005:995).
  * Header hover reveals Search / Filter / Collapse.
  * New → task; Inbox → notifications.
  * Space → Plane projects (lists); each project accordion → Tasks / Sprints / …
@@ -133,8 +133,8 @@ function CreateMenuButton() {
         transition: "background 120ms ease, box-shadow 120ms ease",
       }}
     >
-      <Icon src="/clickup-home/create-plus.svg" />
-      <Icon src="/clickup-home/create-chevron.svg" size={14} />
+      <Icon src="/icons/home-nav/create-plus.svg" />
+      <Icon src="/icons/home-nav/create-chevron.svg" size={14} />
     </button>
   );
 }
@@ -149,8 +149,8 @@ function ListIcon({ color = TEXT_FAINT }: { color?: string }) {
         height: 16,
         flexShrink: 0,
         backgroundColor: color,
-        WebkitMask: "url(/clickup-home/list.svg) center / contain no-repeat",
-        mask: "url(/clickup-home/list.svg) center / contain no-repeat",
+        WebkitMask: "url(/icons/home-nav/list.svg) center / contain no-repeat",
+        mask: "url(/icons/home-nav/list.svg) center / contain no-repeat",
       }}
     />
   );
@@ -191,7 +191,7 @@ function Row(props: {
   const indentLevel = indentLevelProp ?? (indent ? 1 : 0);
   const [hovered, setHovered] = useState(false);
 
-  // Figma / ClickUp: hover = rgba(0,0,0,0.06) pill, radius 7px — covers label + trailing as one surface
+  // Figma /: hover = rgba(0,0,0,0.06) pill, radius 7px — covers label + trailing as one surface
   const highlighted = active || hovered;
   const padLeft = indentLevel === 0 ? 0 : indentLevel === 1 ? 20 : 40;
   const railLeft = indentLevel === 2 ? 35.5 : 15.5;
@@ -337,7 +337,7 @@ function NavGlyph({ icon: IconCmp, active }: { icon: React.ElementType; active?:
   );
 }
 
-/** Plane project as a ClickUp List — accordion to Tasks / Sprints / … */
+/** Plane project as a List — accordion to Tasks / Sprints / … */
 const SpaceProjectItem = observer(function SpaceProjectItem({
   projectId,
   workspaceSlug,
@@ -461,7 +461,7 @@ const SpaceProjectItem = observer(function SpaceProjectItem({
                 transition: "transform 140ms ease",
               }}
             >
-              <Icon src="/clickup-home/chevron.svg" size={14} />
+              <Icon src="/icons/home-nav/chevron.svg" size={14} />
             </span>
           ) : (
             <ListIcon color={iconColor} />
@@ -571,7 +571,7 @@ function SectionLabel({
 
 const LIST_ICON_COLORS = ["#838383", "#29C56A", "#3E8BFF", "#F5A623", "#E06C75", "#C678DD"];
 
-/** ClickUp-style Space parent; nested rows are Plane projects (lists). */
+/**  Space parent; nested rows are Plane projects (lists). */
 const SpaceTree = observer(function SpaceTree({ workspaceSlug }: { workspaceSlug: string }) {
   const pathname = usePathname();
   const { joinedProjectIds, fetchProjectAnalyticsCount } = useProject();
@@ -610,7 +610,7 @@ const SpaceTree = observer(function SpaceTree({ workspaceSlug }: { workspaceSlug
                 transition: "transform 140ms ease",
               }}
             >
-              <Icon src="/clickup-home/chevron.svg" size={14} />
+              <Icon src="/icons/home-nav/chevron.svg" size={14} />
             </span>
           ) : (
             <span
@@ -645,9 +645,9 @@ const SpaceTree = observer(function SpaceTree({ workspaceSlug }: { workspaceSlug
   );
 });
 
-export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
+export const HomeSidebar = observer(function HomeSidebar() {
   const [headerHovered, setHeaderHovered] = useState(false);
-  const { setCollapsed } = useClickUpHomeSidebar();
+  const { setCollapsed } = useHomeSidebar();
   const { toggleCreateIssueModal, toggleCreateProjectModal } = useCommandPalette();
   const { data: currentUser } = useUser();
   const { workspaceSlug } = useParams();
@@ -662,7 +662,7 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
 
   return (
     <aside
-      aria-label="ClickUp Home (mock)"
+      aria-label="Home sidebar"
       style={{
         position: "relative",
         display: "flex",
@@ -692,7 +692,7 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
           zIndex: 1,
         }}
       />
-      {/* Header — hover reveals Search / Filter / Collapse like ClickUp */}
+      {/* Header — hover reveals Search / Filter / Collapse */}
       <div
         onMouseEnter={() => setHeaderHovered(true)}
         onMouseLeave={() => setHeaderHovered(false)}
@@ -741,10 +741,10 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
               pointerEvents: headerHovered ? "auto" : "none",
             }}
           >
-            <HeaderIconButton src="/clickup-home/search.svg" label="Search" />
-            <HeaderIconButton src="/clickup-home/filter.svg" label="Filter" />
+            <HeaderIconButton src="/icons/home-nav/search.svg" label="Search" />
+            <HeaderIconButton src="/icons/home-nav/filter.svg" label="Filter" />
             <HeaderIconButton
-              src="/clickup-home/collapse.svg"
+              src="/icons/home-nav/collapse.svg"
               label="Collapse sidebar"
               title="Close sidebar ⌘\\"
               onClick={() => setCollapsed(true)}
@@ -756,18 +756,18 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
 
       {/* Scrollable tree */}
       <div style={{ flex: 1, overflowY: "auto", overflowX: "hidden", paddingTop: 8, paddingBottom: 20 }}>
-        <Row icon={<Icon src="/clickup-home/new.svg" />} label="New" onClick={() => toggleCreateIssueModal(true)} />
+        <Row icon={<Icon src="/icons/home-nav/new.svg" />} label="New" onClick={() => toggleCreateIssueModal(true)} />
         <Row
-          icon={<Icon src="/clickup-home/inbox.svg" />}
+          icon={<Icon src="/icons/home-nav/inbox.svg" />}
           label="Inbox"
           onClick={() => {
             if (slug) router.push(`/${slug}/notifications/`);
           }}
         />
-        <Row icon={<Icon src="/clickup-home/assigned-comments.svg" />} label="Assigned Comments" />
-        <Row icon={<Icon src="/clickup-home/meetings.svg" />} label="Meetings" />
+        <Row icon={<Icon src="/icons/home-nav/assigned-comments.svg" />} label="Assigned Comments" />
+        <Row icon={<Icon src="/icons/home-nav/meetings.svg" />} label="Meetings" />
         <Row
-          icon={<Icon src="/clickup-home/my-tasks.svg" />}
+          icon={<Icon src="/icons/home-nav/my-tasks.svg" />}
           label="Your work"
           active={isOnYourWork}
           onClick={() => {
@@ -792,7 +792,7 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
                 justifyContent: "center",
               }}
             >
-              <Icon src="/clickup-home/plus-sm.svg" />
+              <Icon src="/icons/home-nav/plus-sm.svg" />
             </span>
           }
         />
@@ -813,7 +813,7 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
               }}
             >
               <img
-                src="/clickup-home/all-tasks.svg"
+                src="/icons/home-nav/all-tasks.svg"
                 alt=""
                 width={14}
                 height={20}
@@ -831,9 +831,9 @@ export const ClickUpHomeSidebar = observer(function ClickUpHomeSidebar() {
 
         {slug ? <SpaceTree workspaceSlug={slug} /> : null}
 
-        <Row icon={<Icon src="/clickup-home/more-muted.svg" />} label="More" labelColor={TEXT_FAINT} />
+        <Row icon={<Icon src="/icons/home-nav/more-muted.svg" />} label="More" labelColor={TEXT_FAINT} />
         <Row
-          icon={<Icon src="/clickup-home/plus.svg" />}
+          icon={<Icon src="/icons/home-nav/plus.svg" />}
           label="New Space"
           labelColor={TEXT_MUTED}
           onClick={() => toggleCreateProjectModal(true)}

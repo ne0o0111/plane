@@ -13,13 +13,13 @@ import { useParams } from "react-router";
 import { EIssueFilterType } from "@plane/constants";
 import { EIssueLayoutTypes, EIssuesStoreType } from "@plane/types";
 // components
-import { ClickUpAddViewMenu } from "@/components/issues/clickup-add-view-menu";
-import { ClickUpViewOptionsMenu } from "@/components/issues/clickup-view-options-menu";
+import { AddViewMenu } from "@/components/issues/add-view-menu";
+import { ViewOptionsMenu } from "@/components/issues/view-options-menu";
 // hooks
 import { useIssues } from "@/hooks/store/use-issues";
 
 /**
- * ClickUp views tab strip — Figma `cu3-data-view-list` (8005:259).
+ * Views tab strip — Figma `cu3-data-view-list` (8005:259).
  * Default tab is Board (kanban). + View adds List / Board / Calendar / Table / Timeline tabs
  * and switches the issue layout to match.
  */
@@ -51,11 +51,11 @@ const VIEW_TYPE_LABELS: Record<TWorkingViewType, string> = {
 };
 
 const VIEW_TYPE_ICON_SRC: Record<TWorkingViewType, string> = {
-  list: "/clickup-views/view-list.svg",
-  board: "/clickup-views/view-board.svg",
-  calendar: "/clickup-views/view-calendar.svg",
-  table: "/clickup-views/view-table.svg",
-  timeline: "/clickup-views/view-timeline.svg",
+  list: "/icons/views/view-list.svg",
+  board: "/icons/views/view-board.svg",
+  calendar: "/icons/views/view-calendar.svg",
+  table: "/icons/views/view-table.svg",
+  timeline: "/icons/views/view-timeline.svg",
 };
 
 function isWorkingViewType(id: string): id is TWorkingViewType {
@@ -137,7 +137,7 @@ export const IssuesViewsBar = observer(function IssuesViewsBar() {
   }, []);
 
   const handleSelectTab = (tab: TViewTab) => {
-    // Active tab click → open view options popover (ClickUp pattern)
+    // Active tab click → open view options popover (pattern)
     if (activeId === tab.id) {
       setAddViewOpen(false);
       if (optionsOpen && optionsTabId === tab.id) {
@@ -290,7 +290,7 @@ export const IssuesViewsBar = observer(function IssuesViewsBar() {
           }}
         >
           <img
-            src="/clickup-views/plus.svg"
+            src="/icons/views/plus.svg"
             alt=""
             width={16}
             height={16}
@@ -304,14 +304,14 @@ export const IssuesViewsBar = observer(function IssuesViewsBar() {
         </button>
       </div>
 
-      <ClickUpAddViewMenu
+      <AddViewMenu
         open={addViewOpen}
         onClose={() => setAddViewOpen(false)}
         onSelect={handleAddView}
         anchorRef={addViewRef}
       />
 
-      <ClickUpViewOptionsMenu
+      <ViewOptionsMenu
         open={optionsOpen}
         onClose={closeOptions}
         anchorRef={optionsAnchorRef}

@@ -78,7 +78,7 @@ export const HIGHLIGHT_CLASS = "highlight";
 export const HIGHLIGHT_WITH_LINE = "highlight-with-line";
 
 /**
- * ClickUp Board column wash (Figma `cu3-board`).
+ * Board column wash (Figma `cu3-board`).
  * Solid `color-mix` against layer-1 — not translucent rgba — so a sticky header
  * nested inside the padded column does not double-stack into a darker “frame” ring.
  */
