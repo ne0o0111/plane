@@ -342,10 +342,17 @@ const SpaceProjectItem = observer(function SpaceProjectItem({
   projectId,
   workspaceSlug,
   index,
+  indentLevel = 1,
+  showRail = true,
+  /** When false, stay collapsed even if the current route is inside this space (Favorites). */
+  autoExpandOnRoute = true,
 }: {
   projectId: string;
   workspaceSlug: string;
   index: number;
+  indentLevel?: number;
+  showRail?: boolean;
+  autoExpandOnRoute?: boolean;
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -414,8 +421,9 @@ const SpaceProjectItem = observer(function SpaceProjectItem({
   }, [project, workspaceSlug, projectId]);
 
   useEffect(() => {
+    if (!autoExpandOnRoute) return;
     if (pathname.includes(`/projects/${projectId}`)) setIsOpen(true);
-  }, [pathname, projectId]);
+  }, [pathname, projectId, autoExpandOnRoute]);
 
   if (!project) return null;
 
@@ -443,8 +451,8 @@ const SpaceProjectItem = observer(function SpaceProjectItem({
         onClose={() => handleLeaveProjectModal(false)}
       />
       <Row
-        indentLevel={1}
-        showRail
+        indentLevel={indentLevel}
+        showRail={showRail}
         active={isActive}
         icon={
           hovered || menuOpen ? (
@@ -499,8 +507,8 @@ const SpaceProjectItem = observer(function SpaceProjectItem({
             return (
               <Row
                 key={item.key}
-                indentLevel={2}
-                showRail
+                indentLevel={indentLevel + 1}
+                showRail={showRail}
                 active={active}
                 icon={<NavGlyph icon={item.icon} active={active} />}
                 label={item.name}
@@ -572,6 +580,28 @@ function SectionLabel({
 const LIST_ICON_COLORS = ["#838383", "#29C56A", "#3E8BFF", "#F5A623", "#E06C75", "#C678DD"];
 
 /**  Space parent; nested rows are Plane projects (lists). */
+const FavoritesTree = observer(function FavoritesTree({ workspaceSlug }: { workspaceSlug: string }) {
+  const { favoriteProjectIds } = useProject();
+  if (favoriteProjectIds.length === 0) return null;
+
+  return (
+    <div style={{ marginBottom: 8 }}>
+      <SectionLabel label="Favorites" />
+      {favoriteProjectIds.map((projectId, index) => (
+        <SpaceProjectItem
+          key={`fav-${projectId}`}
+          projectId={projectId}
+          workspaceSlug={workspaceSlug}
+          index={index}
+          indentLevel={0}
+          showRail={false}
+          autoExpandOnRoute={false}
+        />
+      ))}
+    </div>
+  );
+});
+
 const SpaceTree = observer(function SpaceTree({ workspaceSlug }: { workspaceSlug: string }) {
   const pathname = usePathname();
   const { joinedProjectIds, fetchProjectAnalyticsCount } = useProject();
@@ -776,6 +806,8 @@ export const HomeSidebar = observer(function HomeSidebar() {
         />
 
         <div style={{ height: 1, background: DIVIDER, margin: "12px 12px 8px" }} />
+
+        {slug ? <FavoritesTree workspaceSlug={slug} /> : null}
 
         <SectionLabel
           label="Spaces"

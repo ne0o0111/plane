@@ -64,14 +64,19 @@ export function CreateProjectModal(props: Props) {
   return (
     <Dialog
       open={isOpen}
-      disablePointerDismissal
       onOpenChange={(open) => {
         if (!open) onClose();
       }}
     >
-      <DialogContent size="lg" aria-label={t("create_project")}>
+      <DialogContent
+        size="lg"
+        height="fixed"
+        aria-label={t("create_project")}
+        // Propel DialogContent omits className; soften scale via globals.css `[data-dialog-anim=fade]`.
+        data-dialog-anim="fade"
+      >
         {currentStep === EProjectCreationSteps.CREATE_PROJECT && (
-          <div className="flex min-h-0 flex-1 flex-col overflow-y-auto">
+          <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
             <CreateProjectForm
               setToFavorite={setToFavorite}
               workspaceSlug={workspaceSlug}

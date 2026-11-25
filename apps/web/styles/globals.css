@@ -102,3 +102,16 @@
   max-height: calc(min(var(--available-height), 24rem) - 2px);
   overflow: hidden;
 }
+
+/* Same feel as the previous DialogContent className (propel blocks className on DialogContent). */
+[data-dialog-anim="fade"] {
+  transform-origin: top center;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  will-change: opacity;
+}
+
+[data-dialog-anim="fade"][data-starting-style],
+[data-dialog-anim="fade"][data-ending-style] {
+  transform: none;
+}
