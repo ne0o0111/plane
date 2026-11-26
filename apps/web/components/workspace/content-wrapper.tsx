@@ -19,23 +19,23 @@ const HOME_SIDEBAR_WIDTH = 256;
 const HOME_SIDEBAR_EASE = "cubic-bezier(0.32, 0.72, 0, 1)";
 const HOME_SIDEBAR_MS = 280;
 
-/** Project settings has its own sidebar — hide Home without mutating the saved preference. */
-function isProjectSettingsPath(pathname: string | null): boolean {
-  return /\/settings\/projects(\/|$)/.test(pathname ?? "");
+/** Workspace / Space settings have their own sidebar — hide Home without mutating the saved preference. */
+function isSettingsPath(pathname: string | null): boolean {
+  return /\/settings(\/|$)/.test(pathname ?? "");
 }
 
 const WorkspaceShell = observer(function WorkspaceShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const { shouldRenderAppRail } = useAppRailVisibility();
   const { collapsed, toggleCollapsed } = useHomeSidebar();
-  const homeHidden = collapsed || isProjectSettingsPath(pathname);
+  const homeHidden = collapsed || isSettingsPath(pathname);
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "\\") {
         e.preventDefault();
-        // Don't toggle while project settings forces Home closed.
-        if (isProjectSettingsPath(pathname)) return;
+        // Don't toggle while settings forces Home closed.
+        if (isSettingsPath(pathname)) return;
         toggleCollapsed();
       }
     };
