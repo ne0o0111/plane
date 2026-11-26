@@ -93,9 +93,9 @@ export type BreadcrumbNavigationSelectProps = {
 /**
  * The navigating half owns its hover surface independently of the dropdown control.
  */
-/** Project crumb — no border (Tasks keeps the pill); compact 8px label beside a larger logo. */
+/** Project crumb — no border (Tasks keeps the pill); match Tasks label size so descenders aren't clipped. */
 const NAVIGATION_CLASSNAME =
-  "flex h-7 min-w-0 items-center gap-2 rounded-md px-1 text-[8px] font-semibold leading-4 text-[#1E293B] outline-none hover:bg-layer-transparent-hover focus-visible:outline-solid focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent-strong";
+  "flex h-7 min-w-0 items-center gap-2 rounded-md px-1 text-[13px] font-semibold leading-5 text-[#1E293B] outline-none hover:bg-layer-transparent-hover focus-visible:outline-solid focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent-strong";
 
 /** Adjacent controls have no layout gap; each paints its own rounded surface. */
 const PAIR_CLASSNAME = "inline-flex h-7 min-w-0 items-center";

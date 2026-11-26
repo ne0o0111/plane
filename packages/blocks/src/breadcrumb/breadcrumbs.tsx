@@ -135,11 +135,7 @@ type BreadcrumbLabelProps = {
 /** The crumb's text, clamped to one line. */
 function BreadcrumbLabel(props: BreadcrumbLabelProps) {
   const { children, className } = props;
-  return (
-    <div className={cn("relative line-clamp-1 flex max-w-[150px] items-center truncate leading-4", className)}>
-      {children}
-    </div>
-  );
+  return <div className={cn("relative flex max-w-[150px] items-center truncate leading-5", className)}>{children}</div>;
 }
 
 // breadcrumb separator
